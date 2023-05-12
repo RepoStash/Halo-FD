@@ -151,7 +151,8 @@
 	icon_state = "Helmet Sharpshooter"
 	item_state_novisr = "Odst Helmet Sharpshooter Transparent"
 	icon_state_novisr = "Helmet Sharpshooter Transparent"
-	var/up = 1
+	action_button_name = "Adjust Marksman Visor"
+	var/up = 0
 
 /obj/item/clothing/head/helmet/odst/sharpshooter/attack_self()
 	toggle()
