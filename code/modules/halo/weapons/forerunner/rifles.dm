@@ -16,7 +16,7 @@
 	handle_casings = CASELESS
 	magazine_type = /obj/item/ammo_magazine/suppressor
 
-	fire_delay = 8
+	fire_delay = 10
 	burst = 6
 	burst_delay = 1.7
 	one_hand_penalty = -1
