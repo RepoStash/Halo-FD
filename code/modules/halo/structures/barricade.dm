@@ -93,6 +93,7 @@
 	maxHealth = 150 // Less health than regular barricades.
 	health = 150
 	cover_rating = 15 // Significantly less cover value than barricades
+	dodge_pass = 1
 	repair_material_name = "steel"
 
 /obj/structure/destructible/railing/corner
