@@ -83,3 +83,38 @@
 		icon_state = "covenant_dmg1"
 	else
 		icon_state = "covenant_dmg2"
+
+/obj/structure/destructible/railing // Really shittily-coded railings. My condolences to whoever looks at this.
+	name = "railing"
+	desc = "A metal railing."
+	icon = 'code/modules/halo/icons/railing.dmi'
+	icon_state = "railing"
+	flags = ON_BORDER
+	maxHealth = 150 // Less health than regular barricades.
+	health = 150
+	cover_rating = 15 // Significantly less cover value than barricades
+	repair_material_name = "steel"
+
+/obj/structure/destructible/railing/corner
+	name = "railing corner"
+	desc = "A corner of a metal railing."
+	icon_state = "railing_corner"
+	flags = ON_BORDER
+
+/obj/structure/destructible/railing/middle
+	name = "middle railing"
+	desc = "Half of a metal railing, connected to the corners."
+	icon_state = "railing_middle"
+	flags = ON_BORDER
+
+/obj/structure/destructible/railing/halfleft
+	name = "half-left railing"
+	desc = "Half of a metal railing, connected to the corners."
+	icon_state = "railing_half_left"
+	flags = ON_BORDER
+
+/obj/structure/destructible/railing/halfright
+	name = "half-right railing"
+	desc = "Half of a metal railing, connected to the corners."
+	icon_state = "railing_half_right"
+	flags = ON_BORDER
