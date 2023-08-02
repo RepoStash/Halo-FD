@@ -755,5 +755,32 @@
 					/obj/item/clothing/shoes/jiralhanae/covenant/lord_inquisitor
 					)
 
+///////Planetary\\\\\\\\
+
+//Skirmisher
+
+/obj/item/clothing/suit/armor/special/skirmisher/murmillo/donator/planetary
+	name = "'ODST Armor'"
+	desc = "Lightweight, durable armour issued to Orbital Drop Squak Troopers for increased survivability in the field."
+	icon = 'code/modules/halo/covenant/species/tvoan/skirm_clothing.dmi'
+	icon_state = "planetary_worn"
+	item_state = "planetary_worn"
+	species_restricted = list("Tvaoan Kig-Yar")
+
+/obj/item/clothing/head/helmet/kigyar/skirmisher/murmillo/donator/planetary
+	name = "'ODST Helmet'"
+	desc = "Standard issue short-EVA capable helmet issued to ODST forces"
+	icon = 'code/modules/halo/covenant/species/tvoan/skirm_clothing.dmi'
+	icon_state = "planetary_helmet_worn"
+	item_state = "planetary_helmet_worn"
+	species_restricted = list("Tvaoan Kig-Yar")
+
+/obj/item/weapon/storage/box/large/donator/planetary/murmillo
+	startswith = list(/obj/item/clothing/suit/armor/special/skirmisher/murmillo/donator/planetary,
+					/obj/item/clothing/head/helmet/kigyar/skirmisher/murmillo/donator/planetary
+					)
+	can_hold = list(/obj/item/clothing/suit/armor/special/skirmisher/murmillo/donator/planetary,
+					/obj/item/clothing/head/helmet/kigyar/skirmisher/murmillo/donator/planetary
+					)
 
 #undef JIRALHANAE_ICON_PATH_OBJ
