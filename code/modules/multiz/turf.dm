@@ -23,12 +23,24 @@
 	plane = ABOVE_PLATING_PLANE
 	layer = ABOVE_WIRE_LAYER
 
-/turf/simulated/open/CanZPass(atom, direction)
-	UpdateMobSector(atom)
+/turf/simulated/open/CanZPass(atom/A, direction)
+	if(locate(/obj/structure/catwalk, src))
+		if(z == A.z)
+			if(direction == DOWN)
+				return 0
+		else if(direction == UP)
+			return 0
+	UpdateMobSector(A)
 	return 1
 
-/turf/space/CanZPass(atom, direction)
-	UpdateMobSector(atom)
+/turf/space/CanZPass(atom/A, direction)
+	if(locate(/obj/structure/catwalk, src))
+		if(z == A.z)
+			if(direction == DOWN)
+				return 0
+		else if(direction == UP)
+			return 0
+	UpdateMobSector(A)
 	return 1
 
 /turf/simulated/open
