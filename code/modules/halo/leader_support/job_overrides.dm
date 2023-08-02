@@ -96,7 +96,7 @@
 	command_rank = 3
 
 /datum/job/unsc/oni/field_agent
-	command_rank = 2
+	command_rank = 1
 
 /datum/job/unsc/oni/research/director
 	command_rank = 2
