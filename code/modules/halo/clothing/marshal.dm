@@ -115,8 +115,6 @@ obj/item/clothing/under/police/marshal
 	desc = "Boots worn by Marshals, to signify their status. Has inlays for to provide extra leg-armour."
 	icon_override = MARSHAL_OVERRIDE
 	icon = MARSHAL_OVERRIDE
-	icon_state = "marshal_shades_obj"
-	item_state = "marshal_shades_w"
 	icon_state = "marshal_boots_obj"
 	item_state = "marshal_boots_w"
 
