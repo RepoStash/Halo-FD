@@ -156,7 +156,7 @@
 	if(anchored)
 		return FALSE
 
-	if(locate(/obj/structure/lattice, loc))
+	if(locate(/obj/structure/lattice, loc) || locate(/obj/structure/catwalk, loc))
 		return FALSE
 
 	// See if something prevents us from falling.
@@ -197,7 +197,7 @@
 		return species.can_fall(src)
 
 /atom/movable/proc/handle_fall(var/turf/landing)
-	Move(landing)
+	forceMove(landing)
 	if(locate(/obj/structure/stairs) in landing)
 		return 1
 	else

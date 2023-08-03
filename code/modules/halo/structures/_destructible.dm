@@ -21,6 +21,7 @@
 	var/mob_climb_time = 3 SECONDS
 	var/bump_climb = 0
 	var/climbable = 1
+	var/dodge_pass = 0
 
 /obj/structure/destructible/New()
 	. = ..()
@@ -166,6 +167,9 @@
 		if(mover.throwing)
 			return climbable
 
+		if(dodge_pass && (mover.checkpass(PASSTABLE)))
+			return 1
+
 		return 0
 
 	return 1
@@ -205,6 +209,9 @@
 		//eg grenades, supplies
 		if(mover.throwing)
 			return climbable
+
+		if(dodge_pass && (mover.checkpass(PASSTABLE)))
+			return 1
 
 		return 0
 

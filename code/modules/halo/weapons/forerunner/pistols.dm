@@ -38,7 +38,7 @@
 	else
 		if(istype(ammo_magazine,/obj/item/ammo_magazine/boltshot_sg))
 			icon_state = "boltshot_shotgun"
-			fire_delay = initial(fire_delay) + 4
+			fire_delay = initial(fire_delay) + 6
 		else
 			icon_state = "boltshot"
 			fire_delay = initial(fire_delay)

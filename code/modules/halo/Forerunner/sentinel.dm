@@ -18,10 +18,11 @@
 	name = "sentinel beam"
 	icon_state = "beam_blue"
 
-	damage = 9
+	damage = 10
+	shield_damage = 30
 	damage_type = BURN
-	check_armour = "laser"
-	armor_penetration = 15
+	check_armour = "energy"
+	armor_penetration = 20
 	tracer_delay_time = 2.5
 
 	muzzle_type = /obj/effect/projectile/laser_gold/muzzle
@@ -34,10 +35,10 @@
 	icon = 'code/modules/halo/Forerunner/forerunner_weapons.dmi'
 	icon_state = "sentinel_beam"
 	self_recharge = 1
-	recharge_time = 0
+	recharge_time = 1
 	max_shots = 500
 	fire_delay = 20
-	burst_delay = 2.5
+	burst_delay = 1.5
 	burst = 8
 	charge_meter = 0
 
@@ -53,8 +54,9 @@
 //Found as random loot in forerunner areas (Utilise loot distributor system)//
 /obj/item/weapon/gun/energy/laser/sentinel_beam/detached
 	burst = 10
-	recharge_time = 1
-	max_shots = 75
+	fire_delay = 10
+	recharge_time = 15
+	max_shots = 100
 
 
 // AI pathing landmark
@@ -79,7 +81,7 @@
 	maxHealth = 150
 	ranged = 1
 	move_to_delay = 5
-	resistance = 10
+	resistance = 15
 	speak_chance = 1
 	speak = list()
 	emote_see = list("extends and retracts its manipulator arms","scans its body for damage","scans the environment")

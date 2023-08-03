@@ -278,7 +278,7 @@
 	name = "Rifle Needle"
 	damage = 25 //Shrapnel makes up the difference with the dmr
 	armor_penetration = 40
-	shield_damage = 5
+	shield_damage = 15
 	shrapnel_damage = 10
 	shards_to_explode = 3
 	shard_name = "Rifle Needle shrapnel"
@@ -359,7 +359,7 @@
 /obj/item/projectile/bullet/covenant/concussion_rifle
 	name = "heavy plasma round"
 	damage = 50
-	armor_penetration = 40
+	armor_penetration = 50
 	shield_damage = 50
 	step_delay = 0.75 //slower than most
 	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'

@@ -349,14 +349,17 @@
 		to_chat(user,"<span class = 'notice'>[src] is charging and cannot fire</span>")
 		return
 
+	stored_targ = target
+
 	if(is_charged_weapon==1)
 		if(charge_sound)
 			playsound(src.loc, charge_sound, 100, 1)
 		user.visible_message("<span class = 'notice'>[user] starts charging the [src]!</span>")
 
 		is_charging = 1
-		if (!do_after(user,arm_time,src))
+		if (!do_after(user,arm_time,src,same_loc = 0))
 			is_charging = 0
+			stored_targ = null
 			return
 		is_charging = 0
 
@@ -371,16 +374,13 @@
 
 	//actually attempt to shoot
 	var/turf/targloc = get_turf(target) //cache this in case target gets deleted during shooting, e.g. if it was a securitron that got destroyed.
-	stored_targ = target
 	var/atom/use_targ = stored_targ
 	. = 1
-	/*
 	user.visible_message(
 	"<span class='danger'>\The [user] fires \the [src][pointblank ? " point blank at \the [target]":""]!</span>",
 	"<span class='warning'>You fire \the [src]!</span>",
 	"You hear a [fire_sound_text]!"
 	)
-	*/
 	for(var/i in 1 to burst)
 		if(!pershot_check(user))
 			break
@@ -810,7 +810,7 @@
 	if (scope_zoom_amount == 0) return
 
 	toggle_scope(usr, scope_zoom_amount)
-	
+
 /obj/item/weapon/gun/proc/ammo_check()     //We will change this in the projectile and energy dm files in the guns folder
 	return null
 

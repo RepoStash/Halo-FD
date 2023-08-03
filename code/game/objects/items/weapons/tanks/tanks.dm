@@ -250,7 +250,6 @@ var/list/global/tank_gauge_cache = list()
 		else if(istype(src.loc, /obj/item/weapon/rig) && src.loc in location)	// or the rig is in the mobs possession
 			if(!location.internal)		// and they do not have any active internals
 				mask_check = 1
-
 		if(mask_check)
 			if(location.wear_mask && (location.wear_mask.item_flags & AIRTIGHT))
 				data["maskConnected"] = 1
@@ -276,6 +275,7 @@ var/list/global/tank_gauge_cache = list()
 	..()
 	if (usr.stat|| usr.restrained())
 		return 0
+
 	if (src.loc != usr)
 		return 0
 
@@ -295,30 +295,35 @@ var/list/global/tank_gauge_cache = list()
 	return 1
 
 /obj/item/weapon/tank/proc/toggle_valve(var/mob/user)
+	var/mob/living/carbon/location = loc
 	if(istype(loc,/mob/living/carbon))
-		var/mob/living/carbon/location = loc
-		if(location.internal == src)
-			location.internal = null
-			location.internals.icon_state = "internal0"
-			to_chat(user, "<span class='notice'>You close the tank release valve.</span>")
-			if (location.internals)
-				location.internals.icon_state = "internal0"
-		else
-			var/can_open_valve
-			if(location.wear_mask && (location.wear_mask.item_flags & AIRTIGHT))
-				can_open_valve = 1
-			else if(istype(location,/mob/living/carbon/human))
-				var/mob/living/carbon/human/H = location
-				if(H.head && (H.head.item_flags & AIRTIGHT))
-					can_open_valve = 1
+		location = loc
+	else if(istype(loc,/obj/item/weapon/storage/belt))
+		if(istype(loc.loc,/mob/living/carbon))
+			location = loc.loc
 
-			if(can_open_valve)
-				location.internal = src
-				to_chat(user, "<span class='notice'>You open \the [src] valve.</span>")
-				if (location.internals)
-					location.internals.icon_state = "internal1"
-			else
-				to_chat(user, "<span class='warning'>You need something to connect to \the [src].</span>")
+	if(location.internal == src)
+		location.internal = null
+		location.internals.icon_state = "internal0"
+		to_chat(user, "<span class='notice'>You close the tank release valve.</span>")
+		if (location.internals)
+			location.internals.icon_state = "internal0"
+	else
+		var/can_open_valve
+		if(location.wear_mask && (location.wear_mask.item_flags & AIRTIGHT))
+			can_open_valve = 1
+		else if(istype(location,/mob/living/carbon/human))
+			var/mob/living/carbon/human/H = location
+			if(H.head && (H.head.item_flags & AIRTIGHT))
+				can_open_valve = 1
+
+		if(can_open_valve)
+			location.internal = src
+			to_chat(user, "<span class='notice'>You open \the [src] valve.</span>")
+			if (location.internals)
+				location.internals.icon_state = "internal1"
+		else
+			to_chat(user, "<span class='warning'>You need something to connect to \the [src].</span>")
 
 
 
@@ -459,7 +464,7 @@ var/list/global/tank_gauge_cache = list()
 				return
 			T.assume_air(air_contents)
 			playsound(get_turf(src), 'sound/weapons/gunshot/shotgun.ogg', 20, 1)
-			visible_message("\icon[src] <span class='danger'>\The [src] flies apart!</span>", "<span class='warning'>You hear a bang!</span>")
+			visible_message("[icon2html(src, viewers(src))] <span class='danger'>\The [src] flies apart!</span>", "<span class='warning'>You hear a bang!</span>")
 			T.hotspot_expose(air_contents.temperature, 70, 1)
 
 
@@ -496,10 +501,12 @@ var/list/global/tank_gauge_cache = list()
 			//dynamic air release based on ambient pressure
 
 			T.assume_air(leaked_gas)
+
 			if(!leaking)
 				visible_message("\icon[src] <span class='warning'>\The [src] relief valve flips open with a hiss!</span>", "You hear hissing.")
 				playsound(src.loc, 'sound/effects/spray.ogg', 10, 1, -3)
 				leaking = 1
+
 				#ifdef FIREDBG
 				log_debug("<span class='warning'>[x],[y] tank is leaking: [pressure] kPa, integrity [integrity]</span>")
 				#endif

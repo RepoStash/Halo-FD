@@ -62,7 +62,7 @@ em						{font-style: normal;font-weight: bold;}
 .name					{font-weight: bold;}
 .say					{}
 .alert					{color: #ff0000;}
-h1.alert, h2.alert		{color: #000000;}
+h1.alert, h2.alert		{color: #000080;}
 
 .emote					{font-style: italic;}
 
@@ -110,6 +110,8 @@ h1.alert, h2.alert		{color: #000000;}
 .good					{color: #4f7529; font-weight: bold;}
 .mixed					{color: #FF7F00; font-weight: bold;}
 .bad					{color: #ee0000; font-weight: bold;}
+
+.maptext				{font-size: 8px; -dm-text-outline: 2px black; color: white; line-height:1.1;}
 
 BIG IMG.icon 			{width: 32px; height: 32px;}
 

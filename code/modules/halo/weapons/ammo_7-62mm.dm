@@ -52,7 +52,8 @@
 /obj/item/projectile/bullet/m120
 	damage = 35
 	armor_penetration = 40
-	shield_damage = 5
+	penetrating = 1
+	shield_damage = 15
 	tracer_type = /obj/effect/projectile/dmr_trail
 	tracer_delay_time = 0.5 SECONDS
 	steps_between_delays = 3
