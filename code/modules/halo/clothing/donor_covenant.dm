@@ -783,4 +783,42 @@
 					/obj/item/clothing/head/helmet/kigyar/skirmisher/murmillo/donator/planetary
 					)
 
+///////Timmypool\\\\\\\\
+
+//Sangheili (MINOR)
+
+/obj/item/clothing/head/helmet/sangheili/minor/timmy
+	name = "Silent Shadow Slim Helmet"
+	desc = "Armor worn by a noble blood line regularly inducted into the Silent Shadow."
+	icon_state = "tk_helm_obj"
+	item_state = "tk_helm"
+
+/obj/item/clothing/suit/armor/special/combatharness/minor/timmy
+	name = "Silent Shadow Slim Armor"
+	icon_state = "tk_chest_obj"
+	item_state = "tk_chest"
+
+/obj/item/clothing/shoes/sangheili/minor/timmy
+	name = "Silent Shadow Slim Leg Armor"
+	icon_state = "tk_legs_obj"
+	item_state = "tk_legs"
+
+
+/obj/item/clothing/gloves/thick/sangheili/minor/timmy
+	name = "Silent Shadow Slim Gauntlets"
+	icon_state = "tk_gloves_obj"
+	item_state = "tk_gloves"
+
+/obj/item/weapon/storage/box/large/donator/timmy
+	startswith = list(/obj/item/clothing/head/helmet/sangheili/minor/timmy,
+					/obj/item/clothing/suit/armor/special/combatharness/minor/timmy,
+					/obj/item/clothing/shoes/sangheili/minor/timmy,
+					/obj/item/clothing/gloves/thick/sangheili/minor/timmy
+					)
+	can_hold = list(/obj/item/clothing/head/helmet/sangheili/minor/timmy,
+					/obj/item/clothing/suit/armor/special/combatharness/minor/timmy,
+					/obj/item/clothing/shoes/sangheili/minor/timmy,
+					/obj/item/clothing/gloves/thick/sangheili/minor/timmy
+					)
+
 #undef JIRALHANAE_ICON_PATH_OBJ
