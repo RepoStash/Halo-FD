@@ -126,11 +126,12 @@
 		item_state = "unsc_[rounded_vol]"
 
 		if(reagents.total_volume)
-			filling = null
+			filling = image('icons/obj/reagentfillings.dmi', src, "biofoam10")
 
-			filling.icon_state = null
+			filling.icon_state = "biofoam[rounded_vol]"
 
-			filling.color = null
+			filling.color = reagents.get_color()
+			overlays += filling
 
 /obj/item/weapon/reagent_containers/syringe/biofoam/urf
 	name = "\improper Biofoam Canister"
@@ -156,13 +157,6 @@
 		icon_state = "urf_[rounded_vol]"
 		item_state = "urf_[rounded_vol]"
 
-		if(reagents.total_volume)
-			filling = null
-
-			filling.icon_state = null
-
-			filling.color = null
-
 /obj/item/weapon/reagent_containers/syringe/biofoam/cov
 	name = "\improper Covenant Biofoam Canister"
 	desc = "An advanced injection device filled with biofoam, used to rapidly fix internal and external injuries. Do not inject a second dose until fifteen seconds have passed, as interference from the remnants of previous injections may lead to a lethal overdose."
@@ -186,13 +180,6 @@
 			overlays += injoverlay
 		icon_state = "cov_[rounded_vol]"
 		item_state = "cov_[rounded_vol]"
-
-		if(reagents.total_volume)
-			filling = null
-
-			filling.icon_state = null
-
-			filling.color = null
 
 #undef SYRINGE_DRAW
 #undef SYRINGE_INJECT
