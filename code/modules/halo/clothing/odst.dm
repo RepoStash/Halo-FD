@@ -16,7 +16,7 @@
 
 /obj/item/clothing/head/helmet/odst
 	name = "ODST Rifleman Helmet"
-	desc = "Standard issue short-EVA capable helmet issued to ODST forces"
+	desc = "The helmet of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has standard grey markings denoting its user to be a rifleman. EVA capable, protective, and lightweight; a fine piece of armor if there ever was one."
 	icon = ITEM_INHAND
 	icon_override = ODST_OVERRIDE
 	item_state = "Odst Helmet"
@@ -48,7 +48,7 @@
 
 /obj/item/clothing/suit/armor/special/odst
 	name = "ODST Armour"
-	desc = "Lightweight, durable armour issued to Orbital Drop Shock Troopers for increased survivability in the field."
+	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has standard grey markings denoting its user to be a rifleman. EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one."
 	icon = ITEM_INHAND
 	icon_state = "Odst Armour"
 	icon_override = ODST_OVERRIDE
@@ -121,11 +121,13 @@
 
 /obj/item/clothing/suit/armor/special/odst/cqb
 	name = "ODST CQB Armour"
+	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has deep red markings to relay that its user is specialized in Close Quarters Battle. It has a combat knife sheath attached to the left shoulder as well as additional up-armoring on the chest and legs. EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one."
 
 	icon_state = "Odst Armour CQB"
 
 /obj/item/clothing/head/helmet/odst/cqb
 	name = "ODST CQB Helmet"
+	desc = "The helmet of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has bright red markings to relay that its wearer is specialized in Close Quarters Battle. EVA capable, protective, and lightweight; a fine piece of armor if there ever was one."
 	item_state = "Odst Helmet CQB"
 	icon_state = "Helmet CQB"
 	item_state_novisr = "Odst Helmet CQB Transparent"
@@ -137,11 +139,13 @@
 
 /obj/item/clothing/suit/armor/special/odst/sharpshooter
 	name = "ODST Sharpshooter Armour"
+	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has no markings to enhance stealth capabilities and to relay that its wearer is a designated marksman or sniper. It has had its right shoulder armor removed in order to increase ease of aim and fire for right-handed shooters, as well as its left shoulder armor enlarged to provide extra protection from fire coming from the left side . EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one."
 
 	icon_state = "Odst Armour Sharpshooter"
 
 /obj/item/clothing/head/helmet/odst/sharpshooter
 	name = "ODST Sharpshooter Helmet"
+	desc = "The helmet of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has no markings to relay that its user is a designated marksman or sniper. It has a VISR/S2 Marksman Goggles set attached to the helmet, essentially combining the spotter and the sniper into one with an advanced on-board targeting, rangefinder, and barometer, all of the said information feeding directly into the VISR system of the helmet proper; Try not to drop it, it's expensive. EVA capable, protective, and lightweight; a fine piece of armor if there ever was one."
 
 	item_state = "Odst Helmet Sharpshooter"
 	icon_state = "Helmet Sharpshooter"
@@ -154,11 +158,13 @@
 
 /obj/item/clothing/suit/armor/special/odst/medic
 	name = "ODST Medic Armour"
+	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has maroon markings to relay that its wearer is a designated combat medic. EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one."
 
 	icon_state = "Odst Armour Medic"
 
 /obj/item/clothing/head/helmet/odst/medic
 	name = "ODST Medic Helmet"
+	desc = "The helmet of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this has maroon markings to relay that its wearer is a designated combat medic. Instead of the standard VISR/M3 issued to most ODSTs, this one has a VISR/M5 installed, providing a light medical-readout on most life-forms in its scanning range. EVA capable, protective, and lightweight; a fine piece of armor if there ever was one."
 
 	item_state = "Odst Helmet Medic"
 	icon_state = "Helmet Medic"
@@ -176,6 +182,7 @@
 
 /obj/item/clothing/head/helmet/odst/engineer
 	name = "ODST Engineer Helmet"
+	desc = "The helmet of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has orange markings to relay that its wearer is a designated combat engineer. It has a special polarized visor providing welding protection. EVA capable, protective, and lightweight; a fine piece of armor if there ever was one."
 	flash_protection = FLASH_PROTECTION_MAJOR
 	item_state = "Odst Helmet Engineer"
 	icon_state = "Helmet Engineer"
@@ -184,6 +191,7 @@
 
 /obj/item/clothing/suit/armor/special/odst/engineer
 	name = "ODST Engineer Armour"
+	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has orange markings to relay that its wearer is a designated combat engineer. EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one."
 
 	icon_state = "Odst Armour Engineer"
 
@@ -213,6 +221,7 @@
 
 /obj/item/clothing/head/helmet/odst/squadleader
 	name = "ODST Squad Leader Helmet"
+	desc = "The helmet of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has blue markings to relay that its wearer is an NCO or Officer. It is equipped with an AN/PCK-221 FARNDALE Command Network Module attached to the left side of the helmet, allowing real-time communication with the UNSC Battle Network. EVA capable, protective, and lightweight; a fine piece of armor if there ever was one."
 
 	item_state = "Odst Helmet Squad Leader"
 	icon_state = "Helmet Squad Leader"
@@ -221,6 +230,7 @@
 
 /obj/item/clothing/suit/armor/special/odst/squadleader
 	name = "ODST Squad Leader Armour"
+	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has blue markings to relay that its wearer is an NCO or officer. It has a combat knife sheath attached to the left shoulder. EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one."
 
 	icon_state = "Odst Armor Squad Leader"
 
