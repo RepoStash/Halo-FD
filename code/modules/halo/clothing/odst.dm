@@ -145,34 +145,12 @@
 
 /obj/item/clothing/head/helmet/odst/sharpshooter
 	name = "ODST Sharpshooter Helmet"
-	desc = "The helmet of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has no markings to relay that its user is a designated marksman or sniper. It has a VISR/S2 Marksman Goggles set attached to the helmet, essentially combining the spotter and the sniper into one with an advanced on-board targeting, rangefinder, and barometer, all of the said information feeding directly into the VISR system of the helmet proper; Try not to drop it, its expensive. EVA capable, protective, and lightweight; a fine piece of armor if there ever was one."
+	desc = "The helmet of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has no markings to relay that its user is a designated marksman or sniper. It has a VISR/S2 Marksman Goggles set attached to the helmet, essentially combining the spotter and the sniper into one with an advanced on-board targeting, rangefinder, and barometer, all of the said information feeding directly into the VISR system of the helmet proper; Try not to drop it, it's expensive. EVA capable, protective, and lightweight; a fine piece of armor if there ever was one."
 
 	item_state = "Odst Helmet Sharpshooter"
 	icon_state = "Helmet Sharpshooter"
 	item_state_novisr = "Odst Helmet Sharpshooter Transparent"
 	icon_state_novisr = "Helmet Sharpshooter Transparent"
-	action_button_name = "Adjust Marksman Visor"
-	var/up = 0
-
-/obj/item/clothing/head/helmet/odst/sharpshooter/attack_self()
-	toggle()
-
-/obj/item/clothing/head/helmet/odst/sharpshooter/verb/toggle()
-	set category = "Object"
-	set name = "Adjust Visor"
-	set src in usr
-
-	if(usr.canmove && !usr.incapacitated())
-		if(src.up)
-			src.up = !src.up
-			item_state = initial(item_state)
-			to_chat(usr, "You flip the [src]'s down.")
-		else
-			src.up = !src.up
-			item_state = "[initial(item_state)]up"
-			to_chat(usr, "You push the [src]'s up out of your face.")
-		update_clothing_icon()
-		usr.update_action_buttons()
 
 /obj/effect/odst_armour_set/medic
 	helmet = /obj/item/clothing/head/helmet/odst/medic
