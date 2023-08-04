@@ -14,9 +14,7 @@
 	/obj/item/ammo_magazine/m6d,\
 	/obj/item/ammo_magazine/m6s,\
 	/obj/item/projectile/bullet/covenant/needles,\
-	/obj/item/weapon/storage/firstaid/unsc,\
-	/obj/item/weapon/storage/firstaid/erk,\
-	/obj/item/weapon/storage/firstaid/combat/unsc,\
+	/obj/item/weapon/storage/firstaid,\
 	/obj/item/device/healthanalyzer,\
 	/obj/item/weapon/reagent_containers/dropper,\
 	/obj/item/weapon/reagent_containers/glass/beaker,\

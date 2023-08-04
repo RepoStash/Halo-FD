@@ -353,7 +353,7 @@
 		/obj/item/weapon/plastique/breaching/covenant = 4,
 		/obj/item/weapon/plastique/breaching/longrange/covenant = 4,
 		/obj/item/clothing/accessory/storage/IFAK/cov = 20,
-		/obj/item/weapon/storage/firstaid/unsc/cov = 6, 
+		/obj/item/weapon/storage/firstaid/unsc/cov = 6,
 		/obj/item/weapon/pinpointer/artifact = 2
 	)
 
@@ -568,10 +568,11 @@
 	/obj/item/device/healthanalyzer/covenant = 10,
 	"Medkits" = -1,
 	/obj/item/weapon/storage/firstaid/unsc/cov = 10,
-	/obj/item/weapon/storage/firstaid/fire/covenant = 2,
-	/obj/item/weapon/storage/firstaid/o2/covenant = 4,
-	/obj/item/weapon/storage/firstaid/toxin/covenant = 4,
-	/obj/item/weapon/storage/firstaid/erk/cov = 4,
+	/obj/item/weapon/storage/firstaid/fire/covenant = 3,
+	/obj/item/weapon/storage/firstaid/o2/covenant = 3,
+	/obj/item/weapon/storage/firstaid/toxin/covenant = 3,
+	/obj/item/weapon/storage/firstaid/erk/cov = 3,
+	/obj/item/weapon/storage/firstaid/surgery/covenant = 3,
 	/obj/item/weapon/storage/firstaid/combat/unsc/cov = 7,
 	/obj/item/weapon/storage/firstaid/adv = 7,
 	"Pill Bottles" = -1,

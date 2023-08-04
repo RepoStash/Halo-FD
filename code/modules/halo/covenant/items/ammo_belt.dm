@@ -18,7 +18,7 @@
 /obj/item/weapon/storage/belt/covenant_medic
 	name = "Covenant Medical Belt"
 
-	desc = "A belt with many holders for medical kits, with a few small ammunition pouches"
+	desc = "A belt with multiple hooks to hold medical kits. Heavy, but distributes the weight of larger loads much more efficiently."
 	icon = 'tools.dmi'
 	item_state = "securitybelt"
 	color = "#ff99ff"
@@ -27,8 +27,9 @@
 		"Tvaoan Kig-Yar" = null,\
 		"Sangheili" = null\
 		)
-	storage_slots = 5
-
+	storage_slots = 4
+	slowdown_general = 0.2 // Incurs some slowdown when worn.
+	use_dynamic_slowdown = 0 // Will not get more or less slowdown depending on contents.
 	can_hold = MEDIC_BELT_CANHOLD
 
 /obj/item/clothing/accessory/storage/bandolier/covenant
