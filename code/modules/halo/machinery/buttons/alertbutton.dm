@@ -32,7 +32,10 @@
 	//Then, sound the alarm.
 	if(on)
 		currently_alarming = 1
-		playsound(src, alarm_sound, 150, 0, 500, 0,1)
+		spawn(-1)
+			while(currently_alarming)
+				playsound(src, alarm_sound, 150, 0, 500, 0,1)
+				sleep(alarm_loop_time)
 	else
 		currently_alarming = 0
 	//Then, switch all lights to ominous red.
@@ -79,6 +82,5 @@
 	name = "Evacuation Alert"
 	alarm_sound = 'sound/effects/siren.ogg'
 	alarm_color_string = "#fedc56"
-	area_base = /area/faction_base/unsc/odp
 	alert_message = "<font size ='6' color='yellow'><b>THE STATION HAS BEEN LOST. EVACUATE IMMEDIATELY.</b></font>"
 	un_alert_message = "<font size ='4' color='green'>Evacuation cancelled. Return to your stations.</font>"
