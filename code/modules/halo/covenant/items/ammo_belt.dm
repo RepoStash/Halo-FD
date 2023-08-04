@@ -27,9 +27,9 @@
 		"Tvaoan Kig-Yar" = null,\
 		"Sangheili" = null\
 		)
-	storage_slots = 4
-	slowdown_general = 0.2 // Incurs some slowdown when worn.
-	use_dynamic_slowdown = 0 // Will not get more or less slowdown depending on contents.
+	storage_slots = 5
+	dynamic_storage_threshold = 12
+
 	can_hold = MEDIC_BELT_CANHOLD
 
 /obj/item/clothing/accessory/storage/bandolier/covenant

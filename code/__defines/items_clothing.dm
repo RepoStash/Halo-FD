@@ -29,7 +29,8 @@
 	/obj/item/clothing/head/surgery,\
 	/obj/item/clothing/gloves/latex,\
 	/obj/item/weapon/reagent_containers/hypospray,\
-	/obj/item/clothing/glasses/hud/health\
+	/obj/item/clothing/glasses/hud/health,\
+	/obj/item/weapon/defibrillator/compact\
 	)
 
 #define AMMO_BELT_CANHOLD list(\

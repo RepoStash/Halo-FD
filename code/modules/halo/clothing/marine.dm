@@ -198,9 +198,8 @@
 	icon_override = MARINE_OVERRIDE
 	icon_state = "UNSC Marine Medical Belt item"
 	item_state = "UNSC Marine Medical Belt"*/
-	storage_slots = 4
-	slowdown_general = 0.2 // Incurs some slowdown when worn.
-	use_dynamic_slowdown = 0 // Will not get more or less slowdown depending on contents.
+	storage_slots = 5
+	dynamic_storage_threshold = 12
 
 	can_hold = list(\
 	/obj/item/ammo_magazine/m7,
@@ -221,7 +220,8 @@
 	/obj/item/clothing/head/surgery,
 	/obj/item/clothing/gloves/latex,
 	/obj/item/weapon/reagent_containers/hypospray,
-	/obj/item/clothing/glasses/hud/health
+	/obj/item/clothing/glasses/hud/health,
+	/obj/item/weapon/defibrillator/compact
 	)
 
 /obj/item/clothing/mask/marine

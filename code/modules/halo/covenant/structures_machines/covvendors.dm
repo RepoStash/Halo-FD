@@ -566,6 +566,7 @@
 	"Utility" = -1,
 	/obj/item/bodybag/cryobag/covenant = 3,
 	/obj/item/device/healthanalyzer/covenant = 10,
+	/obj/item/weapon/defibrillator/compact/combat/loaded = 3,
 	"Medkits" = -1,
 	/obj/item/weapon/storage/firstaid/unsc/cov = 10,
 	/obj/item/weapon/storage/firstaid/fire/covenant = 3,
