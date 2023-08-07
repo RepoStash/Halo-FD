@@ -91,6 +91,7 @@ proc/explosion(turf/epicenter, devastation_range, heavy_impact_range, light_impa
 					if(istype(AM,/mob/living/))
 						var/mob/living/m = AM
 						if(dist_num <= guaranteed_damage_range)
+							guaranteed_damage *= (lore_accuracy ? 1.5 : 1)
 							var/mob/living/carbon/human/h = m
 							if(istype(h))
 								if(h.check_shields(guaranteed_damage*2, null, null, null, "the explosion"))
