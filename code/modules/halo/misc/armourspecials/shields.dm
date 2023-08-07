@@ -132,9 +132,9 @@
 	if(istype(dam_proj))
 		if(dam_proj.shield_damage < 0) //Handling for -'ve shield damage numbers
 			damage = max(0,damage - dam_proj.shield_damage)
-		else if(dam_proj.shield_damage >0 && !take_damage(dam_proj.shield_damage,0))
+		else if(dam_proj.shield_damage >0 && !take_damage( dam_proj.shield_damage * (lore_accuracy ? 2 : 1) ,0))
 			return 0
-	if(take_damage(damage))
+	if(take_damage(damage * (lore_accuracy ? 2 : 1) ))
 		//Melee damage through shields is reduced
 		var/obj/item/dam_source = damage_source
 		if(istype(dam_source) &&!istype(dam_proj) && dam_source.loc.Adjacent(connectedarmour.loc))
