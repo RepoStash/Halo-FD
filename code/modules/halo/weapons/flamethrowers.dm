@@ -65,7 +65,7 @@
 	var/impacted_loc = loc
 	if(!ismob(loc))
 		var/obj/effect/fire/f = new /obj/effect/fire/noheat(impacted_loc)
-		f.firelevel = 5
+		f.firelevel = 8
 
 /obj/item/projectile/bullet/fire/launch_from_gun(var/atom/target)
 	. = ..()
