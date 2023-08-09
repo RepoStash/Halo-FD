@@ -5,8 +5,8 @@
 /mob/living/simple_animal/hostile/flood/carrier
 	name = "Flood carrier"
 	icon = 'code/modules/halo/flood/flood_carrier.dmi'
-	icon_state = "anim"
-	icon_living = "anim"
+	icon_state = "static"
+	icon_living = "static"
 	icon_dead = ""
 	//
 	move_to_delay = 30
