@@ -2,8 +2,8 @@
 /mob/living/simple_animal/hostile/flood/infestor
 	name = "Flood infestor"
 	icon = 'code/modules/halo/flood/flood_infection.dmi'
-	icon_state = "anim"
-	icon_living = "anim"
+	icon_state = "static"
+	icon_living = "static"
 	icon_dead = "dead"
 	pass_flags = PASSTABLE
 	mob_size = MOB_MINISCULE
@@ -163,7 +163,7 @@
 	..()
 	if(swarm_size > 1)
 		to_chat(user, "<span class='warning'>There are [swarm_size] in the swarm.</span>")
-		
+
 /mob/living/simple_animal/hostile/flood/infestor/apply_difficulty_setting()
 	. = ..()
 	switch(GLOB.difficulty_level)
@@ -177,7 +177,7 @@
 			//Dont want them too tanky
 			health = 1
 			maxHealth = 1
-			
+
 		if(DIFFICULTY_LEGENDARY)
 			//Dont want them too tanky
 			health = 1
