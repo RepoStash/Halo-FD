@@ -378,7 +378,7 @@
 	/obj/item/clothing/head/soft/police/marshal/beret,
 	/obj/item/clothing/head/helmet/swat/police/marshal,
 	/obj/item/clothing/head/helmet/swat/police/medium/marshal,
-	/obj/item/clothing/head/helmet/swat/police/medium/marshalmedic
+	/obj/item/clothing/head/helmet/swat/police/medium/marshalmedic,
 	/obj/item/clothing/suit/storage/vest/tactical/police/marshal,
 	/obj/item/clothing/suit/armor/vest/police_medium/marshal,
 	/obj/item/clothing/mask/balaclava/tactical/police/marshal,
