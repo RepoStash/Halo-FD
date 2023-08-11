@@ -379,6 +379,21 @@ obj/item/clothing/suit/armor/special/soe/pantas
 		slot_s_store_str = 'code/modules/halo/weapons/icons/Armor_Weapons.dmi',
 		)
 
+/obj/item/weapon/gun/projectile/shotgun/pump/m90_ts/mojave
+	name = "The Boomstick"
+	desc = "An ancient pattern of shotgun, while worn and old, you can tell its owner takes good care of it."
+	icon_state = "mojave-shotgun"
+	item_state = "mojave-shotgun"
+	fire_sound = 'code/modules/halo/sounds/Mojave_Shotgun_Fire.ogg'
+	reload_sound = 'code/modules/halo/sounds/Mojave_Shotgun_Reload.ogg'
+	wielded_item_state = "mojave-shotgun-wielded"
+	item_icons = list(
+		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
+		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
+		slot_back_str = 'code/modules/halo/weapons/icons/Back_Weapons.dmi',
+		slot_s_store_str = 'code/modules/halo/weapons/icons/Armor_Weapons.dmi',
+		)
+
 /obj/item/weapon/gun/projectile/m392_dmr/mojave/update_icon()
 	. = ..()
 	if(ammo_magazine)
@@ -389,11 +404,13 @@ obj/item/clothing/suit/armor/special/soe/pantas
 /obj/item/weapon/storage/box/large/donator/mojave
 	startswith = list(/obj/item/clothing/head/helmet/innie/light/mojave,
 					/obj/item/clothing/suit/storage/innie/light/mojave,
-					/obj/item/weapon/gun/projectile/m392_dmr/mojave
+					/obj/item/weapon/gun/projectile/m392_dmr/mojave,
+					/obj/item/weapon/gun/projectile/shotgun/pump/m90_ts/mojave
 					)
 	can_hold = list(/obj/item/clothing/head/helmet/innie/light/mojave,
 					/obj/item/clothing/suit/storage/innie/light/mojave,
-					/obj/item/weapon/gun/projectile/m392_dmr/mojave
+					/obj/item/weapon/gun/projectile/m392_dmr/mojave,
+					/obj/item/weapon/gun/projectile/shotgun/pump/m90_ts/mojave
 					)
 
 #undef URF_HAND
