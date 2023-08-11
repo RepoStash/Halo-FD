@@ -42,7 +42,7 @@ obj/item/clothing/under/police/marshal
 
 /obj/item/clothing/head/helmet/gas/police/heavy/marshalchief //chief
 	name = "Chief Marshal EH252 Helmet"
-	desc = "A fully enclosed Marshal helmet with inbuilt tear gas filters designed to protect the entirety of the head from ballistics and shrapnel. This one ."
+	desc = "A fully enclosed Marshal helmet with inbuilt tear gas filters designed to protect the entirety of the head from ballistics and shrapnel. This one has command markings."
 	icon_override = MARSHAL_OVERRIDE
 	icon = MARSHAL_OVERRIDE
 	icon_state = "marshal_helmet_chfvisor_obj"
@@ -113,7 +113,7 @@ obj/item/clothing/under/police/marshal
 	icon_state = "marshal_armor_chf_obj"
 	item_state = "marshal_armor_chf_w"
 	armor = list(melee = 50, bullet = 55, laser = 55, energy = 45, bomb = 50, bio = 25, rad = 25) // On-par protection with the heavy vest without the drawback.
-	armor_thickness = 20
+	armor_thickness = 25
 
 /obj/item/clothing/suit/armor/vest/police/marshal //heavy
 	name = "Marshal Heavy Ballistic Suit"
