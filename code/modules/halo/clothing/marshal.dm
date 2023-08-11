@@ -32,6 +32,22 @@ obj/item/clothing/under/police/marshal
 	icon_state = "marshal_helmet_goggled_obj"
 	item_state = "marshal_helmet_goggled_w"
 
+/obj/item/clothing/head/helmet/swat/police/medium/marshalmedic //medium medic
+	name = "Marshal Ballistic Medic Helmet"
+	desc = "A heavier Marshal helmet designed to be worn with the medium ballistic vest with more focus on protecting the eyes and head from shrapnel and bullets. This one has medic markings on it."
+	icon_override = MARSHAL_OVERRIDE
+	icon = MARSHAL_OVERRIDE
+	icon_state = "marshal_medhelmet_obj"
+	item_state = "marshal_medhelmet_w"
+
+/obj/item/clothing/head/helmet/gas/police/heavy/marshalchief //chief
+	name = "Chief Marshal EH252 Helmet"
+	desc = "A fully enclosed Marshal helmet with inbuilt tear gas filters designed to protect the entirety of the head from ballistics and shrapnel. This one ."
+	icon_override = MARSHAL_OVERRIDE
+	icon = MARSHAL_OVERRIDE
+	icon_state = "marshal_helmet_chfvisor_obj"
+	item_state = "marshal_helmet_chfvisor_w"
+
 /obj/item/clothing/head/helmet/gas/police/heavy/marshal //heavy
 	name = "Marshal EH252 Helmet"
 	desc = "A fully enclosed Marshal helmet with inbuilt tear gas filters designed to protect the entirety of the head from ballistics and shrapnel. Goes with the heavy ballistic suit."
@@ -89,6 +105,16 @@ obj/item/clothing/under/police/marshal
 	armor = list(melee = 45, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 25, rad = 25) // Slightly more protection than the light vest, still weaker than marine armor.
 	armor_thickness = 20
 
+/obj/item/clothing/suit/armor/vest/police_medium/marshalchief //medium
+	name = "Chief Marshal Ballistic Vest"
+	desc = "A specialized light-weight heavily armored vest designed for the Chief Marshal to adequately protect, while not at the cost of mobility."
+	icon_override = MARSHAL_OVERRIDE
+	icon = MARSHAL_OVERRIDE
+	icon_state = "marshal_armor_chf_obj"
+	item_state = "marshal_armor_chf_w"
+	armor = list(melee = 50, bullet = 55, laser = 55, energy = 45, bomb = 50, bio = 25, rad = 25) // On-par protection with the heavy vest without the drawback.
+	armor_thickness = 20
+
 /obj/item/clothing/suit/armor/vest/police/marshal //heavy
 	name = "Marshal Heavy Ballistic Suit"
 	desc = "A heavily armored vest designed for bullet and explosive resistance with coverage including the arms, upper and lower torso, and neck."
@@ -112,8 +138,9 @@ obj/item/clothing/under/police/marshal
 //EYES
 
 /obj/item/clothing/glasses/police/marshal
-	name = "Ballistic Glasses"
-	desc = "Tinted to reduce glare and strenghtened to protect eyeballs from shrapnel."
+	name = "Ballistic Hud-Glasses"
+	desc = "Tinted to reduce glare and strenghtened to protect eyeballs from shrapnel. Includes a Hud for rapid identification."
+	hud = /obj/item/clothing/glasses/hud/security
 
 //SHOES
 

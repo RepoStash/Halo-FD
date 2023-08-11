@@ -197,13 +197,13 @@
 	req_access = list(6766)
 	secured_wires = 1
 
-/obj/item/weapon/card/id/building_key/hospital //"HP"
+/obj/item/weapon/card/id/building_key/hospital //"Hospital"
 	name = "Key (Hospital)"
-	access = list(7280)
+	access = list(7280, 8072) //Pharmacy and Hospital access
 
-/obj/item/weapon/card/id/building_key/pharmacy //"PH"
+/obj/item/weapon/card/id/building_key/pharmacy //"Pharmacy"
 	name = "Key (Pharmacy)"
-	access = list(8072)
+	access = list(8072, 7280) //Pharmacy and Hospital access
 
 /obj/machinery/door/airlock/hospital
 	name = "Hospital"
@@ -357,6 +357,8 @@
 	id = "barShutter"
 	req_access = list(6682)
 
+// MARSHALS
+
 /obj/structure/closet/secure_closet/ks7_police
 	name = "Marshal Patrol Gear Locker"
 	desc = "Use this to protect the citizens of your planet from hostile wildlife and people."
@@ -376,6 +378,7 @@
 	/obj/item/clothing/head/soft/police/marshal/beret,
 	/obj/item/clothing/head/helmet/swat/police/marshal,
 	/obj/item/clothing/head/helmet/swat/police/medium/marshal,
+	/obj/item/clothing/head/helmet/swat/police/medium/marshalmedic
 	/obj/item/clothing/suit/storage/vest/tactical/police/marshal,
 	/obj/item/clothing/suit/armor/vest/police_medium/marshal,
 	/obj/item/clothing/mask/balaclava/tactical/police/marshal,
@@ -394,6 +397,44 @@
 	/obj/item/weapon/gun/energy/taser,
 	/obj/item/device/flashlight/maglight
 	)
+
+/obj/structure/closet/secure_closet/ks7_pdchief
+	name = "Chief Marshal Locker"
+	desc = "Locker containing equipemnt to show your higher paygrade over your officers."
+	icon = 'icons/obj/closet.dmi'
+	icon_broken = "hossecurebroken"
+	icon_closed = "hossecure"
+	icon_locked = "hossecure1"
+	icon_off = "hossecureoff"
+	icon_opened = "hossecureopen"
+	icon_state = "hossecure1"
+
+
+/obj/structure/closet/secure_closet/ks7_pdchief/WillContain()
+	return list(\
+	/obj/item/clothing/under/police/marshal,
+	/obj/item/clothing/head/soft/police/marshal/patrol,
+	/obj/item/clothing/head/soft/police/marshal/beret,
+	//obj/item/clothing/head/helmet/gas/police/heavy/marshalchief,
+	/obj/item/clothing/suit/armor/vest/police_medium/marshalchief,
+	/obj/item/clothing/mask/balaclava/tactical/police/marshal,
+	/obj/item/clothing/glasses/police/marshal,
+	/obj/item/clothing/shoes/marine/marshal,
+	/obj/item/clothing/gloves/thick/unsc/marshal,
+	/obj/item/weapon/storage/belt/marine_ammo/marshal,
+	/obj/item/weapon/storage/belt/security,
+	/obj/item/weapon/gun/projectile/m6d_magnum/police/police,
+	/obj/item/clothing/accessory/badge/chiefmarshal,
+	/obj/item/device/radio/headset/marshal,
+	/obj/item/weapon/storage/backpack/marine/brown,
+	/obj/item/weapon/reagent_containers/spray/pepper,
+	/obj/item/weapon/melee/baton/humbler,
+	/obj/item/weapon/handcuffs,
+	/obj/item/weapon/gun/energy/taser,
+	/obj/item/device/flashlight/maglight
+	)
+
+// MARSHALS GEAR
 
 /obj/structure/closet/secure_closet/ks7_police/swat
 	name = "Marshal SWAT Gear Locker"
