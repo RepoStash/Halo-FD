@@ -1,7 +1,9 @@
+#define JIRALHANAE_ICON_PATH_MOB 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_gear.dmi'
+#define GRUNT_GEAR_ICON 'code/modules/halo/covenant/species/unggoy/grunt_gear.dmi'
+
 ////////Boltersam\\\\\\\\
 
 //JIRALHANAE
-#define JIRALHANAE_ICON_PATH_MOB 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_gear.dmi'
 
 /obj/item/clothing/head/helmet/jiralhanae/covenant/boltersam
 	icon_state = "bolter_helm"
@@ -821,4 +823,32 @@
 					/obj/item/clothing/gloves/thick/sangheili/minor/timmy
 					)
 
+///////Ilikesaying\\\\\\\\
+
+//Unggoy (MINOR)
+
+/obj/item/clothing/suit/armor/special/unggoy_combat_harness/ilikesaying
+	name = "Magical Grunt Armor"
+	desc = "Worn by those who wish to punish heretics with the power of love!"
+	icon = GRUNT_GEAR_ICON
+	icon_override = GRUNT_GEAR_ICON
+	icon_state = "grif_minor_combatharness"
+
+/obj/item/weapon/gun/energy/plasmapistol/ilikesaying
+	name = "Magical Plasma Pistol"
+	desc = "In the name of the Covenant, I'll punish you!"
+	icon_state = "Grif Plasma Pistol"
+
+/obj/item/weapon/storage/box/large/donator/ilikesaying/unggoy_minor
+	startswith = list(/obj/item/clothing/suit/armor/special/unggoy_combat_harness/ilikesaying,
+					/obj/item/weapon/gun/energy/plasmapistol/ilikesaying,
+					/obj/item/weapon/gun/energy/plasmapistol/ilikesaying
+					)
+	can_hold = list(/obj/item/clothing/suit/armor/special/unggoy_combat_harness/ilikesaying,
+					/obj/item/weapon/gun/energy/plasmapistol/ilikesaying,
+					/obj/item/weapon/gun/energy/plasmapistol/ilikesaying
+					)
+
 #undef JIRALHANAE_ICON_PATH_OBJ
+#undef GRUNT_GEAR_ICON
+

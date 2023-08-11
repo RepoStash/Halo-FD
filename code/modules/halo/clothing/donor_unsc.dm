@@ -1999,6 +1999,32 @@ obj/item/clothing/head/helmet/odst/donator/roadcone_orange
 	/obj/item/clothing/suit/armor/special/spartan/pneumothorax
 	)
 
+//ODST
+
+/obj/item/clothing/head/helmet/odst/donator/pneumothorax
+	name = "S-1/ONI Recon Helmet"
+	desc = "A modified Mjolnir MK5 Recon helmet designed for use by ODST's. It has a dull orange visor and appears to be similar in strength to the standard ODST Helmets."
+	item_state = "husky-helmet-worn"
+	icon_state = "husky-helmet-obj"
+	item_state_novisr = "husky-helmet-transparent-worn"
+	icon_state_novisr = "husky-helmet-transparent-obj"
+
+/obj/item/clothing/suit/armor/special/odst/donator/pneumothorax
+	name = " S-1/ONI Recon BDU"
+	desc = "A set of Recon BDUs equipped with trauma plates protecting vital areas. Unlike traditional Helljumper BDUs, this one seems lighter in nature, missing the iconic pauldrons. This armor seems well-worn."
+	item_state = "husky-armor-worn"
+	icon_state = "husky-armor-obj"
+
+/obj/item/weapon/storage/box/large/donator/pneumothorax/odst
+	startswith = list(\
+	/obj/item/clothing/head/helmet/odst/donator/pneumothorax,
+	/obj/item/clothing/suit/armor/special/odst/donator/pneumothorax
+	)
+	can_hold = list(\
+	/obj/item/clothing/head/helmet/odst/donator/pneumothorax,
+	/obj/item/clothing/suit/armor/special/odst/donator/pneumothorax
+	)
+
 ///////////TempleOSDavis/////////
 
 //Spartan
