@@ -379,6 +379,13 @@ obj/item/clothing/suit/armor/special/soe/pantas
 		slot_s_store_str = 'code/modules/halo/weapons/icons/Armor_Weapons.dmi',
 		)
 
+/obj/item/weapon/gun/projectile/m392_dmr/mojave/update_icon()
+	. = ..()
+	if(ammo_magazine)
+		icon_state = "mojave-m392"
+	else
+		icon_state = "mojave-m392-unloaded"
+
 /obj/item/weapon/gun/projectile/shotgun/pump/m90_ts/mojave
 	name = "The Boomstick"
 	desc = "An ancient pattern of shotgun, while worn and old, you can tell its owner takes good care of it."
@@ -393,13 +400,6 @@ obj/item/clothing/suit/armor/special/soe/pantas
 		slot_back_str = 'code/modules/halo/weapons/icons/Back_Weapons.dmi',
 		slot_s_store_str = 'code/modules/halo/weapons/icons/Armor_Weapons.dmi',
 		)
-
-/obj/item/weapon/gun/projectile/m392_dmr/mojave/update_icon()
-	. = ..()
-	if(ammo_magazine)
-		icon_state = "mojave-m392"
-	else
-		icon_state = "mojave-m392-unloaded"
 
 /obj/item/weapon/storage/box/large/donator/mojave
 	startswith = list(/obj/item/clothing/head/helmet/innie/light/mojave,
