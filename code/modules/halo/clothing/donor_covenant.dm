@@ -849,6 +849,98 @@
 					/obj/item/weapon/gun/energy/plasmapistol/ilikesaying
 					)
 
+///////Franz Emmerich (Andronov)\\\\\\\\
+
+//Sangheili undersuit
+
+/obj/item/clothing/under/covenant/sangheili/franzemmerich
+	name = "Crimson Body-suit"
+	desc = "A deep-red bodysuit of Sangheili design."
+	icon_state = "sangheili-franzemmerich_undersuit"
+	species_restricted = list ("Sangheili")
+	body_parts_covered = UPPER_TORSO | LOWER_TORSO | ARMS | LEGS
+
+//Sangheili (Spec Ops)
+
+/obj/item/clothing/suit/armor/special/combatharness/specops/infiltrator/franzemmerich
+	name = "Scavenged Combat Harness (Spec-Ops)"
+	desc = "An arguably heretical combat harness pieced together from the remnants of the Sons of Eridanus's finest warriors."
+	icon_state = "franzemmerich_chest_obj"
+	item_state = "franzemmerich_chest"
+
+/obj/item/clothing/head/helmet/sangheili/specops/franzemmerich
+	name = "Scavenged Sangheili Helmet (Spec-Ops)"
+	desc = "An arguably heretical helmet pieced together from the remnants of the Sons of Eridanus's finest warriors."
+	icon_state = "franzemmerich_helm_obj"
+	item_state = "franzemmerich_helm"
+
+/obj/item/clothing/shoes/sangheili/specops/franzemmerich
+	name = "Scavenged Sangheili Leg Armor (Spec-Ops)"
+	desc = "An arguably heretical pair of greaves pieced together from the remnants of the Sons of Eridanus's finest warriors."
+	icon_state = "franzemmerich_legs_obj"
+	item_state = "franzemmerich_legs"
+
+/obj/item/clothing/gloves/thick/sangheili/specops/infiltrator/franzemmerich
+	name = "Scavenged Sangheili Combat Gauntlets (Spec-Ops)"
+	desc = "An arguably heretical pair of combat gauntlets pieced together from the remnants of the Sons of Eridanus's finest warriors."
+	icon_state = "franzemmerich_gloves_obj"
+	item_state = "franzemmerich_gloves"
+
+//Sangheili (Ultra)
+
+/obj/item/clothing/suit/armor/special/combatharness/ultra/franzemmerich
+	name = "Scavenged Combat Harness (Ultra)"
+	desc = "An arguably heretical combat harness pieced together from the remnants of the Sons of Eridanus's finest warriors."
+	icon_state = "franzemmerich_chest_obj"
+	item_state = "franzemmerich_chest"
+
+/obj/item/clothing/head/helmet/sangheili/ultra/franzemmerich
+	name = "Scavenged Sangheili Helmet (Ultra)"
+	desc = "An arguably heretical helmet pieced together from the remnants of the Sons of Eridanus's finest warriors."
+	icon_state = "franzemmerich_helm_obj"
+	item_state = "franzemmerich_helm"
+
+/obj/item/clothing/shoes/sangheili/ultra/franzemmerich
+	name = "Scavenged Sangheili Leg Armour (Ultra)"
+	desc = "An arguably heretical pair of greaves pieced together from the remnants of the Sons of Eridanus's finest warriors."
+	icon_state = "franzemmerich_legs_obj"
+	item_state = "franzemmerich_legs"
+
+/obj/item/clothing/gloves/thick/sangheili/ultra/franzemmerich
+	name = "Scavenged Sangheili Combat Gauntlets (Ultra)"
+	desc = "An arguably heretical pair of combat gauntlets pieced together from the remnants of the Sons of Eridanus's finest warriors."
+	icon_state = "franzemmerich_gloves_obj"
+	item_state = "franzemmerich_gloves"
+
+//Donor boxes
+
+/obj/item/weapon/storage/box/large/donator/franzemmerich/sangheili_specops
+	startswith = list(/obj/item/clothing/under/covenant/sangheili/franzemmerich,
+		/obj/item/clothing/suit/armor/special/combatharness/specops/infiltrator/franzemmerich,
+	    /obj/item/clothing/head/helmet/sangheili/specops/franzemmerich,
+	    /obj/item/clothing/shoes/sangheili/specops/franzemmerich,
+	    /obj/item/clothing/gloves/thick/sangheili/specops/infiltrator/franzemmerich
+					)
+	can_hold = list(/obj/item/clothing/under/covenant/sangheili/franzemmerich,
+		/obj/item/clothing/suit/armor/special/combatharness/specops/infiltrator/franzemmerich,
+	    /obj/item/clothing/head/helmet/sangheili/specops/franzemmerich,
+	    /obj/item/clothing/shoes/sangheili/specops/franzemmerich,
+	    /obj/item/clothing/gloves/thick/sangheili/specops/infiltrator/franzemmerich
+					)
+
+/obj/item/weapon/storage/box/large/donator/franzemmerich/sangheili_ultra
+	startswith = list(/obj/item/clothing/under/covenant/sangheili/franzemmerich,
+		/obj/item/clothing/suit/armor/special/combatharness/ultra/franzemmerich,
+		/obj/item/clothing/head/helmet/sangheili/ultra/franzemmerich,
+		/obj/item/clothing/shoes/sangheili/ultra/franzemmerich,
+		/obj/item/clothing/gloves/thick/sangheili/ultra/franzemmerich
+					)
+	can_hold = list(/obj/item/clothing/under/covenant/sangheili/franzemmerich,
+		/obj/item/clothing/suit/armor/special/combatharness/ultra/franzemmerich,
+		/obj/item/clothing/head/helmet/sangheili/ultra/franzemmerich,
+		/obj/item/clothing/shoes/sangheili/ultra/franzemmerich,
+		/obj/item/clothing/gloves/thick/sangheili/ultra/franzemmerich
+					)
+
 #undef JIRALHANAE_ICON_PATH_OBJ
 #undef GRUNT_GEAR_ICON
-

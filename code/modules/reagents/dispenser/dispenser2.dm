@@ -19,6 +19,7 @@
 	idle_power_usage = 100
 	density = 1
 	anchored = 1
+	layer = 3
 	flags = OBJ_ANCHORABLE
 
 /obj/machinery/chemical_dispenser/New()
