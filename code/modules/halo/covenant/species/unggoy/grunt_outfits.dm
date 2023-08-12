@@ -137,6 +137,7 @@
 	suit = /obj/item/clothing/suit/armor/special/unggoy_combat_harness/deacon
 	mask = /obj/item/clothing/mask/rebreather/unggoy_deacon
 	l_hand = /obj/item/language_learner/unggoy_to_common
+	head = /obj/item/clothing/head/soft/deacon
 	back = /obj/item/weapon/tank/methane/unggoy_internal/blue
 	//
 	id_type = /obj/item/weapon/card/id/grunt_deacon

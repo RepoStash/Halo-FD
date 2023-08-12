@@ -4,6 +4,8 @@
 	desc = "A combat harness with an inbuilt gas tank"
 	icon = GRUNT_GEAR_ICON
 	icon_override = GRUNT_GEAR_ICON
+	icon_state = "combatharness_minor_obj"
+	item_state = "combatharness_minor"
 	item_state_slots = list(slot_l_hand_str = "armor", slot_r_hand_str = "armor")
 	icon_state = "combatharness_minor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS //Essentially, the entire body besides the head,feet,hands
@@ -27,7 +29,7 @@
 
 /obj/item/clothing/suit/armor/special/unggoy_combat_harness/major
 	name = "Unggoy Combat Harness (Major)"
-	icon_state = "combatharness_major"
+	icon_state = "combatharness_major_obj"
 	item_state = "combatharness_major"
 	//
 	//3 less all-round protection compared to marines and high ranking grunts
@@ -35,20 +37,27 @@
 
 /obj/item/clothing/suit/armor/special/unggoy_combat_harness/heavy
 	name = "Unggoy Combat Harness (Heavy)"
-	icon_state = "combatharness_heavy"
+	icon_state = "combatharness_heavy_obj"
 	item_state = "combatharness_heavy"
 
 /obj/item/clothing/suit/armor/special/unggoy_combat_harness/deacon
 	name = "Unggoy Combat Harness (Deacon)"
-	icon_state = "combatharness_deacon"
+	icon_state = "combatharness_deacon_obj"
 	item_state = "combatharness_deacon"
 	//
 	totalshields = 40
 	specials = list(/datum/armourspecials/shields/unggoy)
 
+/obj/item/clothing/head/soft/deacon
+	name = "Unggoy Deacon Hat"
+	icon = GRUNT_GEAR_ICON
+	icon_override = GRUNT_GEAR_ICON
+	icon_state = "hat_deacon_obj"
+	item_state = "hat_deacon"
+
 /obj/item/clothing/suit/armor/special/unggoy_combat_harness/ultra
 	name = "Unggoy Combat Harness (Ultra)"
-	icon_state = "combatharness_ultra"
+	icon_state = "combatharness_ultra_obj"
 	item_state = "combatharness_ultra"
 	//
 	totalshields = 20
@@ -58,7 +67,7 @@
 
 /obj/item/clothing/suit/armor/special/unggoy_combat_harness/specops
 	name = "Unggoy Combat Harness (Spec-Ops)"
-	icon_state = "combatharness_specops"
+	icon_state = "combatharness_specops_obj"
 	item_state = "combatharness_specops"
 	//
 	action_button_name = "Toggle Active Camouflage"
@@ -76,7 +85,7 @@
 
 /obj/item/clothing/suit/armor/special/unggoy_combat_harness/honour_guard
 	name = "Unggoy Combat Harness (Honour Guard)"
-	icon_state = "combatharness_honour"
+	icon_state = "combatharness_honour_obj"
 	item_state = "combatharness_honour"
 	//
 	totalshields = 150
