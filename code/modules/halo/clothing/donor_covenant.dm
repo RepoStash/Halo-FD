@@ -863,52 +863,52 @@
 //Sangheili (Spec Ops)
 
 /obj/item/clothing/suit/armor/special/combatharness/specops/infiltrator/franzemmerich
-	name = "Scavenged Combat Harness (Spec-Ops)"
-	desc = "An arguably heretical combat harness pieced together from the remnants of the Sons of Eridanus's finest warriors."
+	name = "Modified SOE Combat Harness (Spec-Ops)"
+	desc = "A Sangheili modified SOE combat harness intended to bridge the gap between the URF's utility and the Covenant's superior protection."
 	icon_state = "franzemmerich_chest_obj"
 	item_state = "franzemmerich_chest"
 
 /obj/item/clothing/head/helmet/sangheili/specops/franzemmerich
-	name = "Scavenged Sangheili Helmet (Spec-Ops)"
-	desc = "An arguably heretical helmet pieced together from the remnants of the Sons of Eridanus's finest warriors."
+	name = "Modified SOE Helmet (Spec-Ops)"
+	desc = "A Sangheili modified SOE helmet intended to bridge the gap between the URF's utility and the Covenant's superior protection."
 	icon_state = "franzemmerich_helm_obj"
 	item_state = "franzemmerich_helm"
 
 /obj/item/clothing/shoes/sangheili/specops/franzemmerich
-	name = "Scavenged Sangheili Leg Armor (Spec-Ops)"
-	desc = "An arguably heretical pair of greaves pieced together from the remnants of the Sons of Eridanus's finest warriors."
+	name = "Modified SOE Leg Armor (Spec-Ops)"
+	desc = "Sangheili modified SOE greaves intended to bridge the gap between the URF's utility and the Covenant's superior protection."
 	icon_state = "franzemmerich_legs_obj"
 	item_state = "franzemmerich_legs"
 
 /obj/item/clothing/gloves/thick/sangheili/specops/infiltrator/franzemmerich
-	name = "Scavenged Sangheili Combat Gauntlets (Spec-Ops)"
-	desc = "An arguably heretical pair of combat gauntlets pieced together from the remnants of the Sons of Eridanus's finest warriors."
+	name = "Modified SOE Combat Gauntlets (Spec-Ops)"
+	desc = "Sangheili modified SOE gauntlets intended to bridge the gap between the URF's utility and the Covenant's superior protection."
 	icon_state = "franzemmerich_gloves_obj"
 	item_state = "franzemmerich_gloves"
 
 //Sangheili (Ultra)
 
 /obj/item/clothing/suit/armor/special/combatharness/ultra/franzemmerich
-	name = "Scavenged Combat Harness (Ultra)"
-	desc = "An arguably heretical combat harness pieced together from the remnants of the Sons of Eridanus's finest warriors."
+	name = "Modified SOE Combat Harness (Ultra)"
+	desc = "A Sangheili modified SOE combat harness intended to bridge the gap between the URF's utility and the Covenant's superior protection."
 	icon_state = "franzemmerich_chest_obj"
 	item_state = "franzemmerich_chest"
 
 /obj/item/clothing/head/helmet/sangheili/ultra/franzemmerich
-	name = "Scavenged Sangheili Helmet (Ultra)"
-	desc = "An arguably heretical helmet pieced together from the remnants of the Sons of Eridanus's finest warriors."
+	name = "Modified SOE Helmet (Ultra)"
+	desc = "A Sangheili modified SOE helmet intended to bridge the gap between the URF's utility and the Covenant's superior protection."
 	icon_state = "franzemmerich_helm_obj"
 	item_state = "franzemmerich_helm"
 
 /obj/item/clothing/shoes/sangheili/ultra/franzemmerich
-	name = "Scavenged Sangheili Leg Armour (Ultra)"
-	desc = "An arguably heretical pair of greaves pieced together from the remnants of the Sons of Eridanus's finest warriors."
+	name = "Modified SOE Leg Armour (Ultra)"
+	desc = "Sangheili modified SOE greaves intended to bridge the gap between the URF's utility and the Covenant's superior protection."
 	icon_state = "franzemmerich_legs_obj"
 	item_state = "franzemmerich_legs"
 
 /obj/item/clothing/gloves/thick/sangheili/ultra/franzemmerich
-	name = "Scavenged Sangheili Combat Gauntlets (Ultra)"
-	desc = "An arguably heretical pair of combat gauntlets pieced together from the remnants of the Sons of Eridanus's finest warriors."
+	name = "Modified SOE Combat Gauntlets (Ultra)"
+	desc = "Sangheili modified SOE gauntlets intended to bridge the gap between the URF's utility and the Covenant's superior protection."
 	icon_state = "franzemmerich_gloves_obj"
 	item_state = "franzemmerich_gloves"
 

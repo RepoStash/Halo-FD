@@ -85,7 +85,7 @@
 	lunge_dist = 2
 	salvage_components = list()
 	matter = list("duridium" = 1)
-	
+
 	firemodes = list(\
 	list(mode_name="firing mode",  burst=3),
 	list(mode_name="melee mode",  burst=0)
@@ -167,7 +167,7 @@
 	lunge_dist = 2
 	salvage_components = list()
 	matter = list("duridium" = 1)
-	
+
 	firemodes = list(\
 	list(mode_name="firing mode",  burst=1),
 	list(mode_name="melee mode",  burst=0)
@@ -384,7 +384,7 @@
 	to_chat(user, "<span class='info'>It has [amount] grenade[amount != 1 ? "s" : ""] remaining on the belt.</span>")
 
 /obj/item/weapon/grenade/brute_shot/detonate()
-	explosion(get_turf(src), 0, max(round(amount/4),1), max(round(amount / 2), 2), max(amount, 4), guaranteed_damage = 40, guaranteed_damage_range = 2)
+	explosion(get_turf(src), 0, max(round(amount/5),2), max(round(amount / 3), 3), max(amount, 5), guaranteed_damage = 40, guaranteed_damage_range = 3)
 	. = ..()
 	qdel(src)
 
