@@ -71,19 +71,24 @@
 	name = "KS7 - Lake House"
 
 /area/exo_ice_facility/interior/police
-	name = "KS7 - Police Station"
+	name = "KS7 - Police Station Ground Floor"
+	icon_state = "ks7_pd_g"
 
 /area/exo_ice_facility/interior/police/floor2
 	name = "KS7 - Police Station Second Floor"
+	icon_state = "ks7_pd_sf"
 
 /area/exo_ice_facility/interior/police/floor3
 	name = "KS7 - Police Station Basement"
+	icon_state = "ks7_pd_b"
 
 /area/exo_ice_facility/interior/hospital
 	name = "KS7 - Hospital"
+	icon_state = "ks7_hospital"
 
 /area/exo_ice_facility/interior/pharmacy
 	name = "KS7 - Pharmacy"
+	icon_state = "ks7_pharmacy"
 
 /area/exo_ice_facility/interior/casino
 	name = "KS7 - Casino"
