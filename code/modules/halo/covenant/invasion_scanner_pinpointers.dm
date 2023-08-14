@@ -19,13 +19,12 @@
 			if(isnull(scanpoint) && (!check_point_active || point_find.active_scanner))
 				scanpoint = point_find
 	else
-		var/oldpoint = scanpoint
 		for(var/i = index+1 to scanpoints.len)
 			var/obj/effect/landmark/scanning_point/point = scanpoints[i]
 			if(!check_point_active || point.active_scanner)
 				scanpoint = point
 				index = i
-		if(scanpoint == oldpoint || index == scanpoints.len)
+		if(index > scanpoints.len)
 			index = 1
 		visible_message("<span class = 'notice'>[src] switches target.</span>")
 	if(!workdisk())
