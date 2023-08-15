@@ -968,7 +968,7 @@
 	icon_state = "armour_domodyl"
 	name = "Jiralhanae Shaman Armour"
 
-/obj/item/clothing/shoes/jiralhanae/covenant/captain
+/obj/item/clothing/shoes/jiralhanae/covenant/captain/domodyl
 	icon = JIRALHANAE_ICON_PATH_MOB
 	icon_state = "feet_domodyl"
 	name = "Jiralhanae Shaman Greaves"
@@ -976,11 +976,11 @@
 /obj/item/weapon/storage/box/large/donator/domodyl
 	startswith = list(/obj/item/clothing/head/helmet/jiralhanae/covenant/captain/domodyl,
 					/obj/item/clothing/suit/armor/jiralhanae/covenant/captain/domodyl,
-					/obj/item/clothing/shoes/jiralhanae/covenant/captain
+					/obj/item/clothing/shoes/jiralhanae/covenant/captain/domodyl
 					)
 	can_hold = list(/obj/item/clothing/head/helmet/jiralhanae/covenant/captain/domodyl,
 					/obj/item/clothing/suit/armor/jiralhanae/covenant/captain/domodyl,
-					/obj/item/clothing/shoes/jiralhanae/covenant/captain
+					/obj/item/clothing/shoes/jiralhanae/covenant/captain/domodyl
 					)
 
 #undef JIRALHANAE_ICON_PATH_OBJ
