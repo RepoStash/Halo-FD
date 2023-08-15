@@ -834,10 +834,22 @@
 	icon_override = GRUNT_GEAR_ICON
 	icon_state = "grif_minor_combatharness"
 
+//Plasma Pistol Projectile
+
+/obj/item/projectile/bullet/covenant/plasmapistol/heart
+	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
+	icon_state = "Heartpistol Shot"
+
+/obj/item/projectile/bullet/covenant/plasmapistol/overcharge/heart_overcharge
+	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
+	icon_state = "Overcharged_Heartpistol Shot"
+
 /obj/item/weapon/gun/energy/plasmapistol/ilikesaying
 	name = "Magical Plasma Pistol"
 	desc = "In the name of the Covenant, I'll punish you!"
 	icon_state = "Grif Plasma Pistol"
+	overcharge_type = /obj/item/projectile/bullet/covenant/plasmapistol/overcharge/heart_overcharge
+	projectile_type = /obj/item/projectile/bullet/covenant/plasmapistol/heart
 
 /obj/item/weapon/storage/box/large/donator/ilikesaying/unggoy_minor
 	startswith = list(/obj/item/clothing/suit/armor/special/unggoy_combat_harness/ilikesaying,
@@ -940,6 +952,35 @@
 		/obj/item/clothing/head/helmet/sangheili/ultra/franzemmerich,
 		/obj/item/clothing/shoes/sangheili/ultra/franzemmerich,
 		/obj/item/clothing/gloves/thick/sangheili/ultra/franzemmerich
+					)
+
+///////domodyl\\\\\\\\
+
+//Jiralhanae (CAPTAIN)
+
+/obj/item/clothing/head/helmet/jiralhanae/covenant/captain/domodyl
+	icon = JIRALHANAE_ICON_PATH_MOB
+	icon_state = "helm_domodyl"
+	name = "Jiralhanae Shaman Headdress"
+
+/obj/item/clothing/suit/armor/jiralhanae/covenant/captain/domodyl
+	icon = JIRALHANAE_ICON_PATH_MOB
+	icon_state = "armour_domodyl"
+	name = "Jiralhanae Shaman Armour"
+
+/obj/item/clothing/shoes/jiralhanae/covenant/captain
+	icon = JIRALHANAE_ICON_PATH_MOB
+	icon_state = "feet_domodyl"
+	name = "Jiralhanae Shaman Greaves"
+
+/obj/item/weapon/storage/box/large/donator/domodyl
+	startswith = list(/obj/item/clothing/head/helmet/jiralhanae/covenant/captain/domodyl,
+					/obj/item/clothing/suit/armor/jiralhanae/covenant/captain/domodyl,
+					/obj/item/clothing/shoes/jiralhanae/covenant/captain
+					)
+	can_hold = list(/obj/item/clothing/head/helmet/jiralhanae/covenant/captain/domodyl,
+					/obj/item/clothing/suit/armor/jiralhanae/covenant/captain/domodyl,
+					/obj/item/clothing/shoes/jiralhanae/covenant/captain
 					)
 
 #undef JIRALHANAE_ICON_PATH_OBJ
