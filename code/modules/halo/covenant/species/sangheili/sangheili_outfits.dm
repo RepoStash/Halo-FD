@@ -184,22 +184,6 @@
 	belt = /obj/item/weapon/gun/energy/plasmarifle
 	back = /obj/item/weapon/gun/energy/plasmarifle
 
-/decl/hierarchy/outfit/sangheili/eva
-	name = "Sangheili (Ranger)"
-
-	suit = /obj/item/clothing/suit/armor/special/combatharness/ranger
-	suit_store = null
-	back = null
-	belt = null
-	gloves = /obj/item/clothing/gloves/thick/sangheili/ranger
-	shoes = /obj/item/clothing/shoes/magboots/sangheili
-	head = /obj/item/clothing/head/helmet/sangheili/ranger
-	l_pocket = null
-	r_pocket = null
-	//
-	id_type = /obj/item/weapon/card/id/elite_minor
-	id_slot = slot_wear_id
-
 /decl/hierarchy/outfit/sangheili/eva/armed
 	name = "Armed Sangheili (Ranger)"
 
@@ -224,3 +208,44 @@
 	//
 	id_type = /obj/item/weapon/card/id/elite_specops
 	id_slot = slot_wear_id
+
+/// EVA RANGER OUTFITS ////
+
+/decl/hierarchy/outfit/sangheili/eva
+	name = "Sangheili Ranger"
+
+	suit = /obj/item/clothing/suit/armor/special/combatharness/eva/ranger
+	suit_store = /obj/item/weapon/tank/air/covenant
+	back = null
+	belt = null
+	gloves = /obj/item/clothing/gloves/thick/sangheili/ranger
+	shoes = /obj/item/clothing/shoes/magboots/sangheili
+	head = /obj/item/clothing/head/helmet/sangheili/ranger
+	l_pocket = null
+	r_pocket = null
+	//
+	id_type = /obj/item/weapon/card/id/elite_minor
+	id_slot = slot_wear_id
+
+/decl/hierarchy/outfit/sangheili/eva/major
+	name = "Sangheili Ranger Major"
+
+	suit = /obj/item/clothing/suit/armor/special/combatharness/eva/ranger/major
+	//
+	id_type = /obj/item/weapon/card/id/elite_major
+	id_slot = slot_wear_id
+
+/decl/hierarchy/outfit/sangheili/eva/ultra
+	name = "Sangheili Ranger Ultra"
+
+	suit = /obj/item/clothing/suit/armor/special/combatharness/eva/ranger/ultra
+	//
+	id_type = /obj/item/weapon/card/id/elite_ultra
+	id_slot = slot_wear_id
+
+/decl/hierarchy/outfit/sangheili/eva/armed
+	name = "Sangheili Ranger (Armed, Minor)"
+
+	back = /obj/item/weapon/gun/energy/plasmarifle
+	belt = /obj/item/weapon/gun/energy/plasmarifle
+	l_pocket = /obj/item/weapon/grenade/plasma

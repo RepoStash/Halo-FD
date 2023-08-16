@@ -867,6 +867,7 @@
 	desc = "A Sangheili modified SOE combat harness intended to bridge the gap between the URF's utility and the Covenant's superior protection."
 	icon_state = "franzemmerich_chest_obj"
 	item_state = "franzemmerich_chest"
+	specials = list(/datum/armourspecials/shields/elite,/datum/armourspecials/shieldmonitor/sangheili,/datum/armourspecials/cloaking/cov_specops,/datum/armourspecials/gear/sangheili_infiltrator/franzemmerich)
 
 /obj/item/clothing/head/helmet/sangheili/specops/franzemmerich
 	name = "Modified SOE Helmet (Spec-Ops)"
@@ -918,14 +919,12 @@
 	startswith = list(/obj/item/clothing/under/covenant/sangheili/franzemmerich,
 		/obj/item/clothing/suit/armor/special/combatharness/specops/infiltrator/franzemmerich,
 	    /obj/item/clothing/head/helmet/sangheili/specops/franzemmerich,
-	    /obj/item/clothing/shoes/sangheili/specops/franzemmerich,
-	    /obj/item/clothing/gloves/thick/sangheili/specops/infiltrator/franzemmerich
+	    /obj/item/clothing/shoes/sangheili/specops/franzemmerich
 					)
 	can_hold = list(/obj/item/clothing/under/covenant/sangheili/franzemmerich,
 		/obj/item/clothing/suit/armor/special/combatharness/specops/infiltrator/franzemmerich,
 	    /obj/item/clothing/head/helmet/sangheili/specops/franzemmerich,
-	    /obj/item/clothing/shoes/sangheili/specops/franzemmerich,
-	    /obj/item/clothing/gloves/thick/sangheili/specops/infiltrator/franzemmerich
+	    /obj/item/clothing/shoes/sangheili/specops/franzemmerich
 					)
 
 /obj/item/weapon/storage/box/large/donator/franzemmerich/sangheili_ultra

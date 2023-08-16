@@ -131,10 +131,6 @@
 		/obj/item/weapon/storage/pocketstore/hardcase/hypos/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/materials/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/tools/cov = 0,
-		"EVA" = -1,
-		/obj/item/weapon/storage/box/large/armorset/elite/eva = 0,
-		/obj/item/weapon/tank/air/covenant = 0,
-		/obj/item/clothing/mask/breath = 0,
 		"Equipment" = -1,
 		/obj/item/clothing/ears/earmuffs/earplugs/covenant = 0,
 		/obj/item/weapon/pickaxe/plasma_drill = 0,
@@ -148,12 +144,18 @@
 		/obj/item/weapon/armor_patch/mini/cov = 0,
 		/obj/item/weapon/storage/firstaid/unsc/cov = 0,
 		/obj/item/drop_pod_beacon/covenant = 0,
-		/obj/item/weapon/pinpointer/artifact = 0
+		/obj/item/weapon/pinpointer/artifact = 0,
+		"EVA Equipment" = -1,
+		/obj/item/weapon/storage/box/large/armorset/elite/eva = 0,
+		/obj/item/clothing/mask/breath = 0,
+		/obj/item/weapon/tank/air/covenant = 0,
+		/obj/item/weapon/tank/emergency/oxygen/engi = 10,
+		/obj/item/weapon/tank/jetpack = 5
 	)
 	amounts = list(\
-		/obj/item/weapon/storage/box/large/armorset/elite/eva = 4,
-		/obj/item/weapon/tank/air/covenant = 9,
-		/obj/item/clothing/mask/breath = 7,
+		/obj/item/weapon/storage/box/large/armorset/elite/eva = 10,
+		/obj/item/weapon/tank/air/covenant = 10,
+		/obj/item/clothing/mask/breath = 10,
 		/obj/item/weapon/pickaxe/plasma_drill = 1,
 		/obj/item/flight_item/covenant_pack = 1,
 		/obj/item/dumb_ai_chip/cov = 2,
@@ -229,9 +231,6 @@
 		/obj/item/weapon/storage/pocketstore/hardcase/hypos/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/materials/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/tools/cov = 0,
-		"EVA" = -1,
-		/obj/item/weapon/storage/box/large/armorset/brute/eva = 0,
-		/obj/item/weapon/tank/air/covenant = 0,
 		"Equipment" = -1,
 		/obj/item/clothing/ears/earmuffs/earplugs/covenant = 0,
 		/obj/item/weapon/pickaxe/plasma_drill = 0,
@@ -248,11 +247,17 @@
 		/obj/item/weapon/armor_patch/mini/cov = 0,
 		/obj/item/weapon/storage/firstaid/unsc/cov = 0,
 		/obj/item/drop_pod_beacon/covenant = 0,
-		/obj/item/weapon/pinpointer/artifact = 0
+		/obj/item/weapon/pinpointer/artifact = 0,
+		"EVA Equipment" = -1,
+		/obj/item/weapon/storage/box/large/armorset/brute/eva = 0,
+		/obj/item/clothing/mask/breath = 10,
+		/obj/item/weapon/tank/air/covenant = 0,
+		/obj/item/weapon/tank/emergency/oxygen/engi = 10,
+		/obj/item/weapon/tank/jetpack = 5
 	)
 	amounts = list(\
-		/obj/item/weapon/storage/box/large/armorset/brute/eva = 4,
-		/obj/item/weapon/tank/air/covenant = 7,
+		/obj/item/weapon/storage/box/large/armorset/brute/eva = 10,
+		/obj/item/weapon/tank/air/covenant = 10,
 		/obj/item/weapon/pickaxe/plasma_drill = 1,
 		/obj/item/flight_item/covenant_pack = 1,
 		/obj/item/dumb_ai_chip/cov = 2,
@@ -342,7 +347,13 @@
 		/obj/item/weapon/armor_patch/mini/cov = 0,
 		/obj/item/weapon/storage/firstaid/unsc/cov = 0,
 		/obj/item/drop_pod_beacon/covenant = 0,
-		/obj/item/weapon/pinpointer/artifact = 0
+		/obj/item/weapon/pinpointer/artifact = 0,
+		"EVA Equipment" = -1,
+		/obj/item/weapon/storage/box/large/armorset/kigyar/eva = 10,
+		/obj/item/clothing/mask/breath = 10,
+		/obj/item/weapon/tank/air/covenant = 10,
+		/obj/item/weapon/tank/emergency/oxygen/engi = 10,
+		/obj/item/weapon/tank/jetpack = 5
 	)
 	amounts = list(\
 		/obj/item/flight_item/covenant_pack = 1,

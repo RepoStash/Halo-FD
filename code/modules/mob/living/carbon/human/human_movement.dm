@@ -90,6 +90,12 @@
 
 	//Do we have a working jetpack?
 	var/obj/item/weapon/tank/jetpack/thrust
+	if(wear_suit)
+		if(istype(wear_suit,/obj/item/clothing/suit/armor/special))
+			var/obj/item/clothing/suit/armor/special/eva = wear_suit
+			for(var/datum/armourspecials/integrated_jetpack/specials in eva.specials)
+				thrust = specials.integrated_thrust
+				break
 	if(back)
 		if(istype(back,/obj/item/weapon/tank/jetpack))
 			thrust = back

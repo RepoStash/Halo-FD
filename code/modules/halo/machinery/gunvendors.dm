@@ -210,7 +210,6 @@
 					/obj/item/weapon/storage/box/large/armorset/medic/brown/novisor = 0,
 					/obj/item/weapon/storage/box/large/armorset/medic/brown/visor = 0,
 					/obj/item/weapon/storage/box/large/armorset/medic/white = 0,
-					/obj/item/weapon/storage/box/large/armorset/eva = 0,
 					"Storage" = -1,
 					/obj/item/weapon/storage/belt/marine_ammo = 2,
 					/obj/item/weapon/storage/belt/marine_medic = 1,
@@ -244,10 +243,16 @@
 					/obj/item/device/binoculars = 0,
 					/obj/item/weapon/armor_patch = 0,
 					/obj/item/weapon/armor_patch/mini = 0,
-					/obj/item/drop_pod_beacon = 0
+					/obj/item/drop_pod_beacon = 0,
+					"EVA Equipment" = -1,
+					/obj/item/weapon/storage/box/large/armorset/eva = 0,
+					/obj/item/clothing/mask/breath = 0,
+					/obj/item/weapon/tank/oxygen = 10,
+					/obj/item/weapon/tank/emergency/oxygen/engi = 10,
+					/obj/item/weapon/tank/jetpack/oxygen = 5
 					)
 	amounts = list(\
-		/obj/item/weapon/storage/box/large/armorset/eva = 3,
+		/obj/item/weapon/storage/box/large/armorset/eva = 10,
 		/obj/item/clothing/accessory/storage/IFAK/UNSC = 20,
 		/obj/item/weapon/storage/firstaid/unsc = 6,
 		/obj/item/stack/barbedwire/fifteen = 15,

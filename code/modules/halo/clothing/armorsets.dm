@@ -189,20 +189,25 @@
 
 
 /obj/item/weapon/storage/box/large/armorset/eva
-  name = "Marine Armor Set (EVA)"
+  name = "UNSC Vacuum Suit Set (EVA)"
+  desc = "Contains a UNSC combat-rated spacesuit and two alternatively-sized oxygen tanks."
   startswith = list(
+  		/obj/item/clothing/under/unsc/marine_fatigues/marineeva,
         /obj/item/clothing/head/helmet/eva/marine,
         /obj/item/clothing/shoes/magboots/eva/marine,
-        /obj/item/clothing/suit/spaceeva/eva,
-        /obj/item/clothing/gloves/thick/unsc,
+		/obj/item/clothing/suit/armor/special/eva/marineeva,
+        /obj/item/clothing/gloves/thick/unsc/marineeva,
         /obj/item/weapon/tank/emergency/oxygen/engi,
+        /obj/item/weapon/tank/oxygen,
         )
   can_hold = list(
+  		/obj/item/clothing/under/unsc/marine_fatigues/marineeva,
         /obj/item/clothing/head/helmet/eva/marine,
         /obj/item/clothing/shoes/magboots/eva/marine,
-        /obj/item/clothing/suit/spaceeva/eva,
-        /obj/item/clothing/gloves/thick/unsc,
+		/obj/item/clothing/suit/armor/special/eva/marineeva,
+        /obj/item/clothing/gloves/thick/unsc/marineeva,
         /obj/item/weapon/tank/emergency/oxygen/engi,
+        /obj/item/weapon/tank/oxygen,
         )
 
 //odst
@@ -345,13 +350,13 @@
   name = "Jiralhanae EVA Armor Set"
   startswith = list(
         /obj/item/clothing/head/helmet/jiralhanae/covenant/EVA,
-        /obj/item/clothing/suit/armor/jiralhanae/covenant/EVA,
+        /obj/item/clothing/suit/armor/special/jiralhanae/EVA,
         /obj/item/clothing/shoes/magboots/jiralhanaeEVA,
         /obj/item/weapon/tank/emergency/oxygen/engi,
         )
   can_hold = list(
         /obj/item/clothing/head/helmet/jiralhanae/covenant/EVA,
-        /obj/item/clothing/suit/armor/jiralhanae/covenant/EVA,
+        /obj/item/clothing/suit/armor/special/jiralhanae/EVA,
         /obj/item/clothing/shoes/magboots/jiralhanaeEVA,
         /obj/item/weapon/tank/emergency/oxygen/engi,
         )
@@ -362,14 +367,14 @@
   name = "Sangheili Ranger Armor Set"
   startswith = list(
           /obj/item/clothing/head/helmet/sangheili/ranger,
-          /obj/item/clothing/suit/armor/special/combatharness/ranger,
+          /obj/item/clothing/suit/armor/special/combatharness/eva/ranger,
           /obj/item/clothing/shoes/magboots/sangheili,
           /obj/item/clothing/gloves/thick/sangheili/ranger,
           /obj/item/weapon/tank/emergency/oxygen/engi,
           )
   can_hold = list(
           /obj/item/clothing/head/helmet/sangheili/ranger,
-          /obj/item/clothing/suit/armor/special/combatharness/ranger,
+          /obj/item/clothing/suit/armor/special/combatharness/eva/ranger,
           /obj/item/clothing/shoes/magboots/sangheili,
           /obj/item/clothing/gloves/thick/sangheili/ranger,
           /obj/item/weapon/tank/emergency/oxygen/engi,
@@ -377,18 +382,22 @@
 // kiggies
 
 /obj/item/weapon/storage/box/large/armorset/kigyar/eva
-  name = "Kig-Yar EVA Armor Set"
+  name = "Kig-Yar Ranger Armor Set (EVA)"
   startswith = list(
-          /obj/item/clothing/suit/armor/ranger_kigyar,
+  		  /obj/item/clothing/under/kigyar/ranger_kigyar,
+          /obj/item/clothing/suit/armor/special/eva/ranger_kigyar,
           /obj/item/clothing/shoes/magboots/ranger_kigyar,
           /obj/item/clothing/head/helmet/ranger_kigyar,
           /obj/item/weapon/tank/emergency/oxygen/engi,
+		  /obj/item/weapon/tank/air/covenant,
     )
   can_hold = list(
-          /obj/item/clothing/suit/armor/ranger_kigyar,
+  		  /obj/item/clothing/under/kigyar/ranger_kigyar,
+          /obj/item/clothing/suit/armor/special/eva/ranger_kigyar,
           /obj/item/clothing/shoes/magboots/ranger_kigyar,
           /obj/item/clothing/head/helmet/ranger_kigyar,
           /obj/item/weapon/tank/emergency/oxygen/engi,
+          /obj/item/weapon/tank/air/covenant,
     )
 
 
