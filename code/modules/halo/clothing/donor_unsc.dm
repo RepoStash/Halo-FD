@@ -110,7 +110,7 @@
 	icon_state = "ashvor-helmet_obj"
 	item_state_slots = list(slot_l_hand_str = "ashvor-helmet", slot_r_hand_str = "ashvor-helmet")
 
-/obj/item/clothing/suit/spaceeva/eva/ashvor
+/obj/item/clothing/suit/armor/special/eva/marineeva/ashvor
 	desc = "A pressurized Atmospheric/Exoatmospheric (A/X) version of the standard M52 Body Armor, Worn mitigate the atmospheric hazards caused by nearby glassing,"
 	name = "M52A/X Body Armor"
 	item_state = "ashvor-armor_worn"
@@ -164,13 +164,13 @@
 
 /obj/item/weapon/storage/box/large/donator/ashvor
 	startswith = list(/obj/item/clothing/under/unsc/marine_fatigues/ashvor,
-					/obj/item/clothing/suit/spaceeva/eva/ashvor,
+					/obj/item/clothing/suit/armor/special/eva/marineeva/ashvor,
 					/obj/item/clothing/gloves/thick/unsc/ashvor,
 					/obj/item/clothing/shoes/magboots/eva/marine/ashvor,
 					/obj/item/clothing/head/helmet/eva/marine/ashvor,
 					/obj/item/weapon/storage/backpack/marine/ashvor)
 	can_hold = list(/obj/item/clothing/under/unsc/marine_fatigues/ashvor,
-					/obj/item/clothing/suit/spaceeva/eva/ashvor,
+					/obj/item/clothing/suit/armor/special/eva/marineeva/ashvor,
 					/obj/item/clothing/gloves/thick/unsc/ashvor,
 					/obj/item/clothing/shoes/magboots/eva/marine/ashvor,
 					/obj/item/clothing/head/helmet/eva/marine/ashvor,
@@ -179,7 +179,7 @@
 /decl/hierarchy/outfit/ashvor_marine
 	name = "ashvor - marine"
 	uniform = /obj/item/clothing/under/unsc/marine_fatigues/ashvor
-	suit = /obj/item/clothing/suit/spaceeva/eva/ashvor
+	suit = /obj/item/clothing/suit/armor/special/eva/marineeva/ashvor
 	shoes = /obj/item/clothing/shoes/magboots/eva/marine/ashvor
 	gloves = /obj/item/clothing/gloves/thick/unsc/ashvor
 	head = /obj/item/clothing/head/helmet/eva/marine/ashvor

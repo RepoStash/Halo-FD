@@ -20,6 +20,8 @@
 	outfit_type = /decl/hierarchy/outfit/jiralhanae/covenant/captain
 	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/brutes)
+	alt_titles = list(\
+		"Jiralhanae Ranger Captain" = /decl/hierarchy/outfit/jiralhanae/covenant/ranger/captain)
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
 	pop_balance_mult = 2
 
@@ -33,6 +35,8 @@
 	outfit_type = /decl/hierarchy/outfit/jiralhanae/covenant/major
 	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/brutes)
+	alt_titles = list(\
+		"Jiralhanae Ranger Major" = /decl/hierarchy/outfit/jiralhanae/covenant/ranger/major)
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
 	pop_balance_mult = 2
 
@@ -45,6 +49,8 @@
 	outfit_type = /decl/hierarchy/outfit/jiralhanae/covenant/minor
 	faction_whitelist = null //Let's see how it goes with these open.
 	whitelisted_species = list(/datum/species/brutes)
+	alt_titles = list(\
+		"Jiralhanae Ranger" = /decl/hierarchy/outfit/jiralhanae/covenant/ranger)
 	open_slot_on_death = 1 //Lowest rank of a leader caste can respawn indefinitely although still capped low
 	pop_balance_mult = 2
 	access = list(access_covenant, access_covenant_cargo)

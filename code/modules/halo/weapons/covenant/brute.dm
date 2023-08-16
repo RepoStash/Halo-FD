@@ -300,7 +300,7 @@
 	one_hand_penalty = -1
 	fire_sound = 'code/modules/halo/sounds/bruteshotfire.ogg'
 	var/reload_sound = 'code/modules/halo/sounds/bruteshotreload.ogg'
-	var/reload_time = 30
+	var/reload_time = 20
 	force = 40
 	edge = 1
 	armor_penetration = 70
@@ -384,7 +384,7 @@
 	to_chat(user, "<span class='info'>It has [amount] grenade[amount != 1 ? "s" : ""] remaining on the belt.</span>")
 
 /obj/item/weapon/grenade/brute_shot/detonate()
-	explosion(get_turf(src), 0, max(round(amount/5),2), max(round(amount / 3), 3), max(amount, 5), guaranteed_damage = 40, guaranteed_damage_range = 3)
+	explosion(get_turf(src), 0, max(round(amount/5),2), max(round(amount / 3), 3), max(amount, 5), guaranteed_damage = 30, guaranteed_damage_range = 3)
 	. = ..()
 	qdel(src)
 

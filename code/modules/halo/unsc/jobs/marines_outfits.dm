@@ -121,3 +121,56 @@
 	belt = /obj/item/weapon/storage/belt/marine_ammo/mobilespawn_pistol
 	l_hand = /obj/item/weapon/gun/projectile/m6d_magnum
 
+///// EVA EQUIPMENT /////
+
+/decl/hierarchy/outfit/job/unsc/marine/eva
+	name = "EVA Operations Marine (E-2)"
+	l_ear = /obj/item/device/radio/headset/unsc/marine
+	uniform = /obj/item/clothing/under/unsc/marine_fatigues/marineeva
+	shoes = /obj/item/clothing/shoes/magboots/eva/marine
+	gloves = /obj/item/clothing/gloves/thick/unsc/marineeva
+	head = /obj/item/clothing/head/helmet/eva/marine
+	suit = /obj/item/clothing/suit/armor/special/eva/marineeva
+	suit_store = /obj/item/weapon/tank/oxygen
+	starting_accessories = list(\
+		/obj/item/clothing/accessory/rank/marine/enlisted/e2,\
+		/obj/item/clothing/accessory/badge/tags)
+
+/decl/hierarchy/outfit/job/unsc/marine/eva/e3
+	name = "EVA Combat Marine (E-3)"
+	l_ear = /obj/item/device/radio/headset/unsc/marine
+	uniform = /obj/item/clothing/under/unsc/marine_fatigues/marineeva
+	shoes = /obj/item/clothing/shoes/magboots/eva/marine
+	gloves = /obj/item/clothing/gloves/thick/unsc/marineeva
+	head = /obj/item/clothing/head/helmet/eva/marine
+	suit = /obj/item/clothing/suit/armor/special/eva/marineeva
+	suit_store = /obj/item/weapon/tank/oxygen
+	starting_accessories = list(\
+		/obj/item/clothing/accessory/rank/marine/enlisted/e3,\
+		/obj/item/clothing/accessory/badge/tags)
+
+/decl/hierarchy/outfit/job/unsc/marine/eva/e4
+	name = "EVA Operations Specialist (E-4)"
+	l_ear = /obj/item/device/radio/headset/unsc/marine
+	uniform = /obj/item/clothing/under/unsc/marine_fatigues/marineeva
+	shoes = /obj/item/clothing/shoes/magboots/eva/marine
+	gloves = /obj/item/clothing/gloves/thick/unsc/marineeva
+	head = /obj/item/clothing/head/helmet/eva/marine
+	suit = /obj/item/clothing/suit/armor/special/eva/marineeva
+	suit_store = /obj/item/weapon/tank/oxygen
+	starting_accessories = list(\
+		/obj/item/clothing/accessory/rank/marine/enlisted/e4,\
+		/obj/item/clothing/accessory/badge/tags)
+
+/decl/hierarchy/outfit/job/unsc/marine/eva/e6
+	name = "EVA Operations Team Leader (E-6)"
+	l_ear = /obj/item/device/radio/headset/unsc/marine
+	uniform = /obj/item/clothing/under/unsc/marine_fatigues/marineeva
+	shoes = /obj/item/clothing/shoes/magboots/eva/marine
+	gloves = /obj/item/clothing/gloves/thick/unsc/marineeva
+	head = /obj/item/clothing/head/helmet/eva/marine
+	suit = /obj/item/clothing/suit/armor/special/eva/marineeva
+	suit_store = /obj/item/weapon/tank/oxygen
+	starting_accessories = list(\
+		/obj/item/clothing/accessory/rank/marine/enlisted/e6,\
+		/obj/item/clothing/accessory/badge/tags)

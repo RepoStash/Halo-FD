@@ -135,16 +135,6 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 	armor_thickness = 28
 	armor_thickness_max = 28
 
-/obj/item/clothing/head/helmet/jiralhanae/covenant/EVA
-	name = "Jiralhanae Softsuit Helmet"
-	desc = "This helmet was designed to keep Jiralhanae alive during EVA activity."
-	icon_state = "helm_soft"
-	armor = list(melee = 50, bullet = 30, laser = 20,energy = 20, bomb = 15, bio = 20, rad = 20)
-	item_flags = STOPPRESSUREDAMAGE | THICKMATERIAL | AIRTIGHT
-	body_parts_covered = HEAD|FACE
-	cold_protection = HEAD|FACE
-	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
-
 /* ARMOUR */
 
 
@@ -227,21 +217,6 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 	armor_thickness = 24
 	armor_thickness_max = 24
 
-/obj/item/clothing/suit/armor/jiralhanae/covenant/EVA
-	name = "Jiralhanae Softsuit"
-	desc = "This softsuit was designed to keep Jiralhanae alive during EVA activity."
-	icon_state = "armour_soft"
-	armor = list(melee = 45, bullet = 40, laser = 45, energy = 35, bomb = 30, bio = 15, rad = 15)
-	allowed = list(\
-		/obj/item/weapon/grenade/plasma,/obj/item/weapon/grenade/frag/spike,/obj/item/weapon/grenade/brute_shot,/obj/item/weapon/grenade/toxic_gas,\
-		/obj/item/weapon/gun/projectile/spiker,/obj/item/weapon/gun/projectile/mauler,\
-		/obj/item/weapon/gun/energy/plasmapistol, /obj/item/weapon/gun/energy/plasmarifle, /obj/item/weapon/gun/energy/plasmarifle/brute, /obj/item/weapon/tank)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
-	item_flags = STOPPRESSUREDAMAGE | THICKMATERIAL | AIRTIGHT
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	armor_thickness = 20
-
 /obj/item/clothing/suit/armor/jiralhanae/covenant/minor
 	name = "Jiralhanae Armor (Minor)"
 	icon = JIRALHANAE_ICON_PATH_OBJ
@@ -305,7 +280,6 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 	desc = "The footwear of Jiralhanae soldiers within the covenant."
 	icon_state = "greaves"
 	armor = list(melee = 50, bullet = 40, laser = 5, energy = 5, bomb = 40, bio = 0, rad = 0)
-
 
 /obj/item/clothing/shoes/jiralhanae/covenant/minor
 	name = "Jiralhanae Greaves (Minor)"
@@ -402,6 +376,101 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 		item_state_slots = list(
 		slot_l_hand_str = "flag_red_left",
 		slot_r_hand_str = "flag_red_right" )
+
+/// JIRALHANAE EVA EQUIPMENT ///
+
+// HELMETS //
+
+/obj/item/clothing/head/helmet/jiralhanae/covenant/EVA
+	name = "\improper Jiralhanae Ranger Helmet (Minor)"
+	desc = "A heavy Ranger helmet, designed for extended operations in EVA. Its airtight fittings provide the user with immunity to biological contaminants and resistance to radiological hazards."
+	item_state = "helm_soft"
+	icon_state = "helm_soft"
+	armor = list(melee = 55, bullet = 35, laser = 25,energy = 25, bomb = 20, bio = 100, rad = 30)
+	armor_thickness = 22
+	armor_thickness_max = 22
+	item_flags = STOPPRESSUREDAMAGE | THICKMATERIAL | AIRTIGHT
+	body_parts_covered = HEAD|FACE
+	cold_protection = HEAD|FACE
+	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/jiralhanae/covenant/EVA/New()
+	..()
+	slowdown_per_slot[slot_head] += 0.01 // Movement speed malus due to the armor's weight.
+
+/obj/item/clothing/head/helmet/jiralhanae/covenant/EVA/major
+	name = "\improper Jiralhanae Ranger Helmet (Major)"
+	item_state = "helm_soft_major"
+	armor_thickness = 24
+	armor_thickness_max = 24
+
+/obj/item/clothing/head/helmet/jiralhanae/covenant/EVA/captain
+	name = "\improper Jiralhanae Ranger Helmet (Captain)"
+	item_state = "helm_soft_captain"
+	armor_thickness = 26
+	armor_thickness_max = 26
+
+// ARMOR //
+
+/obj/item/clothing/suit/armor/special/jiralhanae/EVA
+	name = "\improper Jiralhanae Ranger Suit (Minor)"
+	desc = "A heavy suit of reinforced spaceproof Ranger armor, designed for extended operations in EVA. Its airtight fittings provide the user with immunity to biological contaminants and resistance to radiological hazards. Features a built-in manouvering system for basic movement in zero-gravity, but lacks the stabilization technology of dedicated jetpacks."
+	icon = JIRALHANAE_ICON_PATH_OBJ
+	sprite_sheets = list("Jiralhanae" = JIRALHANAE_ICON_PATH_MOB)
+	icon_state = "armour_soft"
+	item_state = "armour_soft"
+	armor = list(melee = 50, bullet = 45, laser = 50, energy = 40, bomb = 35, bio = 100, rad = 30)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|HANDS
+	item_flags = STOPPRESSUREDAMAGE | THICKMATERIAL | AIRTIGHT
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	armor_thickness = 24
+	armor_thickness_max = 24
+	allowed = list(/obj/item/weapon/tank)
+
+	specials = list(/datum/armourspecials/integrated_jetpack)
+
+/obj/item/clothing/suit/armor/special/jiralhanae/EVA/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] += 0.02 // Movement speed malus due to the armor's weight.
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
+
+/obj/item/clothing/suit/armor/special/jiralhanae/EVA/major
+	name = "\improper Jiralhanae Ranger Suit (Major)"
+	item_state = "armour_soft_major"
+	armor_thickness = 27
+	armor_thickness_max = 27
+
+/obj/item/clothing/suit/armor/special/jiralhanae/EVA/captain
+	name = "\improper Jiralhanae Ranger Suit (Captain)"
+	item_state = "armour_soft_captain"
+	armor_thickness = 30
+	armor_thickness_max = 30
+
+// BOOTS //
+
+/obj/item/clothing/shoes/magboots/jiralhanaeEVA
+	name = "Jiralhanae Ranger Magboots"
+	desc = "A heavy pair of Ranger magboots, designed for extended operations in EVA. Its airtight fittings provide the user with immunity to biological contaminants and resistance to radiological hazards."
+	species_restricted = list("Jiralhanae")
+	icon = JIRALHANAE_ICON_PATH_OBJ
+	sprite_sheets = list("Jiralhanae" = JIRALHANAE_ICON_PATH_MOB)
+	icon_state = "maggreaves"
+	item_state = "maggreaves"
+	icon_base = null
+	cold_protection = LEGS|FEET
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	stepsound = 'code/modules/halo/sounds/walk_sounds/brute_boots.ogg'
+	sprite_sheets = list("Jiralhanae" = JIRALHANAE_ICON_PATH_MOB)
+	armor = list(melee = 50, bullet = 40, laser = 5, energy = 5, bomb = 40, bio = 100, rad = 30)
+	armor_thickness = 20
+	armor_thickness_max = 20
+	body_parts_covered = LEGS|FEET
+	matter = list("nanolaminate" = 1)
+
+/obj/item/clothing/shoes/magboots/jiralhanaeEVA/New()
+	..()
+	slowdown_per_slot[slot_shoes] += 0.02 // Movement speed malus due to the armor's weight.
 
 #undef JIRALHANAE_ICON_PATH_MOB
 #undef JIRALHANAE_ICON_PATH_OBJ
