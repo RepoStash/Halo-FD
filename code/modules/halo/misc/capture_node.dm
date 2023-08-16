@@ -20,6 +20,9 @@ GLOBAL_LIST_EMPTY(capture_nodes)
 	var/next_cap_tick_at = 0
 	var/list/capture_npc_spawnlocs = list()
 	var/fallback_spawns = 0
+	var/objective_secured = 0
+	var/obsec_until = 0
+	var/obsec_for = 2.5 MINUTES
 	ai_access_level = 4
 
 /obj/machinery/computer/capture_node/New()
@@ -41,16 +44,21 @@ GLOBAL_LIST_EMPTY(capture_nodes)
 
 /obj/machinery/computer/capture_node/examine(mob/user, var/distance = -1, var/infix = "", var/suffix = "")
 	. = ..()
+	if(objective_secured)
+		to_chat(user,"<span class = 'warning'>It is currently locked down due to being recently captured.</span>")
 	if(capture_ticks_remain > 0)
 		to_chat(user,"<span class = 'warning'>It is currently being captured by [faction_capturing]. [capture_ticks_remain] ticks remain until capture.</span>")
 
 	var/chat_text = "<span class='info'>Current score: "
+	var/has_obj = 0
 	for(var/datum/faction/F in GLOB.all_factions)
 		for(var/datum/objective/colony_capture/O in F.all_objectives)
+			has_obj = 1
 			chat_text += "<span class='em'>[F.name]</span> ([O.capture_score] | [round(100 * (O.controlled_nodes.len / GLOB.capture_nodes.len))]% control) "
 			break
-	chat_text += "</span>"
-	to_chat(user, chat_text)
+	if(has_obj)
+		chat_text += "</span>"
+		to_chat(user, chat_text)
 
 /obj/machinery/computer/capture_node/proc/check_faction_cap_active(var/get_amount = 0)
 	if(!faction_capturing)
@@ -70,6 +78,9 @@ GLOBAL_LIST_EMPTY(capture_nodes)
 
 /obj/machinery/computer/capture_node/attack_hand(var/mob/living/user)
 	var/userfaction = user.faction
+	if(objective_secured)
+		to_chat(user,"<span class = 'notice'>This objective has been secured and is no longer available for capture.</span>")
+		return
 	if(userfaction == control_faction)
 		to_chat(user,"<span class = 'notice'>Your faction is already in control of [src].</span>")
 		return
@@ -93,6 +104,10 @@ GLOBAL_LIST_EMPTY(capture_nodes)
 			return
 
 /obj/machinery/computer/capture_node/process()
+	if(objective_secured && obsec_until > 0 && world.time > obsec_until)
+		objective_secured = 0
+		obsec_until = 0
+		return
 	if(!faction_capturing)
 		return
 	if(world.time < next_cap_tick_at)
@@ -106,6 +121,9 @@ GLOBAL_LIST_EMPTY(capture_nodes)
 		overlays -= cap_bar
 		qdel(cap_bar)
 		cap_bar = null
+		if(obsec_for != 0)
+			obsec_until = world.time + obsec_for
+			objective_secured = 1
 		return
 	var/amt_capping = check_faction_cap_active(1)
 	if(amt_capping == 0)
