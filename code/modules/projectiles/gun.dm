@@ -411,7 +411,7 @@
 			var/mob/living/targ_m = target
 			if(istype(targ_m))
 				if(!targ_m.lying)
-					use_targ = targloc
+					use_targ = targ_m
 				else
 					use_targ = targloc
 
