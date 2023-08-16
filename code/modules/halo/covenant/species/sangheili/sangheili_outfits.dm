@@ -218,6 +218,7 @@
 	suit_store = /obj/item/weapon/tank/air/covenant
 	back = null
 	belt = null
+	l_hand = /obj/item/language_learner/unggoy_to_common
 	gloves = /obj/item/clothing/gloves/thick/sangheili/ranger
 	shoes = /obj/item/clothing/shoes/magboots/sangheili
 	head = /obj/item/clothing/head/helmet/sangheili/ranger

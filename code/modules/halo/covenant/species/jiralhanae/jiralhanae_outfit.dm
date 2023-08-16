@@ -238,12 +238,14 @@
 
 	head = /obj/item/clothing/head/helmet/jiralhanae/covenant/EVA/major
 	suit = /obj/item/clothing/suit/armor/special/jiralhanae/EVA/major
+	l_hand = /obj/item/language_learner/unggoy_to_common
 
 /decl/hierarchy/outfit/jiralhanae/covenant/ranger/captain
 	name = "Jiralhanae Ranger Captain"
 
 	head = /obj/item/clothing/head/helmet/jiralhanae/covenant/EVA/captain
 	suit = /obj/item/clothing/suit/armor/special/jiralhanae/EVA/captain
+	l_hand = /obj/item/language_learner/unggoy_to_common
 	//
 	id_type = /obj/item/weapon/card/id/brute_captain
 	id_slot = slot_wear_id
