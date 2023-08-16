@@ -831,18 +831,8 @@
 	name = "Magical Grunt Armor"
 	desc = "Worn by those who wish to punish heretics with the power of love!"
 	icon = GRUNT_GEAR_ICON
-	icon_override = GRUNT_GEAR_ICON
 	icon_state = "grif_minor_combatharness"
-
-//Plasma Pistol Projectile
-
-/obj/item/projectile/bullet/covenant/plasmapistol/heart
-	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
-	icon_state = "Heartpistol Shot"
-
-/obj/item/projectile/bullet/covenant/plasmapistol/overcharge/heart_overcharge
-	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
-	icon_state = "Overcharged_Heartpistol Shot"
+	item_state = "grif_minor_combatharness"
 
 /obj/item/weapon/gun/energy/plasmapistol/ilikesaying
 	name = "Magical Plasma Pistol"
@@ -851,7 +841,7 @@
 	overcharge_type = /obj/item/projectile/bullet/covenant/plasmapistol/overcharge/heart_overcharge
 	projectile_type = /obj/item/projectile/bullet/covenant/plasmapistol/heart
 
-/obj/item/weapon/storage/box/large/donator/ilikesaying/unggoy_minor
+/obj/item/weapon/storage/box/large/donator/ilikesaying
 	startswith = list(/obj/item/clothing/suit/armor/special/unggoy_combat_harness/ilikesaying,
 					/obj/item/weapon/gun/energy/plasmapistol/ilikesaying,
 					/obj/item/weapon/gun/energy/plasmapistol/ilikesaying
