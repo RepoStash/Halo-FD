@@ -23,6 +23,7 @@ GLOBAL_LIST_EMPTY(capture_nodes)
 	var/objective_secured = 0
 	var/obsec_until = 0
 	var/obsec_for = 2.5 MINUTES
+	var/obscure_first_capture = 0 //Do we show an announcment on the first capture?
 	ai_access_level = 4
 
 /obj/machinery/computer/capture_node/New()
@@ -187,17 +188,22 @@ GLOBAL_LIST_EMPTY(capture_nodes)
 	control_faction = owner_faction
 
 	//tell the objective about the new capture
-	if(control_faction)
-		for(var/datum/faction/F in GLOB.all_factions)
-			for(var/datum/objective/colony_capture/O in F.all_objectives)
-				O.node_captured(src, old_faction, control_faction)
-	else
-		for(var/datum/faction/F in GLOB.all_factions)
-			for(var/datum/objective/colony_capture/O in F.all_objectives)
-				O.node_reset(src, old_faction, trigger_faction)
+	if(!obscure_first_capture)
+		if(control_faction)
+			for(var/datum/faction/F in GLOB.all_factions)
+				for(var/datum/objective/colony_capture/O in F.all_objectives)
+					O.node_captured(src, old_faction, control_faction)
+		else
+			for(var/datum/faction/F in GLOB.all_factions)
+				for(var/datum/objective/colony_capture/O in F.all_objectives)
+					O.node_reset(src, old_faction, trigger_faction)
 
 	if(control_faction)
-		minor_announcement.Announce("[control_faction] has captured the [src]!",comms_from)
+		if(!obscure_first_capture)
+			minor_announcement.Announce("[control_faction] has captured the [src]!",comms_from)
+		else
+			//If we obscured the first capture, we won't do it again.
+			obscure_first_capture = 0
 		spawn_defenders()
 
 /obj/machinery/computer/capture_node/proc/reset_markers()
@@ -272,6 +278,13 @@ GLOBAL_LIST_EMPTY(capture_nodes)
 
 /obj/effect/landmark/npc_capturespawn_marker
 	name = "Capture-Spawn marker"
+
+//System Conquest Capture Node//
+/obj/machinery/computer/capture_node/system_conquest
+	capture_time = 10 MINUTES
+	obsec_for = 0
+	objective_secured = 1
+
 
 #undef EXTRAPLAYER_CAP_AMT_INCREASE
 #undef EXTRAPLAYER_CAP_AMT_MAX

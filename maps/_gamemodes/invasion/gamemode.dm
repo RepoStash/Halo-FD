@@ -63,14 +63,6 @@
 	GLOB.UNSC.fleets_max = 1
 	GLOB.UNSC.fleet_spawn_at = 75 MINUTES
 
-	//setup faction handling
-	for(var/faction_type in factions)
-		factions.Remove(faction_type)
-		var/datum/faction/F = GLOB.factions_by_type[faction_type]
-
-		//this is normally bad practice, but it seems to work fine in byond
-		factions.Add(F)
-
 	//Setup slipdrive-overload blocking.
 	for(var/obj/effect/overmap/om in list(GLOB.UNSC.base,GLOB.COVENANT.base,GLOB.INSURRECTION.base))
 		GLOB.disallow_slipdrive_explosion_zs |= om.map_z

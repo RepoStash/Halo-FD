@@ -28,6 +28,9 @@ var/global/datum/loot_distributor/loot_distributor = new
 	for(var/tag in distribute_locs)
 		var/list/lootlist = get_lootlist_for_type(tag)
 		var/list/loclist = distribute_locs[tag]
+		//Skip this if there's no lootlist. If something wants to create one later, they can call our process proc again.
+		if(isnull(lootlist))
+			continue
 		while(lootlist.len > 0 && loclist.len > 0)
 			var/item = pick(lootlist)
 			lootlist -= item
