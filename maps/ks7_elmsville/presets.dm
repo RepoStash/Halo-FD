@@ -230,15 +230,15 @@
 
 /obj/item/weapon/card/id/building_key/living_quarters1//"L1"
 	name = "Key (Medical Quarters 1)"
-	req_access = list(7649)
+	access = list(7649)
 
 /obj/item/weapon/card/id/building_key/living_quarters2
 	name = "Key (Medical Quarters 2)"
-	req_access = list(7650)
+	access = list(7650)
 
 /obj/item/weapon/card/id/building_key/living_quarters3
 	name = "Key (Medical Quarters 3)"
-	req_access = list(7651)
+	access = list(7651)
 
 /obj/machinery/door/airlock/hospital/living_quarters1
 	name = "On-Site Living Quarters - 1"
