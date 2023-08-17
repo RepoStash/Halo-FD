@@ -12,7 +12,7 @@ GLOBAL_LIST_EMPTY(capture_nodes)
 	var/list/capturing_factions = list("UNSC","Insurrection","Covenant")
 	var/list/faction_frequencies = list()
 	var/list/faction_languages = list()
-	var/capture_time = 180
+	var/capture_time = 3 MINUTES
 	var/last_cap_tick_time
 	var/faction_capturing
 	var/capture_ticks_remain = -1
@@ -137,9 +137,9 @@ GLOBAL_LIST_EMPTY(capture_nodes)
 		else
 			capture_ticks_remain = min(capture_time,capture_ticks_remain+3)
 	else
-		var/deltaticks = (world.time - last_cap_tick_time)/10
-		var/ticks_remove = (1 + ((amt_capping-1)*EXTRAPLAYER_CAP_AMT_INCREASE)) * deltaticks
-		capture_ticks_remain = max(0,capture_ticks_remain-min(ticks_remove,EXTRAPLAYER_CAP_AMT_MAX))
+		var/deltaticks = (world.time - last_cap_tick_time)
+		var/ticks_remove_players = (amt_capping-1)*EXTRAPLAYER_CAP_AMT_INCREASE
+		capture_ticks_remain = max(0,capture_ticks_remain - (deltaticks * min(ticks_remove_players,EXTRAPLAYER_CAP_AMT_MAX)) )
 	if(!cap_bar)
 		cap_bar = new (null,capture_time, src)
 		cap_bar.process_without_user = 1
