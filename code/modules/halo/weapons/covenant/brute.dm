@@ -238,8 +238,9 @@
 
 /obj/item/weapon/grav_hammer/attack(var/mob/m,var/mob/user)
 	. = ..()
-	var/throw_dir = get_dir(user,m)
-	m.throw_at(get_edge_target_turf(m, throw_dir),2,4,user)
+	if(unique_afterattack)
+		var/throw_dir = get_dir(user,m)
+		m.throw_at(get_edge_target_turf(m, throw_dir),2,4,user)
 
 /obj/item/weapon/grav_hammer/afterattack(atom/A as mob|obj|turf|area, mob/user, proximity)
 	if(lunge_dist > 0)

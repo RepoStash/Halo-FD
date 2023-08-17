@@ -340,7 +340,7 @@ var/list/points_of_interest = list()
 /obj/effect/overmap/process()
 	for(var/e in active_effects)
 		var/datum/overmap_effect/effect = e
-		if(!effect.process_effect())
+		if(effect && !effect.process_effect())
 			active_effects -= src
 			qdel(effect)
 	if(!isnull(targeting_datum.current_target) && !(targeting_datum.current_target in range(src,7)))
