@@ -12,6 +12,7 @@
 	mouse_opacity = 0
 
 	var/mob/living/user
+	var/hud_scale = 1.3
 	var/obj/item/weapon/gun/lastgun
 	var/max_rounds_row = 10
 	var/list/bulletsprites = list()
@@ -26,6 +27,8 @@
 	if(!istype(l) || !l.client)
 		return INITIALIZE_HINT_QDEL
 	user = l
+	if(user.client.prefs)
+		hud_scale = user.client.prefs.halo_hud_scaling
 
 /obj/screen/weapondisplay/proc/clear_bulletsprites(var/amt)
 	if(isnull(amt))
@@ -59,9 +62,12 @@
 		max_ammo = ammo_max
 		ammobar = image('code/modules/halo/icons/hud_display/hud_bullet_bar.dmi',src,"bar")
 		basebar = image('code/modules/halo/icons/hud_display/hud_bullet_bar.dmi',src,"basebar")
+		var/matrix/m = new(basebar.transform)
+		m.Scale(hud_scale,hud_scale)
+		basebar.transform = m
 		base_transform = new(ammobar.transform)
-		to_chat(user,basebar)
-		to_chat(user,ammobar)
+		to_target(user,basebar)
+		to_target(user,ammobar)
 	max_rounds_row = lastgun.hud_bullet_row_num
 
 /obj/screen/weapondisplay/proc/update_ammo()
@@ -85,23 +91,27 @@
 				return
 			else
 				var/icon/bullet_ref_icon = icon(lastgun.hud_bullet_reffile,lastgun.hud_bullet_iconstate)
-				var/bullet_xsize = bullet_ref_icon.Width()
-				var/bullet_ysize = bullet_ref_icon.Height()
-				var/max_pix_x = max_rounds_row * bullet_xsize
+				var/bullet_xsize = ceil(bullet_ref_icon.Width() * hud_scale)
+				var/bullet_ysize = ceil(bullet_ref_icon.Height() * hud_scale)
+				var/screen_loc_x_offset = round((max_rounds_row * bullet_xsize)/32,1)
+				screen_loc = "NORTH,EAST - [screen_loc_x_offset]"
 				while(ammo_create != 0)
 					ammo_create--
 					var/image/bulletsprite = image(lastgun.hud_bullet_reffile,src,lastgun.hud_bullet_iconstate)
-					bulletsprite.pixel_x = bulletsprites.len * bullet_xsize
-					while(bulletsprite.pixel_x >= max_pix_x)
-						bulletsprite.pixel_y -= bullet_ysize
-						bulletsprite.pixel_x -= max_pix_x
+					var/matrix/m = new(bulletsprite.transform)
+					m.Scale(hud_scale,hud_scale)
+					bulletsprite.transform = m
+					var/pix_mult = round(bulletsprites.len / max_rounds_row)
+					bulletsprite.pixel_x = (bulletsprites.len - (pix_mult * max_rounds_row) ) * bullet_xsize
+					bulletsprite.pixel_y -= (bullet_ysize * pix_mult)
 					bulletsprites += bulletsprite
-					to_chat(user,bulletsprite)
+					to_target(user,bulletsprite)
 		else
 			if(max_ammo)
+				screen_loc = "NORTH,EAST - 2"
 				var/new_pct = min(1,max(0,ammo_loaded/max_ammo))
 				var/matrix/m = new(base_transform)
-				m.Scale(new_pct,1)
+				m.Scale(new_pct*hud_scale,hud_scale)
 				ammobar.transform = m
 
 /obj/screen/weapondisplay/Destroy()

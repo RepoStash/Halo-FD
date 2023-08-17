@@ -87,10 +87,7 @@
 	. = ..()
 
 /obj/item/clothing/glasses/hud/tactical/proc/get_loc_used()
-	if(!isturf(loc))
-		return get_turf(loc)
-	else
-		return loc
+	return get_turf(loc)
 
 /obj/item/clothing/glasses/hud/tactical/proc/update_known_waypoints(var/list/new_waypoint_list)
 	known_waypoints = new_waypoint_list.Copy()
@@ -109,50 +106,62 @@
 	for(var/point in waypoint_pointers)
 		remove_pointer(user,point)
 
-/obj/item/clothing/glasses/hud/tactical/proc/process_hud_pointers() //This is for directional pointers around the character, for waypoints off-screen.
-	if(!isnull(last_user))
+/obj/item/clothing/glasses/hud/tactical/proc/process_hud_pointers()
+	var/mob/living/user = loc
+	if(!isnull(last_user) && last_user != user)
 		remove_all_pointers(last_user)
 		last_user = null
-	var/mob/user = loc
-	if(!istype(user))
+	if(!istype(user) || user.stat != CONSCIOUS)
 		return
 	if(isnull(user.client))
 		return
 	last_user = user
 	for(var/obj/effect/waypoint_holder/waypoint in known_waypoints)
-		var/dist_to = get_dist(waypoint,get_loc_used())
-		if(dist_to == 0) //Don't render it if we're right on top of it. It'd just get in the way.
-			continue
-		if(dist_to <= user.client.view)
-			process_visible_marker(waypoint,user)
-			continue
 		var/dir_to_point = get_dir(get_loc_used(),waypoint)
-		var/turf/waypoint_render_loc = get_step(get_loc_used(),dir_to_point)
-		var/image/pointer = waypoint_pointers[waypoint]
+		var/turf/user_loc = get_loc_used()
+		var/turf/waypoint_render_loc = get_loc_used()
+		var/waypoint_turf = get_turf(waypoint.loc)
+		var/dist_to = get_dist(waypoint_turf,get_loc_used())
+		var/on_screen = 0
+		if(dist_to <= user.client.view)
+			on_screen = 1
+		if(on_screen)
+			waypoint_render_loc = waypoint_turf
+		else
+			//Make the waypoint slide closer to us the closer we are to the target.
+			var/waypoint_centerdist_mod = 2
+			if(dist_to <= 14)
+				waypoint_centerdist_mod = 6
+			else if(dist_to <= 21)
+				waypoint_centerdist_mod = 5
+			else if(dist_to <= 28)
+				waypoint_centerdist_mod = 4
+			else if(dist_to <= 35)
+				waypoint_centerdist_mod = 3
+			for(var/i = 1 to user.client.view - waypoint_centerdist_mod)
+				waypoint_render_loc = get_step(waypoint_render_loc,dir_to_point)
+				dir_to_point = get_dir(waypoint_render_loc,waypoint)
+		var/x_diff = waypoint_render_loc.x - user_loc.x
+		var/y_diff = waypoint_render_loc.y - user_loc.y
+		var/new_screen_loc = "CENTER + [x_diff],CENTER + [y_diff]"
+		var/obj/effect/pointer_holder/pointer = waypoint_pointers[waypoint]
+		var/icon_state_use = waypoint.waypoint_icon
+		if(on_screen)
+			icon_state_use = "[waypoint.waypoint_icon]_onscreen"
 		if(pointer)
-			pointer.loc = waypoint_render_loc
+			pointer.icon_state = icon_state_use
+			pointer.screen_loc = new_screen_loc
 			pointer.dir = dir_to_point
 		else
-			pointer = image(waypoint.icon,waypoint_render_loc,waypoint.waypoint_icon,,dir_to_point)
+			pointer = new
 			pointer.name = waypoint.waypoint_name
-			pointer.mouse_opacity = 0
-			pointer.alpha = 150
-			pointer.plane = HUD_PLANE
-			pointer.layer = HUD_ABOVE_ITEM_LAYER
+			pointer.icon = waypoint.icon
+			pointer.icon_state = icon_state_use
+			pointer.dir = dir_to_point
+			pointer.screen_loc = new_screen_loc
 			waypoint_pointers[waypoint] = pointer
-			to_chat(user,pointer)
-
-/obj/item/clothing/glasses/hud/tactical/proc/process_visible_marker(var/obj/effect/waypoint_holder/waypoint,var/mob/user) //This is for waypoints the player can currently see on-screen
-	if(waypoint_pointers[waypoint])
-		remove_pointer(user,waypoint)
-	var/image/pointer = image(waypoint.icon,waypoint.loc,"[waypoint.waypoint_icon]_onscreen")
-	pointer.name = waypoint.waypoint_name
-	pointer.mouse_opacity = 0
-	pointer.alpha = 150
-	pointer.plane = HUD_PLANE
-	pointer.layer = HUD_ABOVE_ITEM_LAYER
-	waypoint_pointers[waypoint] = pointer
-	to_chat(user,pointer)
+			user.client.screen += pointer
+			to_target(user,pointer)
 
 /obj/item/clothing/glasses/hud/tactical/process_hud()
 	process_hud_pointers()

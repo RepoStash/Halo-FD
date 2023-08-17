@@ -2,9 +2,10 @@
 /proc/sanitize_bool(boolean, default=FALSE)
 	return sanitize_integer(boolean, FALSE, TRUE, default)
 
-/proc/sanitize_integer(number, min=0, max=1, default=0)
+/proc/sanitize_integer(number, min=0, max=1, default=0,roundint = 1)
 	if(isnum(number))
-		number = round(number)
+		if(roundint)
+			number = round(number)
 		if(min <= number && number <= max)
 			return number
 	return default

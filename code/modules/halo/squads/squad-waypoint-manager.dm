@@ -22,6 +22,16 @@
 	else
 		return linked_controller.get_waypoint_from_name(selected_waypoint_by_name)
 
+
+/obj/item/squad_manager/proc/user_modify_waypoint_name(var/mob/user,var/obj/effect/waypoint_holder/waypoint)
+	var/new_value = input(user,"Enter the new waypoint name.","Waypoint Name Selection",waypoint.waypoint_name)
+	linked_controller.inform_waypoint_modification(waypoint,0,new_value)
+	waypoint.waypoint_name = new_value
+
+/obj/item/squad_manager/proc/user_modify_waypoint_icon(var/mob/user,var/obj/effect/waypoint_holder/waypoint)
+	var/new_value = input(user,"Choose a new waypoint icon","Waypoint Icon Selection",waypoint.waypoint_icon) in WAYPOINT_ICONS
+	waypoint.waypoint_icon = new_value
+
 /obj/item/squad_manager/proc/process_squad_management_option(var/option,var/mob/user)
 	var/new_value
 	if(option == "Change Squad Name")
@@ -31,15 +41,12 @@
 		var/obj/effect/waypoint_holder/selected_waypoint = process_waypoint_selection(user)
 		if(isnull(selected_waypoint))
 			return
-		new_value = input(user,"Enter the new waypoint name.","Waypoint Name Selection",selected_waypoint.waypoint_name)
-		linked_controller.inform_waypoint_modification(selected_waypoint,0,new_value)
-		selected_waypoint.waypoint_name = new_value
+		user_modify_waypoint_name(user,selected_waypoint)
 	else if(option == "Modify Waypoint Icon")
 		var/obj/effect/waypoint_holder/selected_waypoint = process_waypoint_selection(user)
 		if(isnull(selected_waypoint))
 			return
-		new_value = input(user,"Choose a new waypoint icon","Waypoint Icon Selection",selected_waypoint.waypoint_icon) in WAYPOINT_ICONS
-		selected_waypoint.waypoint_icon = new_value
+		user_modify_waypoint_icon(user,selected_waypoint)
 	else if(option == "Delete Waypoint")
 		new_value = input(user,"Select a waypoint to delete","Waypoint Deletion",null) in linked_controller.get_waypoints() + list("Cancel")
 		if(isnull(new_value) || new_value == "Cancel")
@@ -91,12 +98,13 @@
 		if(ishuman(A))
 			var/mob/living/carbon/human/h = A
 			var/obj/item/clothing/glasses/hud/tactical/glasses = h.glasses
+
 			if(istype(glasses))
-				linked_controller.linked_devices += glasses
+				linked_controller.linked_devices |= glasses
 				to_chat(h,"<span class = 'notice'>You have been added to [linked_controller.squad_name]</span>")
 				to_chat(user,"<span class = 'notice'>[h] has been added to [linked_controller.squad_name]</span>")
 		else if(istype(A,/obj/item/clothing/glasses/hud/tactical))
-			linked_controller.linked_devices += A
+			linked_controller.linked_devices |= A
 			to_chat(user,"<span class = 'notice'>[A.name] added to linker.</span>")
 		else if(istype(A,/obj/item/squad_manager) && (A != src))
 			var/obj/item/squad_manager/manager = A
@@ -106,8 +114,12 @@
 	else
 		if(is_adjacent)
 			return
-		linked_controller.create_waypoint(A,user)
-		linked_controller.update_linked_waypoint_locations()
+		var/waypoint = linked_controller.create_waypoint(A,user)
+		user_modify_waypoint_name(user,waypoint)
+		user_modify_waypoint_icon(user,waypoint)
 
 /obj/item/squad_manager/covenant
 	icon_state = "waypoint_manager_cov"
+
+#undef WAYPOINT_ICONS
+#undef SQUAD_MANAGEMENT_OPTIONS
