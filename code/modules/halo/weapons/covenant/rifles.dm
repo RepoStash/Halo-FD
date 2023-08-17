@@ -7,7 +7,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK
 	fire_sound = 'code/modules/halo/sounds/plasrifle1shot.ogg'
 	charge_meter = 1
-	max_shots = 240
+	max_shots = 300
 	projectile_type = /obj/item/projectile/bullet/covenant/plasmarifle
 	screen_shake = 0
 	is_heavy = 1
