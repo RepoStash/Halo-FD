@@ -247,16 +247,20 @@
 					"EVA Equipment" = -1,
 					/obj/item/weapon/storage/box/large/armorset/eva = 0,
 					/obj/item/clothing/mask/breath = 0,
-					/obj/item/weapon/tank/oxygen = 10,
-					/obj/item/weapon/tank/emergency/oxygen/engi = 10,
-					/obj/item/weapon/tank/jetpack/oxygen = 5
+					/obj/item/weapon/tank/oxygen = 0,
+					/obj/item/weapon/tank/emergency/oxygen/engi = 0,
+					/obj/item/weapon/tank/jetpack/oxygen = 0
 					)
 	amounts = list(\
 		/obj/item/weapon/storage/box/large/armorset/eva = 10,
 		/obj/item/clothing/accessory/storage/IFAK/UNSC = 20,
 		/obj/item/weapon/storage/firstaid/unsc = 6,
 		/obj/item/stack/barbedwire/fifteen = 15,
-		/obj/item/flight_item/bullfrog_pack = 2
+		/obj/item/flight_item/bullfrog_pack = 2,
+		/obj/item/clothing/mask/breath = 10,
+		/obj/item/weapon/tank/oxygen = 10,
+		/obj/item/weapon/tank/emergency/oxygen/engi = 10,
+		/obj/item/weapon/tank/jetpack/oxygen = 5
 		)
 
 /obj/machinery/vending/armory/oni

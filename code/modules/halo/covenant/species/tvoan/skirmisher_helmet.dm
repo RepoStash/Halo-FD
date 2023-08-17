@@ -27,6 +27,7 @@
 	name = "T\'Vaoan Champion helmet"
 	icon_state = "championhelmet"
 	item_state = "championhelmet_worn"
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/covenant/medic
 
 /obj/item/clothing/head/helmet/kigyar/skirmisher/unsc
 	name = "T\'Vaoan Separatist helmet"

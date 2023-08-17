@@ -261,6 +261,7 @@
 	icon = SANGHEILI_ARMOUR_ICON
 	icon_state = "honour_helm_obj"
 	item_state = "honour_helm"
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/covenant/medic
 
 /obj/item/clothing/suit/armor/special/combatharness/honour_guard
 	name = "Sangheili Combat Harness (Honour Guard)"
@@ -286,6 +287,7 @@
 	icon = SANGHEILI_ARMOUR_ICON
 	icon_state = "ultra_helm_obj"
 	item_state = "ultra_helm"
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/covenant/medic
 
 /obj/item/clothing/suit/armor/special/combatharness/ultra
 	name = "Sangheili Combat Harness (Ultra)"
@@ -311,6 +313,7 @@
 	icon = SANGHEILI_ARMOUR_ICON
 	icon_state = "zealot_helm_obj"
 	item_state = "zealot_helm"
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/covenant/medic
 
 /obj/item/clothing/suit/armor/special/combatharness/zealot
 	name = "Sangheili Combat Harness (Zealot)"
@@ -336,6 +339,7 @@
 	icon = SANGHEILI_ARMOUR_ICON
 	icon_state = "regal_helm_obj"
 	item_state = "regal_helm"
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/covenant/medic
 
 /obj/item/clothing/suit/armor/special/combatharness/shipmaster
 	name = "Sangheili Combat Harness (Shipmaster)"

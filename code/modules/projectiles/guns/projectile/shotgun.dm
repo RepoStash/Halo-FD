@@ -15,7 +15,7 @@
 	handle_casings = HOLD_CASINGS
 	one_hand_penalty = 2
 	var/recentpump = 0 // to prevent spammage
-	var/min_pump_time_diff = 5
+	var/min_pump_time_diff = 4
 
 /obj/item/weapon/gun/projectile/shotgun/pump/consume_next_projectile()
 	if(chambered)

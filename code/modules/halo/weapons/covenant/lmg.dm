@@ -24,7 +24,7 @@
 	matter = list("nanolaminate" = 2)
 	hud_bullet_usebar = 1
 	overheat_capacity = 121
-	overheat_fullclear_delay = 3.5 SECONDS
+	overheat_fullclear_delay = 15 SECONDS // Increased to account for high DPS and massive overheat capacity.
 	overheat_sfx = 'code/modules/halo/sounds/plasrifle_overheat.ogg'
 
 	burst = 12

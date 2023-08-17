@@ -7,19 +7,20 @@
 	icon_state = "armor_patch"
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT | SLOT_POCKET
-	var/repair_supplies = 30 //The amount of armor damage this patch can repair
+	var/repair_supplies = 40 //The amount of armor damage this patch can repair. Increased to 40, so you'll always get 2 full repairs out of it.
 
 /obj/item/weapon/armor_patch/examine(var/mob/examiner)
 	. = ..()
-	var/supply_percentile = repair_supplies / initial(repair_supplies)
-	var/message = "all its repair supplies"
+	var/message = "[repair_supplies]/[initial(repair_supplies)]"
+	to_chat(examiner,"<span class = 'notice'>The [name] has [message] repair supplies remaining.</span>")
+/*	var/supply_percentile = repair_supplies / initial(repair_supplies)
 	if(supply_percentile < initial(repair_supplies))
 		message = "most of its repair supplies"
 	if(supply_percentile < 0.5)
 		message = "around half its repair supplies"
 	if(supply_percentile < 0.25)
 		message = "barely any repair supplies"
-	to_chat(examiner,"<span class = 'notice'>[name] has [message] left.</span>")
+	to_chat(examiner,"<span class = 'notice'>[name] has [message] left.</span>") */
 
 /obj/item/weapon/armor_patch/attack(mob/living/M, mob/living/user, var/target_zone)
 	var/mob/living/carbon/human/h = M
@@ -53,12 +54,12 @@
 
 	user.visible_message("<span class = 'notice'>[user] patches up damage on [c]</span>")
 	if(armor_damage_taken > repair_supplies)
-		to_chat(user,"<span class = 'notice'>You can't repair all the damage on [c] due to a lack of repair supplies in [name]</span>")
+		to_chat(user,"<font size = 2><span class = 'warning'>You can't repair all the damage on [c] due to a lack of repair supplies in the[name].</span></font>")
 		c.armor_thickness += repair_supplies
 		reduce_supplies(repair_supplies)
 
 	else
-		to_chat(user,"<span class = 'notice'>You fully repair [c].</span>")
+		to_chat(user,"<font size = 2><span class = 'notice'>You fully repair [c].</span></font>")
 		c.armor_thickness = c.armor_thickness_max
 		reduce_supplies(armor_damage_taken)
 
@@ -78,7 +79,7 @@
 	desc ="A small, simple, limited-use kit that allows armor to be patched up, restoring a portion of the protection it usually affords. Reduced to the bare essentials of repair to fit on bandoliers and smaller such storage items."
 	icon_state = "armor_patch_mini"
 	w_class = ITEM_SIZE_SMALL
-	repair_supplies = 10
+	repair_supplies = 20 // Increased to 20 so you'll always get at least 1 full repair out of it.
 
 /obj/item/weapon/armor_patch/mini/cov
 	icon_state = "armor_patch_cov_mini"

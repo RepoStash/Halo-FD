@@ -412,8 +412,8 @@
 			if(istype(targ_m))
 				if(!targ_m.lying)
 					use_targ = targloc
-			else
-				use_targ = targloc
+				else
+					use_targ = stored_targ
 
 		process_accuracy(projectile, user, use_targ, i, held_twohanded)
 
