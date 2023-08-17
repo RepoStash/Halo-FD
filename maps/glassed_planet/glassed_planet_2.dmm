@@ -588,7 +588,7 @@
 "lp" = (/obj/effect/loot_marker/glassed_facility_console,/turf/simulated/floor/tech/gray,/area/glassed_planet/interior/facility)
 "lq" = (/obj/effect/floor_decal/industrial/outline,/obj/structure/reagent_dispensers/fueltank,/turf/simulated/floor/tiled,/area/glassed_planet/interior/outpost_lower/storage)
 "lr" = (/obj/effect/loot_marker/glassed_facility_console,/turf/simulated/floor/plating{icon_state = "dmg4"},/area/glassed_planet/interior/facility)
-"ls" = (/obj/effect/landmark/map_data{name = "Glassed Planet"},/turf/unsimulated/mineral,/area/glassed_planet/exterior/caves/lower)
+"ls" = (/obj/effect/landmark/map_data{name = "Unknown Glassed Planet"},/turf/unsimulated/mineral,/area/glassed_planet/exterior/caves/lower)
 "lt" = (/obj/effect/floor_decal/industrial/warning/dust/corner{tag = "icon-warningcorner_dust (NORTH)"; icon_state = "warningcorner_dust"; dir = 1},/obj/effect/loot_marker/glassed_miningshack_console,/turf/simulated/floor/tiled,/area/glassed_planet/interior/outpost_lower/storage)
 "lu" = (/obj/effect/floor_decal/industrial/outline,/obj/effect/decal/cleanable/dirt,/obj/structure/reagent_dispensers/fueltank,/turf/simulated/floor/tiled,/area/glassed_planet/interior/outpost_lower/storage)
 

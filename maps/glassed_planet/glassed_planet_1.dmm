@@ -258,7 +258,6 @@
 "eX" = (/obj/effect/floor_decal/corner/yellow/full,/obj/machinery/food_replicator,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/glassed_planet/interior/mining_shack)
 "eY" = (/obj/effect/decal/cleanable/cobweb,/turf/simulated/floor/asteroid/planet,/area/glassed_planet/exterior/caves)
 "eZ" = (/obj/structure/lattice,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor,/area/glassed_planet/interior/outpost_groundfloor/hangar)
-"fa" = (/obj/effect/landmark/map_data{name = "Glassed Planet"},/obj/autolight_init/glassed_planet,/turf/unsimulated/mineral,/area/glassed_planet/exterior/caves)
 "fb" = (/mob/living/simple_animal/hostile/giant_spider/nurse,/turf/simulated/floor/asteroid/planet,/area/glassed_planet/exterior/caves)
 "fc" = (/obj/machinery/optable,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/white,/area/glassed_planet/interior/crashed_shuttle_room/med)
 "fd" = (/obj/structure/closet/crate/large,/obj/item/clothing/suit/space/emergency,/obj/item/clothing/suit/space/emergency,/obj/item/clothing/suit/space/emergency,/obj/item/clothing/suit/space/emergency,/obj/item/clothing/head/helmet/space/emergency,/obj/item/clothing/head/helmet/space/emergency,/obj/item/clothing/head/helmet/space/emergency,/obj/item/clothing/head/helmet/space/emergency,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/shuttle/yellow,/area/glassed_planet/interior/crashed_shuttle_room/cargoS)
@@ -280,6 +279,7 @@
 "ft" = (/obj/effect/decal/cleanable/dirt,/obj/effect/loot_marker/glassed_shuttle_console,/turf/simulated/floor/shuttle/blue,/area/glassed_planet/interior/crashed_shuttle_seating)
 "fu" = (/obj/effect/decal/cleanable/dirt,/obj/effect/loot_marker/glassed_shuttle_console,/turf/simulated/floor/tiled/white,/area/glassed_planet/interior/crashed_shuttle_room/med)
 "fv" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/loot_marker/glassed_warehouse_console,/turf/simulated/floor/tiled/dark,/area/glassed_planet/interior/outpost_groundfloor)
+"fw" = (/obj/effect/landmark/map_data{name = "Unknown Glassed Planet"},/obj/autolight_init/glassed_planet,/turf/unsimulated/mineral,/area/glassed_planet/exterior/caves)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -431,5 +431,5 @@ aaadadadadadadadadadadadadadadadadadadadadadadadadadadadadadahahahahahahahahahah
 aaaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadahahahahahahahahahaeaeaeaeaeaeahahahahahahahahahahahahahahahahahahcTelelcTcTcTcTcTcTcTcTcTcTcTahahahahahahahahahahahahahahahahahahahahahaeaeaeaeaeaeaeaeaeahahahahahahaeaeaeaeaeahahahahaeaecmcmcmcmcmcmcmaeaeaeaectcScScScScScScScScScScScSctaa
 foaeadadadadadadadadadaeaeaeadadadadaeaeaeadadadadadadadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeahahahahahahahahahahahahahahahahahahcTcTcTcTahahahahahahaeahahahahahahahahahahahaeahahahahahahahahahahaeaeaeaeaeaeaeaeaeaeahahchahahahahaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaectcSedeZdicScSedcScScSdiedctaa
 aaaeadadadadadadaeaeaeaeaeaeaeadadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeahahahahahaeahahahahahahaeaeahahahahaeahahahahahaeaeaeahahahahahahahahaeaeaeaeahahahahahaeaeaeaeaeaeaeaeaeaeaeaeaeahahahaeaeaeahaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaectctctctctctctctctctctctctctaa
-faaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+fwaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 "}
