@@ -217,21 +217,21 @@
 /obj/item/nav_data_chip/fragmented/unsc
 	name = "Fragmented Nav Data Chip"
 	chip_faction = "UNSC"
-	known_sectors = list("Deviance Station","VT9-042","Northwind","KS7-535","Geminus Colony")
+	known_sectors = list("Deviance Station","VT9-042","KS7-535","Northwind","Geminus Colony","Taurus Colony","Unknown Glassed Planet")
 
 /obj/item/nav_data_chip/fragmented/covenant
 	name = "Fragmented Nav Data Chip"
 	icon_state = "nav_data_chip_cov"
 	chip_faction = "Covenant"
-	known_sectors = list("Vanguard's Mantle","VT9-042","KS7-535","Northwind")
+	known_sectors = list("Vanguard's Mantle","VT9-042","KS7-535","Northwind","Geminus Colony","Taurus Colony","Unknown Glassed Planet")
 
 /obj/item/nav_data_chip/fragmented/covenant/kig_yar
-	known_sectors = list("Vanguard's Mantle","Asteroid","KS7-535","Geminus Colony")
+	known_sectors = list("Vanguard's Mantle","VT9-042","KS7-535","Northwind","Geminus Colony","Taurus Colony","Unknown Glassed Planet")
 
 /obj/item/nav_data_chip/fragmented/innie
 	name = "Fragmented Nav Data Chip"
 	chip_faction = "Insurrection"
-	known_sectors = list("Camp New Hope","Asteroid","KS7-535","Geminus Colony")
+	known_sectors = list("Camp New Hope","Asteroid","VT9-042","KS7-535","Geminus Colony","Taurus Colony","Unknown Glassed Planet")
 
 /obj/machinery/nav_computer/npc/unsc
 	data_chip = new /obj/item/nav_data_chip/fragmented/unsc
