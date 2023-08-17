@@ -24,6 +24,7 @@
 	var/safe_expire_warning = 0
 
 	factions = list(/datum/faction/unsc, /datum/faction/covenant, /datum/faction/insurrection)
+	faction_balance = list(/datum/faction/unsc, /datum/faction/covenant, /datum/faction/insurrection)
 	var/list/endgame_fleets = list(/datum/faction/unsc)
 
 	var/list/overmap_hide = list()
@@ -62,14 +63,6 @@
 	//setup the endgame fleet spawning
 	GLOB.UNSC.fleets_max = 1
 	GLOB.UNSC.fleet_spawn_at = 75 MINUTES
-
-	//setup faction handling
-	for(var/faction_type in factions)
-		factions.Remove(faction_type)
-		var/datum/faction/F = GLOB.factions_by_type[faction_type]
-
-		//this is normally bad practice, but it seems to work fine in byond
-		factions.Add(F)
 
 	//Setup slipdrive-overload blocking.
 	for(var/obj/effect/overmap/om in list(GLOB.UNSC.base,GLOB.COVENANT.base,GLOB.INSURRECTION.base))

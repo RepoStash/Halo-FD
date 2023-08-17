@@ -1,4 +1,5 @@
 
+#include "../_gamemodes/system_conquest/system_conquest.dm"
 
 /datum/map/system_conquest
 	name = "111 Tauri System"
@@ -23,7 +24,7 @@
 	overmap_event_tokens = 100
 
 	use_overmap = 1
-	allowed_gamemodes = list("extended","spicyextended")
+	allowed_gamemodes = list("extended","spicyextended","systemconquest")
 
 	area_coherency_test_exempt_areas = list(
 		/area/space,

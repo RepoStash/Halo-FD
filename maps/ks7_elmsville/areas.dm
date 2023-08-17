@@ -18,6 +18,7 @@
 
 /area/exo_ice_facility/exterior
 	dynamic_lighting = 0
+	requires_power = 0
 	sound_env = RURAL_OPEN
 
 /area/exo_ice_facility/exterior/autolight

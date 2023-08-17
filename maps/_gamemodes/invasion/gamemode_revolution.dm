@@ -8,6 +8,7 @@
 	votable = 1
 	end_conditions_required = 2
 	factions = list(/datum/faction/unsc, /datum/faction/insurrection)
+	faction_balance = list(/datum/faction/unsc, /datum/faction/insurrection)
 	//overmap_hide = list(/obj/effect/overmap/sector/exo_listen, /obj/effect/overmap/ship/covenant_light_cruiser)
 	disabled_jobs_types = list(\
 		/datum/job/covenant/huragok,\
