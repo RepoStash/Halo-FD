@@ -10,11 +10,12 @@
 	"SOE Corporal",\
 	"SOE Surgeon")
 
-	total_positions = 8
-	spawn_positions = 8
+	total_positions = 6
+	spawn_positions = 6
+	open_slot_on_death = 1
 	selection_color = "#ff0000"
 	access = list(access_innie,access_innie_prowler,access_innie_asteroid, access_soe)
-	faction_whitelist = null
+	faction_whitelist = "Insurrection"
 	fallback_spawnpoint = "Innie Base Fallback Spawns"
 	whitelisted_species = list(/datum/species/human)
 	loadout_allowed = TRUE

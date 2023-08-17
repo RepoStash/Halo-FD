@@ -99,8 +99,9 @@
 	title = "Insurrectionist Orion Defector"
 	outfit_type = /decl/hierarchy/outfit/job/colonist/geminus_innie_orion_defector
 	whitelisted_species = list(/datum/species/orion)
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 4
+	spawn_positions = 4
+	open_slot_on_death = 1
 	access = list(access_innie, access_innie_boss, access_innie_cargo)
 	faction_whitelist = null
 
