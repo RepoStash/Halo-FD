@@ -1,10 +1,14 @@
 
+#define WAYPOINT_DEFAULT_NAME_LIST list("Alpha","Bravo","Charlie","Delta","Echo","Foxtrot","Golf","Hotel","Indigo")
+#define WAYPOINT_DEFAULT_ICON_LIST list("waypoint","waypointred","waypointgreen","waypointorange","waypointyellow","waypointpink")
+
 /datum/waypoint_controller
 
 	var/squad_name = "squad1"
 	var/controller_manager_device
 	var/list/linked_devices = list()
 	var/list/active_waypoints = list()
+	var/list/waypoint_name_defaults = WAYPOINT_DEFAULT_NAME_LIST
 
 /datum/waypoint_controller/New(var/creator)
 	. = ..()
@@ -12,14 +16,16 @@
 
 /datum/waypoint_controller/proc/create_waypoint(var/atom/waypoint_turf,var/mob/user)
 	var/obj/effect/waypoint_holder/created_waypoint = new
+	created_waypoint.waypoint_icon = pick(WAYPOINT_DEFAULT_ICON_LIST)
 	created_waypoint.loc = waypoint_turf
 	waypoint_turf.contents += created_waypoint
 	active_waypoints += created_waypoint
-	created_waypoint.waypoint_name = "Waypoint-[active_waypoints.Find(created_waypoint)]"
+	created_waypoint.waypoint_name = "[waypoint_name_defaults[active_waypoints.len]]"
 	inform_waypoint_modification(created_waypoint)
 	update_linked_waypoint_locations()
 	if(!(src in GLOB.processing_objects))
 		GLOB.processing_objects += src
+	return created_waypoint
 
 /datum/waypoint_controller/proc/cole_protocol() //This wipes the controller, removing all waypoints and linked devices before deleting itself.
 	for(var/obj/item/clothing/glasses/hud/tactical/device in linked_devices)
@@ -74,3 +80,6 @@
 
 /datum/waypoint_controller/proc/process()
 	update_linked_waypoint_locations()
+
+#undef WAYPOINT_DEFAULT_NAME_LIST
+#undef WAYPOINT_DEFAULT_ICON_LIST

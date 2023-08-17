@@ -14,6 +14,7 @@
 	var/transform_image_x = 1
 	var/transform_image_y = 0
 	var/matrix/base_transform
+	var/hud_scale = 1
 	var/image/barimage
 
 /obj/screen/shieldbar/New(var/mob/living/l)
@@ -22,7 +23,12 @@
 	l.client.screen += src
 	barimage = image(icon,src,"bar")
 	base_transform = new(barimage.transform)
-	to_chat(l,barimage)
+	if(l.client.prefs)
+		hud_scale = l.client.prefs.halo_hud_scaling
+	var/matrix/m = new(transform)
+	m.Scale(hud_scale,hud_scale)
+	transform = m
+	to_target(l,barimage)
 
 /obj/screen/shieldbar/proc/update(var/currshield,var/maxshield)
 	var/new_pct = min(1,max(0,currshield/maxshield))
@@ -50,10 +56,11 @@
 						if(statpanel("Status"))
 							stat("Shields: ","[shield_datum.shieldstrength/shield_datum.totalshields*100]%")
 						bar.update(shield_datum.shieldstrength,shield_datum.totalshields)
-					return
-		if(bar)
-			client.screen -= bar
-			qdel(bar)
+						break
+		else
+			if(bar)
+				client.screen -= bar
+				qdel(bar)
 
 /datum/armourspecials
 	var/mob/living/carbon/human/user
