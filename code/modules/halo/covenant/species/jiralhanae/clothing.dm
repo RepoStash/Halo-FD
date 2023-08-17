@@ -127,6 +127,7 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 	icon_state = "captainhelm"
 	armor_thickness = 26
 	armor_thickness_max = 26
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/covenant/medic
 
 /obj/item/clothing/head/helmet/jiralhanae/covenant/chieftain
 	name = "Jiralhanae Helm (Chieftain)"
@@ -134,6 +135,7 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 	icon_state = "helm_chieftain"
 	armor_thickness = 28
 	armor_thickness_max = 28
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/covenant/medic
 
 /* ARMOUR */
 
@@ -409,6 +411,7 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 	item_state = "helm_soft_captain"
 	armor_thickness = 26
 	armor_thickness_max = 26
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/covenant/medic
 
 // ARMOR //
 

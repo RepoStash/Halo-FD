@@ -1,6 +1,6 @@
 #define EXPLOSION_DEBRIS_CHANCE 30
 //Projectiles below will be ignored when checking if we should block them.//
-#define PROJECTILES_DEBRIS_IGNORE list(/obj/item/projectile/bullet/scorp_cannon,/obj/item/projectile/bullet/cobra_cannon,/obj/item/projectile/bullet/cobra_sniper,/obj/item/projectile/bullet/m232,/obj/item/projectile/bullet/m233,/obj/item/projectile/bullet/m234,/obj/item/projectile/bullet/m235,/obj/item/projectile/bullet/covenant/beamrifle)
+#define PROJECTILES_DEBRIS_IGNORE list(/obj/item/projectile/bullet/scorp_cannon,/obj/item/projectile/bullet/cobra_cannon,/obj/item/projectile/bullet/cobra_sniper,/obj/item/projectile/bullet/m232,/obj/item/projectile/bullet/m233,/obj/item/projectile/bullet/m234,/obj/item/projectile/bullet/m235,/obj/item/projectile/bullet/covenant/beamrifle,/obj/item/projectile/bullet/fuel_rod,/obj/item/projectile/bullet/ssr)
 
 /obj/structure/destructible/explosion_debris
 	name = "explosion debris"
@@ -15,6 +15,7 @@
 	scrap_types = list()
 	bump_climb = 1
 	mob_climb_time = 0.7 SECONDS
+	dodge_pass = 1
 
 /obj/structure/destructible/proc/check_ignore_list(var/obj/i)
 	for(var/type in PROJECTILES_DEBRIS_IGNORE)

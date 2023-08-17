@@ -41,6 +41,7 @@
 	item_state = "CH252 Helmet Medic"
 	icon_state = "helmet novisor medic_obj"
 	body_parts_covered = HEAD|EYES
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/medic
 
 /obj/item/clothing/head/helmet/marine/medic/visor
 	name = "Olive Camo CH251-V Helmet Medic"
@@ -48,6 +49,7 @@
 	item_state = "CH252 Visor Helmet Medic"
 	icon_state = "helmet medic_obj"
 	body_parts_covered = HEAD|EYES
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/medic
 
 /obj/item/clothing/head/helmet/marine/visor
 	name = "Olive Camo CH251-V Helmet"
@@ -75,6 +77,7 @@
 	item_state = "CH252 Helmet Medic B"
 	icon_state = "helmet novisor medic-b_obj"
 	body_parts_covered = HEAD|EYES
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/medic
 
 /obj/item/clothing/head/helmet/marine/medic/brownvisor
 	name = "Brown Camo CH251-V Helmet Medic"
@@ -84,6 +87,7 @@
 	item_state = "CH252 Visor Helmet Medic B"
 	icon_state = "helmet medic_obj"
 	body_parts_covered = HEAD|EYES
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/medic
 
 /obj/item/clothing/head/helmet/marine/brownvisor
 	name = "Brown Camo CH251-V Helmet"
@@ -284,6 +288,7 @@
 /obj/item/clothing/head/helmet/marine/medic/winter
 	item_state = "snowhelmetmedic"
 	icon_state = "snowhelmetmedic"
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/medic
 
 /obj/item/clothing/suit/storage/marine/winter
 	name = "M52B Winter Body Armor"

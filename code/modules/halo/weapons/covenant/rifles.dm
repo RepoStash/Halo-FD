@@ -22,7 +22,7 @@
 	one_hand_penalty = 2
 	hud_bullet_usebar = 1
 
-	overheat_capacity = 45
+	overheat_capacity = 60
 	overheat_fullclear_delay = 3 SECONDS
 	overheat_sfx = 'code/modules/halo/sounds/plasrifle_overheat.ogg'
 
@@ -61,8 +61,8 @@
 	desc = "Also known as the \"Plasma Rifle\", this weapon fires bursts of superheated plasma at an accelerated rate. This one appears to be overcharged for fire speed at the cost of damage and accuracy."
 	projectile_type = /obj/item/projectile/bullet/covenant/plasmarifle/brute
 	fire_delay = 5
-	burst_delay = 1.7
-	accuracy = -1
+	burst_delay = 1.6
+	dispersion = list(0.1, 0.3, 0.6, 1.0)
 
 /obj/item/weapon/gun/projectile/concussion_rifle
 	name = "Type-50 Directed Energy Rifle / Heavy"
