@@ -1,5 +1,7 @@
 GLOBAL_LIST_EMPTY(capture_nodes)
-#define EXTRAPLAYER_CAP_AMT_INCREASE 0.25
+//The increase to the multiplier per person on the point.
+#define EXTRAPLAYER_CAP_AMT_INCREASE 0.15
+//The highest possible multiplier.
 #define EXTRAPLAYER_CAP_AMT_MAX 2
 
 /obj/machinery/computer/capture_node
@@ -138,8 +140,8 @@ GLOBAL_LIST_EMPTY(capture_nodes)
 			capture_ticks_remain = min(capture_time,capture_ticks_remain+3)
 	else
 		var/deltaticks = (world.time - last_cap_tick_time)
-		var/ticks_remove_players = (amt_capping-1)*EXTRAPLAYER_CAP_AMT_INCREASE
-		capture_ticks_remain = max(0,capture_ticks_remain - (deltaticks * min(ticks_remove_players,EXTRAPLAYER_CAP_AMT_MAX)) )
+		var/playercount_ticks_mult = min((1 + (amt_capping-1)*EXTRAPLAYER_CAP_AMT_INCREASE),EXTRAPLAYER_CAP_AMT_MAX)
+		capture_ticks_remain = max(0,capture_ticks_remain - (deltaticks * playercount_ticks_mult) )
 	if(!cap_bar)
 		cap_bar = new (null,capture_time, src)
 		cap_bar.process_without_user = 1
