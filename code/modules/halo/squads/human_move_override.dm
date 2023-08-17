@@ -3,4 +3,4 @@
 	. = ..()
 	if(istype(head,/obj/item/clothing/glasses/hud/tactical))
 		spawn()
-			head:process_hud_pointers()
+			head:process_hud()

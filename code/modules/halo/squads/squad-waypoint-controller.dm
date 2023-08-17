@@ -57,8 +57,8 @@
 /datum/waypoint_controller/proc/delete_waypoint(var/obj/effect/waypoint_holder/waypoint)
 	active_waypoints -= waypoint
 	inform_waypoint_modification(waypoint,1)
-	qdel(waypoint)
 	update_linked_waypoint_locations()
+	qdel(waypoint)
 	if(active_waypoints.len == 0)
 		GLOB.processing_objects -= src
 
