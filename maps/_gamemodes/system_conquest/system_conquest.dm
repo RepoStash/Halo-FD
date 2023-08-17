@@ -7,7 +7,7 @@
 /datum/game_mode/system_conquest
 	name = "System Conquest"
 	round_description = "Complete a series of randomised objectives to win."
-	extended_round_description = "Complete a series of randomised objectives to win."
+	extended_round_description = "Complete a series of randomised objectives to win. First to three successful completions wins."
 	config_tag = "systemconquest"
 	votable = 1
 	probability = 1
