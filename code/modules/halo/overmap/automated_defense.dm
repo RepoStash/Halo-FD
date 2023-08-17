@@ -145,7 +145,7 @@
 
 /obj/effect/overmap/ship/npc_ship/automated_defenses/unsc
 	icon_state = "SMAC"
-	faction = "unsc"
+	faction = "UNSC"
 	ship_name_list = list()
 	ship_datums = list(/datum/npc_ship/unsc_defenseplatform)
 
@@ -154,7 +154,7 @@
 
 /obj/effect/overmap/ship/npc_ship/automated_defenses/innie
 	icon_state = "SMAC"
-	faction = "innie"
+	faction = "Insurrection"
 	ship_name_list = list()
 	ship_datums = list(/datum/npc_ship/innie_defenseplatform)
 
@@ -163,7 +163,7 @@
 
 /obj/effect/overmap/ship/npc_ship/automated_defenses/cov
 	icon_state = "cov_defenseplatform"
-	faction = "covenant"
+	faction = "Covenant"
 	proj_fired = /obj/item/projectile/overmap/auto_defense_proj/covenant
 	ship_datums = list(/datum/npc_ship/cov_defenseplatform)
 	ship_name_list = list(\
