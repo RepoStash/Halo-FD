@@ -90,11 +90,15 @@
 	return get_turf(loc)
 
 /obj/item/clothing/glasses/hud/tactical/proc/update_known_waypoints(var/list/new_waypoint_list)
-	known_waypoints = new_waypoint_list.Copy()
+	var/list/new_points = new_waypoint_list.Copy()
+	for(var/obj/point in known_waypoints)
+		if(!(point in new_points))
+			remove_pointer(last_user,point)
+	known_waypoints = new_points
 	process_hud()
 
 /obj/item/clothing/glasses/hud/tactical/proc/remove_pointer(var/mob/user,var/waypoint)
-	var/pointer = waypoint_pointers[waypoint]
+	var/obj/pointer = waypoint_pointers[waypoint]
 	waypoint_pointers -= waypoint
 	if(user && user.client && user.client.screen)
 		user.client.screen -= pointer
