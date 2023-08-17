@@ -14,6 +14,7 @@
 	ship_lockdown_duration = 12 MINUTES
 
 	factions = list(/datum/faction/unsc, /datum/faction/covenant, /datum/faction/insurrection)
+	faction_balance = list(/datum/faction/unsc, /datum/faction/covenant, /datum/faction/insurrection)
 
 	var/list/round_end_reasons = list()
 
