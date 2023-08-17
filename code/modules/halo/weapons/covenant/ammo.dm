@@ -37,6 +37,16 @@
 	icon_state = "Plasmapistol Shot"
 	muzzle_type = /obj/effect/projectile/muzzle/cov_green
 
+//Ilikesaying's Plasma Pistol Projectile
+
+/obj/item/projectile/bullet/covenant/plasmapistol/heart
+	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
+	icon_state = "Heartpistol Shot"
+
+/obj/item/projectile/bullet/covenant/plasmapistol/overcharge/heart_overcharge
+	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
+	icon_state = "Overcharged_Heartpistol Shot"
+
 /obj/item/projectile/bullet/covenant/plasmapistol/fastfire
 	damage = 20
 
@@ -276,7 +286,7 @@
 
 /obj/item/projectile/bullet/covenant/needles/rifleneedle
 	name = "Rifle Needle"
-	damage = 25 //Shrapnel makes up the difference with the dmr
+	damage = 30 //Shrapnel makes up the difference with the dmr
 	armor_penetration = 40
 	shield_damage = 15
 	shrapnel_damage = 10

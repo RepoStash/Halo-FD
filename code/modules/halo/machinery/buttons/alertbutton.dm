@@ -3,12 +3,14 @@
 
 /obj/machinery/button/toggle/alarm_button
 	var/area/area_base = null
-	var/alert_message = "Red Alert! All hands to combat stations!"
-	var/un_alert_message = "Red Alert lifted."
+	var/alert_message = "<font color='green'><b>Automated Alert System</b> coldly states, </font><font size ='4' color='red'><b>''Red Alert. All hands to battlestations.''</b></font>"
+	var/un_alert_message = "<font color='green'><b>Automated Alert System</b> coldly states, </font><font size ='4' color='red'><b>''Green alert. All clear.''</b></font>"
 	var/alarm_color_string = "#ff9696"
 	var/sound/alarm_sound = 'code/modules/halo/sounds/r_alert_alarm_loop.ogg'
 	var/alarm_loop_time = 13.896 SECONDS //The amount of time it takes for the alarm sound to end. Used for restarting the sound.
 	var/currently_alarming
+	var/starting_sound = null
+	var/ending_sound = null
 
 /obj/machinery/button/toggle/alarm_button/activate(var/mob/user)
 	if(operating)
@@ -17,8 +19,12 @@
 	active = !active
 	use_power(5)
 	if(active)
+		if(!isnull(starting_sound))
+			playsound(src, starting_sound, 150, 0, 500, 0,1)
 		toggle_alert(1)
 	else
+		if(!isnull(ending_sound))
+			playsound(src, ending_sound, 150, 0, 500, 0,1)
 		toggle_alert(0)
 	update_icon()
 	operating = 0
@@ -63,7 +69,7 @@
 		if(state)
 			for(var/mob/m in GLOB.player_list)
 				if(isturf(m.loc) && istype(m.loc.loc,area_base))
-					to_chat(m,"<span class = 'danger'>Station firing sequence has been initialized.</span>")
+					to_chat(m,"<font color='green'><b>Automated Alert System</b> coldly states, </font><font size ='4' color='red'><b>''Station firing sequence has been initialized.''</b></font>")
 					if((last_used + sound_cooldown)<world.time)
 						m << alarm_sound
 		state = !state
@@ -77,3 +83,10 @@
 					spawn(0)
 						M.close()
 	last_used = world.time
+
+/obj/machinery/button/toggle/alarm_button/evacuation
+	name = "Evacuation Alert"
+	alarm_sound = 'sound/effects/siren.ogg'
+	alarm_color_string = "#fedc56"
+	alert_message = "<font color='green'><b>Automated Alert System</b> coldly states, </font><font size ='4' color='yellow'><b>''DELTA ALERT. EVACUATE IMMEDIATELY.''</b></font>"
+	un_alert_message = "<font color='green'><b>Automated Alert System</b> coldly states, </font><font size ='4' color='red'><b>''Evacuation cancelled. Return to your stations.''</b></font>"

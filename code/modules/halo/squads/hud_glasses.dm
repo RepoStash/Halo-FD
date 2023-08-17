@@ -243,6 +243,13 @@
 
 /* SUBTYPES */
 
+/obj/item/clothing/glasses/hud/tactical/medic
+	name = "UNSC Medic HUD"
+
+/obj/item/clothing/glasses/hud/tactical/medic/process_hud(var/mob/M)
+	process_med_hud(M, 1)
+	. = ..()
+
 /obj/item/clothing/glasses/hud/tactical/odst_hud
 	name = "ODST HUD"
 
@@ -256,6 +263,12 @@
 /obj/item/clothing/glasses/hud/tactical/spartan_hud
 	name = "Spartan HUD"
 
+/obj/item/clothing/glasses/hud/tactical/spartan_hud/process_hud(var/mob/M)
+	process_med_hud(M, 1)
+	. = ..()
+
+// COVENANT HUDs //
+
 /obj/item/clothing/glasses/hud/tactical/kigyar_nv
 	name = "Kig-Yar Scout Helmet Night Vision"
 	desc = "Scout Helmet night vision active."
@@ -266,12 +279,29 @@
 	nv_screen_impair = /obj/screen/fullscreen/night_vision/cone/better
 
 /obj/item/clothing/glasses/hud/tactical/covenant
+	name = "Covenant HUD"
 	icon_state = "hud_covie"
 	nv_screen_colour = /obj/screen/fullscreen/night_vision/purple
 
+/obj/item/clothing/glasses/hud/tactical/covenant/medic
+	name = "Covenant Medical HUD"
+
+/obj/item/clothing/glasses/hud/tactical/covenant/medic/process_hud(var/mob/M)
+	process_med_hud(M, 1)
+	. = ..()
+
+// URF HUDs //
+
 /obj/item/clothing/glasses/hud/tactical/innie
+	name = "Insurrectionist HUD"
 	nv_screen_colour = /obj/screen/fullscreen/night_vision/red
 
+/obj/item/clothing/glasses/hud/tactical/innie/medic
+	name = "Insurrectionist Medic HUD"
+
+/obj/item/clothing/glasses/hud/tactical/innie/medic/process_hud(var/mob/M)
+	process_med_hud(M, 1)
+	. = ..()
 
 /* SCREEN VISUAL EFFECTS */
 

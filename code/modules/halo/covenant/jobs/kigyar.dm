@@ -4,6 +4,8 @@
 	total_positions = -1
 	spawn_positions = -1
 	outfit_type = /decl/hierarchy/outfit/kigyar
+	alt_titles = list(\
+		"Kig-Yar Ranger" = /decl/hierarchy/outfit/kigyar_ranger)
 	whitelisted_species = list(/datum/species/kig_yar)
 
 /datum/job/covenant/kigyar_marksman

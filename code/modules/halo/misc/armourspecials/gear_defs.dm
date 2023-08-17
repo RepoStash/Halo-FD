@@ -52,3 +52,7 @@
 /datum/armourspecials/gear/sangheili_infiltrator
 	gear_type = /obj/item/clothing/gloves/thick/sangheili/specops/infiltrator
 	equip_slot = slot_gloves
+
+/datum/armourspecials/gear/sangheili_infiltrator/franzemmerich
+	gear_type = /obj/item/clothing/gloves/thick/sangheili/specops/infiltrator/franzemmerich
+	equip_slot = slot_gloves

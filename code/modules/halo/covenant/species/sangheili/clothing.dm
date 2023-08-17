@@ -10,13 +10,14 @@
 	item_state = null
 
 /obj/item/clothing/under/covenant/sangheili
-	name = "Sangheili Body-suit"
+	name = "\improper Sangheili Body-suit"
 	desc = "A sealed, airtight bodysuit. Meant to be worn underneath combat harnesses."
 	icon = SANGHEILI_ARMOUR_ICON
 	icon_state = "sangheili_suit"
 	sprite_sheets = list("Sangheili" = SANGHEILI_ARMOUR_ICON)
 	species_restricted = list("Sangheili")
 	body_parts_covered = UPPER_TORSO | LOWER_TORSO | ARMS | LEGS
+	item_flags = STOPPRESSUREDAMAGE|AIRTIGHT
 	matter = list("cloth" = 1)
 
 /obj/item/clothing/head/helmet/sangheili
@@ -260,6 +261,7 @@
 	icon = SANGHEILI_ARMOUR_ICON
 	icon_state = "honour_helm_obj"
 	item_state = "honour_helm"
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/covenant/medic
 
 /obj/item/clothing/suit/armor/special/combatharness/honour_guard
 	name = "Sangheili Combat Harness (Honour Guard)"
@@ -285,6 +287,7 @@
 	icon = SANGHEILI_ARMOUR_ICON
 	icon_state = "ultra_helm_obj"
 	item_state = "ultra_helm"
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/covenant/medic
 
 /obj/item/clothing/suit/armor/special/combatharness/ultra
 	name = "Sangheili Combat Harness (Ultra)"
@@ -310,6 +313,7 @@
 	icon = SANGHEILI_ARMOUR_ICON
 	icon_state = "zealot_helm_obj"
 	item_state = "zealot_helm"
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/covenant/medic
 
 /obj/item/clothing/suit/armor/special/combatharness/zealot
 	name = "Sangheili Combat Harness (Zealot)"
@@ -335,6 +339,7 @@
 	icon = SANGHEILI_ARMOUR_ICON
 	icon_state = "regal_helm_obj"
 	item_state = "regal_helm"
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/covenant/medic
 
 /obj/item/clothing/suit/armor/special/combatharness/shipmaster
 	name = "Sangheili Combat Harness (Shipmaster)"
@@ -436,25 +441,34 @@
 	cold_protection = HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+///// RANGER EVA /////
+
 /obj/item/clothing/head/helmet/sangheili/ranger
-	name = "Sangheili Helmet (Ranger)"
-	desc = "Head armour, to be used with the Sangheili Combat Harness."
+	name = "\improper Sangheili Ranger Helmet"
+	desc = "A heavy Ranger helmet, designed for extended operations in EVA. Its airtight fittings provide the user with immunity to biological contaminants and resistance to radiological hazards."
 	icon = SANGHEILI_ARMOUR_ICON
 	icon_state = "ranger_helm_obj"
 	item_state = "ranger_helm"
 	sprite_sheets = list("Sangheili" = SANGHEILI_ARMOUR_ICON)
 	species_restricted = list("Sangheili")
 	body_parts_covered = HEAD | FACE
-	item_flags = THICKMATERIAL | FLASH_PROTECTION_MAJOR
+	item_flags = THICKMATERIAL | FLASH_PROTECTION_MAJOR | STOPPRESSUREDAMAGE | THICKMATERIAL | AIRTIGHT
 	item_flags = STOPPRESSUREDAMAGE | THICKMATERIAL | AIRTIGHT
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(melee = 60, bullet = 40, laser = 30,energy = 30, bomb = 25, bio = 100, rad = 30)
+	armor_thickness = 20
+	armor_thickness_max = 20
 
-/obj/item/clothing/suit/armor/special/combatharness/ranger
-	name = "Sangheili Combat Harness (Ranger)"
-	desc = "A sealed. airtight Sangheili Combat Harness."
+/obj/item/clothing/head/helmet/sangheili/ranger/New()
+	..()
+	slowdown_per_slot[slot_head] += 0.01 // Movement speed malus due to the armor's weight.
+
+/obj/item/clothing/suit/armor/special/combatharness/eva/ranger
+	name = "\improper Sangheili Ranger Combat Harness (Minor)"
+	desc = "A heavy suit of reinforced spaceproof Ranger armor, designed for extended operations in EVA. Its airtight fittings provide the user with immunity to biological contaminants and resistance to radiological hazards. Features a built-in manouvering system for basic movement in zero-gravity, but lacks the stabilization technology of dedicated jetpacks."
 	icon_state = "ranger_chest_obj"
 	item_state = "ranger_chest"
 	totalshields = 150
@@ -462,12 +476,21 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(melee = 55, bullet = 50, laser = 55, energy = 45, bomb = 40, bio = 100, rad = 30)
+	armor_thickness = 20
+	armor_thickness_max = 20
+
 	allowed = list(/obj/item/weapon/tank)
 
-//It has to be this way to minimize code replication. magboots.dm is quite expansive.
+	specials = list(/datum/armourspecials/integrated_jetpack)
+
+/obj/item/clothing/suit/armor/special/combatharness/eva/ranger/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] += 0.02 // Movement speed malus due to the armor's weight.
+
 /obj/item/clothing/shoes/magboots/sangheili
-	name = "Sanghelli Leg Armour (Ranger)"
-	desc = "Leg armour, to be used with the Sangheili Combat Harness."
+	name = "Sanghelli Ranger Greaves"
+	desc = "A heavy pair of Ranger magboots, designed for extended operations in EVA. Its airtight fittings provide the user with immunity to biological contaminants and resistance to radiological hazards."
 	icon = SANGHEILI_ARMOUR_ICON
 	icon_state = "ranger_legs_obj"
 	item_state = "ranger_legs"
@@ -477,18 +500,43 @@
 	body_parts_covered = LEGS|FEET
 	cold_protection = LEGS|FEET
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	armor = list(melee = 60, bullet = 45, laser = 35,energy = 35, bomb = 30, bio = 35, rad = 35)
+	armor = list(melee = 60, bullet = 45, laser = 35, energy = 35, bomb = 30, bio = 100, rad = 30)
 	armor_thickness = 20
+	armor_thickness_max = 20
 	overshoes = 0
+	stepsound = 'code/modules/halo/sounds/walk_sounds/spartan_boots.ogg'
+
+/obj/item/clothing/shoes/magboots/sangheili/New()
+	..()
+	slowdown_per_slot[slot_gloves] += 0.01 // Movement speed malus due to the armor's weight.
 
 /obj/item/clothing/gloves/thick/sangheili/ranger
-	name = "Sanghelli Combat Gauntlets (Ranger)"
-	desc = "Hand armour, to be used with the Sangheili Combat Harness."
+	name = "Sanghelli Ranger Gauntlets"
+	desc = "A heavy pair of Ranger gauntlets, designed for extended operations in EVA. Its airtight fittings provide the user with immunity to biological contaminants and resistance to radiological hazards. Comes equipped with a built-in energy dagger."
 	icon_state = "ranger_gloves_obj"
 	item_state = "ranger_gloves"
 	item_flags = STOPPRESSUREDAMAGE | THICKMATERIAL | AIRTIGHT
 	body_parts_covered = HANDS
 	cold_protection = HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(melee = 30, bullet = 40, laser = 10, energy = 25, bomb = 30, bio = 100, rad = 30)
+	armor_thickness = 20
+	armor_thickness_max = 20
+
+/obj/item/clothing/gloves/thick/sangheili/ranger/New()
+	..()
+	slowdown_per_slot[slot_shoes] += 0.01 // Movement speed malus due to the armor's weight.
+
+/// RANGER ARMOR RANK SUBTYPES ///
+
+/obj/item/clothing/suit/armor/special/combatharness/eva/ranger/major
+	name = "\improper Sangheili Ranger Combat Harness (Major)"
+	totalshields = 180
+	item_state = "ranger_chest_major"
+
+/obj/item/clothing/suit/armor/special/combatharness/eva/ranger/ultra
+	name = "\improper Sangheili Ranger Combat Harness (Ultra)"
+	totalshields = 240
+	item_state = "ranger_chest_ultra"
 
 #undef SANGHEILI_ARMOUR_ICON

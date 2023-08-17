@@ -119,6 +119,12 @@
 	icon_state = "marshalbadge"
 	badge_string = "Colonial Marshal Bureau"
 
+/obj/item/clothing/accessory/badge/chiefmarshal
+	name = "chief marshal's badge"
+	desc = "A leather-backed gold badge displaying the crest of the Colonial Marshals. This one has extra shine to it."
+	icon_state = "marshalbadge"
+	badge_string = "Colonial Marshal Bureau"
+
 /obj/item/clothing/accessory/badge/tags //child of a badge for now because I'd rather not copy-paste their code
 	name = "dog tags"
 	desc = "Plain identification tags made from a durable metal. Stamped with a variety of informational details."

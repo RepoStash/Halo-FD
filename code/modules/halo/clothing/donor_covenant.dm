@@ -1,7 +1,9 @@
+#define JIRALHANAE_ICON_PATH_MOB 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_gear.dmi'
+#define GRUNT_GEAR_ICON 'code/modules/halo/covenant/species/unggoy/grunt_gear.dmi'
+
 ////////Boltersam\\\\\\\\
 
 //JIRALHANAE
-#define JIRALHANAE_ICON_PATH_MOB 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_gear.dmi'
 
 /obj/item/clothing/head/helmet/jiralhanae/covenant/boltersam
 	icon_state = "bolter_helm"
@@ -821,4 +823,154 @@
 					/obj/item/clothing/gloves/thick/sangheili/minor/timmy
 					)
 
+///////Ilikesaying\\\\\\\\
+
+//Unggoy (MINOR)
+
+/obj/item/clothing/suit/armor/special/unggoy_combat_harness/ilikesaying
+	name = "Magical Grunt Armor"
+	desc = "Worn by those who wish to punish heretics with the power of love!"
+	icon = GRUNT_GEAR_ICON
+	icon_state = "grif_minor_combatharness"
+	item_state = "grif_minor_combatharness"
+
+/obj/item/weapon/gun/energy/plasmapistol/ilikesaying
+	name = "Magical Plasma Pistol"
+	desc = "In the name of the Covenant, I'll punish you!"
+	icon_state = "Grif Plasma Pistol"
+	overcharge_type = /obj/item/projectile/bullet/covenant/plasmapistol/overcharge/heart_overcharge
+	projectile_type = /obj/item/projectile/bullet/covenant/plasmapistol/heart
+
+/obj/item/weapon/storage/box/large/donator/ilikesaying
+	startswith = list(/obj/item/clothing/suit/armor/special/unggoy_combat_harness/ilikesaying,
+					/obj/item/weapon/gun/energy/plasmapistol/ilikesaying,
+					/obj/item/weapon/gun/energy/plasmapistol/ilikesaying
+					)
+	can_hold = list(/obj/item/clothing/suit/armor/special/unggoy_combat_harness/ilikesaying,
+					/obj/item/weapon/gun/energy/plasmapistol/ilikesaying,
+					/obj/item/weapon/gun/energy/plasmapistol/ilikesaying
+					)
+
+///////Franz Emmerich (Andronov)\\\\\\\\
+
+//Sangheili undersuit
+
+/obj/item/clothing/under/covenant/sangheili/franzemmerich
+	name = "Crimson Body-suit"
+	desc = "A deep-red bodysuit of Sangheili design."
+	icon_state = "sangheili-franzemmerich_undersuit"
+	species_restricted = list ("Sangheili")
+	body_parts_covered = UPPER_TORSO | LOWER_TORSO | ARMS | LEGS
+
+//Sangheili (Spec Ops)
+
+/obj/item/clothing/suit/armor/special/combatharness/specops/infiltrator/franzemmerich
+	name = "Modified SOE Combat Harness (Spec-Ops)"
+	desc = "A Sangheili modified SOE combat harness intended to bridge the gap between the URF's utility and the Covenant's superior protection."
+	icon_state = "franzemmerich_chest_obj"
+	item_state = "franzemmerich_chest"
+	specials = list(/datum/armourspecials/shields/elite,/datum/armourspecials/shieldmonitor/sangheili,/datum/armourspecials/cloaking/cov_specops,/datum/armourspecials/gear/sangheili_infiltrator/franzemmerich)
+
+/obj/item/clothing/head/helmet/sangheili/specops/franzemmerich
+	name = "Modified SOE Helmet (Spec-Ops)"
+	desc = "A Sangheili modified SOE helmet intended to bridge the gap between the URF's utility and the Covenant's superior protection."
+	icon_state = "franzemmerich_helm_obj"
+	item_state = "franzemmerich_helm"
+
+/obj/item/clothing/shoes/sangheili/specops/franzemmerich
+	name = "Modified SOE Leg Armor (Spec-Ops)"
+	desc = "Sangheili modified SOE greaves intended to bridge the gap between the URF's utility and the Covenant's superior protection."
+	icon_state = "franzemmerich_legs_obj"
+	item_state = "franzemmerich_legs"
+
+/obj/item/clothing/gloves/thick/sangheili/specops/infiltrator/franzemmerich
+	name = "Modified SOE Combat Gauntlets (Spec-Ops)"
+	desc = "Sangheili modified SOE gauntlets intended to bridge the gap between the URF's utility and the Covenant's superior protection."
+	icon_state = "franzemmerich_gloves_obj"
+	item_state = "franzemmerich_gloves"
+
+//Sangheili (Ultra)
+
+/obj/item/clothing/suit/armor/special/combatharness/ultra/franzemmerich
+	name = "Modified SOE Combat Harness (Ultra)"
+	desc = "A Sangheili modified SOE combat harness intended to bridge the gap between the URF's utility and the Covenant's superior protection."
+	icon_state = "franzemmerich_chest_obj"
+	item_state = "franzemmerich_chest"
+
+/obj/item/clothing/head/helmet/sangheili/ultra/franzemmerich
+	name = "Modified SOE Helmet (Ultra)"
+	desc = "A Sangheili modified SOE helmet intended to bridge the gap between the URF's utility and the Covenant's superior protection."
+	icon_state = "franzemmerich_helm_obj"
+	item_state = "franzemmerich_helm"
+
+/obj/item/clothing/shoes/sangheili/ultra/franzemmerich
+	name = "Modified SOE Leg Armour (Ultra)"
+	desc = "Sangheili modified SOE greaves intended to bridge the gap between the URF's utility and the Covenant's superior protection."
+	icon_state = "franzemmerich_legs_obj"
+	item_state = "franzemmerich_legs"
+
+/obj/item/clothing/gloves/thick/sangheili/ultra/franzemmerich
+	name = "Modified SOE Combat Gauntlets (Ultra)"
+	desc = "Sangheili modified SOE gauntlets intended to bridge the gap between the URF's utility and the Covenant's superior protection."
+	icon_state = "franzemmerich_gloves_obj"
+	item_state = "franzemmerich_gloves"
+
+//Donor boxes
+
+/obj/item/weapon/storage/box/large/donator/franzemmerich/sangheili_specops
+	startswith = list(/obj/item/clothing/under/covenant/sangheili/franzemmerich,
+		/obj/item/clothing/suit/armor/special/combatharness/specops/infiltrator/franzemmerich,
+	    /obj/item/clothing/head/helmet/sangheili/specops/franzemmerich,
+	    /obj/item/clothing/shoes/sangheili/specops/franzemmerich
+					)
+	can_hold = list(/obj/item/clothing/under/covenant/sangheili/franzemmerich,
+		/obj/item/clothing/suit/armor/special/combatharness/specops/infiltrator/franzemmerich,
+	    /obj/item/clothing/head/helmet/sangheili/specops/franzemmerich,
+	    /obj/item/clothing/shoes/sangheili/specops/franzemmerich
+					)
+
+/obj/item/weapon/storage/box/large/donator/franzemmerich/sangheili_ultra
+	startswith = list(/obj/item/clothing/under/covenant/sangheili/franzemmerich,
+		/obj/item/clothing/suit/armor/special/combatharness/ultra/franzemmerich,
+		/obj/item/clothing/head/helmet/sangheili/ultra/franzemmerich,
+		/obj/item/clothing/shoes/sangheili/ultra/franzemmerich,
+		/obj/item/clothing/gloves/thick/sangheili/ultra/franzemmerich
+					)
+	can_hold = list(/obj/item/clothing/under/covenant/sangheili/franzemmerich,
+		/obj/item/clothing/suit/armor/special/combatharness/ultra/franzemmerich,
+		/obj/item/clothing/head/helmet/sangheili/ultra/franzemmerich,
+		/obj/item/clothing/shoes/sangheili/ultra/franzemmerich,
+		/obj/item/clothing/gloves/thick/sangheili/ultra/franzemmerich
+					)
+
+///////domodyl\\\\\\\\
+
+//Jiralhanae (CAPTAIN)
+
+/obj/item/clothing/head/helmet/jiralhanae/covenant/captain/domodyl
+	icon = JIRALHANAE_ICON_PATH_MOB
+	icon_state = "helm_domodyl"
+	name = "Jiralhanae Shaman Headdress"
+
+/obj/item/clothing/suit/armor/jiralhanae/covenant/captain/domodyl
+	icon = JIRALHANAE_ICON_PATH_MOB
+	icon_state = "armour_domodyl"
+	name = "Jiralhanae Shaman Armour"
+
+/obj/item/clothing/shoes/jiralhanae/covenant/captain/domodyl
+	icon = JIRALHANAE_ICON_PATH_MOB
+	icon_state = "feet_domodyl"
+	name = "Jiralhanae Shaman Greaves"
+
+/obj/item/weapon/storage/box/large/donator/domodyl
+	startswith = list(/obj/item/clothing/head/helmet/jiralhanae/covenant/captain/domodyl,
+					/obj/item/clothing/suit/armor/jiralhanae/covenant/captain/domodyl,
+					/obj/item/clothing/shoes/jiralhanae/covenant/captain/domodyl
+					)
+	can_hold = list(/obj/item/clothing/head/helmet/jiralhanae/covenant/captain/domodyl,
+					/obj/item/clothing/suit/armor/jiralhanae/covenant/captain/domodyl,
+					/obj/item/clothing/shoes/jiralhanae/covenant/captain/domodyl
+					)
+
 #undef JIRALHANAE_ICON_PATH_OBJ
+#undef GRUNT_GEAR_ICON

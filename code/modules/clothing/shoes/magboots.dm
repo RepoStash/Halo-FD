@@ -14,13 +14,14 @@
 	action_button_name = "Toggle Magboots"
 	var/obj/item/clothing/shoes/shoes = null	//Undershoes
 	var/mob/living/carbon/human/wearer = null	//For shoe procs
+	var/magboot_on = 'sound/effects/magboot_on.ogg'
 	center_of_mass = null
 	randpixel = 0
 
 /obj/item/clothing/shoes/magboots/proc/set_slowdown()
 	slowdown_per_slot[slot_shoes] = shoes? max(SHOES_SLOWDOWN, shoes.slowdown_per_slot[slot_shoes]): SHOES_SLOWDOWN	//So you can't put on magboots to make you walk faster.
 	if (magpulse)
-		slowdown_per_slot[slot_shoes] += 3
+		slowdown_per_slot[slot_shoes] += 1.5
 
 /obj/item/clothing/shoes/magboots/attack_self(mob/user)
 	if(magpulse)
@@ -36,6 +37,7 @@
 		set_slowdown()
 		force = 5
 		if(icon_base) icon_state = "[icon_base]1"
+		playsound(user, magboot_on, 30, 1)
 		to_chat(user, "You enable the mag-pulse traction system.")
 	user.update_inv_shoes()	//so our mob-overlays update
 	user.update_action_buttons()

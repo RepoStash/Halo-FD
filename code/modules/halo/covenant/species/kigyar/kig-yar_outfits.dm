@@ -76,16 +76,12 @@
 	name = "Kig-Yar Ranger"
 
 	l_ear = /obj/item/device/radio/headset/covenant
-	uniform = /obj/item/clothing/under/kigyar
-	belt = /obj/item/weapon/gun/energy/plasmapistol
+	uniform = /obj/item/clothing/under/kigyar/ranger_kigyar
 	shoes = /obj/item/clothing/shoes/magboots/ranger_kigyar
-
-	suit = /obj/item/clothing/suit/armor/ranger_kigyar
+	gloves = /obj/item/clothing/gloves/shield_gauntlet/kigyar
+	suit = /obj/item/clothing/suit/armor/special/eva/ranger_kigyar
 	head = /obj/item/clothing/head/helmet/ranger_kigyar
-
-	l_pocket = /obj/item/ammo_magazine/type51mag
-	r_pocket = /obj/item/ammo_magazine/type51mag
-	back = /obj/item/weapon/gun/projectile/type51carbine
+	suit_store = /obj/item/weapon/tank/air/covenant
 	//
 	id_type = /obj/item/weapon/card/id/jackal_minor
 	id_slot = slot_wear_id

@@ -110,7 +110,7 @@
 	icon_state = "ashvor-helmet_obj"
 	item_state_slots = list(slot_l_hand_str = "ashvor-helmet", slot_r_hand_str = "ashvor-helmet")
 
-/obj/item/clothing/suit/spaceeva/eva/ashvor
+/obj/item/clothing/suit/armor/special/eva/marineeva/ashvor
 	desc = "A pressurized Atmospheric/Exoatmospheric (A/X) version of the standard M52 Body Armor, Worn mitigate the atmospheric hazards caused by nearby glassing,"
 	name = "M52A/X Body Armor"
 	item_state = "ashvor-armor_worn"
@@ -164,13 +164,13 @@
 
 /obj/item/weapon/storage/box/large/donator/ashvor
 	startswith = list(/obj/item/clothing/under/unsc/marine_fatigues/ashvor,
-					/obj/item/clothing/suit/spaceeva/eva/ashvor,
+					/obj/item/clothing/suit/armor/special/eva/marineeva/ashvor,
 					/obj/item/clothing/gloves/thick/unsc/ashvor,
 					/obj/item/clothing/shoes/magboots/eva/marine/ashvor,
 					/obj/item/clothing/head/helmet/eva/marine/ashvor,
 					/obj/item/weapon/storage/backpack/marine/ashvor)
 	can_hold = list(/obj/item/clothing/under/unsc/marine_fatigues/ashvor,
-					/obj/item/clothing/suit/spaceeva/eva/ashvor,
+					/obj/item/clothing/suit/armor/special/eva/marineeva/ashvor,
 					/obj/item/clothing/gloves/thick/unsc/ashvor,
 					/obj/item/clothing/shoes/magboots/eva/marine/ashvor,
 					/obj/item/clothing/head/helmet/eva/marine/ashvor,
@@ -179,7 +179,7 @@
 /decl/hierarchy/outfit/ashvor_marine
 	name = "ashvor - marine"
 	uniform = /obj/item/clothing/under/unsc/marine_fatigues/ashvor
-	suit = /obj/item/clothing/suit/spaceeva/eva/ashvor
+	suit = /obj/item/clothing/suit/armor/special/eva/marineeva/ashvor
 	shoes = /obj/item/clothing/shoes/magboots/eva/marine/ashvor
 	gloves = /obj/item/clothing/gloves/thick/unsc/ashvor
 	head = /obj/item/clothing/head/helmet/eva/marine/ashvor
@@ -1997,6 +1997,82 @@ obj/item/clothing/head/helmet/odst/donator/roadcone_orange
 	can_hold = list(\
 	/obj/item/clothing/head/helmet/spartan/pneumothorax,
 	/obj/item/clothing/suit/armor/special/spartan/pneumothorax
+	)
+
+//ODST
+
+/obj/item/clothing/head/helmet/odst/donator/pneumothorax
+	name = "S-1/ONI Recon Helmet"
+	desc = "A modified Mjolnir MK5 Recon helmet designed for use by ODST's. It has a dull orange visor and appears to be similar in strength to the standard ODST Helmets."
+	item_state = "husky-helmet-worn"
+	icon_state = "husky-helmet-obj"
+	item_state_novisr = "husky-helmet-transparent-worn"
+	icon_state_novisr = "husky-helmet-transparent-obj"
+
+/obj/item/clothing/suit/armor/special/odst/donator/pneumothorax
+	name = " S-1/ONI Recon BDU"
+	desc = "A set of Recon BDUs equipped with trauma plates protecting vital areas. Unlike traditional Helljumper BDUs, this one seems lighter in nature, missing the iconic pauldrons. This armor seems well-worn."
+	item_state = "husky-armor-worn"
+	icon_state = "husky-armor-obj"
+
+/obj/item/weapon/storage/box/large/donator/pneumothorax/odst
+	startswith = list(\
+	/obj/item/clothing/head/helmet/odst/donator/pneumothorax,
+	/obj/item/clothing/suit/armor/special/odst/donator/pneumothorax
+	)
+	can_hold = list(\
+	/obj/item/clothing/head/helmet/odst/donator/pneumothorax,
+	/obj/item/clothing/suit/armor/special/odst/donator/pneumothorax
+	)
+
+///////////TempleOSDavis/////////
+
+//Spartan
+
+/obj/item/clothing/head/helmet/spartan/temple
+	name = "Mjionir MK V Abomination Helmet"
+	desc = "Absolute cancer."
+	icon_state = "temple_helm_obj"
+	item_state = "temple_helm_worn"
+
+/obj/item/clothing/suit/armor/special/spartan/temple
+	name = "Mjionir MK V Abomination Armor"
+	desc = "Absolute cancer."
+	icon_state = "temple_armor_obj"
+	item_state = "temple_armor_worn"
+
+/obj/item/weapon/storage/box/large/donator/temple
+	startswith = list(\
+	/obj/item/clothing/head/helmet/spartan/temple,
+	/obj/item/clothing/suit/armor/special/spartan/temple
+	)
+	can_hold = list(\
+	/obj/item/clothing/head/helmet/spartan/temple,
+	/obj/item/clothing/suit/armor/special/spartan/temple
+	)
+
+//ONI Field Agent(SPI)
+
+/obj/item/clothing/head/helmet/SPIgen1/temple
+	name = "SPI Skullsuit Helmet"
+	desc = "A helmet modelled after Cybernetic Ninja."
+	icon_state = "temple_helm"
+	item_state = "temple_helm"
+
+/obj/item/clothing/suit/armor/special/SPIgen1/temple
+	name = "SPI Skullsuit"
+	desc = "A skintight suit modelled after Cybernetic Ninja."
+	icon_state = "temple_suit"
+	item_state = "temple_suit"
+
+/obj/item/weapon/storage/box/large/donator/temple/SPI
+	startswith = list(\
+	/obj/item/clothing/head/helmet/SPIgen1/temple,
+	/obj/item/clothing/suit/armor/special/SPIgen1/temple
+	)
+	can_hold = list(\
+	/obj/item/clothing/head/helmet/SPIgen1/temple,
+	/obj/item/clothing/suit/armor/special/SPIgen1/temple
 	)
 
 #undef ODST_OVERRIDE

@@ -31,3 +31,8 @@
 	name = "Mjolnir Speed"
 	icon_state = "ability_orange"
 	armourspecials_type = /datum/armourspecials/superspeed
+
+/obj/item/device/armour_ability/spartan/integrated_jetpack
+	name = "Mjolnir EVA Mobility System"
+	icon_state = "ability_blue"
+	armourspecials_type = /datum/armourspecials/integrated_jetpack

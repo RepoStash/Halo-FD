@@ -131,10 +131,6 @@
 		/obj/item/weapon/storage/pocketstore/hardcase/hypos/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/materials/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/tools/cov = 0,
-		"EVA" = -1,
-		/obj/item/weapon/storage/box/large/armorset/elite/eva = 0,
-		/obj/item/weapon/tank/air/covenant = 0,
-		/obj/item/clothing/mask/breath = 0,
 		"Equipment" = -1,
 		/obj/item/clothing/ears/earmuffs/earplugs/covenant = 0,
 		/obj/item/weapon/pickaxe/plasma_drill = 0,
@@ -148,12 +144,18 @@
 		/obj/item/weapon/armor_patch/mini/cov = 0,
 		/obj/item/weapon/storage/firstaid/unsc/cov = 0,
 		/obj/item/drop_pod_beacon/covenant = 0,
-		/obj/item/weapon/pinpointer/artifact = 0
+		/obj/item/weapon/pinpointer/artifact = 0,
+		"EVA Equipment" = -1,
+		/obj/item/weapon/storage/box/large/armorset/elite/eva = 0,
+		/obj/item/clothing/mask/breath = 0,
+		/obj/item/weapon/tank/air/covenant = 0,
+		/obj/item/weapon/tank/emergency/oxygen/engi = 0,
+		/obj/item/weapon/tank/jetpack = 0
 	)
 	amounts = list(\
-		/obj/item/weapon/storage/box/large/armorset/elite/eva = 4,
-		/obj/item/weapon/tank/air/covenant = 9,
-		/obj/item/clothing/mask/breath = 7,
+		/obj/item/weapon/storage/box/large/armorset/elite/eva = 10,
+		/obj/item/weapon/tank/air/covenant = 10,
+		/obj/item/clothing/mask/breath = 10,
 		/obj/item/weapon/pickaxe/plasma_drill = 1,
 		/obj/item/flight_item/covenant_pack = 1,
 		/obj/item/dumb_ai_chip/cov = 2,
@@ -163,7 +165,9 @@
 		/obj/item/weapon/plastique/breaching/longrange/covenant = 5,
 		/obj/item/clothing/accessory/storage/IFAK/cov = 20,
 		/obj/item/weapon/storage/firstaid/unsc/cov = 6,
-		/obj/item/weapon/pinpointer/artifact = 3
+		/obj/item/weapon/pinpointer/artifact = 3,
+		/obj/item/weapon/tank/emergency/oxygen/engi = 10,
+		/obj/item/weapon/tank/jetpack = 5
 	)
 
 /obj/machinery/pointbased_vending/armory/covenant/jiralhanae/weapon // Both ammo, and guns!
@@ -229,9 +233,6 @@
 		/obj/item/weapon/storage/pocketstore/hardcase/hypos/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/materials/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/tools/cov = 0,
-		"EVA" = -1,
-		/obj/item/weapon/storage/box/large/armorset/brute/eva = 0,
-		/obj/item/weapon/tank/air/covenant = 0,
 		"Equipment" = -1,
 		/obj/item/clothing/ears/earmuffs/earplugs/covenant = 0,
 		/obj/item/weapon/pickaxe/plasma_drill = 0,
@@ -248,11 +249,17 @@
 		/obj/item/weapon/armor_patch/mini/cov = 0,
 		/obj/item/weapon/storage/firstaid/unsc/cov = 0,
 		/obj/item/drop_pod_beacon/covenant = 0,
-		/obj/item/weapon/pinpointer/artifact = 0
+		/obj/item/weapon/pinpointer/artifact = 0,
+		"EVA Equipment" = -1,
+		/obj/item/weapon/storage/box/large/armorset/brute/eva = 0,
+		/obj/item/clothing/mask/breath = 0,
+		/obj/item/weapon/tank/air/covenant = 0,
+		/obj/item/weapon/tank/emergency/oxygen/engi = 0,
+		/obj/item/weapon/tank/jetpack = 0
 	)
 	amounts = list(\
-		/obj/item/weapon/storage/box/large/armorset/brute/eva = 4,
-		/obj/item/weapon/tank/air/covenant = 7,
+		/obj/item/weapon/storage/box/large/armorset/brute/eva = 10,
+		/obj/item/weapon/tank/air/covenant = 10,
 		/obj/item/weapon/pickaxe/plasma_drill = 1,
 		/obj/item/flight_item/covenant_pack = 1,
 		/obj/item/dumb_ai_chip/cov = 2,
@@ -263,6 +270,9 @@
 		/obj/item/clothing/accessory/storage/IFAK/cov = 20,
 		/obj/item/weapon/storage/firstaid/unsc/cov = 6,
 		/obj/item/weapon/pinpointer/artifact = 2,
+		/obj/item/clothing/mask/breath = 10,
+		/obj/item/weapon/tank/emergency/oxygen/engi = 10,
+		/obj/item/weapon/tank/jetpack = 5
 	)
 
 /obj/machinery/pointbased_vending/armory/covenant/kigyar/weapon // Both ammo, and guns!
@@ -342,7 +352,13 @@
 		/obj/item/weapon/armor_patch/mini/cov = 0,
 		/obj/item/weapon/storage/firstaid/unsc/cov = 0,
 		/obj/item/drop_pod_beacon/covenant = 0,
-		/obj/item/weapon/pinpointer/artifact = 0
+		/obj/item/weapon/pinpointer/artifact = 0,
+		"EVA Equipment" = -1,
+		/obj/item/weapon/storage/box/large/armorset/kigyar/eva = 0,
+		/obj/item/clothing/mask/breath = 0,
+		/obj/item/weapon/tank/air/covenant = 0,
+		/obj/item/weapon/tank/emergency/oxygen/engi = 0,
+		/obj/item/weapon/tank/jetpack = 0
 	)
 	amounts = list(\
 		/obj/item/flight_item/covenant_pack = 1,
@@ -353,8 +369,13 @@
 		/obj/item/weapon/plastique/breaching/covenant = 4,
 		/obj/item/weapon/plastique/breaching/longrange/covenant = 4,
 		/obj/item/clothing/accessory/storage/IFAK/cov = 20,
-		/obj/item/weapon/storage/firstaid/unsc/cov = 6, 
-		/obj/item/weapon/pinpointer/artifact = 2
+		/obj/item/weapon/storage/firstaid/unsc/cov = 6,
+		/obj/item/weapon/pinpointer/artifact = 2,
+		/obj/item/weapon/storage/box/large/armorset/kigyar/eva = 10,
+		/obj/item/clothing/mask/breath = 10,
+		/obj/item/weapon/tank/air/covenant = 10,
+		/obj/item/weapon/tank/emergency/oxygen/engi = 10,
+		/obj/item/weapon/tank/jetpack = 5
 	)
 
 /obj/machinery/vending/armory/covenant/kigyar/ranger // Equipment for Kig-Yar
@@ -566,12 +587,14 @@
 	"Utility" = -1,
 	/obj/item/bodybag/cryobag/covenant = 3,
 	/obj/item/device/healthanalyzer/covenant = 10,
+	/obj/item/weapon/defibrillator/compact/combat/loaded = 3,
 	"Medkits" = -1,
 	/obj/item/weapon/storage/firstaid/unsc/cov = 10,
-	/obj/item/weapon/storage/firstaid/fire/covenant = 2,
-	/obj/item/weapon/storage/firstaid/o2/covenant = 4,
-	/obj/item/weapon/storage/firstaid/toxin/covenant = 4,
-	/obj/item/weapon/storage/firstaid/erk/cov = 4,
+	/obj/item/weapon/storage/firstaid/fire/covenant = 3,
+	/obj/item/weapon/storage/firstaid/o2/covenant = 3,
+	/obj/item/weapon/storage/firstaid/toxin/covenant = 3,
+	/obj/item/weapon/storage/firstaid/erk/cov = 3,
+	/obj/item/weapon/storage/firstaid/surgery/covenant = 3,
 	/obj/item/weapon/storage/firstaid/combat/unsc/cov = 7,
 	/obj/item/weapon/storage/firstaid/adv = 7,
 	"Pill Bottles" = -1,
@@ -587,6 +610,7 @@
 	/obj/item/weapon/reagent_containers/hypospray = 3,
 	/obj/item/weapon/reagent_containers/syringe/psychostimulant = 10,
 	/obj/item/weapon/reagent_containers/syringe/ld50_syringe/triadrenaline = 10,
+	/obj/item/weapon/reagent_containers/syringe/synthblood = 10,
 	/obj/item/weapon/storage/box/syringes = 2,
 		)
 

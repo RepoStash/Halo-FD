@@ -18,20 +18,9 @@
 		mode = SYRINGE_INJECT
 		update_icon()
 
-/obj/item/weapon/reagent_containers/syringe/biofoam
-	name = "Biofoam Syringe"
-	desc = "A syringe filled with biofoam, used to quickly fix internal and external injuries. Only inject a second dose after 15 seconds has passed, as remnants of previous injections interferes with the processing of future ones until fully processed."
-	amount_per_transfer_from_this = 10
-
-	New()
-		..()
-		reagents.add_reagent(/datum/reagent/biofoam, 10)
-		mode = SYRINGE_INJECT
-		update_icon()
-
 /obj/item/weapon/reagent_containers/syringe/ld50_syringe/triadrenaline
 	name = "Tri-Adrenaline Syringe"
-	desc = "A spring-loaded syringe of tri-adrenaline. Used for resuscitation"
+	desc = "A spring-loaded syringe of tri-adrenaline. Used for resuscitation."
 	amount_per_transfer_from_this = 15
 	volume = 15
 	visible_name = "a giant syringe"
@@ -46,16 +35,29 @@
 
 /obj/item/weapon/reagent_containers/syringe/psychostimulant
 	name = "Psychostimulant Syringe"
-	desc = "A dangerous syringe full of a potent brain-mending concoction used to treat traumatic brain injuries. Side effects include loss of consciousness; contains biofoam."
+	desc = "A dangerous syringe full of a potent neural-mending concoction used to treat traumatic brain injuries. Contains Alkysine, Inaprovaline and Tricordrazine. Causes liver damage."
 	amount_per_transfer_from_this = 15
 	volume = 15
 	time = 30
 
 	New()
 		..()
-		reagents.add_reagent(/datum/reagent/alkysine, 3)
-		reagents.add_reagent(/datum/reagent/inaprovaline, 7)
-		reagents.add_reagent(/datum/reagent/biofoam, 5)
+		reagents.add_reagent(/datum/reagent/alkysine, 2)
+		reagents.add_reagent(/datum/reagent/inaprovaline, 5)
+		reagents.add_reagent(/datum/reagent/tricordrazine, 8)
+		mode = SYRINGE_INJECT
+		update_icon()
+
+/obj/item/weapon/reagent_containers/syringe/synthblood
+	name = "Synthblood Syringe"
+	desc = "A syringe full of synthblood, used for rapidly restoring blood volume to a patient. Has no overdose limit, but metabolizes quickly."
+	amount_per_transfer_from_this = 15
+	volume = 15
+	time = 30
+
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/synthblood, 15)
 		mode = SYRINGE_INJECT
 		update_icon()
 
@@ -102,6 +104,95 @@
 
 	startswith = list(/obj/item/weapon/reagent_containers/pill/polypseudomorphine = 7)
 
+// NEW BIOFOAM CANISTERS //
+
+/obj/item/weapon/reagent_containers/syringe/biofoam
+	name = "\improper Biofoam Canister"
+	desc = "A military-grade olive drab canister filled with biofoam, used to rapidly fix internal and external injuries. Do not inject a second dose until fifteen seconds have passed, as interference from the remnants of previous injections may lead to a lethal overdose."
+	icon = 'code/modules/halo/medicine/biofoam.dmi'
+	icon_state = "unsc_10"
+	amount_per_transfer_from_this = 10
+
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/biofoam, 10)
+		mode = SYRINGE_INJECT
+		update_icon()
+
+	update_icon()
+		overlays.Cut()
+
+		if(mode == SYRINGE_BROKEN)
+			icon_state = "unsc_broken"
+			return
+
+		var/rounded_vol = round(reagents.total_volume, round(reagents.maximum_volume / 3))
+		if(ismob(loc))
+			var/injoverlay
+			switch(mode)
+				if (SYRINGE_DRAW)
+					injoverlay = "draw"
+				if (SYRINGE_INJECT)
+					injoverlay = "inject"
+			overlays += injoverlay
+		icon_state = "unsc_[rounded_vol]"
+		item_state = "unsc_[rounded_vol]"
+
+		if(reagents.total_volume)
+			filling = image('icons/obj/reagentfillings.dmi', src, "biofoam10")
+
+			filling.icon_state = "biofoam[rounded_vol]"
+
+			filling.color = reagents.get_color()
+			overlays += filling
+
+/obj/item/weapon/reagent_containers/syringe/biofoam/urf
+	name = "\improper Biofoam Canister"
+	desc = "A civilian-grade canister filled with biofoam, used to rapidly fix internal and external injuries. Do not inject a second dose until fifteen seconds have passed, as interference from the remnants of previous injections may lead to a lethal overdose."
+	icon_state = "urf_10"
+
+	update_icon()
+		overlays.Cut()
+
+		if(mode == SYRINGE_BROKEN)
+			icon_state = "urf_broken"
+			return
+
+		var/rounded_vol = round(reagents.total_volume, round(reagents.maximum_volume / 3))
+		if(ismob(loc))
+			var/injoverlay
+			switch(mode)
+				if (SYRINGE_DRAW)
+					injoverlay = "draw"
+				if (SYRINGE_INJECT)
+					injoverlay = "inject"
+			overlays += injoverlay
+		icon_state = "urf_[rounded_vol]"
+		item_state = "urf_[rounded_vol]"
+
+/obj/item/weapon/reagent_containers/syringe/biofoam/cov
+	name = "\improper Covenant Biofoam Canister"
+	desc = "An advanced injection device filled with biofoam, used to rapidly fix internal and external injuries. Do not inject a second dose until fifteen seconds have passed, as interference from the remnants of previous injections may lead to a lethal overdose."
+	icon_state = "cov_10"
+
+	update_icon()
+		overlays.Cut()
+
+		if(mode == SYRINGE_BROKEN)
+			icon_state = "cov_broken"
+			return
+
+		var/rounded_vol = round(reagents.total_volume, round(reagents.maximum_volume / 3))
+		if(ismob(loc))
+			var/injoverlay
+			switch(mode)
+				if (SYRINGE_DRAW)
+					injoverlay = "draw"
+				if (SYRINGE_INJECT)
+					injoverlay = "inject"
+			overlays += injoverlay
+		icon_state = "cov_[rounded_vol]"
+		item_state = "cov_[rounded_vol]"
 
 #undef SYRINGE_DRAW
 #undef SYRINGE_INJECT

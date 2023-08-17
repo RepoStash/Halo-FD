@@ -222,3 +222,30 @@
 	head = /obj/item/clothing/head/helmet/jiralhanae/chieftain_boulder
 	suit = /obj/item/clothing/suit/armor/jiralhanae/chieftain_boulder
 	shoes = /obj/item/clothing/shoes/jiralhanae
+
+///// COVENANT EVA JIRALHANAE /////
+
+/decl/hierarchy/outfit/jiralhanae/covenant/ranger
+	name = "Jiralhanae Ranger"
+
+	head = /obj/item/clothing/head/helmet/jiralhanae/covenant/EVA
+	suit = /obj/item/clothing/suit/armor/special/jiralhanae/EVA
+	suit_store = /obj/item/weapon/tank/air/covenant
+	shoes = /obj/item/clothing/shoes/magboots/jiralhanaeEVA
+
+/decl/hierarchy/outfit/jiralhanae/covenant/ranger/major
+	name = "Jiralhanae Ranger Major"
+
+	head = /obj/item/clothing/head/helmet/jiralhanae/covenant/EVA/major
+	suit = /obj/item/clothing/suit/armor/special/jiralhanae/EVA/major
+	l_hand = /obj/item/language_learner/unggoy_to_common
+
+/decl/hierarchy/outfit/jiralhanae/covenant/ranger/captain
+	name = "Jiralhanae Ranger Captain"
+
+	head = /obj/item/clothing/head/helmet/jiralhanae/covenant/EVA/captain
+	suit = /obj/item/clothing/suit/armor/special/jiralhanae/EVA/captain
+	l_hand = /obj/item/language_learner/unggoy_to_common
+	//
+	id_type = /obj/item/weapon/card/id/brute_captain
+	id_slot = slot_wear_id
