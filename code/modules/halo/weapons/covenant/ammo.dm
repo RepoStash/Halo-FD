@@ -276,7 +276,7 @@
 
 /obj/item/projectile/bullet/covenant/needles/rifleneedle
 	name = "Rifle Needle"
-	damage = 25 //Shrapnel makes up the difference with the dmr
+	damage = 30 //Shrapnel makes up the difference with the dmr
 	armor_penetration = 40
 	shield_damage = 15
 	shrapnel_damage = 10
