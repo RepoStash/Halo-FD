@@ -60,8 +60,8 @@
 
 /obj/machinery/overmap_weapon_console/mac/orbital_bombard/energy_projector/bombard_impact(var/turf/bombard)
 	explosion(get_turf(bombard),3,4,5,15, adminlog = 0)
-	for(var/t in dview(9,bombard))
-		var/obj/effect/fire/noheat/fire = new (bombard)
+	for(var/t in trange(9,bombard))
+		var/obj/effect/fire/noheat/fire = new (t)
 		fire.fire_fuel = 20 //4x the default.
 
 /obj/item/projectile/overmap/beam
