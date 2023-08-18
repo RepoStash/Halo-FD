@@ -39,7 +39,7 @@
 
 		M.adjustFireLoss(10000)
 
-	else if(isitem(Obj))
+	else if(isitem(Obj) && !istype(Obj,/obj/item/projectile))
 		loseme = 1
 	else if(istype(Obj,/obj/vehicles))
 		loseme = 1

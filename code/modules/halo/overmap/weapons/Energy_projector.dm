@@ -60,8 +60,8 @@
 
 /obj/machinery/overmap_weapon_console/mac/orbital_bombard/energy_projector/bombard_impact(var/turf/bombard)
 	explosion(get_turf(bombard),3,4,5,15, adminlog = 0)
-	for(var/t in dview(9,bombard))
-		var/obj/effect/fire/noheat/fire = new (bombard)
+	for(var/t in trange(9,bombard))
+		var/obj/effect/fire/noheat/fire = new (t)
 		fire.fire_fuel = 20 //4x the default.
 
 /obj/item/projectile/overmap/beam
@@ -146,7 +146,7 @@
 	if(isnull(glass_effect_beam))
 		glass_effect_beam = new
 	explosion(get_turf(a),-1,-1,2,5, adminlog = 0)
-	glass_effect_beam.do_glassing_effect(a,3,/turf/unsimulated/floor/lava/glassed_turf/to_space)//Value of 3 chosen due to min light damage radius of MACs
+	glass_effect_beam.do_glassing_effect(a,4,/turf/unsimulated/floor/lava/glassed_turf/to_space)//Value of 3 chosen due to min light damage radius of MACs
 	if(!warned)
 		warned = 1
 		var/obj/effect/overmap/sector/S = map_sectors["[src.z]"]
