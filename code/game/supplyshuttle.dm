@@ -244,9 +244,19 @@ var/list/point_source_descriptions = list(
 
 			var/datum/supply_order/SO = S
 			var/decl/hierarchy/supply_pack/SP = SO.object
+			var/obj/A = pickedloc
+			if(!isnull(SP.containertype))
+				A = new SP.containertype(pickedloc)
+				A.name = "[SP.containername][SO.comment ? " ([SO.comment])":"" ]"
+				if(SP.access)
+					if(isnum(SP.access))
+						A.req_access = list()
+					else if(islist(SP.access))
+						var/list/L = SP.access // access var is a plain var, we need a list
+						A.req_access = L.Copy()
+					else
+						log_debug("<span class='danger'>Supply pack with invalid access restriction [SP.access] encountered!</span>")
 
-			var/obj/A = new SP.containertype(pickedloc)
-			A.name = "[SP.containername][SO.comment ? " ([SO.comment])":"" ]"
 			//supply manifest generation begin
 
 			var/obj/item/weapon/paper/manifest/slip
@@ -260,15 +270,6 @@ var/list/point_source_descriptions = list(
 				slip.info +="CONTENTS:<br><ul>"
 
 			//spawn the stuff, finish generating the manifest while you're at it
-			if(SP.access)
-				if(isnum(SP.access))
-					A.req_access = list()
-				else if(islist(SP.access))
-					var/list/L = SP.access // access var is a plain var, we need a list
-					A.req_access = L.Copy()
-				else
-					log_debug("<span class='danger'>Supply pack with invalid access restriction [SP.access] encountered!</span>")
-
 			var/list/spawned = SP.spawn_contents(A)
 			if(slip)
 				for(var/atom/content in spawned)
