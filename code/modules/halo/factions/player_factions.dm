@@ -23,7 +23,7 @@
 		/mob/living/simple_animal/hostile/covenant/drone/ranged = 5)
 	default_radio_channel = RADIO_COV
 	special_jobs = list(/datum/job/covenant/mgalekgolo)
-	income = 500 //Higher than UNSC/ONI as they don't have an easy way to make money and also don't have purchases split
+	income = 350 //Slightly lower than UNSC/ONI because they can't lose their income stream.
 	contraband_gear = "Covenant"
 
 /datum/faction/covenant/Initialize()
