@@ -1857,6 +1857,7 @@
 #include "code\modules\halo\misc\human_roomba.dm"
 #include "code\modules\halo\misc\Hunting Rocks.dm"
 #include "code\modules\halo\misc\loot_distributor.dm"
+#include "code\modules\halo\misc\melee_strikes.dm"
 #include "code\modules\halo\misc\neural_lace_injectors.dm"
 #include "code\modules\halo\misc\obstacle_autoclimb_pref.dm"
 #include "code\modules\halo\misc\oni_cryopod.dm"

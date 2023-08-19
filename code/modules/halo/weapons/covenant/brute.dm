@@ -30,6 +30,9 @@
 	explosion_size = 0
 	num_fragments = 250 //50 more than a high yield frag bomb
 
+	melee_strikes = list(/datum/melee_strike/precise_strike)
+
+
 	lunge_dist = 3
 	salvage_components = list(/obj/item/plasma_core)
 	matter = list("duridium" = 1, "kemocite" = 1)
@@ -82,6 +85,9 @@
 	sprite_sheets = list(\
 	"Jiralhanae" = 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_weapons_big.dmi'
 	)
+
+	melee_strikes = list(/datum/melee_strike/precise_strike)
+
 	lunge_dist = 2
 	salvage_components = list()
 	matter = list("duridium" = 1)
@@ -164,6 +170,9 @@
 	w_class = ITEM_SIZE_NORMAL
 	item_state_slots = list(slot_l_hand_str = "mauler", slot_r_hand_str = "mauler")
 	sprite_sheets = list("Kig-Yar" = 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_weapons.dmi')
+
+	melee_strikes = list(/datum/melee_strike/precise_strike)
+
 	lunge_dist = 2
 	salvage_components = list()
 	matter = list("duridium" = 1)
@@ -228,6 +237,9 @@
 	armor_penetration = 70
 	lunge_dist = 2
 	hitsound = 'code/modules/halo/sounds/gravhammer.ogg'
+
+	melee_strikes = list(/datum/melee_strike/swipe_strike/polearm_mixed/hammer,/datum/melee_strike/swipe_strike/polearm_slash/hammer)
+
 	sprite_sheets = list(
 	"Jiralhanae" = 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_weapons_big.dmi',
 	)
@@ -276,7 +288,7 @@
 	name = "Type-2 Energy Weapon/Hammer, Depowered"
 	desc = "A long haft and a heavy head with a tungsten-alloy blade on the reverse end. The gravity generator in the head is low-power and only activates on direct hits."
 	icon_state = "gravlesshammer"
-	force = 45 //It does not have afterattack.
+	force = 50 //It does not have afterattack.
 	lunge_dist = 4
 	hitsound = "swing_hit"
 	salvage_components = list()
@@ -309,6 +321,9 @@
 	sprite_sheets = list("Default" = 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_weapons.dmi',
 	"Jiralhanae" = 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_weapons_big.dmi'
 	)
+
+	melee_strikes = list(/datum/melee_strike/precise_strike)
+
 	salvage_components = list()
 	matter = list("nanolaminate" = 2, "kemocite" = 1, "duridium" = 1)
 	firemodes = list(\

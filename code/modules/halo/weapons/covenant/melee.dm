@@ -33,6 +33,8 @@
 
 	unacidable = 1
 
+	melee_strikes = list(/datum/melee_strike/swipe_strike/mixed_combo,/datum/melee_strike/swipe_strike/sword_slashes)
+
 	executions_allowed = TRUE
 	start_execute_messages  = list(BP_CHEST = "\The USER prepares to run \the VICTIM through with \the WEAPON!", BP_HEAD = "\The USER steps over \the VICTIM and winds up their arm, holding \the WEAPON!")
 	finish_execute_messages = list(BP_CHEST = "\The USER runs \the VICTIM through with \the WEAPON!", BP_HEAD = "\The USER slices \the VICTIM's head clean off with \the WEAPON!")
@@ -154,6 +156,8 @@
 
 	cloak_disrupt = 0
 
+	melee_strikes = list(/datum/melee_strike/precise_strike/fast_attacks,/datum/melee_strike/swipe_strike/harrying_strike)
+
 	lunge_dist = 2
 	start_execute_messages  = list(BP_CHEST = "\The USER prepares to run \the VICTIM through with \the WEAPON!", BP_HEAD = "\The USER steps over \the VICTIM and winds up their arm, holding \the WEAPON!")
 	finish_execute_messages = list(BP_CHEST = "\The USER runs \the VICTIM through with \the WEAPON!", BP_HEAD = "\The USER slices \the VICTIM's throat wide open with \the WEAPON!")
@@ -191,11 +195,11 @@
 	desc = "A ceremonial staff typically wielded by Sangheili Honour Guards. While not fit for a true battle, it serves well for beating unruly unngoy."
 	icon = 'code/modules/halo/weapons/icons/Covenant Weapons.dmi'
 	icon_state = "honourstaff"
-	//icon_state_deployed = "honourstaff-active"
+	icon_state_deployed = "honourstaff-active"
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK
-	force = 40
-	armor_penetration = 40
+	force = 45
+	armor_penetration = 70
 	hits_burn_mobs = 0
 	//active_force = 60
 	matter = list("nanolaminate" = 5)
@@ -205,6 +209,12 @@
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
 		)
+	item_state_slots = list(
+	slot_l_hand_str = "honourstaff",
+	slot_r_hand_str = "honourstaff")
+
+	melee_strikes = list(/datum/melee_strike/swipe_strike/polearm_mixed,/datum/melee_strike/swipe_strike/polearm_slash)
+
 	lunge_dist = STAFF_LEAP_DIST
 
 /obj/item/weapon/melee/energy/elite_sword/honour_staff/change_misc_variables(var/deactivate = 0)
@@ -215,6 +225,7 @@
 	else
 		hitsound = 'code/modules/halo/sounds/Energyswordhit.ogg'
 		damtype = BURN
+		hits_burn_mobs = 1
 		parry_slice_objects = 1
 
 /obj/item/weapon/material/shard/shrapnel/blamite
@@ -355,6 +366,8 @@ Luckily, this isn't a downside due to the explosive properties of such a large a
 	throwforce = 15
 	lunge_dist = 3
 
+	melee_strikes = list(/datum/melee_strike/swipe_strike/mixed_combo,/datum/melee_strike/swipe_strike/sword_slashes)
+
 /obj/item/weapon/melee/blamite/dagger
 	name = "Blamite Dagger"
 	icon_state = "bl_dag"
@@ -363,6 +376,9 @@ Luckily, this isn't a downside due to the explosive properties of such a large a
 	throwforce = 10
 	lunge_dist = 2
 
+	melee_strikes = list(/datum/melee_strike/precise_strike/fast_attacks,/datum/melee_strike/swipe_strike/harrying_strike)
+
+
 /obj/item/weapon/melee/baton/humbler/covenant
 	name = "Type-12 Antipersonnel Incapacitator"
 	desc = "A retractable baton capable of inducing a large amount of pain via electrical shocks."
@@ -370,3 +386,4 @@ Luckily, this isn't a downside due to the explosive properties of such a large a
 	icon_state = "Type-12 Antipersonnel Incapacitator"
 	item_state = "telebaton_0"
 	matter = list("nanolaminate" = 1)
+

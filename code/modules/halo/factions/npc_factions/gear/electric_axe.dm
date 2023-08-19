@@ -17,6 +17,11 @@
 		)
 	throwforce = 15
 	force = 35
+	armor_penetration = 50
+
+	melee_strikes = list(/datum/melee_strike/swipe_strike/mixed_combo,/datum/melee_strike/swipe_strike/sword_slashes)
+
+
 	var/obj/item/weapon/cell/cell
 	var/charge_per_hit = 75
 	var/active = 0
@@ -47,6 +52,7 @@
 			slot_r_hand_str = "electric_axer",
 			)
 		force = 40
+		armor_penetration = 70
 		throwforce = 20
 		damtype = "fire"
 	else
@@ -55,6 +61,7 @@
 			slot_r_hand_str = "khoros_axer",
 			)
 		force = 35
+		armor_penetration = 50
 		throwforce = 15
 		damtype = "brute"
 

@@ -167,6 +167,8 @@
 	armor_penetration = 50
 	canremove = 0
 
+	melee_strikes = list(/datum/melee_strike/precise_strike/fast_attacks,/datum/melee_strike/swipe_strike/harrying_strike)
+
 	item_icons = list(slot_l_hand_str ='code/modules/halo/icons/energy_dagger_inhand.dmi',slot_r_hand_str = 'code/modules/halo/icons/energy_dagger_inhand.dmi')
 	item_state_slots = list(
 	slot_l_hand_str = "en_dag_l_hand",

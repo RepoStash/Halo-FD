@@ -17,8 +17,13 @@
 		)
 	var/active = 0
 	throwforce = 25
-	force = 25
+	force = 35
+	armor_penetration = 50
 	sharp = 1
+
+	melee_strikes = list(/datum/melee_strike/swipe_strike/polearm_mixed,/datum/melee_strike/swipe_strike/polearm_slash)
+
+
 
 /obj/item/weapon/explosive_spear/attack_self(mob/user)
 	active = !active
