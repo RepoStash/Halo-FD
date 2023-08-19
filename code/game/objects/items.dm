@@ -79,6 +79,8 @@
 
 	var/cloak_disrupt = 1 //Should this item, when used, disrupt cloaking devices?
 
+	var/attack_cooldown = DEFAULT_ATTACK_COOLDOWN //Click cooldown post-attack.
+
 /obj/item/New()
 	..()
 	if(randpixel && (!pixel_x && !pixel_y) && isturf(loc)) //hopefully this will prevent us from messing with mapper-set pixel_x/y

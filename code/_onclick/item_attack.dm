@@ -26,6 +26,8 @@ avoid code duplication. This includes items that may sometimes act as a standard
 //I would prefer to rename this to attack(), but that would involve touching hundreds of files.
 /obj/item/proc/resolve_attackby(atom/A, mob/user, var/click_params)
 	add_fingerprint(user)
+	if(has_melee_strike(user))
+		return melee_strike.do_pre_strike(user,A,src,click_params)
 	return A.attackby(src, user, click_params)
 
 // No comment
@@ -72,7 +74,7 @@ avoid code duplication. This includes items that may sometimes act as a standard
 		admin_attack_log(user, M, "Attacked using \a [src] (DAMTYE: [uppertext(damtype)])", "Was attacked with \a [src] (DAMTYE: [uppertext(damtype)])", "used \a [src] (DAMTYE: [uppertext(damtype)]) to attack")
 	/////////////////////////
 
-	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+	user.setClickCooldown(attack_cooldown)
 	user.do_attack_animation(M)
 
 	var/hit_zone = M.resolve_item_attack(src, user, target_zone)

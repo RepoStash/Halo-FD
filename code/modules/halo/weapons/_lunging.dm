@@ -9,9 +9,8 @@
 /obj/item/proc/get_lunge_dist(var/mob/user)
 	return lunge_dist
 
-/obj/item/afterattack(var/atom/target,var/mob/user)
-	. = ..()
-	if(get_lunge_dist(user) == 0 || user.Adjacent(get_turf(target)) || istype(user.loc,/obj/vehicles))
+/obj/item/proc/do_lunge(var/atom/target,var/mob/user,var/is_adjacent,var/click_params)
+	if(get_lunge_dist(user) == 0 || is_adjacent || istype(user.loc,/obj/vehicles))
 		return
 	if(world.time < next_leapwhen)
 		to_chat(user,"<span class = 'notice'>You're still recovering from the last lunge!</span>")
@@ -30,9 +29,6 @@
 		else
 			to_chat(user,"<span class = 'notice'>You can't leap at non-mobs!</span>")
 			return
-	if(!(target in view(7,user.loc)))
-		to_chat(user,"<span class = 'notice'>That's not in your view!</span>")
-		return
 	if(get_dist(user,target) <= get_lunge_dist(user))
 		user.visible_message("<span class = 'danger'>[user] lunges forward, [src] in hand, ready to strike!</span>")
 		var/image/user_image = image(user)
@@ -62,3 +58,11 @@
 
 		else
 			next_leapwhen = world.time + lunge_delay
+
+
+/obj/item/afterattack(var/atom/target,var/mob/user,var/is_adjacent,var/click_params)
+	. = ..()
+	if(has_melee_strike() && (is_adjacent || (melee_strike.strike_range >= get_dist( get_turf(user),target))))
+		melee_strike.do_pre_strike(user,target,src,click_params)
+	else
+		do_lunge(target,user,is_adjacent,click_params)
