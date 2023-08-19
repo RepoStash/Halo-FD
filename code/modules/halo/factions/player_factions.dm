@@ -23,7 +23,7 @@
 		/mob/living/simple_animal/hostile/covenant/drone/ranged = 5)
 	default_radio_channel = RADIO_COV
 	special_jobs = list(/datum/job/covenant/mgalekgolo)
-	income = 350 //Slightly lower than UNSC/ONI because they can't lose their income stream.
+	income = 450 //Slightly lower than UNSC/ONI because they can't lose their income stream.
 	contraband_gear = "Covenant"
 
 /datum/faction/covenant/Initialize()
@@ -66,7 +66,7 @@
 		/mob/living/simple_animal/hostile/battledog/pmc = 2,\
 		/mob/living/simple_animal/hostile/battledog/odst = 1)
 	default_radio_channel = RADIO_SQUAD
-	income = 200
+	income = 500
 	special_jobs = list(/datum/job/unsc/spartan_two)
 
 /datum/faction/unsc/Initialize()
@@ -96,8 +96,8 @@
 		/mob/living/simple_animal/hostile/battledog/odst = 1,\
 		/mob/living/simple_animal/hostile/unsc/spartan_two = 1)
 	default_radio_channel = RADIO_ONI
-	income = 200
-	income_delay = 15 MINUTES
+	income = 500
+	income_delay = 10 MINUTES
 
 /datum/faction/oni/Initialize()
 	. = ..()
