@@ -17,12 +17,8 @@
 #define STRIKE_MULT_SPEED_SLOW 1.3
 #define STRIKE_MULT_SPEED_SUPERSLOW 1.5
 
-//Add these to: Blamite Cutlass, Blamite Dagger, Energy Dagger, Energy Gauntlet. Energy Sword, Jiralhanae Hammer, Brute combat knife??, UNSC Combat Knife, Loadout-spawned Tactical Knife, UNSC Machete, Knight Sword, Makeshift Spear, Kitchen Knife, Cleaver, Material system created knives,
+//Add these to: Loadout-spawned Tactical Knife, Makeshift Spear, Kitchen Knife, Cleaver, Material system created knives,
 //Scalpel? Gardening Trowel? Gardening Hatchet?
-//Brute ranged weapons
-//
-
-//Make a set of the above for each stat and assign them numbers, then use them below in the strike code.
 
 //Some markers for future reference. The code hooking this into resolve_attackby is in:
 //item_attack.dm /atom/movable/resolve_attackby (Line 27)
@@ -103,7 +99,7 @@
 	//Melee strike datum path. If null, resets the active melee strike to null. This can be used to loop attack chains.
 	var/next_strike = null
 	//These set a max timeframe on chaining, otherwise it reverts back to a base strike type.
-	var/chain_timeframe = 1.5 SECONDS
+	var/chain_timeframe = 2 SECONDS
 	var/chain_expire_at = 0
 	var/chain_base_strike = null //Typepath.
 
@@ -185,7 +181,7 @@
 			target = pick(turf_mobs)
 		else
 			return 0
-	if(target == user)
+	if(ismob(target) && target != user)
 		do_strike_targ(user,target,striker,click_params)
 
 	return 1
@@ -302,6 +298,7 @@
 	strike_dmg = STRIKE_MULT_DMG_STANDARD
 	strike_ap = STRIKE_MULT_AP_STANDARD
 	strike_speed = STRIKE_MULT_SPEED_SLOW
+	strike_range = 2
 	strike_verbs = list("slashed","cut","lacerated")
 	strike_switch_text = "You ready your weapon for a devastating combination of mixed strikes."
 	next_strike = /datum/melee_strike/precise_strike/polearm_mixed
@@ -323,7 +320,7 @@
 	strike_speed = STRIKE_MULT_SPEED_MEDIUM
 	strike_verbs = list("grazingly stabbed","grazingly jabbed")
 	strike_switch_text = null
-	next_strike = /datum/melee_strike/swipe_strike/mixed_combo
+	next_strike = /datum/melee_strike/swipe_strike/polearm_mixed/finale
 	chain_base_strike = /datum/melee_strike/swipe_strike/polearm_mixed
 
 /datum/melee_strike/swipe_strike/polearm_mixed/finale

@@ -5,7 +5,7 @@
 	icon = 'code/modules/halo/weapons/icons/forerunner_sprites.dmi'
 	icon_state = "exorcisor"
 	item_state = "armblade"
-	force = 50
+	force = 55
 	throwforce = 12
 	armor_penetration = 70
 	edge = 1
@@ -14,6 +14,9 @@
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/forerunner_sprites_inhand_l.dmi',
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/forerunner_sprites_inhand_r.dmi',
 		)
+
+	melee_strikes = list(/datum/melee_strike/swipe_strike/mixed_combo,/datum/melee_strike/swipe_strike/sword_slashes)
+
 
 /obj/item/weapon/melee/hardlight_blade/can_embed()
 	return FALSE

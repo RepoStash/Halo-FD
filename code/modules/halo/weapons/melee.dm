@@ -17,12 +17,14 @@
 
 	cloak_disrupt = 0
 
+	melee_strikes = list(/datum/melee_strike/precise_strike/fast_attacks,/datum/melee_strike/swipe_strike/harrying_strike)
+
 	executions_allowed = TRUE
 	start_execute_messages = list(BP_CHEST = "\The USER steps on \the VICTIM and brandishes \the WEAPON!", BP_HEAD = "\The USER grips \the VICTIM's shoulder and brandishes \the WEAPON!")
 	finish_execute_messages = list(BP_CHEST = "\The USER guts VICTIM with \the WEAPON!", BP_HEAD = "\The USER slices clean through \the VICTIM's neck with \the WEAPON!")
 
 /obj/item/weapon/material/machete
-	name = "\improper machete"
+	name = "\improper pattern-2 composite sword"
 	desc = "A standard issue machete used for hacking things apart. It is very sharp "
 	icon= 'code/modules/halo/weapons/icons/machete.dmi'
 	icon_state = "machete_obj"
@@ -45,6 +47,8 @@
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	unacidable = 1
 	lunge_dist = 2
+
+	melee_strikes = list(/datum/melee_strike/swipe_strike/mixed_combo,/datum/melee_strike/swipe_strike/sword_slashes)
 
 	executions_allowed = TRUE
 	start_execute_messages = list(BP_CHEST = "\The USER steps on \the VICTIM and brandishes \the WEAPON!", BP_HEAD = "\The USER grips \the VICTIM's shoulder and brandishes \the WEAPON!")
@@ -80,6 +84,9 @@
 	agonyforce = 60
 	status = 0		//whether the thing is on or not
 	hitcost = 10
+
+	melee_strikes = list(/datum/melee_strike/precise_strike)
+
 
 
 /obj/item/weapon/melee/baton/humbler/New()
