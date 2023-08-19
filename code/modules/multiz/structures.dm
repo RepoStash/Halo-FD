@@ -224,3 +224,6 @@
 	west
 		dir = WEST
 		bound_width = 64
+
+/obj/structure/stairs/ex_act(var/severity)  //Explosion invulnerability
+	return
