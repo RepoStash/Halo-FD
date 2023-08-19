@@ -7,6 +7,7 @@
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/cheap_unsc_combat
 	name = "Ship"
+	faction = "UNSC"
 	ship_datums = list(/datum/npc_ship/cheap_unsc_combat)
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/req_combat.dmi')
 
@@ -24,6 +25,7 @@
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/heavyarmed_unsc_combat
 	name = "Ship"
+	faction = "UNSC"
 	ship_datums = list(/datum/npc_ship/heavyarmed_unsc_combat)
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/req_heavyarmed.dmi')
 
@@ -41,6 +43,7 @@
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/experimental_unsc_combat
 	name = "Ship"
+	faction = "UNSC"
 	ship_datums = list(/datum/npc_ship/experimental_unsc_combat)
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/req_macplatform.dmi')
 
@@ -58,6 +61,7 @@
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/unsc_slipspace_tender
 	name = "Ship"
+	faction = "UNSC"
 	ship_datums = list(/datum/npc_ship/unsc_slipspace_tender)
 	ship_max_speed = SHIP_DEFAULT_PIXEL_SPEED + 0.5//Non combat ships are provided with a speed boost to allow them to dodge combat ships more effectively.
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/req_tender.dmi')
@@ -78,6 +82,7 @@ alongside an improved assortment of engineering supplies. Lacks weapons and has 
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/unsc_podcarrier
 	name = "Ship"
+	faction = "UNSC"
 	ship_datums = list(/datum/npc_ship/unsc_podcarrier)
 	ship_max_speed = SHIP_DEFAULT_PIXEL_SPEED + 0.5
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/req_podcarrier.dmi')
@@ -97,6 +102,7 @@ A lightly armored vessel fitted for orbital troop deployment, boarding and orbit
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/unsc_trooptransport
 	name = "Ship"
+	faction = "UNSC"
 	ship_datums = list(/datum/npc_ship/unsc_trooptransport)
 	ship_max_speed = SHIP_DEFAULT_PIXEL_SPEED + 0.5
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/req_trooptransport.dmi')
@@ -117,6 +123,7 @@ A lightly armored vessel fitted for troop and vehicle deployment. Armed with dec
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/cheap_cov_combat
 	name = "Ship"
+	faction = "Covenant"
 	ship_datums = list(/datum/npc_ship/cheap_cov_combat)
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/covshuttle2.dmi') //Until we get specially made ones, use the same sprite for all
 
@@ -134,6 +141,7 @@ A lightly armored vessel fitted for troop and vehicle deployment. Armed with dec
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/heavyarmed_cov_combat
 	name = "Ship"
+	faction = "Covenant"
 	ship_datums = list(/datum/npc_ship/heavyarmed_cov_combat)
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/covshuttle2.dmi')
 
@@ -151,6 +159,7 @@ A lightly armored vessel fitted for troop and vehicle deployment. Armed with dec
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/experimental_cov_combat
 	name = "Ship"
+	faction = "Covenant"
 	ship_datums = list(/datum/npc_ship/experimental_cov_combat)
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/covshuttle2.dmi')
 
@@ -168,6 +177,7 @@ A lightly armored vessel fitted for troop and vehicle deployment. Armed with dec
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/cov_slipspace_tender
 	name = "Ship"
+	faction = "Covenant"
 	ship_datums = list(/datum/npc_ship/cov_slipspace_tender)
 	ship_max_speed = SHIP_DEFAULT_PIXEL_SPEED + 0.5 //Non combat ships are provided with a speed boost to allow them to dodge combat ships more effectively.
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/covshuttle2.dmi')
@@ -188,6 +198,7 @@ alongside an improved assortment of engineering supplies. Lacks weapons and has 
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/cov_podcarrier
 	name = "Ship"
+	faction = "Covenant"
 	ship_datums = list(/datum/npc_ship/cov_podcarrier)
 	ship_max_speed = SHIP_DEFAULT_PIXEL_SPEED + 0.5
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/covshuttle2.dmi')
@@ -207,6 +218,7 @@ A lightly armored vessel fitted for orbital troop deployment, boarding and orbit
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/cov_trooptransport
 	name = "Ship"
+	faction = "Covenant"
 	ship_datums = list(/datum/npc_ship/cov_trooptransport)
 	ship_max_speed = SHIP_DEFAULT_PIXEL_SPEED + 0.5
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/covshuttle2.dmi')
@@ -227,6 +239,7 @@ A lightly armored vessel fitted for troop and vehicle deployment. Armed with pul
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/cheap_urf_combat
 	name = "Ship"
+	faction = "Insurrection"
 	ship_datums = list(/datum/npc_ship/cheap_urf_combat)
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/req_combat.dmi')
 
@@ -244,6 +257,7 @@ A lightly armored vessel fitted for troop and vehicle deployment. Armed with pul
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/heavyarmed_urf_combat
 	name = "Ship"
+	faction = "Insurrection"
 	ship_datums = list(/datum/npc_ship/heavyarmed_urf_combat)
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/req_heavyarmed.dmi')
 
@@ -261,6 +275,7 @@ A lightly armored vessel fitted for troop and vehicle deployment. Armed with pul
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/experimental_urf_combat
 	name = "Ship"
+	faction = "Insurrection"
 	ship_datums = list(/datum/npc_ship/experimental_urf_combat)
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/req_macplatform.dmi')
 
@@ -278,6 +293,7 @@ A lightly armored vessel fitted for troop and vehicle deployment. Armed with pul
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/urf_slipspace_tender
 	name = "Ship"
+	faction = "Insurrection"
 	ship_datums = list(/datum/npc_ship/urf_slipspace_tender)
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/req_tender.dmi')
 	ship_max_speed = SHIP_DEFAULT_PIXEL_SPEED + 0.5//Non combat ships are provided with a speed boost to allow them to dodge combat ships more effectively.
@@ -298,6 +314,7 @@ alongside an improved assortment of engineering supplies. Lacks weapons and has 
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/urf_podcarrier
 	name = "Ship"
+	faction = "Insurrection"
 	ship_datums = list(/datum/npc_ship/urf_podcarrier)
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/req_podcarrier.dmi')
 	ship_max_speed = SHIP_DEFAULT_PIXEL_SPEED + 0.5
@@ -317,6 +334,7 @@ A lightly armored vessel fitted for orbital troop deployment, boarding and orbit
 
 /obj/effect/overmap/ship/npc_ship/shuttlecraft/urf_trooptransport
 	name = "Ship"
+	faction = "Insurrection"
 	ship_datums = list(/datum/npc_ship/urf_trooptransport)
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/req_trooptransport.dmi')
 	ship_max_speed = SHIP_DEFAULT_PIXEL_SPEED + 0.5
