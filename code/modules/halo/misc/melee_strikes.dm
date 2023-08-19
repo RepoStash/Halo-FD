@@ -185,8 +185,8 @@
 			target = pick(turf_mobs)
 		else
 			return 0
-
-	do_strike_targ(user,target,striker,click_params)
+	if(target == user)
+		do_strike_targ(user,target,striker,click_params)
 
 	return 1
 
@@ -204,6 +204,8 @@
 
 	if(targets.len != 0)
 		for(var/mob in targets)
+			if(user == mob)
+				continue
 			do_strike_targ(user,mob,striker,click_params)
 	else
 		return 0
