@@ -15,10 +15,14 @@
 	set name = "Activate Self Destruct"
 	set category = "Abilities"
 
-	if(!istype(usr,/mob/living))
+	var/mob/living/carbon/human/h = usr
+	if(!istype(h))
 		return
-	if(!self_destruct_allowed(usr))
-		to_chat(usr,"<span class = 'notice'>You lack the knowledge to do that.</span>")
+	if(!self_destruct_allowed(h))
+		to_chat(h,"<span class = 'notice'>You lack the knowledge to do that.</span>")
+		return
+	if(h.wear_suit != src)
+		to_chat(h,"<span class = 'notice'>You need to be wearing that to arm the self destruct.</span>")
 		return
 	self_destruct(usr)
 
