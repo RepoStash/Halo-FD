@@ -23,13 +23,13 @@
 	n.obscure_first_capture = 0
 
 /datum/SC_objective/point_control/hold/announce_reminder()
-	to_target(world,sound('sound/ambience/alarm4.ogg', repeat = 0, wait = 0, volume = 50, channel = 3))
+	to_target(world,sound('sound/misc/notice2.ogg', repeat = 0, wait = 0, volume = 50, channel = 3))
 	var/pre_text = "[objective_name] is still ongoing!"
 	var/point_text = get_point_areas_and_status()
 	broadcast_all_factions(pre_text + point_text)
 
 /datum/SC_objective/point_control/hold/announce_removal()
-	to_target(world,sound('sound/ambience/alarm4.ogg', repeat = 0, wait = 0, volume = 50, channel = 3))
+	to_target(world,sound('sound/misc/notice2.ogg', repeat = 0, wait = 0, volume = 50, channel = 3))
 	var/pre_text = "[objective_name] was not achieved in time, and has expired!"
 	broadcast_all_factions(pre_text)
 
@@ -41,7 +41,7 @@
 	. = ..()
 
 /datum/SC_objective/point_control/hold/announce_active()
-	to_target(world,sound('sound/ambience/alarm4.ogg', repeat = 0, wait = 0, volume = 50, channel = 3))
+	to_target(world,sound('sound/misc/notice2.ogg', repeat = 0, wait = 0, volume = 50, channel = 3))
 	var/pre_text = "A new objective has been assigned: [objective_name]."
 	var/point_text = get_point_areas_and_status()
 	var/holder_text = "\nStop any other faction from capturing enough points for 40 minutes to win.\nEnemy communications have been partially disrupted, but our tampering will not have gone unnoticed. We do not have long."
@@ -51,7 +51,7 @@
 		broadcast_all_factions(pre_text + point_text, list(holder_faction))
 
 /datum/SC_objective/point_control/hold/announce_completion()
-	to_target(world,sound('sound/ambience/alarm4.ogg', repeat = 0, wait = 0, volume = 50, channel = 3))
+	to_target(world,sound('sound/misc/notice2.ogg', repeat = 0, wait = 0, volume = 50, channel = 3))
 	var/pre_text = "We succesfully achieved our objective ([objective_name])!\n A new objective will be assigned soon."
 	broadcast_faction(objective_winner,pre_text)
 	pre_text = "We failed to complete our objective ([objective_name].\n A new objective will be assigned soon."
