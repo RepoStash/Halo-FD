@@ -146,6 +146,7 @@
 	n.obsec_for = POINT_CAPTURE_OBSEC_FOR
 
 /datum/SC_objective/point_control/proc/revert_point_tweaks(var/obj/machinery/computer/capture_node/n)
+	n.control_faction = null
 	n.obsec_until = 0
 	n.obsec_for = 0
 	n.objective_secured = 1
