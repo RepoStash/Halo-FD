@@ -69,7 +69,7 @@
 					/obj/item/weapon/material/knife/combat_knife = 10,
 					"Guns" = -1,
 					/obj/item/weapon/gun/projectile/m6d_magnum = 20,
-					/obj/item/weapon/gun/projectile/ma5b_ar = 20,
+					/obj/item/weapon/gun/projectile/ma5b_ar = 40,
 					/obj/item/weapon/gun/projectile/m7_smg = 10,
 					/obj/item/weapon/gun/projectile/br55 = 5,
 					"Ammunition" = -1,
@@ -91,7 +91,7 @@
 
 /obj/machinery/vending/armory/light/innie
 	name = "Insurrectionist Light Equipment Rack"
-	desc = "An jury-rigged light equipment rack, many of its equipment options appear to be out of stock and replaced with more easily sourced ones."
+	desc = "A jury-rigged light equipment rack, many of its equipment options appear to be out of stock and replaced with more easily sourced ones."
 	products = list(
 					"Melee" = -1,
 					/obj/item/weapon/material/knife/combat_knife = 10,
