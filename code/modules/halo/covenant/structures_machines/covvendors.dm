@@ -546,6 +546,29 @@
 		/obj/item/turret_deploy_kit/plasturret = 1
 	)
 
+/obj/machinery/vending/armory/covenant/light //General-Purpose Arms
+	name = "Covenant - General-Purpose Armaments Vendor"
+	desc = "A general-purpose weapon vendor with a condensed list of armaments and equipment."
+	products = list(
+		"Melee" = -1,
+		/obj/item/weapon/melee/energy/elite_sword/dagger = 10,
+		"Guns" = -1,
+		/obj/item/weapon/gun/energy/plasmapistol = 20,
+		/obj/item/weapon/gun/energy/plasmarifle = 10,
+		/obj/item/weapon/gun/projectile/needler = 10,
+		/obj/item/weapon/gun/projectile/type51carbine = 10,
+		"Ammunition" = -1,
+		/obj/item/ammo_magazine/needles = 50,
+		/obj/item/ammo_magazine/type51mag = 50,
+		"Explosives" = -1,
+		/obj/item/weapon/grenade/smokebomb/covenant = 15,
+		/obj/item/weapon/grenade/plasma = 15,
+		"Misc" = -1,
+		/obj/item/weapon/armor_patch/cov = 15,
+		/obj/item/weapon/armor_patch/mini/cov = 15,
+		/obj/item/drop_pod_beacon/covenant = 15
+	)
+
 /obj/machinery/vending/armory/covenant/sangheili/food
 	name = "Covenant - Sangheili Food Vendor"
 	desc = "A vendor for Sangheili oriented food."

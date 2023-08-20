@@ -3,6 +3,11 @@
 	name = "ramp"
 	icon = 'ramp.dmi'
 
+/obj/structure/steps_decorative_covenant
+	name = "Steps"
+	icon = 'covenant_steps.dmi'
+	icon_state = "steps"
+
 /obj/structure/stairs/covenant
 	north
 		dir = NORTH
