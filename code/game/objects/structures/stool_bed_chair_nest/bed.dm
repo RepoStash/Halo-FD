@@ -21,6 +21,10 @@
 	var/base_icon = "bed"
 	var/material_alteration = MATERIAL_ALTERATION_ALL
 
+/obj/structure/bed/bunkbed
+	name = "bunk bed"
+	icon_state = "bunkbed"
+
 /obj/structure/bed/New(var/newloc, var/new_material, var/new_padding_material)
 	..(newloc)
 	color = null
