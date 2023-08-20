@@ -10,7 +10,8 @@
 
 /obj/structure/catwalk/Initialize()
 	. = ..()
-	if(locate (/obj/structure/catwalk) in get_turf(src))
+	var/turf/t = get_turf(src)
+	if(locate (/obj/structure/catwalk) in t.contents-src)
 		return INITIALIZE_HINT_QDEL
 	update_icon()
 	redraw_nearby_catwalks()
