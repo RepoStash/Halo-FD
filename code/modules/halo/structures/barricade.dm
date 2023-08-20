@@ -84,6 +84,8 @@
 	else
 		icon_state = "covenant_dmg2"
 
+// RAILING //
+
 /obj/structure/destructible/railing // Really shittily-coded railings. My condolences to whoever looks at this.
 	name = "railing"
 	desc = "A metal railing."
@@ -101,6 +103,8 @@
 	desc = "A corner of a metal railing."
 	icon_state = "railing_corner"
 	flags = ON_BORDER
+	density = 0
+	cover_rating = 0
 
 /obj/structure/destructible/railing/middle
 	name = "middle railing"
@@ -119,3 +123,38 @@
 	desc = "Half of a metal railing, connected to the corners."
 	icon_state = "railing_half_right"
 	flags = ON_BORDER
+
+// DARK RAILING //
+
+/obj/structure/destructible/railing/dark
+	desc = "A dark, metal railing."
+	icon_state = "railing_dark"
+
+/obj/structure/destructible/railing/dark/corner
+	name = "railing corner"
+	desc = "A corner of a metal railing."
+	icon_state = "railing_corner_dark"
+	density = 0
+	cover_rating = 0
+
+/obj/structure/destructible/railing/dark/corner_outer
+	name = "railing outer corner"
+	desc = "A corner of a metal railing, facing outwards."
+	icon_state = "railing_corner_outer_dark"
+	density = 0
+	cover_rating = 0
+
+/obj/structure/destructible/railing/dark/middle
+	name = "middle railing"
+	desc = "Half of a metal railing, connected to the corners."
+	icon_state = "railing_middle_dark"
+
+/obj/structure/destructible/railing/dark/halfleft
+	name = "half-left railing"
+	desc = "Half of a metal railing, connected to the corners."
+	icon_state = "railing_half_left_dark"
+
+/obj/structure/destructible/railing/dark/halfright
+	name = "half-right railing"
+	desc = "Half of a metal railing, connected to the corners."
+	icon_state = "railing_half_right_dark"

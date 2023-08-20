@@ -1,5 +1,5 @@
 
-#define DEFAULT_LIGHT_STRING "#a0a080"
+#define DEFAULT_LIGHT_STRING "#fffeb8"
 
 /obj/machinery/button/toggle/alarm_button
 	var/area/area_base = null
