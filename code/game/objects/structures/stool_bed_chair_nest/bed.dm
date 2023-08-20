@@ -7,6 +7,17 @@
 /*
  * Beds
  */
+
+/obj/structure/bunkbed
+	name = "bunk bed"
+	desc = "A cozy, double-stacked bed fit for a barracks."
+	icon = 'icons/obj/furniture.dmi'
+	icon_state = "bunkbed"
+	anchored = 1
+	can_buckle = 1
+	buckle_dir = SOUTH
+	buckle_lying = 1
+
 /obj/structure/bed
 	name = "bed"
 	desc = "This is used to lie in, sleep in or strap on."
@@ -20,11 +31,6 @@
 	var/material/padding_material
 	var/base_icon = "bed"
 	var/material_alteration = MATERIAL_ALTERATION_ALL
-
-/obj/structure/bed/bunkbed
-	name = "bunk bed"
-	icon_state = "bunkbed"
-	base_icon = "bunkbed"
 
 /obj/structure/bed/New(var/newloc, var/new_material, var/new_padding_material)
 	..(newloc)
