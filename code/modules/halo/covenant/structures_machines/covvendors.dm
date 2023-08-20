@@ -547,7 +547,7 @@
 	)
 
 /obj/machinery/vending/armory/covenant/light //General-Purpose Arms
-	name = "Covenant - Weapon Vendor"
+	name = "Covenant - General-Purpose Armaments Vendor"
 	desc = "A general-purpose weapon vendor with a condensed list of armaments and equipment."
 	products = list(
 		"Melee" = -1,
@@ -555,9 +555,11 @@
 		"Guns" = -1,
 		/obj/item/weapon/gun/energy/plasmapistol = 20,
 		/obj/item/weapon/gun/energy/plasmarifle = 10,
+		/obj/item/weapon/gun/projectile/needler = 10,
 		/obj/item/weapon/gun/projectile/type51carbine = 10,
 		"Ammunition" = -1,
-		/obj/item/ammo_magazine/type51mag = 20,
+		/obj/item/ammo_magazine/needles = 50,
+		/obj/item/ammo_magazine/type51mag = 50,
 		"Explosives" = -1,
 		/obj/item/weapon/grenade/smokebomb/covenant = 15,
 		/obj/item/weapon/grenade/plasma = 15,
