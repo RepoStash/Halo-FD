@@ -33,6 +33,7 @@
 	var/old_lighting_overlay = lighting_overlay
 	var/old_corners = corners
 	var/old_can_build_wall = can_build_wall
+	var/old_ao_neighbors = ao_neighbors
 
 //	log_debug("Replacing [src.type] with [N]")
 
@@ -74,6 +75,7 @@
 	W.post_change()
 	. = W
 
+	W.ao_neighbors = old_ao_neighbors
 	if(lighting_overlays_initialised)
 		lighting_overlay = old_lighting_overlay
 		affecting_lights = old_affecting_lights
