@@ -6,7 +6,7 @@
 	density = 0
 	anchored = 1.0
 	plane = ABOVE_PLATING_PLANE
-	layer = LATTICE_LAYER
+	layer = DECAL_PLATING_LAYER
 
 /obj/structure/catwalk/Initialize()
 	. = ..()
