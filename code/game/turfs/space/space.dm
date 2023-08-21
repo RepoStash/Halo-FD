@@ -9,6 +9,7 @@
 	thermal_conductivity = OPEN_HEAT_TRANSFER_COEFFICIENT
 	var/keep_sprite = 0
 //	heat_capacity = 700000 No.
+	permit_ao = FALSE
 
 /turf/space/New()
 	if((icon_state == "0") && (!keep_sprite))

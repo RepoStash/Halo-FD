@@ -89,6 +89,8 @@
 			return global.SMALLSIZEBLOCK;
 		if("SSatoms")
 			return global.SSatoms;
+		if("SSao")
+			return global.SSao;
 		if("SSevent")
 			return global.SSevent;
 		if("SSgarbage")
@@ -1219,7 +1221,7 @@
 			return global.xenomorphs;
 		if("zone_blocked")
 			return global.zone_blocked;
-		
+
 /proc/writeglobal(which, newval)
 	switch(which)
 		if("ALL_ANTIGENS")
@@ -1310,6 +1312,8 @@
 			global.SMALLSIZEBLOCK=newval;
 		if("SSatoms")
 			global.SSatoms=newval;
+		if("SSao")
+			global.SSao=newval;
 		if("SSevent")
 			global.SSevent=newval;
 		if("SSgarbage")
@@ -2440,7 +2444,7 @@
 			global.xenomorphs=newval;
 		if("zone_blocked")
 			global.zone_blocked=newval;
-		
+
 /var/list/_all_globals=list(
 	"ALL_ANTIGENS",
 	"ANTAG_FREQS",
@@ -2486,6 +2490,7 @@
 	"SHOCKIMMUNITYBLOCK",
 	"SMALLSIZEBLOCK",
 	"SSatoms",
+	"SSao",
 	"SSevent",
 	"SSgarbage",
 	"SSinactivity",

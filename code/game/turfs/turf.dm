@@ -43,6 +43,9 @@
 	else
 		luminosity = 1
 
+/turf/on_update_icon()
+	queue_ao(FALSE)
+
 /turf/Destroy()
 	//turfs -= src
 	remove_cleanables()

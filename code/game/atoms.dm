@@ -281,6 +281,9 @@ its easier to just keep the beam vertical.
 /atom/proc/update_icon()
 	return
 
+/atom/proc/on_update_icon()
+	return
+
 /atom/proc/ex_act(var/severity,var/turf/epicenter)
 	return
 
