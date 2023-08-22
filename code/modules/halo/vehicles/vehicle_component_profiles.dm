@@ -1,6 +1,7 @@
 #define REPAIR_TOOLS_LIST list(/obj/item/weapon/screwdriver,/obj/item/weapon/wrench,/obj/item/weapon/weldingtool,/obj/item/weapon/crowbar,/obj/item/weapon/wirecutters)
 #define BASE_INTEGRITY_RESTORE_PERSHEET 20 //Amount of integrity restored per sheet of material.
 #define COMPONENT_REPAIR_DELAY 10 SECONDS
+#define COMPONENT_INSPECT_DELAY 1.5 SECONDS
 
 /datum/component_profile
 
@@ -92,7 +93,7 @@
 	if(isnull(chosen))
 		return
 	user.visible_message("<span class = 'notice'>[user] starts inspecting the damage to [contained_vehicle].</span>")
-	if(!do_after(user,COMPONENT_REPAIR_DELAY/5,contained_vehicle))
+	if(!do_after(user,COMPONENT_INSPECT_DELAY,contained_vehicle))
 		return
 	user.visible_message("<span class = 'notice'>[user] inspects the damage to [contained_vehicle]</span>")
 	component_last_inspected = chosen
