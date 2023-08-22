@@ -42,6 +42,8 @@
 
 	ai_access_level = 2
 
+	atmos_canpass = CANPASS_PROC
+
 /obj/machinery/door/attack_generic(var/mob/user, var/damage)
 	if(damage >= 10)
 		visible_message("<span class='danger'>\The [user] smashes into \the [src]!</span>")
@@ -440,13 +442,10 @@
 	return ..(M)
 
 /obj/machinery/door/update_nearby_tiles(need_rebuild)
-	if(!air_master)
-		return 0
-
+	.=..()
 	for(var/turf/simulated/turf in locs)
 		update_heat_protection(turf)
-		air_master.mark_for_update(turf)
-
+		SSair.mark_for_update(turf)
 	return 1
 
 /obj/machinery/door/proc/update_heat_protection(var/turf/simulated/source)

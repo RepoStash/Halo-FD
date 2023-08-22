@@ -51,12 +51,12 @@
 			if(istype(T) && T.zone && T.zone.contents.len > (world.maxx*world.maxy*0.25)) //if it's a zone quarter of zlevel, good enough odds it's planetary main one
 				Z = T.zone
 				break
-		if(!Z.fire_tiles.len && !atmosphere.compare(Z.air)) //let fire die out first if there is one
+		if(Z && !Z.fire_tiles.len && !atmosphere.compare(Z.air)) //let fire die out first if there is one
 			var/datum/gas_mixture/daddy = new() //make a fake 'planet' zone gas
 			daddy.copy_from(atmosphere)
 			daddy.group_multiplier = Z.air.group_multiplier
 			Z.air.equalize(daddy)
-				
+
 
 /obj/effect/overmap/sector/exoplanet/proc/generate_map()
 
@@ -115,7 +115,7 @@
 			newgases -= "phoron"
 		if(prob(50)) //alium gas should be slightly less common than mundane shit
 			newgases -= "aliether"
-		
+
 		var/total_moles = MOLES_CELLSTANDARD * rand(80,120)/100
 		var/gasnum = rand(1,4)
 		for(var/i = 1 to gasnum) //swapping gases wholesale. don't try at home
@@ -125,7 +125,7 @@
 				part = total_moles
 			atmosphere.gas[ng] += part
 			total_moles = max(total_moles - part, 0)
-		
+
 	atmosphere.temperature = T20C + rand(-10, 10)
 	var/factor = max(rand(60,140)/100, 0.6)
 	atmosphere.multiply(factor)
