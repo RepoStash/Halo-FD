@@ -4,9 +4,9 @@
 	icon_name = "head"
 	name = "head"
 	slot_flags = SLOT_BELT
-	max_damage = 75
+	max_damage = 100
 	min_broken_damage = 35
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_LARGE
 	body_part = HEAD
 	parent_organ = BP_CHEST
 	joint = "jaw"

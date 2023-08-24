@@ -1,6 +1,6 @@
 #define REPAIR_TOOLS_LIST list(/obj/item/weapon/screwdriver,/obj/item/weapon/wrench,/obj/item/weapon/weldingtool,/obj/item/weapon/crowbar,/obj/item/weapon/wirecutters)
-#define BASE_INTEGRITY_RESTORE_PERSHEET 20 //Amount of integrity restored per sheet of material.
-#define COMPONENT_REPAIR_DELAY 10 SECONDS
+#define BASE_INTEGRITY_RESTORE_PERSHEET 50 //Amount of integrity restored per sheet of material.
+#define COMPONENT_REPAIR_DELAY 8 SECONDS
 #define COMPONENT_INSPECT_DELAY 1.5 SECONDS
 
 /datum/component_profile
