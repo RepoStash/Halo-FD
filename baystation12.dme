@@ -1772,6 +1772,8 @@
 #include "code\modules\halo\flood\types\pure.dm"
 #include "code\modules\halo\flood\types\sangheili.dm"
 #include "code\modules\halo\floorsigns\floorsigns.dm"
+#include "code\modules\halo\flora\swamp_mushrooms.dm"
+#include "code\modules\halo\flora\swamp_tree.dm"
 #include "code\modules\halo\Forerunner\knight.dm"
 #include "code\modules\halo\Forerunner\monitor.dm"
 #include "code\modules\halo\Forerunner\sentinel.dm"
