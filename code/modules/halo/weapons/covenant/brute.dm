@@ -400,7 +400,7 @@
 	to_chat(user, "<span class='info'>It has [amount] grenade[amount != 1 ? "s" : ""] remaining on the belt.</span>")
 
 /obj/item/weapon/grenade/brute_shot/detonate()
-	explosion(get_turf(src), 0, max(round(amount/5),2), max(round(amount / 3), 3), max(amount, 5), guaranteed_damage = 20, guaranteed_damage_range = 3)
+	explosion(get_turf(src), 0, max(round(amount/4),1), max(round(amount / 2), 2), max(amount, 4), guaranteed_damage = 20, guaranteed_damage_range = 3)
 	. = ..()
 	qdel(src)
 

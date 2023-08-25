@@ -43,10 +43,7 @@
 
 	to_chat(usr, "\[4/5\] - All turfs reset to roundstart values.")
 
-	qdel(air_master)
-	air_master = new
-	air_master.Setup()
-	spawn air_master.Start()
+	SSair.reboot()
 
 	to_chat(usr, "\[5/5\] - ZAS Rebooted")
 	to_world("<span class = 'danger'>Atmosphere restart completed in <b>[(world.timeofday - current_time)/10]</b> seconds.</span>")
@@ -80,10 +77,7 @@
 
 	to_chat(usr, "\[2/3\] - All turfs reset to roundstart values.")
 
-	qdel(air_master)
-	air_master = new
-	air_master.Setup()
-	spawn air_master.Start()
+	SSair.reboot()
 
 	to_chat(usr, "\[3/3\] - ZAS Rebooted")
 	to_world("<span class = 'danger'>Minor atmosphere restart completed in <b>[(world.timeofday - current_time)/10]</b> seconds.</span>")

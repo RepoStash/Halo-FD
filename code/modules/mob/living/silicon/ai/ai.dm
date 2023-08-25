@@ -81,7 +81,7 @@ var/list/ai_verbs_default = list(
 	var/static/list/custom_ai_icons_by_ckey_and_name
 
 	var/cpu_points_max = 100
-	var/cpu_points = 100 //Spent on Terminal access, node access and ability usage.
+	var/cpu_points = 0 //Spent on Terminal access, node access and ability usage.
 
 	var/native_network = "Exodus"//We recieve alerts from this network, even if we're not in it.
 	var/obj/structure/ai_terminal/our_terminal = null

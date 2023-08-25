@@ -16,7 +16,7 @@
 	loot_types = list()
 	scrap_types = list()
 	bump_climb = 1
-	mob_climb_time = 0.7 SECONDS
+	mob_climb_time = 0.5 SECONDS
 	dodge_pass = 1
 
 /obj/structure/destructible/proc/check_ignore_list(var/obj/i)

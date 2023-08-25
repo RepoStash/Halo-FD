@@ -1,4 +1,4 @@
-/datum/controller/process/air/setup()
+/* /datum/controller/process/air/setup()
 	name = "air"
 	schedule_interval = 20 // every 2 seconds
 	start_delay = 4
@@ -21,4 +21,4 @@
 				log_admin("ZASALERT: Shutting down! status: [air_master.tick_progress]")
 
 				air_processing_killed = TRUE
-				air_master.failed_ticks = 0
+				air_master.failed_ticks = 0 */ // NO LONGER USED, PROBABLY.
