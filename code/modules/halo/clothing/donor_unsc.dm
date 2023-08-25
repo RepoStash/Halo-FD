@@ -2074,6 +2074,47 @@ obj/item/clothing/head/helmet/odst/donator/roadcone_orange
 	/obj/item/clothing/head/helmet/SPIgen1/temple,
 	/obj/item/clothing/suit/armor/special/SPIgen1/temple
 	)
+///////////Ilikesaying/////////
+
+//Marine
+
+/obj/item/clothing/head/helmet/marine/ilikesaying
+	name = "Rider Trooper Helmet"
+	desc = "A prototype helmet that was designed for use on military motorbikes."
+	icon_state = "ilikesaying-helmet-obj"
+	item_state = "ilikesaying-helmet-worn"
+
+/obj/item/clothing/suit/storage/marine/ilikesaying
+	name = "Rider Trooper Armor"
+	desc = "A prototype armour that was designed for use on military motorbikes, it seems to lack the power buckle..."
+	icon_state = "ilikesaying-armor-obj"
+	item_state = "ilikesaying-armor-worn"
+
+/obj/item/clothing/gloves/thick/unsc/ilikesaying
+	name = "Rider Trooper Gloves"
+	desc = "Prototype gloves that was designed for use on military motorbikes."
+	icon_state = "ilikesaying-gloves-obj"
+	item_state = "ilikesaying-gloves-worn"
+
+/obj/item/clothing/shoes/marine/ilikesaying
+	name = "Rider Trooper Boots"
+	desc = "Prototype boots that was designed for use on military motorbikes."
+	icon_state = "ilikesaying-boots-obj"
+	item_state = "ilikesaying-boots-worn"
+
+/obj/item/weapon/storage/box/large/donator/ilikesaying/marine
+	startswith = list(\
+	/obj/item/clothing/head/helmet/marine/ilikesaying,
+	/obj/item/clothing/suit/storage/marine/ilikesaying,
+	/obj/item/clothing/gloves/thick/unsc/ilikesaying,
+	/obj/item/clothing/shoes/marine/ilikesaying
+	)
+	can_hold = list(\
+	/obj/item/clothing/head/helmet/marine/ilikesaying,
+	/obj/item/clothing/suit/storage/marine/ilikesaying,
+	/obj/item/clothing/gloves/thick/unsc/ilikesaying,
+	/obj/item/clothing/shoes/marine/ilikesaying
+	)
 
 #undef ODST_OVERRIDE
 #undef ITEM_INHAND

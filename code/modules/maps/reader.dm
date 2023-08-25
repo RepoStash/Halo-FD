@@ -210,7 +210,7 @@ var/global/dmm_suite/preloader/_preloader = null
 	for(index=1,index < first_turf_index,index++)
 		instance_atom(members[index],members_attributes[index],xcrd,ycrd,zcrd)
 
-	air_master.mark_for_update(T)
+	SSair.mark_for_update(T)
 
 ////////////////
 //Helpers procs

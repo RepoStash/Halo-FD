@@ -44,7 +44,7 @@
 	icon_name = "groin"
 	max_damage = 100
 	min_broken_damage = 35
-	w_class = ITEM_SIZE_LARGE
+	w_class = ITEM_SIZE_HUGE
 	body_part = LOWER_TORSO
 	vital = 1
 	parent_organ = BP_CHEST
@@ -52,6 +52,7 @@
 	joint = "hip"
 	dislocated = -1
 	gendered_icon = 1
+	cannot_amputate = 1
 	artery_name = "iliac artery"
 
 /obj/item/organ/external/arm

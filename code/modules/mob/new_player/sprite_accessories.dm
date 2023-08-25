@@ -621,6 +621,336 @@
 		name = "Manbun"
 		icon_state = "hair_manbun"
 		gender = MALE
+
+	leftsidecut
+		name = "Left Sidecut"
+		icon_state = "hair_leftside"
+
+	rightsidecut
+		name = "Right Sidecut"
+		icon_state = "hair_rightside"
+		gender = MALE
+
+	slick
+		name = "Slick"
+		icon_state = "hair_slick"
+		gender = MALE
+
+	messyhair
+		name = "Messy"
+		icon_state = "hair_messyhair"
+		gender = MALE
+
+	averagejoe
+		name = "Average Joe"
+		icon_state = "hair_averagejoe"
+		gender = MALE
+
+	sideswept
+		name = "Sideswept Hair"
+		icon_state = "hair_sideswept"
+		gender = MALE
+
+	mohawkshaved
+		name = "Shaved Mohawk"
+		icon_state = "hair_mohawkshaved"
+		gender = MALE
+
+	mohawkshaved2
+		name = "Tight Shaved Mohawk"
+		icon_state = "hair_mohawkshaved2"
+		gender = MALE
+
+	mohawkshavednaomi
+		name = "Naomi Mohawk"
+		icon_state = "hair_mohawkshavednaomi"
+		gender = FEMALE
+
+	amazon
+		name = "Amazon"
+		icon_state = "hair_amazon"
+		gender = FEMALE
+
+	straightlong
+		name = "Straight Long"
+		icon_state = "hair_straightlong"
+		gender = FEMALE
+
+	marysue
+		name = "Mary Sue"
+		icon_state = "hair_marysue"
+		gender = FEMALE
+
+	messyhair2
+		name = "Messy Hair 2"
+		icon_state = "hair_messyhair2"
+		gender = FEMALE
+
+	buzzcut2
+		name = "Buzzcut 2"
+		icon_state = "hair_buzzcut2"
+		gender = MALE
+
+	sideundercut
+		name = "Side Undercut"
+		icon_state = "hair_sideundercut"
+		gender = MALE
+
+	bighawk
+		name = "Big Mohawk"
+		icon_state = "hair_bighawk"
+		gender = MALE
+
+	donutbun
+		name = "Donut Bun"
+		icon_state = "hair_donutbun"
+		gender = FEMALE
+
+	gentle2
+		name = "Gentle 2"
+		icon_state = "hair_gentle2"
+		gender = FEMALE
+
+	gentle2long
+		name = "Gentle 2 Long"
+		icon_state = "hair_gentle2long"
+		gender = FEMALE
+
+	trimrsidecut
+		name = "Trimmed Right Sidecut"
+		icon_state = "hair_rightside_trim"
+		gender = FEMALE
+
+	belenkotied
+		name = "Belenkotied"
+		icon_state = "hair_belenkotied"
+		gender = FEMALE
+
+	bobshoulder
+		name = "Shoulder Bob"
+		icon_state = "hair_bob_shoulder"
+		gender = FEMALE
+
+	bobshoulder2
+		name = "Shoulder Bob 2"
+		icon_state = "hair_bob_shoulder2"
+		gender = FEMALE
+
+	bobcurl2
+		name = "Bobcurl 2"
+		icon_state = "hair_bobcurl2"
+		gender = FEMALE
+
+	bunovereye
+		name = "Overeye Bun"
+		icon_state = "hair_bun_overeye"
+		gender = FEMALE
+
+	shortbun
+		name = "Short Bun"
+		icon_state = "hair_bun_short"
+		gender = FEMALE
+
+	bigbun
+		name = "Big Bun"
+		icon_state = "hair_bunbig"
+		gender = FEMALE
+
+	emofringe
+		name = "Emo Fringe"
+		icon_state = "hair_emofringe"
+		gender = FEMALE
+
+	himecutalt
+		name = "Himecut Alt"
+		icon_state = "hair_himecut_alt"
+		gender = FEMALE
+
+	himecutlong
+		name = "Himecut Long"
+		icon_state = "hair_himecut_long_ponytail"
+		gender = FEMALE
+
+	himecutponytail
+		name = "Himecut Ponytail"
+		icon_state = "hair_himecut_ponytail"
+		gender = FEMALE
+
+	himecutponyup
+		name = "Himecut Ponytail Up"
+		icon_state = "hair_himecut_ponytail_up"
+		gender = FEMALE
+
+	himecutshort
+		name = "Himecut Short"
+		icon_state = "hair_himecut_short"
+		gender = FEMALE
+
+	modern
+		name = "Modern"
+		icon_state = "hair_modern"
+		gender = MALE
+
+	mohawkshaved3
+		name = "Low and Long Mohawk"
+		icon_state = "hair_mohawk_shavedlong"
+		gender = MALE
+
+	regmohawk2
+		name = "Regulation Mohawk 2"
+		icon_state = "hair_mohawk_shavedback"
+		gender = MALE
+
+	mohawkshaved4
+		name = "Low Mohawk"
+		icon_state = "hair_mohawk_shavedbacklong"
+		gender = MALE
+
+	newyou
+		name = "New You"
+		icon_state = "hair_newyou"
+		gender = MALE
+
+	oneshoulder
+		name = "One Shoulder"
+		icon_state = "hair_oneshoulder"
+		gender = MALE
+
+	overeye2
+		name = "Overeye"
+		icon_state = "hair_overeye_veryshort"
+		gender = FEMALE
+
+	overeye3
+		name = "Overeye 2"
+		icon_state = "hair_overeye_veryshort_alt"
+		gender = FEMALE
+
+	ponytail7
+		name = "Ponytail 7"
+		icon_state = "hair_ponytail7"
+		gender = FEMALE
+
+	ponytailtied
+		name = "Ponytail Tied"
+		icon_state = "hair_ponytail_tied"
+		gender = FEMALE
+
+	ponytaildinky1
+		name = "Ponytail Dinky"
+		icon_state = "hair_ponytail_dinky1"
+		gender = FEMALE
+
+	ponytaildinky2
+		name = "Ponytail Dinky 2"
+		icon_state = "hair_ponytail_dinky2"
+		gender = FEMALE
+
+	ponytaildinky3
+		name = "Ponytail Dinky 3"
+		icon_state = "hair_ponytail_dinky3"
+		gender = FEMALE
+
+	tressshoulder
+		name = "Tress Shoulder"
+		icon_state = "hair_tressshoulder"
+		gender = FEMALE
+
+	undercut2
+		name = "Undercut 2"
+		icon_state = "hair_undercut3"
+		gender = MALE
+
+	baldingboddicker
+		name = "Balding Boddicker"
+		icon_state = "hair_balding_boddicker"
+		gender = MALE
+
+	librarianbun
+		name = "Librarian Bun"
+		icon_state = "hair_bun_librarian"
+		gender = MALE
+
+	bunquad
+		name = "Bun Quad"
+		icon_state = "hair_bun_quad"
+		gender = FEMALE
+
+	bununiter
+		name = "Bun Uniter"
+		icon_state = "hair_bun_uniter"
+		gender = FEMALE
+
+	business
+		name = "Business"
+		icon_state = "hair_business"
+		gender = MALE
+
+	business2
+		name = "Business 2"
+		icon_state = "hair_business2"
+		gender = MALE
+
+	business3
+		name = "Business 3"
+		icon_state = "hair_business3"
+		gender = MALE
+
+	fadeg
+		name = "Fade Grown"
+		icon_state = "hair_fade_grown"
+		gender = MALE
+
+	partedshort
+		name = "Short Parted"
+		icon_state = "hair_parted_short"
+		gender = MALE
+
+	pigtails
+		name = "Simple Pigtails"
+		icon_state = "hair_pigtails_simple"
+		gender = FEMALE
+
+	ponytailside
+		name = "Side Ponytail 2"
+		icon_state = "hair_ponytail_side7"
+		gender = FEMALE
+
+	shortspiked
+		name = "Short Spiked"
+		icon_state = "hair_short_spiked"
+		gender = MALE
+
+	sweptshort
+		name = "Swept Short"
+		icon_state = "hair_swept_short"
+		gender = MALE
+
+	sweptback
+		name = "Swept Back"
+		icon_state = "hair_swept_back"
+		gender = MALE
+
+	wavyshoulder
+		name = "Shoulder-length Wavy"
+		icon_state = "hair_wavyshoulder_down"
+		gender = MALE
+
+	wavyup
+		name = "Ponytail Wavy"
+		icon_state = "hair_wavyshoulder_up"
+		gender = FEMALE
+
+	wheeler
+		name = "Wheeler"
+		icon_state = "hair_wheeler"
+		gender = MALE
+
+	mullethawk
+		name = "Mullet-Hawk"
+		icon_state = "hair_mullethawk"
+		gender = MALE
+
 /*
 ///////////////////////////////////
 /  =---------------------------=  /
