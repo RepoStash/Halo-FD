@@ -95,10 +95,10 @@
 	desc = "I wonder how many people have been curbstomped on this?"
 	icon = 'code/modules/halo/turfs/pavement2.dmi'
 	icon_state = "pavement"
-	initial_flooring = /turf/simulated/floor/pavement2/empty
 
 /turf/simulated/floor/pavement2/empty
 	icon_state = "pave_empty"
+	dir = 2
 
 /turf/simulated/floor/pavement2/corner
 	icon_state = "pave_corner"
