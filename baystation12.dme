@@ -2151,6 +2151,7 @@
 #include "code\modules\halo\trade\trade_items\weapon_unsc.dm"
 #include "code\modules\halo\turfs\area.dm"
 #include "code\modules\halo\turfs\cityprops.dm"
+#include "code\modules\halo\turfs\grass.dm"
 #include "code\modules\halo\turfs\interiorobjs.dm"
 #include "code\modules\halo\turfs\interiorstructures.dm"
 #include "code\modules\halo\turfs\mineral_field.dm"
