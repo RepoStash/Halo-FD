@@ -54,7 +54,7 @@
 
 /obj/effect/flora/swamp_bush
 	name = "bush"
-	icon = 'code/modules/halo/flora/swamp_ausflora.dmi'
+	icon = 'code/modules/halo/flora/swamp_ausflora_large.dmi'
 	icon_state = "bush1"
 
 /obj/effect/flora/swamp_bush/New()
@@ -63,7 +63,7 @@
 
 /obj/effect/flora/rocks/large
 	name = "rocks"
-	icon = 'code/modules/halo/flora/swamp_ausflora.dmi'
+	icon = 'code/modules/halo/flora/swamp_ausflora_large.dmi'
 	icon_state = "rocks1"
 
 /obj/effect/flora/rocks/large/New()
