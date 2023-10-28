@@ -39,7 +39,7 @@
 	var/list/last_spawns_list
 
 	var/time_rest_end = 0
-	var/interval_resupply = 2 MINUTES
+	var/interval_resupply = 4 MINUTES
 	var/time_next_resupply = 0
 
 	var/rest_time = 2 MINUTES
