@@ -1648,6 +1648,7 @@
 #include "code\modules\halo\covenant\structures_machines\lekgolo_spawner.dm"
 #include "code\modules\halo\covenant\structures_machines\lights.dm"
 #include "code\modules\halo\covenant\structures_machines\modular_computer.dm"
+#include "code\modules\halo\covenant\structures_machines\newscaster.dm"
 #include "code\modules\halo\covenant\structures_machines\pillar_lift.dm"
 #include "code\modules\halo\covenant\structures_machines\pinch_fusion.dm"
 #include "code\modules\halo\covenant\structures_machines\plasmabattery.dm"
