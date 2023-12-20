@@ -668,3 +668,7 @@
 	/obj/item/weapon/reagent_containers/blood/empty = 12,
 	/obj/item/weapon/reagent_containers/spray/cleaner = 2
 	)
+
+/obj/machinery/smartfridge/chemistry/covenant
+	icon = 'code/modules/halo/covenant/structures_machines/smartfridge.dmi'
+	icon_state = "smartfridge"
