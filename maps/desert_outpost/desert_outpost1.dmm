@@ -1,0 +1,150 @@
+"aa" = (/turf/simulated/floor/asteroid/planet,/area/planet/stranded_outpost/caves)
+"ab" = (/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"ac" = (/turf/simulated/floor/road/empty,/area/planet/stranded_outpost)
+"ad" = (/turf/simulated/floor/road/markings{icon_state = "road_marking"; dir = 8},/area/planet/stranded_outpost)
+"ae" = (/turf/simulated/floor/road/corner{icon_state = "road_corner"; dir = 8},/area/planet/stranded_outpost)
+"af" = (/turf/simulated/floor/road{icon_state = "road"; dir = 1},/area/planet/stranded_outpost)
+"ag" = (/turf/simulated/floor/road/corner{icon_state = "road_corner"; dir = 1},/area/planet/stranded_outpost)
+"ah" = (/turf/simulated/floor/road/markings,/area/planet/stranded_outpost)
+"ai" = (/turf/simulated/floor/road{icon_state = "road"; dir = 8},/area/planet/stranded_outpost)
+"aj" = (/turf/simulated/floor/road{icon_state = "road"; dir = 4},/area/planet/stranded_outpost)
+"ak" = (/obj/structure/destructible/railing/industrial/corner,/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"al" = (/obj/structure/destructible/railing/industrial,/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"am" = (/obj/structure/destructible/railing/industrial/corner{icon_state = "railing_deco"; dir = 1},/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"an" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 4},/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"ao" = (/obj/structure/destructible/sandbag{dir = 8},/obj/structure/destructible/sandbag{dir = 1},/turf/simulated/floor/tiled/steel_grid,/area/planet/stranded_outpost)
+"ap" = (/obj/structure/destructible/sandbag{dir = 1},/turf/simulated/floor/tiled/steel_grid,/area/planet/stranded_outpost)
+"aq" = (/obj/structure/destructible/sandbag{dir = 1},/obj/structure/destructible/sandbag{dir = 4},/turf/simulated/floor/tiled/steel_grid,/area/planet/stranded_outpost)
+"ar" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 8},/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"as" = (/obj/structure/destructible/sandbag{dir = 8},/obj/structure/turret/chaingun{dir = 8; icon_state = "chaingunturret"; plane = -14},/turf/simulated/floor/tiled/steel_grid,/area/planet/stranded_outpost)
+"at" = (/turf/simulated/floor/tiled/steel_grid,/area/planet/stranded_outpost)
+"au" = (/obj/structure/destructible/sandbag{dir = 4},/turf/simulated/floor/tiled/steel_grid,/area/planet/stranded_outpost)
+"av" = (/obj/machinery/light/street,/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 8},/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"aw" = (/turf/unsimulated/wall{icon_state = "0"},/area/planet/stranded_outpost)
+"ax" = (/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost)
+"ay" = (/obj/machinery/light/street,/turf/simulated/floor/road/empty,/area/planet/stranded_outpost)
+"az" = (/obj/structure/destructible/sandbag,/obj/structure/destructible/sandbag{dir = 8},/turf/simulated/floor/tiled/steel_grid,/area/planet/stranded_outpost)
+"aA" = (/obj/structure/destructible/sandbag,/turf/simulated/floor/tiled/steel_grid,/area/planet/stranded_outpost)
+"aB" = (/obj/structure/stairs/west{icon_state = "industrialstair"},/turf/simulated/floor/tiled/steel_grid,/area/planet/stranded_outpost)
+"aC" = (/obj/structure/destructible/railing/industrial/corner{icon_state = "railing_deco"; dir = 8},/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"aD" = (/obj/structure/destructible/railing/industrial/mounted,/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"aE" = (/obj/vehicles/warthog/turretless,/turf/simulated/floor/road/empty,/area/planet/stranded_outpost)
+"aF" = (/turf/simulated/floor/road/corner,/area/planet/stranded_outpost)
+"aG" = (/turf/simulated/floor/road,/area/planet/stranded_outpost)
+"aH" = (/turf/simulated/floor/road/corner{icon_state = "road_corner"; dir = 4},/area/planet/stranded_outpost)
+"aI" = (/turf/unsimulated/wall,/area/planet/stranded_outpost)
+"aJ" = (/obj/machinery/light/street,/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"aK" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 1},/turf/simulated/floor/tiled/steel_grid,/area/planet/stranded_outpost)
+"aL" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 4},/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 1},/turf/simulated/floor/tiled/steel_grid,/area/planet/stranded_outpost)
+"aM" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 4},/turf/simulated/floor/tiled/steel_grid,/area/planet/stranded_outpost)
+"aN" = (/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/stranded_outpost)
+"aO" = (/obj/structure/stairs_decorative/industrial{icon_state = "industrialstair"; dir = 8},/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"aP" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 4},/obj/structure/destructible/railing/industrial,/turf/simulated/floor/tiled/steel_grid,/area/planet/stranded_outpost)
+"aQ" = (/obj/structure/destructible/railing/industrial/corner{icon_state = "railing_deco"; dir = 4},/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"aR" = (/turf/simulated/floor/tiled/techmaint,/area/planet/stranded_outpost)
+"aS" = (/obj/effect/landmark/start/joinlate,/turf/simulated/floor/tiled/techmaint,/area/planet/stranded_outpost)
+"aT" = (/obj/structure/stairs/west{icon_state = "industrialstair"},/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/stranded_outpost)
+"aU" = (/obj/structure/stairs_decorative/industrial{icon_state = "industrialstair"; dir = 8},/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/stranded_outpost)
+"aV" = (/obj/effect/landmark/resupply,/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/stranded_outpost)
+"aW" = (/obj/structure/destructible/railing/industrial,/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/stranded_outpost)
+"aX" = (/obj/effect/landmark/assault_target,/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/stranded_outpost)
+"aY" = (/obj/effect/landmark/assault_target/flood,/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/stranded_outpost)
+"aZ" = (/obj/structure/closet/crate/secure/weapon,/turf/simulated/floor/tiled/techmaint,/area/planet/stranded_outpost)
+"ba" = (/obj/structure/closet/crate/secure/weapon,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost)
+"bb" = (/obj/structure/stairs_decorative/industrial{icon_state = "industrialstair"; dir = 1},/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"bc" = (/obj/structure/destructible/railing/industrial,/turf/simulated/floor/tiled/steel_grid,/area/planet/stranded_outpost)
+"bd" = (/obj/structure/stairs_decorative/industrial{icon_state = "industrialstair"; dir = 8},/turf/simulated/floor/tiled/steel_grid,/area/planet/stranded_outpost)
+"be" = (/obj/structure/destructible/sandbag{dir = 4},/obj/structure/destructible/sandbag,/turf/simulated/floor/tiled/steel_grid,/area/planet/stranded_outpost)
+"bf" = (/obj/structure/destructible/railing/industrial,/obj/structure/destructible/railing/industrial/mounted,/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/stranded_outpost)
+"bg" = (/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost)
+"bh" = (/obj/structure/closet/crate/secure/weapon,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost)
+"bi" = (/obj/effect/floor_decal/industrial/outline/yellow,/obj/structure/closet/crate/secure/weapon,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost)
+"bj" = (/turf/unsimulated/mineral,/area/planet/stranded_outpost/caves)
+"bk" = (/obj/effect/landmark/test/safe_turf,/turf/unsimulated/floor/desert,/area/planet/stranded_outpost/caves)
+"bl" = (/obj/effect/landmark/spawn_legendary,/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"bm" = (/obj/effect/landmark/spawn_medium,/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"bn" = (/obj/effect/landmark/spawn_legendary,/turf/simulated/floor/asteroid/planet,/area/planet/stranded_outpost/caves)
+"bo" = (/obj/effect/landmark/spawn_easy,/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"bp" = (/obj/effect/landmark/spawn_medium,/turf/simulated/floor/road/empty,/area/planet/stranded_outpost)
+"bq" = (/obj/effect/landmark/resupply,/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"bs" = (/obj/effect/landmark/resupply,/turf/simulated/floor/road/empty,/area/planet/stranded_outpost)
+"bt" = (/obj/structure/destructible/railing/industrial/mounted,/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/stranded_outpost)
+"bu" = (/obj/structure/flora/pottedplant/thinbush,/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/stranded_outpost)
+"bv" = (/obj/effect/evac_ship,/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"bw" = (/obj/effect/landmark/resupply_skip,/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"bx" = (/obj/effect/floor_decal/industrial/outline/yellow,/obj/machinery/floodlight,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost)
+"by" = (/obj/effect/landmark/day_night_zcontroller,/turf/unsimulated/floor/desert,/area/planet/stranded_outpost/caves)
+"bz" = (/obj/effect/landmark/spawn_medium,/turf/simulated/floor/road/markings{icon_state = "road_marking"; dir = 8},/area/planet/stranded_outpost)
+"bA" = (/obj/effect/landmark/spawn_hard,/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"bB" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 1},/obj/structure/stairs_decorative/industrial,/turf/simulated/floor/tiled/steel_grid,/area/planet/stranded_outpost)
+"bC" = (/obj/structure/stairs_decorative/industrial{icon_state = "industrialstair"; dir = 4},/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"bD" = (/obj/machinery/vending/coffee,/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/stranded_outpost)
+"bE" = (/obj/structure/flora/pottedplant/minitree,/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/stranded_outpost)
+"bF" = (/obj/machinery/vending/snack,/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/stranded_outpost)
+"bG" = (/obj/structure/flora/pottedplant/orientaltree,/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/stranded_outpost)
+"bH" = (/obj/machinery/vending/cigarette,/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/stranded_outpost)
+"bI" = (/obj/structure/tree/palm,/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"bJ" = (/obj/structure/tree/palm_giant,/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"bK" = (/obj/structure/stairs/east{icon_state = "industrialstair"},/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"bL" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 1},/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
+"bM" = (/turf/unsimulated/floor/desert,/area/planet/stranded_outpost/caves)
+"bN" = (/obj/effect/landmark/map_data{name = "Desert Outpost"},/turf/unsimulated/mineral,/area/planet/stranded_outpost/caves)
+
+(1,1,1) = {"
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjaaaaaabjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbobobjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjbjaaaaaaaaaaaaaabjbjbjbjbjbjbjbjbjaaaaaaaaaaaaaaaaaaaabjbjbjbjbjbjbjbjbjbobobobobjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjboboboababbobobobobjbjbjbjbjbjbjbjbjbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjbjaaaabjbjaaaaaaaaaabjbjbjaaaaaaaaaaaaaaaaaabjbjaaaaaaaabjbjbjbjbjboboboababababbobjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjboboabababababababababbobobobobobobjbjbjbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjaaaaaabjbjbjaaaaaaaaaaaaaaaaaaaaaaaaaaaabjbjbjbjbjbjaaaabjbjboboboababababababababbobjbjbjbjbjbjbjboboboboboboboboboboboabababababababababababababababababbobobobjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjaaaaaabjbjbjbjbjaaaaaaaaaaaabjaaaaaaaabjbjbjbjbjbjbjaaaaboboababababababbIabababababbobjbjbjbjboboabababababababababababababababababbqababboababababababababababbobjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjaaaaaaaaaabjbjbjbjbjbjbjbjbjbjbjbjbjbjaaaabjbjbjbjbjbjblblblabababababababababababababababboboboboababababbIababababbJabababababbIabababababababbIabababababbIababababbobjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjaaaaaaaaaabjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjaaaabjbjbjblblababababbIababababababababbqabababababababababababababababababababababababababababababababababababababababababababbobjbjbj
+bjbjbjbjbjbjbjbjbjbjaaaaaaaabjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjaaaabjblblababababababababababababababababababababababababababababababababababababababababababababababababababbJabababababababababbobjbj
+bjbjbjbjbjbjbjbjbjaaaaaaaaaabjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjblblabababababababababababababababababababbIababababababbIababababababababababbIabababababababababababababababababbIabababababababbmbj
+bjbjbjbjbjbjbjbjaaaaaaaaaabjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjblababababababababababababababbIababababababababababababababababababababababababababababababababbIabababababababababababababababababbmbj
+bjbjbjbjbjbjbjbjaaaaaaaabjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjblababababbIababababababababababababababababababababababababababababababababababababababababababababababababababbIababababababababababbmbj
+bjbjbjbjbjbjbjaaaaaaaabjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjblababababababababababababababababababababababababababacabacacacacabacacacacacacabacababacabababababababababababababababababababbIabababbmbj
+aabjbjbjbjbjbjaaaaaabjbjbjbjbjbjbjbjbjaaaaaaaaaaaaaaaabjbjblababababababababababababababababababababababababababacacacacacacabacacacacababacabacacabacabababababababababababababababababababababababbmbj
+aaaabjbjbjbjaaaaaabjbjbjbjbjbjbjbjbjaaaaaaaabjaaaaaaaaaablabababababababababababababbIabababababababababababacabadacadadabacadadbwacadadabacabadadacadadabacabababaeafafafafafafafafafafafafafafagabbmbj
+aaaaaaaabjbjaaaaaabjbjbjbjbjbjbjbjaaaaaaaabjbjbjbjbjaaaablababababababababababababababababababababababababababacacacacacacacacacacacacacacacababacacacacacabahababaiacacahacacahacacahacacahacacajabbmbj
+aabjbjaaaaaaaaaabjbjbjbjbjbjbjbjaaaaaaaaaaaabjbjbjbjbjblababababababababbJabababababababababababababababababacacacacabacacacabacacacabacacabababababacacababahababaiacacahacacahacacahacacahacacajabbmbj
+aabjbjbjbjaaaaaabjbjbjbjbjbjbjbjaaaaaabjaaaaaabjbjbjblababababababababababababababakalalalamabababababababababababababababababababababababababababababababacahacabacacacacacacacacacacacacacacacajabbmbj
+aaaabjbjaaaaaaaabjbjbjbjbjbjbjaaaaaabjbjbjaaaaaabjblababababababbIababababababababanaoapaqarababababababababababababababababababababababababababababababacacacacacacacacacacacacacacacacacacacacajabbmbj
+bjaaaaaaaaaaaaaaaabjbjbjbjbjaaaaaabjbjbjbjaaaaaablababababababababababababababababanasatauavabababababababababawawaxawawawawawawawawawawawawawawawawabababacabacabaiacacayacacacacbsacacacayacacajabbmbj
+bjbjaaaaaaaaaabjaaaabjbjbjaaaaaabjbjbjbjbjbjaaaablababababababababababababababababanazaAbdababbwabababababababawaxaxaxawawawawawawawawawawawawawawawababacacahabacacacacacacacacacacacacacacacacajabbmbj
+bjbjbjaaaaaaaabjbjaaaaaabjaaaabjbjbjbjbjbjbjbjbjblababababababababababababababababaCaDaDaDaQabababababababababawaxaxaxawawawawawawawawawawawawawawawababacacabacacacacacacacacacacacacacacacacacajabbmbj
+bjbjaaaaaaaaaaaaaaaaaaaaaaaaaabjbjbjbjbjbjbjbjblabababababababababababababababababababababababababababababababawaxaxaxawawawawawawawawawawawawawawawababacacacacacaiacacahacacahacacahacacahacacajabbmbj
+bjbjbjaaaaaaaaaaaaaaaaaaaaaabjbjbjbjbjbjbjbjbjblabababababababababababababababababababababababababababababababawawaxawawawawawawawawawawawawawawawawababacacahacacaiacacahacacahaEacahacacahacacajabbmbj
+bjbjaaaaaaaabjbjbjbjaaaaaaaaaabjbjbjbjbjbjbjbjblababababbIababababababababababababababababababababababababababawaxaxaxawaNaNaNabaNaNaNaNaNaNaNaNaNawababacacahacacaFaGaGaGaGaGaGaGaGaGaGaGaGaGaGaHbmaIaI
+bjbjaaaaaabjbjbjbjbjbjaaaaaaaaaaaabjbjbjbjbjblababababababababababbJabababababababababababababababababababababaxaxaxaxaxaNabaNaNaNabaNaNabaNaNaNaNabababacacahacacacacacacacacacacacacacacacacacacbpacaI
+bjbjaaaabjbjbjbjbjbjbjaaaaaaaaaaaabjbjbjbjbjbjblabababababababababababababababaJababawaKaKaKaKaKaLababababababawaxaxaxawaWalaWaWaNaNaNaNaNaNabaNaNabababacacacacacacacacacacacacacacacacacacacacacbpacaI
+bjbjaabjbjbjbjbjbjbjbjaaaabjbjaaaaaabjbjbjbjbjblababababababababababababababababababawaBatatatataMababababababawawaxawawaTaNaUaNaNaNabaNaVaNababababababacacacacadadadacadadadacadadadacadadadacadbzadaI
+bjbjaaaabjbjbjbjbjbjbjaaaabjbjaaaaaaaaaaaaaaaaaablababababababababababababababawawawawawawawbcataPababababababawaxaxaxawbfbfbfbfaNaNaXaYaNabababababababacacacacacacacacacacacacacacacacacacacacacbpacaI
+bjaaaaaabjbjbjbjbjbjbjaabjbjbjbjbjbjaaaaaaaaaabjbjblabababababababababababababawaxaxaxaxaxawbbabaJababababababawaxaRaxawaTaNaUaNabababaNaNaNaNaNaNaNababacacahacacacacacacacacacacacacacacacacacacbpacaI
+bjaaaaaabjbjbjbjbjbjaaaabjbjbjbjbjbjbjbjbjbjbjbjbjbjblabababababababbIababababaxaxaSaxaSaxawabababababababababawaxaxaxawbtbtbtaDaNaNaNbubDbEbFbGbHawababacacahacacacabababababaJabababababababaJabbmaIaI
+bjbjaaaaaabjbjbjbjbjaaaabjbjbjbjbjbjbjbjbjbjbjbjbjbjblababababababababababababawaxaxaxaxaxaxabbwabababababababawaxaxaxawawawawawawawaxawawawawawawawababacacahacacacababababababababababababababababbmbj
+bjbjaaaaaabjbjbjbjbjaaaaaabjbjbjbjbjbjbjbjbjbjbjbjbjblababababababababababababaxaxaSaxaSaxawabababababababababawaxaxaxawawawaZbaaxaRaxaRaxaxaxaZawawababacacacacacacababababababababababababababababbmbj
+bjbjaaaabjbjbjbjbjbjbjaaaabjbjbjbjbjbjaaaaaaaaaaaabnabababababababababababababawaxaxaxaxaxawababaJababababababawaxaxaxawawawaxaxaxaxaxaxaxbaaxaxawawababacacahacacacabababababbIabababababababbIababbmbj
+bjbjaaaabjbjbjbjbjbjaaaaaaaabjbjaaaaaaaaaaaaaaaaaabnabababababababababababababawawawawawawawbBataLababababababawaxaRaxawawawbabaaxaxaxaxaxaxaxbaawawababacacahacacacabababababababababbIababababababbmbj
+bjbjbjaaaabjbjbjaaaaaaaaaaaaaaaaaaaaaaaabjbjbjbjbjblababababababababababababababababawaBatatatataMababababababawaxaxaxawawawaZbabaaRaxaRaxaxbaaZawawababacacahacacacabababababababababababababababbmbjbj
+bjbjaaaaaaaaaaaaaaaaaabjbjaaaaaaaabjbjbjbjbjbjbjbjblababababbIababababababababaJababawbcbcbcbcbcaPababababababawawaxawawawawawawawawaxawawawawawawawababacacacacacacaJabababababbJababababbIabababbmbjbj
+bjbjbjaaaaaaaaaaaaaabjbjbjbjaaaabjbjbjbjbjbjbjbjbjblabababababababbJababababababababababababababababababababababababababababababababababababababababababacacahacacacabababbIababababababababababbmbjbjbj
+bjbjbjbjaaaaaaaaaaaaaaaaaaaaaaaaaabjbjbjbjbjbjbjbjblababababababababababababababababababababababababababababababababababababababababababababababababababacacahacacacababababababababbqabababbmbmbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjaaaaaaaaaaaaaaaabjbjbjbjbjbjbjblabababababababababababababababababababababababababababababababababababababababababababababababababababacahacacabababababababababababbmbmbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjaaaaaaaaaabjbjbjbjbjblababababababababababababbIababababababababababababababababababababababababababababbwabababababababababababacacacababababababababababbmbjbjbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjaaaaaaaaaabjbjblababababababababababababababababababakalalalamababababababababababababababababababababababababababababababacabacacabababababababababbmbjbjbjbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjaaaaaaaaaabjblababababbIabababababababababababababanaoapbdabababababababababababababababababababababababababababababababababababababababababababbmbjbjbjbjbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjaaaaaaaabnababababababababababababababababababanasatauavababababababbCabaKaKaKaKaKaOabababababababababababbJabababababacabacababababababababbmbjbjbjbjbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjaaaaaabnabababababababababababababababababanazaAbearababababababaJawawawaxawawawaJababababababababababababababababababacabaJababababbIababbmbjbjbjbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjblabababababbvababababababababababaCaDaDaDaQabababababababawbxbgaxbxbxawabababababababababababababababababababababababababababababbmbjbjbjbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjblabababababababababababababababababababababababalalalalawbxbgaxbhbhawabababababababbIababababababababababababababababababababbAbjbjbjbjbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjblabababababababababababababababababababababababbCababbKawbxbgaxbhbhawabababababababababbqabababababababababababababababboababbAbjbjbjbjbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjblababababababababababababababababababababababbCababbKawbibgaxbgbiawababababababababababababababbIabababababababbJababababbAbjbjbjbjbjbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjblabababababababbIabababababababababababbJabbCababbKawbibgaxbhbhawabababababababababababababababababbIababababababbAbAbAbAbjbjbjbjbjbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjblababababababababababababababbIababababababbLbLbLbLawbhbiaxbhbhawababababbIababababababababababababababbAbAbAbAbAbjbjbjbjbjbjbjbjbjbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbAbAbAbAbAabababababababababababababababababababababawbhbiaxbhbhawabababababbAbAbAbAbAbAbAbAbAabababbAbAbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbj
+bjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbAababababababababababababababababababababawawawawawawawabbAbAbAbAbjbjbjbjbjbjbjbjbjbAbAbAbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbj
+bjbkbybMbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAbjbjbjbjbjbjbjbAbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbj
+bNbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbj
+"}

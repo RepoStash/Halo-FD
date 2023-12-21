@@ -1,0 +1,139 @@
+"aa" = (/turf/simulated/open,/area/planet/stranded_outpost/level1)
+"ab" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"ac" = (/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"ad" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"ae" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 10},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"af" = (/obj/structure/destructible/railing/industrial,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"ag" = (/obj/structure/destructible/railing/industrial/corner{icon_state = "railing_deco"; dir = 1},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"ah" = (/obj/structure/destructible/railing/industrial/corner,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"ai" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 6},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aj" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 8},/turf/simulated/floor/tiled/doubletiled,/area/planet/stranded_outpost/level1)
+"ak" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 4},/turf/simulated/floor/tiled/doubletiled,/area/planet/stranded_outpost/level1)
+"al" = (/turf/unsimulated/wall{icon_state = "0"},/area/planet/stranded_outpost/level1)
+"am" = (/obj/machinery/light/spot{icon_state = "tube1"; dir = 8},/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 1},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"an" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 1},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"ao" = (/obj/structure/destructible/railing/industrial/corner{icon_state = "railing_deco"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"ap" = (/obj/structure/destructible/railing/industrial/corner{icon_state = "railing_deco"; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aq" = (/obj/machinery/light/spot{icon_state = "tube1"; dir = 4},/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 1},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"ar" = (/obj/structure/destructible/marine_barricade{icon_state = "fullbarricade"; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"as" = (/obj/effect/landmark/start/joinlate,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"at" = (/obj/structure/closet/crate/supply_drop/construction,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"au" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 4},/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"av" = (/obj/structure/closet/crate/supply_drop,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aw" = (/obj/structure/closet/crate/supply_drop/mass_ammo/odst,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"ax" = (/obj/machinery/light/spot{icon_state = "tube1"; dir = 8},/obj/structure/destructible/railing/industrial,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"ay" = (/obj/machinery/light/spot{icon_state = "tube1"; dir = 4},/obj/structure/destructible/railing/industrial,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"az" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 9},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aA" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 5},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aB" = (/obj/structure/destructible/marine_barricade{icon_state = "fullbarricade"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aC" = (/obj/effect/landmark/assault_target_firefight,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aD" = (/obj/structure/destructible/railing/industrial/corner{icon_state = "railing_deco"; dir = 8},/obj/structure/destructible/railing/industrial/corner,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aE" = (/obj/machinery/light/floor,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aF" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 1},/turf/simulated/floor/tiled/steel,/area/planet/stranded_outpost/level1)
+"aG" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 4},/obj/structure/table/rack,/obj/item/ammo_magazine/m6s/m224,/obj/item/ammo_magazine/m6s/m224,/obj/item/ammo_magazine/m6s/m224,/obj/item/ammo_magazine/m6s/m224,/obj/item/ammo_magazine/m6s/m224,/obj/item/ammo_magazine/m6s/m224,/obj/item/weapon/gun/projectile/m6c_magnum_s,/obj/item/weapon/gun/projectile/m6c_magnum_s,/obj/item/weapon/gun/projectile/m6c_magnum_s,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aH" = (/obj/structure/destructible/railing/dark/corner_outer,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aI" = (/obj/structure/destructible/railing/dark,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aJ" = (/obj/structure/destructible/railing/dark/corner_outer{icon_state = "railing_corner_outer_dark"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aK" = (/obj/machinery/light/floor,/turf/simulated/floor/tiled/steel,/area/planet/stranded_outpost/level1)
+"aL" = (/turf/simulated/floor/tiled/steel_ridged,/area/planet/stranded_outpost/level1)
+"aM" = (/turf/simulated/floor/tiled/steel,/area/planet/stranded_outpost/level1)
+"aN" = (/obj/effect/landmark/assault_target/flood,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aO" = (/obj/structure/destructible/railing/industrial/corner,/obj/structure/destructible/railing/industrial/corner{icon_state = "railing_deco"; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aP" = (/obj/structure/destructible/railing/dark{icon_state = "railing_dark"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aQ" = (/turf/unsimulated/floor/grass5,/area/planet/stranded_outpost/level1)
+"aR" = (/obj/structure/destructible/railing/dark{icon_state = "railing_dark"; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aS" = (/obj/structure/destructible/railing/dark,/turf/simulated/floor/tiled/steel,/area/planet/stranded_outpost/level1)
+"aT" = (/turf/unsimulated/mineral,/area/planet/stranded_outpost/caves/upper)
+"aU" = (/obj/structure/table/rack,/obj/structure/destructible/railing/dark{icon_state = "railing_dark"; dir = 4},/obj/item/weapon/gun/projectile/m7_smg/silenced,/obj/item/weapon/gun/projectile/m7_smg/silenced,/obj/item/ammo_magazine/m7/m443/rnd48,/obj/item/ammo_magazine/m7/m443/rnd48,/obj/item/ammo_magazine/m7/m443/rnd48,/obj/item/ammo_magazine/m7/m443/rnd48,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aV" = (/obj/machinery/light/spot{icon_state = "tube1"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aW" = (/obj/structure/destructible/railing/dark/corner_outer{icon_state = "railing_corner_outer_dark"; dir = 1},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"aX" = (/turf/simulated/wall/flood_biomass,/area/planet/stranded_outpost/caves/upper)
+"aY" = (/obj/structure/destructible/railing/dark{icon_state = "railing_dark"; dir = 1},/turf/simulated/floor/tiled/steel,/area/planet/stranded_outpost/level1)
+"aZ" = (/obj/structure/destructible/railing/dark/corner_outer{icon_state = "railing_corner_outer_dark"; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"ba" = (/obj/item/weapon/storage/belt/marine_ammo,/obj/structure/closet/crate/supply_drop,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"bb" = (/obj/structure/destructible/railing/dark{icon_state = "railing_dark"; dir = 1},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"bc" = (/turf/simulated/floor/asteroid/planet,/area/planet/stranded_outpost/caves/upper)
+"bd" = (/obj/effect/landmark/spawn_easy,/turf/simulated/floor/asteroid/planet,/area/planet/stranded_outpost/caves/upper)
+"be" = (/turf/simulated/floor/flood_biomass,/area/planet/stranded_outpost/caves/upper)
+"bf" = (/obj/structure/destructible/railing/industrial,/turf/simulated/floor/tiled/steel,/area/planet/stranded_outpost/level1)
+"bg" = (/obj/machinery/light/spot{icon_state = "tube1"; dir = 8},/obj/structure/destructible/railing/industrial/corner{icon_state = "railing_deco"; dir = 1},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"bh" = (/obj/effect/landmark/spawn_medium,/turf/simulated/floor/asteroid/planet,/area/planet/stranded_outpost/caves/upper)
+"bi" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 8},/turf/simulated/floor/tiled/steel,/area/planet/stranded_outpost/level1)
+"bj" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 4},/turf/simulated/floor/tiled/steel,/area/planet/stranded_outpost/level1)
+"bk" = (/obj/effect/landmark/spawn_hard,/turf/simulated/floor/asteroid/planet,/area/planet/stranded_outpost/caves/upper)
+"bl" = (/obj/effect/landmark/spawn_legendary,/turf/simulated/floor/asteroid/planet,/area/planet/stranded_outpost/caves/upper)
+"bm" = (/turf/simulated/open,/area/planet/stranded_outpost/caves/upper)
+"bn" = (/obj/effect/overmap/sector/desert_outpost,/turf/unsimulated/mineral,/area/planet/stranded_outpost/caves/upper)
+"bo" = (/obj/machinery/light/spot{icon_state = "tube1"; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"bp" = (/obj/effect/landmark/spawn_medium,/turf/simulated/floor/tiled/techfloor/grid,/area/planet/stranded_outpost/level1)
+"bq" = (/obj/effect/landmark/spawn_legendary,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"br" = (/obj/effect/landmark/spawn_hard,/turf/simulated/floor/tiled/techfloor/grid,/area/planet/stranded_outpost/level1)
+"bs" = (/obj/effect/landmark/spawn_easy,/turf/simulated/floor/tiled/techfloor/grid,/area/planet/stranded_outpost/level1)
+"bt" = (/obj/effect/landmark/map_data{name = "Desert Outpost"},/turf/unsimulated/mineral,/area/planet/stranded_outpost/caves/upper)
+"bu" = (/obj/item/weapon/gun/projectile/ma37_ar,/obj/item/weapon/gun/projectile/ma37_ar,/obj/item/ammo_magazine/ma37,/obj/item/ammo_magazine/ma37,/obj/item/ammo_magazine/ma37,/obj/item/ammo_magazine/ma37,/obj/item/ammo_magazine/ma37,/obj/item/ammo_magazine/ma37,/obj/structure/closet/crate/supply_drop,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"bv" = (/obj/structure/closet/crate/supply_drop,/obj/item/weapon/storage/firstaid/unsc,/obj/item/weapon/storage/firstaid/unsc,/obj/item/weapon/storage/belt/marine_medic,/obj/item/weapon/storage/belt/marine_medic,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"bw" = (/obj/structure/bed/roller,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"bx" = (/obj/structure/closet/crate/supply_drop,/obj/item/weapon/storage/firstaid/combat/unsc,/obj/item/weapon/storage/firstaid/fire,/obj/item/weapon/storage/firstaid/o2,/obj/item/weapon/storage/firstaid/regular,/obj/item/weapon/storage/firstaid/toxin,/obj/item/weapon/storage/firstaid/surgery,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"by" = (/obj/structure/closet/crate/supply_drop,/obj/item/weapon/gun/projectile/m392_dmr,/obj/item/weapon/gun/projectile/m392_dmr,/obj/item/ammo_magazine/m392,/obj/item/ammo_magazine/m392,/obj/item/ammo_magazine/m392,/obj/item/ammo_magazine/m392,/obj/item/ammo_magazine/m392,/obj/item/ammo_magazine/m392,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"bz" = (/obj/structure/closet/crate/supply_drop,/obj/item/weapon/gun/projectile/shotgun/pump/m90_ts,/obj/item/weapon/gun/projectile/shotgun/pump/m90_ts,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"bA" = (/obj/structure/closet/crate/supply_drop,/obj/item/weapon/material/machete,/obj/item/weapon/material/machete,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+"bB" = (/obj/structure/closet/crate/supply_drop/medical,/turf/simulated/floor/tiled/techfloor,/area/planet/stranded_outpost/level1)
+
+(1,1,1) = {"
+aTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaTaTaTaTaTaTaTaTaXaXaXaXaXaXaXaXaXaXaXaXaXbcbcaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTbcaTbcbcbcbcbcbcbcaTaTaTaTaTaTaTaTaTaTaTbdbdaTaTaTaTaTaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaTaTaTaTaTaXaXaXaXbebebebebebebebebebebebcbcbcbcaTaTaTaTaTaTaTaTaTaTaTaTaTbcbcbcbcbcbcaTaTaTaTaTbcbcbcbcaTaTbhbhbhbhbhbhbdbdaTaTaTaTaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaTaTaTaTaXaXbebebebebebebebebebebebeaXaXaXaXbcbcbcaTaTaTaTaTaTaTaTbcbcbcbcbcaTaTaTaTaTaTaTaTaTaTaTaTaTbcbkbkblblblblblblbdaTaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaTaTaTaXaXbebebebebeaXaXaXaXaXaXaXaXaXaTaTaXbcbcbcbcbcbcbcaTaTbcbcbcbcbcbcaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTbkblblblblblblbdbdaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaTaTaXaXbebebebebeaXaXaTaTaTaTaTaTaTaTaTaTaXaXaXaXbcbcbcbcbcbcbcbcbcbcaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTbkblblblblbdbdaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaTaXaXbebebebeaXaXaXaTaTaTaTaTaaaTaTaTaTaTaTaTaTaXaXaXaTbcbcbcbcbcaTaTaTaTaTaTaTaTaaaaaaaaaaaTaTaTaTaTaTaTbkblblbdaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaTaXbebebebeaXaXaTaTaTaTaTaaaaaaaaaaaaaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaTaTaTaTbkblbdaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaXaXbebebeaXaXaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaTaTaTaTaTaTaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaTaTbcbcaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaXaXbebebeaXaXaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaTaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabacacacacadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaXaXbebebeaXaXaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabacacacacadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXaXbebebeaXaXaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeafagahafaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXbmbebeaXaXaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTbmbmbebeaXaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTbmbebeaXaXaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXbebebeaXaXaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXaXbebebeaXaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaXaXbebeaXaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaXaXbebeaXaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaXbebebeaXaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalamanaoapananananananananananananaqalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXaXbebebeaXaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabacacacacaracacacaracacasacacasatatauaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXbebebebeaXaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabacacacacacacaracacacaracacacacacatadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXbebebeaXaXaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabacacacacacacaracacacaracacavavacacadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXbebebeaXaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabacacacacaracacacaracacasavavasacawadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXbebeaXaXaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabacacacalaxafafafafafafafafafafafayalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXbebebmaXaXaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabacacacadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXbebebmbmaXaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabacacacadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXaXbebebmaXaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaazananaAaaaaaaaaaaaaaaaaaaaaaaaaabacacacadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaXbebebmaXaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaBacacaaaaaaaaaaaaaaaaaaaaaaaaabaCaBacaDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaXaXbebeaXaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabacaEapanananaFaFaFaFaFaFaFaFaFaoacaBacaGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaXbebeaXaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaHaIaJacacacaKaLaMaLaKaLaMaLaKacaNaBacaOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaXbebeaXaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaPaQaRacacaHaSaSaSaSaSaSaSaSaSaJacacacadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaXaXbebeaXaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaPaQaRacacaUaaaaaaaaaaaaaaaaaaaRacacaValamanananananananananananaqalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaXbebebeaXaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaPaQaRacacaWaYaYaYaYaYaYaYaYaYaZacacacacaracacacaracacacasacasbabuadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXaXbebeaXaXaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaWbbaZacacacaKaLaMaLaKaLaMaLaKacacacacacacacaracacacarbBacbvacacacadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXbebebeaXaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabacaEahafafafbfbfbfbfbfbfbfbfbfagacacacacacacaracacacarbBbwbxbwbybzadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXbebeaXaXaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaBacacaaaaaaaaaaaaaaaaaaaaaaaaabacacacacaracacacaracacacasacasbAavadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXbebebeaXaXaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeafafaiaaaaaaaaaaaaaaaaaaaaaaaaalbgacahafafafafafafafafafafafafafayalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXbmbebebeaXaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabiaMbjaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXbmbmbebeaXaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabiaLbjaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaXaXbmbebeaXaXaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabiaMbjaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaXaXbebebeaXaTaTaTaTaTaTaaaaaaaaaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabiaLbjaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaXbebebeaXaTaTaTaTaTaTaTaaaaaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabiaMbjaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaXaXbebeaXaTaTaTaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabiaLbjaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaXbebeaXaXaTaTaTaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabiaMbjaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaXaXbebeaXaXaXaTaTaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalalaoacapalalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaTaXbebebmbmaXaTaTaTaTaTaTaTaTaTaTaTaaaaaaaaaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalboacacacaValaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaTaXbebebmbmaXaTaTaTaTaTaTaTaTaTaTaTaTaaaaaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabacbpacbpacadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaTaXbebebmaXaXaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoacacbqacacadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaTaXbebebeaXaXaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacbracbracadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaTaXaXbebebeaXaXaXaXaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagacacbqacacadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaTaXaXbmbebebebmbmaXaXaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabacbsacbsacadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaTaXbmbmbebebmbmbmbmaXaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalboacacacaValaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaTaXbmbmaXaXbmaXbmbmaXaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaaaaaTaaaaaaaaaaaaaaaaaaaaaaaaalalacacacalalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aTaTaTaTaTaXaXaXaXaXaXaXaXaXaXaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+bnbtaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

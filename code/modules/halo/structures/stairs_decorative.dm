@@ -53,3 +53,8 @@
 /obj/structure/stairs_decorative/dark/west
 	dir = WEST
 	bound_width = 64
+
+/obj/structure/stairs_decorative/industrial
+	name = "industrial stairs"
+	icon = 'icons/obj/stairs.dmi'
+	icon_state = "industrialstair"
