@@ -19,7 +19,7 @@
 	overmap_event_tokens = 50
 
 	use_overmap = 1
-	allowed_gamemodes = list("stranded", "firefight")
+	allowed_gamemodes = list("stranded")
 
 	area_coherency_test_exempt_areas = list(
 		/area/space,
