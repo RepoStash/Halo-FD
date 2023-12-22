@@ -5,7 +5,7 @@
 	lobby_icon = 'code/modules/halo/splashworks/title4.jpg'
 	id_hud_icons = 'maps/firefight/hud_icons.dmi'
 
-	path = "desert_outpost"
+	path = "stranded_desert_outpost"
 	station_levels = list()
 	admin_levels = list()
 	accessible_z_levels = list()
@@ -15,7 +15,7 @@
 	overmap_size= 5
 
 	use_overmap = 1
-	allowed_gamemodes = list("stranded", "firefight")
+	allowed_gamemodes = list("stranded")
 	allowed_jobs = list(\
 		/datum/job/unsc/marine/firefight,\
 		/datum/job/unsc/marine/squad_leader/firefight,\

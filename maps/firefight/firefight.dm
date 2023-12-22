@@ -5,13 +5,13 @@
 
 	//overmap define
 	#include "../desert_outpost/desert_outpost_overmap.dm"
-	#include "../desert_outpost/desert_outpost_map.dm"
+//	#include "../desert_outpost/desert_outpost_map.dm"
 
 	//lobby music
 	#include "../../code/modules/halo/lobby_music/halo_music.dm"
 
 	//subtype
-	#include "../_gamemodes/firefight/subtypes/stranded.dm"
+//	#include "../_gamemodes/firefight/subtypes/stranded.dm"
 	#include "../_gamemodes/firefight/subtypes/jobs_colonist.dm"
 	#include "../_gamemodes/firefight/subtypes/jobs_unsc.dm"
 
