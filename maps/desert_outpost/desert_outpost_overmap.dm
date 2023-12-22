@@ -4,11 +4,7 @@
 	desc = "A generic desert planet."
 	icon_state = "research"
 
-	map_bounds = list(1,160,175,1)
-
-	faction = "Human Colony"
-	base = 1
-	block_slipspace = 1
+	map_bounds = list(1,1,1,1)
 
 	parent_area_type = /area/planet/stranded_outpost
 
