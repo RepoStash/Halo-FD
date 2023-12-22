@@ -9,7 +9,7 @@
 
 	heat_capacity = 17000
 
-/decl/flooring/forerunner/old
+/decl/flooring/forerunner_alloy/old
 	name = "Alloy Flooring"
 	desc = "Floor made of an advanced alien alloy."
 	icon = 'code/modules/halo/forerunner/turfs/floors.dmi'
