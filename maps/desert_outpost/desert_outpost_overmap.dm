@@ -6,6 +6,6 @@
 
 	map_bounds = list(1,1,1,1)
 
-	parent_area_type = /area/planet/stranded_outpost
+	parent_area_type = /area/planet/daynight
 
 	occupy_range = 28

@@ -13,21 +13,5 @@
 	base_turf = /turf/simulated/floor/asteroid/planet
 	requires_power = 0
 
-/area/planet/stranded_outpost
-	name = "Stranded Outpost"
+/area/planet/daynight/floor1
 	icon_state = "security"
-	base_turf = /turf/simulated/floor/asteroid/planet
-	requires_power = 0
-
-/area/planet/stranded_outpost/caves
-	icon_state = "away"
-	requires_power = 1
-	dynamic_lighting = 1
-
-/area/planet/stranded_outpost/caves/upper
-	icon_state = "away"
-	requires_power = 1
-	dynamic_lighting = 1
-
-/area/planet/stranded_outpost/level1
-	name = "Stranded Outpost - Level 1"
