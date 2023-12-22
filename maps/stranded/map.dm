@@ -13,6 +13,7 @@
 	boss_name     = "United Nations Space Command"
 	company_name  = "United Nations Space Command"
 	overmap_size= 5
+	overmap_event_tokens = 0
 
 	use_overmap = 1
 	allowed_gamemodes = list("stranded")
