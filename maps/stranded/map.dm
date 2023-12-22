@@ -1,4 +1,4 @@
-/datum/map/desert_outpost
+/datum/map/stranded_desert_outpost
 	name = "Stranded: Desert Outpost"
 	full_name = "Stranded gamemode on Desert Outpost map"
 

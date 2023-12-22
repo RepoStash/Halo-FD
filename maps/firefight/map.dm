@@ -1,4 +1,4 @@
-/datum/map/desert_outpost
+/datum/map/firefight_desert_outpost
 	name = "Firefight: Desert Outpost"
 	full_name = "Firefight gamemode on Desert Outpost map"
 
