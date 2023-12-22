@@ -1,15 +1,21 @@
 
-/turf/simulated/floor/forerunner_alloy/old
+/turf/simulated/floor/forerunner_alloy
 	name = "Alloy Flooring"
 	desc = "Floor made of an advanced alien alloy."
 	icon = 'code/modules/halo/forerunner/turfs/floors.dmi'
 	icon_state = "floortile"
 
-	initial_flooring = /turf/simulated/floor/plating
-
 	heat_capacity = 17000
 
-/decl/flooring/forerunner_alloy/old
+	initial_flooring = /turf/simulated/floor/forerunner_alloy
+
+/turf/simulated/floor/forerunner_alloy/old
+	name = "Alloy Flooring"
+	desc = "Floor made of an advanced alien alloy."
+	icon = 'code/modules/halo/forerunner/turfs/floors.dmi'
+	icon_state = "floortile_old"
+
+/decl/flooring/forerunner_alloy
 	name = "Alloy Flooring"
 	desc = "Floor made of an advanced alien alloy."
 	icon = 'code/modules/halo/forerunner/turfs/floors.dmi'
