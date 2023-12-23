@@ -11,7 +11,7 @@
 
 /obj/machinery/light/covenant/south
 	dir = 2
-	pixel_y = -24
+	pixel_y = -16
 
 /obj/machinery/light/covenant/east
 	dir = 4
