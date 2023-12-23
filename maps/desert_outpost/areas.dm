@@ -13,8 +13,5 @@
 	base_turf = /turf/simulated/floor/asteroid/planet
 	requires_power = 0
 
-/area/planet/stranded_outpost
-	name = "Stranded Outpost"
+/area/planet/daynight/floor1
 	icon_state = "security"
-	base_turf = /turf/simulated/floor/asteroid/planet
-	requires_power = 0
