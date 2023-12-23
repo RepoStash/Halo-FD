@@ -70,6 +70,47 @@
 	..()
 	icon_state = "rocks_[rand(1,3)]"
 
+//Vines
 
+/obj/effect/flora/vines
+	name = "vines"
+	icon = 'code/modules/halo/flora/vines.dmi'
+	icon_state = "light1"
 
+/obj/effect/flora/vines/New()
+	..()
+	icon_state = "light_[rand(1,3)]"
 
+/obj/effect/flora/vines/medium
+	icon_state = "medium1"
+
+/obj/effect/flora/vines/medium/New()
+	..()
+	icon_state = "medium_[rand(1,3)]"
+
+/obj/effect/flora/vines/heavy
+	icon_state = "heavy1"
+
+/obj/effect/flora/vines/heavy/New()
+	..()
+	icon_state = "heavy_[rand(1,3)]"
+
+//Ausflora
+
+/obj/effect/flora/fern
+	name = "fern"
+	icon = 'code/modules/halo/flora/ausflora.dmi'
+	icon_state = "fern1"
+
+/obj/effect/flora/fern/New()
+	..()
+	icon_state = "fern_[rand(1,4)]"
+
+/obj/effect/flora/bush
+	name = "bush"
+	icon = 'code/modules/halo/flora/ausflora.dmi'
+	icon_state = "bush1"
+
+/obj/effect/flora/bush/New()
+	..()
+	icon_state = "bush_[rand(1,3)]"

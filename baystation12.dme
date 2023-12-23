@@ -1784,6 +1784,7 @@
 #include "code\modules\halo\forerunner\sentinel_kit.dm"
 #include "code\modules\halo\forerunner\sentinel_spawner.dm"
 #include "code\modules\halo\forerunner\watcher.dm"
+#include "code\modules\halo\forerunner\airlocks\doors.dm"
 #include "code\modules\halo\forerunner\species\knight\knight.dm"
 #include "code\modules\halo\forerunner\species\knight\knight_armour.dm"
 #include "code\modules\halo\forerunner\species\knight\knight_outfit.dm"
