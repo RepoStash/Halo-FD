@@ -57,7 +57,7 @@
 "be" = (/obj/structure/destructible/railing/dark/corner_outer{icon_state = "railing_corner_outer_dark"; dir = 1},/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
 "bf" = (/obj/structure/destructible/railing/dark{icon_state = "railing_dark"; dir = 1},/turf/simulated/floor/tech/steel,/area/planet/daynight/floor1)
 "bg" = (/obj/structure/destructible/railing/dark/corner_outer{icon_state = "railing_corner_outer_dark"; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
-"bh" = (/obj/item/weapon/storage/belt/marine_ammo,/obj/structure/closet/crate/supply_drop,/obj/item/weapon/storage/belt/marine_ammo,/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
+"bh" = (/obj/item/weapon/storage/belt/marine_ammo,/obj/structure/closet/crate/supply_drop,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
 "bi" = (/obj/item/weapon/gun/projectile/ma37_ar,/obj/item/weapon/gun/projectile/ma37_ar,/obj/structure/closet/crate/supply_drop,/obj/item/ammo_magazine/ma37/m118,/obj/item/ammo_magazine/ma37/m118,/obj/item/ammo_magazine/ma37/m118,/obj/item/ammo_magazine/ma37/m118,/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
 "bj" = (/obj/structure/destructible/railing/dark{icon_state = "railing_dark"; dir = 1},/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
 "bk" = (/obj/structure/closet/crate/supply_drop/medical,/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
@@ -126,6 +126,7 @@
 "cv" = (/obj/effect/floor_decal/techfloor/corner,/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
 "cw" = (/obj/machinery/light/spot{icon_state = "tube1"; dir = 4},/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 6},/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
 "cx" = (/obj/structure/destructible/railing/industrial,/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 10},/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
+"cy" = (/obj/structure/closet/crate/supply_drop,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababababababababababab
@@ -164,7 +165,7 @@ aaaaacacafafacaaaaababababababababababababababababababababababababababababababaJ
 aaaaacafafafacaaaaaaabababababababababababababababababababababababababababababaJaYaZcnakakbYbfbfbfbfbfbfbfbfbfbZakakakakazakakakazakakakaAakaAbhbiaPabababababababababababababababababababababababababab
 aaacacafafacacaaaaaaabababababababababababababababababababababababababababababaJbebjbgakcobJaTaUaVaUaTaUaVaUaTbOakakakclakakazclakakazbkakblakakakaPabababababababababababababababababababababababababab
 aaacafafafacaaaaaaaaabababababababababababababababababababababababababababababaJakaNcabsbscbbmbmbmbmbmbmbmbmbmccakakakcoakakazcoakakazbkbnbobnbpbqaPabababababababababababababababababababababababababab
-aaacafafacacaaaaaaaaabababababababababababababababababababababababababababababaJaKakbJababababababababababababcdceakakakazakakakazakcfakaAakaAbraEaPabababababababababababababababababababababababababab
+aaacafafacacaaaaaaaaabababababababababababababababababababababababababababababaJaKakbJababababababababababababcdceakakakazakakakazakcfakaAakaAbrcyaPabababababababababababababababababababababababababab
 aaacafafafacacaaaaaaaaababababababababababababababababababababababababababababcgbsbschababababababababababababatcicjcjbsbsbsbsbsbsbsatbsbsbsbsbsckatabababababababababababababababababababababababababab
 aaacabafafafacaaaaaaaaaaababababababababababababababababababababababababababababababababababababababababababababbtaVbuababababababababababababababababababababababababababababababababababababababababab
 aaacababafafacaaaaaaaaaaababababababababababababababababababababababababababababababababababababababababababababbtaUbuababababababababababababababababababababababababababababababababababababababababab
