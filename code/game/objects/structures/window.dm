@@ -1,3 +1,5 @@
+#define PROJ_RESIST_WINDOW_DAMAGE_MOD 0.05
+
 /obj/structure/window
 	name = "window"
 	desc = "A window."
@@ -567,16 +569,21 @@
 	desc = "A thin sheen covers this window. It looks incredibly hard to destroy with gunfire."
 	icon_state = "rwindow"
 	basestate = "rwindow"
-	maxhealth = 400
+	maxhealth = 600
 	reinf = 1
 	damage_per_fire_tick = 0
 	glasstype = /obj/item/stack/material/glass/reinforced
 
 /obj/structure/window/reinforced/projresist/bullet_act(var/obj/item/projectile/p)
-	visible_message("<span class = 'danger'>[name] doesn't appear to take any damage from [p.name]</span>")
+	p.damage *= PROJ_RESIST_WINDOW_DAMAGE_MOD
+	p.penetrating = max(p.penetrating-1,0)
+	visible_message("<span class = 'danger'>[name] absorbs the majority of the impact of [p.name]</span>")
+	..()
 
 /obj/structure/window/reinforced/projresist/ex_act(var/severity)
 	if(severity > 1) //Anything other than a direct epicenter hit just damages the window.
 		take_damage(50)
 	else
 		take_damage(300)
+
+#undef PROJ_RESIST_WINDOW_DAMAGE_MOD
