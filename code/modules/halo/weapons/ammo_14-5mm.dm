@@ -36,8 +36,7 @@
 /obj/item/projectile/bullet/m233 //Modified slightly to provide a downside for using the innie-heavy-sniper-rounds over normal rounds.
 	damage = 50
 	armor_penetration = 40
-	pin_range = 3
-	pin_chance = 70
+	penetrating = 1
 	shield_damage = 120
 	kill_count = 125
 	step_delay = 0
