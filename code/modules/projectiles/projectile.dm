@@ -269,8 +269,10 @@
 		var/mob/M = A
 		if(istype(A, /mob/living))
 			//if they have a neck grab on someone, that person gets hit instead
+			// But only if we're (generally) facing the direction of the attack.
 			var/obj/item/grab/G = locate() in M
-			if(G && G.shield_assailant())
+			var/shield_facing = get_dir(M,src)
+			if(G && G.shield_assailant() && M.dir in list(shield_facing,turn(shield_facing,45),turn(shield_facing,-45)))
 				visible_message("<span class='danger'>\The [M] uses [G.affecting] as a shield!</span>")
 				if(Bump(G.affecting, forced=1))
 					return //If Bump() returns 0 (keep going) then we continue on to attack M.
