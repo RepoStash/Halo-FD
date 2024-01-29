@@ -22,6 +22,15 @@
 /datum/grab/normal/aggressive/process_effect(var/obj/item/grab/G)
 	var/mob/living/carbon/human/affecting = G.affecting
 
+	//Drop two-handed guns.
+	var/obj/item/weapon/gun/g = affecting.l_hand
+
+	if((istype(g) && g.one_hand_penalty == -1))
+		affecting.drop_l_hand()
+	g = affecting.r_hand
+	if((istype(g) && g.one_hand_penalty == -1))
+		affecting.drop_r_hand()
+
 	// Keeps those who are on the ground down
 	if(affecting.lying)
 		affecting.Weaken(4)

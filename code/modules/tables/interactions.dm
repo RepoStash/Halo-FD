@@ -90,7 +90,7 @@
 
 			if(G.force_danger())
 				G.affecting.forceMove(src.loc)
-				G.affecting.Weaken(rand(2,5))
+				G.affecting.Weaken(rand(2,4))
 				visible_message("<span class='danger'>[G.assailant] puts [G.affecting] on \the [src].</span>")
 				qdel(W)
 			else
