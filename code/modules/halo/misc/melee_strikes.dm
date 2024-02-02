@@ -41,13 +41,16 @@
 			melee_strikes += strike
 	. = ..()
 
-/obj/item/proc/has_melee_strike(var/mob/user,var/skip_firststrike_set)
+/obj/item/proc/has_melee_strike_active()
+	return melee_strike
+
+/obj/item/proc/has_melee_strike(var/mob/user)
 	if(!melee_strikes || melee_strikes.len == 0)
 		return 0
 	if(ishuman(user))
 		var/mob/living/carbon/human/h = user
 		if(src in list(h.l_hand,h.r_hand) && has_melee_strike(user))
-			verbs += /obj/item/proc/verb_swap_stances
+			verbs |= /obj/item/proc/verb_swap_stances
 		else
 			verbs -= /obj/item/proc/verb_swap_stances
 	if(isnull(melee_strike))
