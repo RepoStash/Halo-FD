@@ -41,8 +41,8 @@
 			melee_strikes += strike
 	. = ..()
 
-/obj/item/proc/has_melee_strike(var/mob/user,var/active_only = 0)
-	if(isnull(melee_strikes))
+/obj/item/proc/has_melee_strike(var/mob/user,var/skip_firststrike_set)
+	if(!melee_strikes || melee_strikes.len == 0)
 		return 0
 	if(ishuman(user))
 		var/mob/living/carbon/human/h = user
@@ -54,8 +54,6 @@
 		melee_strike = melee_strikes[1]
 		if(!isnull(melee_strike))
 			melee_strike.strike_active(user)
-		else if (active_only) //If the caller only wants a true result if we have an *active* melee strike,
-			return 0		  //stop here (because we don't, and can't acquire one in the first step)
 
 	return 1
 
@@ -79,8 +77,8 @@
 	melee_strike = stance_curr
 	if(stance_curr == null)
 		to_chat(user,"<span class = 'danger'>You return to your normal weapon stance.</span>")
-		return
-	stance_curr.strike_active(user)
+	else
+		stance_curr.strike_active(user)
 
 //Most elements of melee strikes should do nothing extra if set to null.
 /datum/melee_strike
