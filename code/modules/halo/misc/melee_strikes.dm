@@ -31,29 +31,38 @@
 
 /obj/item/New()
 	if(melee_strikes)
+		verbs += /obj/item/proc/verb_swap_stances
+		melee_strikes += null //Purposefully added, so the stance-switch system can allow you to switch to no-stance for lunges and such.
 		for(var/type in melee_strikes)
 			if(isnull(type))
 				continue
 			var/strike = new type
 			melee_strikes -= type
 			melee_strikes += strike
-		melee_strikes += null //Purposefully added, so the stance-switch system can allow you to switch to no-stance for lunges and such.
 	. = ..()
 
-/obj/item/proc/has_melee_strike(var/mob/user)
+/obj/item/proc/has_melee_strike(var/mob/user,var/active_only = 0)
 	if(isnull(melee_strikes))
-		return null
+		return 0
+	if(ishuman(user))
+		var/mob/living/carbon/human/h = user
+		if(src in list(h.l_hand,h.r_hand) && has_melee_strike(user))
+			verbs += /obj/item/proc/verb_swap_stances
+		else
+			verbs -= /obj/item/proc/verb_swap_stances
 	if(isnull(melee_strike))
 		melee_strike = melee_strikes[1]
 		if(!isnull(melee_strike))
 			melee_strike.strike_active(user)
+		else if (active_only) //If the caller only wants a true result if we have an *active* melee strike,
+			return 0		  //stop here (because we don't, and can't acquire one in the first step)
 
-	return melee_strike
+	return 1
 
 /obj/item/proc/verb_swap_stances()
 	set name = "Swap Stances"
 	set category = "Object"
-	var/mob/living/carbon/human/user = usr
+	var/mob/living/user = usr
 	if(!istype(user)) return
 	if(user.stat) return
 
@@ -73,20 +82,6 @@
 		return
 	stance_curr.strike_active(user)
 
-/obj/item/equipped(var/mob/living/carbon/human/user)
-	. = ..()
-	if(src in list(user.l_hand,user.r_hand) && has_melee_strike(user))
-		verbs |= /obj/item/proc/verb_swap_stances
-	else
-		verbs -= /obj/item/proc/verb_swap_stances
-
-/obj/item/dropped(mob/user as mob)
-	. = ..()
-	if(src in list(user.l_hand,user.r_hand) && has_melee_strike(user))
-		verbs |= /obj/item/proc/verb_swap_stances
-	else
-		verbs -= /obj/item/proc/verb_swap_stances
-
 //Most elements of melee strikes should do nothing extra if set to null.
 /datum/melee_strike
 	var/list/strike_verbs = null //Replacement attack verbs.
@@ -101,7 +96,7 @@
 	//These set a max timeframe on chaining, otherwise it reverts back to a base strike type.
 	var/chain_timeframe = 2 SECONDS
 	var/chain_expire_at = 0
-	var/chain_base_strike = null //Typepath.
+	var/chain_base_strike = null //Typepath.to reset a chain back to.
 
 /datum/melee_strike/proc/strike_active(var/mob/user)
 	if(strike_switch_text) //Combos may want to keep this quiet.

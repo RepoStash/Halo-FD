@@ -26,7 +26,7 @@ avoid code duplication. This includes items that may sometimes act as a standard
 //I would prefer to rename this to attack(), but that would involve touching hundreds of files.
 /obj/item/proc/resolve_attackby(atom/A, mob/user, var/click_params)
 	add_fingerprint(user)
-	if(has_melee_strike(user))
+	if(has_melee_strike(user,1))
 		return melee_strike.do_pre_strike(user,A,src,click_params)
 	return A.attackby(src, user, click_params)
 

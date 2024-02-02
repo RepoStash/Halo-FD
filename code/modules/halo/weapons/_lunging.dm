@@ -62,7 +62,7 @@
 
 /obj/item/afterattack(var/atom/target,var/mob/user,var/is_adjacent,var/click_params)
 	. = ..()
-	if(has_melee_strike() && (is_adjacent || (melee_strike.strike_range >= get_dist( get_turf(user),target))))
+	if(has_melee_strike(user,1) && (is_adjacent || (melee_strike.strike_range >= get_dist( get_turf(user),target))))
 		melee_strike.do_pre_strike(user,target,src,click_params)
 	else
 		do_lunge(target,user,is_adjacent,click_params)
