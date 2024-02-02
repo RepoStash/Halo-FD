@@ -31,24 +31,24 @@
 
 /obj/item/New()
 	if(melee_strikes)
-		melee_strikes += null //Purposefully added, so the stance-switch system can allow you to switch to no-stance for lunges and such.
 		for(var/type in melee_strikes)
 			if(isnull(type))
 				continue
 			var/strike = new type
 			melee_strikes -= type
 			melee_strikes += strike
+		melee_strikes += null //Purposefully added, so the stance-switch system can allow you to switch to no-stance for lunges and such.
 	. = ..()
 
 /obj/item/proc/has_melee_strike(var/mob/user)
-	if(isnull(melee_strikes) || melee_strikes.len == 0)
+	if(isnull(melee_strikes))
 		return null
 	if(isnull(melee_strike))
 		melee_strike = melee_strikes[1]
 		if(!isnull(melee_strike))
 			melee_strike.strike_active(user)
 
-	return 1
+	return melee_strike
 
 /obj/item/proc/verb_swap_stances()
 	set name = "Swap Stances"
