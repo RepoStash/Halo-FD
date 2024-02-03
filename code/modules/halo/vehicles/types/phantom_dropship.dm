@@ -19,6 +19,8 @@
 	takeoff_sound = null
 	overmap_range = 10
 
+	move_sound = 'code/modules/halo/sounds/vehicle_sfx/phantom_move.ogg'
+
 	comp_prof = /datum/component_profile/phantom
 
 	spawn_datum = /datum/mobile_spawn/covenant
