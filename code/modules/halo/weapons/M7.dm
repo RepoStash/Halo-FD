@@ -49,6 +49,7 @@
 	desc = "The M7S is a special operations variant of the M7 submachine gun with inbuilt suppressor and host of other attachments. Takes 5mm calibre magazines."
 	icon_state = "m7smgs"
 	item_state = "m7s"
+	wielded_item_state = "m7s-wielded"
 	silenced = 1
 	is_heavy = 1
 	scoped_accuracy = 1
@@ -69,9 +70,9 @@
 
 /obj/item/weapon/gun/projectile/m7_smg/silenced/update_icon()
 	if(ammo_magazine)
-		icon_state = "m7s"
+		icon_state = "m7smgs"
 	else
-		icon_state = "m7s_unloaded"
+		icon_state = "m7smgs_unloaded"
 
 /obj/item/weapon/gun/projectile/m7_smg/rubber
 	magazine_type = /obj/item/ammo_magazine/m7/rubber

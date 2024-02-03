@@ -36,8 +36,10 @@
 		)
 
 /datum/species/orion/get_random_name(var/gender)
+
 	var/name = ""
 	if(gender == FEMALE)
-		capitalize(pick(GLOB.first_names_female)) + " " + capitalize(pick(GLOB.last_names))
+		name = capitalize(pick(GLOB.first_names_female)) + " " + capitalize(pick(GLOB.last_names))
 	else
 		name = capitalize(pick(GLOB.first_names_male)) + " " + capitalize(pick(GLOB.last_names))
+	return name
