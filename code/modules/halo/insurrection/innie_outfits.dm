@@ -57,6 +57,7 @@
 
 	head = /obj/item/clothing/head/helmet/innie/urfdefector
 	glasses = /obj/item/clothing/glasses/hud/tactical
+	back = /obj/item/weapon/gun/projectile/xm98_carbine/orion
 	mask = /obj/item/clothing/mask/gas/soebalaclava
 	suit = /obj/item/clothing/suit/storage/innie/urfdefector
 	uniform = /obj/item/clothing/under/psysuit/theta

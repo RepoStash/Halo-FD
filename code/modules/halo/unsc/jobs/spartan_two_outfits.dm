@@ -6,10 +6,12 @@
 	gloves = /obj/item/clothing/gloves/spartan
 	shoes = /obj/item/clothing/shoes/magboots/spartan
 	head = /obj/item/clothing/head/helmet/spartan
+	back = /obj/item/weapon/gun/projectile/xm98_carbine
 	l_ear = /obj/item/device/radio/headset/unsc/spartan
 	suit_store = /obj/item/weapon/tank/emergency/oxygen/double
 	starting_accessories = list(/obj/item/clothing/accessory/rank/fleet/enlisted/e9)
 	id_type = /obj/item/weapon/card/id/spartan
+	l_hand = /obj/item/language_learner/human_to_sang
 	flags = 0
 
 /decl/hierarchy/outfit/job/adminspawn_marine/spartan
@@ -24,11 +26,12 @@
 	l_ear = /obj/item/device/radio/headset/unsc/spartan
 	suit_store = /obj/item/weapon/gun/projectile/m6d_magnum
 	starting_accessories = list(/obj/item/clothing/accessory/rank/fleet/enlisted/e9)
-	back = /obj/item/weapon/gun/projectile/ma5b_ar
+	back = /obj/item/weapon/gun/projectile/xm98_carbine
 	belt = /obj/item/weapon/storage/belt/marine_ammo/mobilespawn_ma5
 	r_ear = /obj/item/weapon/reagent_containers/syringe/biofoam
 	l_pocket =/obj/item/weapon/grenade/frag/m9_hedp
 	r_pocket = /obj/item/weapon/armor_patch
+	l_hand = /obj/item/language_learner/human_to_sang
 	id_type = /obj/item/weapon/card/id/spartan
 	flags = 0
 

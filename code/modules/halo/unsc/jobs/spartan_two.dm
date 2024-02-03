@@ -17,6 +17,7 @@
 		access_unsc_medical,\
 		access_unsc_armoury,\
 		access_unsc_supplies,\
+		access_unsc_cargo, \
 		access_unsc_officers,\
 		access_unsc_marine,\
 		access_unsc_gunnery,\
