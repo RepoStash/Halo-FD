@@ -43,18 +43,6 @@
 	cost = 500
 	containername = "\improper Neural Lace crate"
 
-/decl/hierarchy/supply_pack/oni_special/laceinjectoroni //So UNSC has a way to give basic access to people
-	name = "ONI Lace Access Injector"
-	contains = list(/obj/item/lace_injector/oni = 1)
-	cost = 750
-	containername = "\improper Neural Lace crate"
-
-/decl/hierarchy/supply_pack/oni_special/laceinjectoroni //So UNSC has a way to give basic access to people
-	name = "Spartan Lace Access Injector"
-	contains = list(/obj/item/lace_injector/spartan = 1)
-	cost = 2000
-	containername = "\improper Neural Lace crate"
-
 /* MATERIALS - Expensive so that ONI hopefully doesn't powergame research. Not all items included, just in case they somehow do. */
 
 /decl/hierarchy/supply_pack/oni_special/plasma_core

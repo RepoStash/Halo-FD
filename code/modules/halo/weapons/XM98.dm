@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/projectile/xm98_carbine
 	name = "\improper XM98 Carbine"
-	desc = "An experimental carbine dreamt up by the Office of Naval Intelligence as a standard rifle for special operations teams, trading the modularity of the MA5B with a faster rate of fire and better accuracy. It is a bullpup carbine with an integrated suppressor, and is capable of using magazines from the MA5B, MA3, and MA37. It has a low-magnification sight attached on the top."
+	desc = "An experimental carbine dreamt up by the Office of Naval Intelligence as a standard rifle for special operations teams, trading the modularity of the MA5B with a fast and accurate 2 round burst or fast and inaccurate 5 round burst. It is a bullpup carbine with an integrated suppressor, and is capable of using magazines from the MA5B, MA3, and MA37. It has a reflex sight attached on the top."
 	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
 	icon_state = "XM98"
 	item_state = "xm98"
@@ -13,18 +13,16 @@
 	slot_flags = SLOT_BACK
 	wielded_item_state = "xm98-wielded"
 
-	burst = 5
-	burst_delay = 1.5
+	burst = 2
+	burst_delay = 0.8
 	one_hand_penalty = -1
 	dispersion = list(0.0,0.1,0.2,0.2)
 	hud_bullet_row_num = 20
-	scope_zoom_amount = 1.05
-	is_scope_variable = 0
 	silenced = 1
 
 	firemodes = list(\
-	list(mode_name="short bursts",  burst=5, dispersion=list(0.0,0.1,0.2,0.2)),
-	list(mode_name="extended bursts",  burst=10, dispersion=list(0.0,0.1,0.2,0.2, 0.3, 0.3, 0.4, 0.4))
+	list(mode_name="3 round burst",  burst=3, dispersion=list(0.0,0.1,0.2)),
+	list(mode_name="6 round burst",  burst=5, dispersion=list(0.7,0.8,0.9,1.0,1.1,1.2)),
 	)
 
 	ammo_icon_state = null
