@@ -20,6 +20,7 @@
 	/obj/item/organ/internal/liver/spartan/theta = 1,
 	/obj/item/organ/internal/lungs/theta = 1,
 	/obj/item/species_convert/orion = 1
+	/obj/item/lace_injector/odst = 1 //orioning removes your neural lace
 	)
 	cost = 4000
 	containername = "\improper Orion organs freezer"
@@ -27,19 +28,31 @@
 /decl/hierarchy/supply_pack/oni_special/laceinjectormarine //So UNSC has a way to give access to people
 	name = "UNSC Marine Lace Access Injector"
 	contains = list(/obj/item/lace_injector/marine = 1)
-	cost = 250
+	cost = 100
 	containername = "\improper Neural Lace crate"
 
 /decl/hierarchy/supply_pack/oni_special/laceinjectorodst //So UNSC has a way to give access to people
 	name = "UNSC ODST Lace Access Injector"
 	contains = list(/obj/item/lace_injector/marine_spec = 1)
+	cost = 250
+	containername = "\improper Neural Lace crate"
+
+/decl/hierarchy/supply_pack/oni_special/laceinjectorofficer //So UNSC has a way to give access to people
+	name = "UNSC Officer Lace Access Injector"
+	contains = list(/obj/item/lace_injector/odst = 1)
 	cost = 500
 	containername = "\improper Neural Lace crate"
 
-/decl/hierarchy/supply_pack/oni_special/laceinjectorofficer //So UNSC has a way to give basic access to people
-	name = "UNSC Officer Lace Access Injector"
-	contains = list(/obj/item/lace_injector/odst = 1)
-	cost = 1000
+/decl/hierarchy/supply_pack/oni_special/laceinjectoroni //So UNSC has a way to give basic access to people
+	name = "ONI Lace Access Injector"
+	contains = list(/obj/item/lace_injector/oni = 1)
+	cost = 750
+	containername = "\improper Neural Lace crate"
+
+/decl/hierarchy/supply_pack/oni_special/laceinjectoroni //So UNSC has a way to give basic access to people
+	name = "Spartan Lace Access Injector"
+	contains = list(/obj/item/lace_injector/spartan = 1)
+	cost = 2000
 	containername = "\improper Neural Lace crate"
 
 /* MATERIALS - Expensive so that ONI hopefully doesn't powergame research. Not all items included, just in case they somehow do. */

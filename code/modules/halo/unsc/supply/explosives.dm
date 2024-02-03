@@ -47,19 +47,19 @@
 
 /decl/hierarchy/supply_pack/unsc_explosives/plastique
 	name = "C12 Breaching Charges (4)"
-	cost = 200
+	cost = 100 //c12 sucks
 	contains = list(/obj/item/weapon/plastique = 4)
 	containername = "\improper C12 Breaching Charge crate"
 
 /decl/hierarchy/supply_pack/unsc_explosives/plastique_breaching
 	name = "Large Breaching Charges (4)"
-	cost = 500
+	cost = 300
 	contains = list(/obj/item/weapon/plastique/breaching = 4)
 	containername = "\improper Breaching Charge crate"
 
 /decl/hierarchy/supply_pack/unsc_explosives/plastique_breachingpierce
 	name = "Piercing Breaching Charges (4)"
-	cost = 700
+	cost = 500
 	contains = list(/obj/item/weapon/plastique/breaching/longrange = 4)
 	containername = "\improper Piercing Breaching Charge crate"
 
