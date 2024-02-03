@@ -69,7 +69,7 @@
 	var/datum/vector_loc/location		// current location of the projectile in pixel space
 	var/matrix/effect_transform			// matrix to rotate and scale projectile effects - putting it here so it doesn't
 										//  have to be recreated multiple time
-	var/list/segments					// Tracers for hitscan projectiles.
+	var/list/segments = list()					// Tracers for hitscan projectiles.
 
 /obj/item/projectile/Initialize()
 	damtype = damage_type //TODO unify these vars properly
@@ -95,6 +95,9 @@
 
 //called when the projectile stops flying because it collided with something
 /obj/item/projectile/proc/on_impact(var/atom/A)
+	spawn(tracer_delay_time ? tracer_delay_time : 3)
+		for(var/obj/effect/projectile/fx in segments)
+			qdel(fx)
 	impact_effect(effect_transform)		// generate impact effect
 	return
 
@@ -415,7 +418,7 @@
 
 /obj/item/projectile/proc/tracer_effect(var/matrix/M)
 	if(ispath(tracer_type))
-		var/obj/effect/projectile/P = new tracer_type(location.loc)
+		var/obj/effect/projectile/P = new tracer_type(get_turf(src))
 
 		if(istype(P))
 			P.set_transform(M)
