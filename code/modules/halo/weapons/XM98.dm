@@ -3,24 +3,24 @@
 	desc = "An experimental carbine dreamt up by the Office of Naval Intelligence as a standard rifle for special operations teams, trading the modularity of the MA5B with a faster rate of fire and better accuracy. It is a bullpup carbine with an integrated suppressor, and is capable of using magazines from the MA5B, MA3, and MA37. It has a low-magnification sight attached on the top."
 	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
 	icon_state = "XM98"
-	item_state = "ma37"
+	item_state = "xm98"
 	caliber = "7.62mm"
-	fire_sound = 'code/modules/halo/sounds/MA3_Assault_Rifle_Fire_New.ogg'
-	//fire_sound_burst = 'code/modules/halo/sounds/MA37_Fire_New.wav'
+	fire_sound = 'code/modules/halo/sounds/MA3firefix.ogg' //sounds suppressed enough
 	reload_sound = 'code/modules/halo/sounds/MA37_Reload_New.wav'
 	magazine_type = /obj/item/ammo_magazine/ma5b/m118
 	allowed_magazines = list(/obj/item/ammo_magazine/ma37/m118, /obj/item/ammo_magazine/ma5b, /obj/item/ammo_magazine/ma3/m118)
 	load_method = MAGAZINE
 	slot_flags = SLOT_BACK
-	wielded_item_state = "ma37-wielded"
+	wielded_item_state = "xm98-wielded"
 
 	burst = 5
 	burst_delay = 1.5
 	one_hand_penalty = -1
 	dispersion = list(0.0,0.1,0.2,0.2)
 	hud_bullet_row_num = 20
-	scope_zoom_amount = 1.2
+	scope_zoom_amount = 1.05
 	is_scope_variable = 0
+	silenced = 1
 
 	firemodes = list(\
 	list(mode_name="short bursts",  burst=5, dispersion=list(0.0,0.1,0.2,0.2)),
@@ -31,10 +31,10 @@
 	attachment_slots = null
 	attachments_on_spawn = null
 
-/obj/item/weapon/gun/projectile/ma37_ar/can_use_when_prone()
+/obj/item/weapon/gun/projectile/xm98_carbine/can_use_when_prone()
 	return 1
 
-/obj/item/weapon/gun/projectile/ma37_ar/update_icon()
+/obj/item/weapon/gun/projectile/xm98_carbine/update_icon()
 	. = ..()
 	if(ammo_magazine)
 		icon_state = "XM98"
