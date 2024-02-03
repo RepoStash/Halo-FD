@@ -19,7 +19,7 @@
 	/obj/item/organ/internal/heart/spartan/theta = 1,
 	/obj/item/organ/internal/liver/spartan/theta = 1,
 	/obj/item/organ/internal/lungs/theta = 1,
-	/obj/item/species_convert/orion = 1
+	/obj/item/species_convert/orion = 1,
 	/obj/item/lace_injector/odst = 1 //orioning removes your neural lace
 	)
 	cost = 4000

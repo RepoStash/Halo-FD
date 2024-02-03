@@ -2286,6 +2286,7 @@
 #include "code\modules\halo\weapons\MA3.dm"
 #include "code\modules\halo\weapons\MA37.dm"
 #include "code\modules\halo\weapons\MA5B.dm"
+#include "code\modules\halo\weapons\XM98.dm"
 #include "code\modules\halo\weapons\melee.dm"
 #include "code\modules\halo\weapons\plastic_explosives.dm"
 #include "code\modules\halo\weapons\railrifle.dm"
