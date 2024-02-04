@@ -296,8 +296,10 @@
 	tracer_delay_time = 0.5 SECONDS
 	invisibility = 101
 	max_track_steps = 1
+	penetrating = 1
+	pen_limited = 1
 	muzzle_type = /obj/effect/projectile/muzzle/cov_red
-	steps_between_delays = 3
+	steps_between_delays = 5
 
 /obj/effect/projectile/bullet/covenant/needles
 	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
