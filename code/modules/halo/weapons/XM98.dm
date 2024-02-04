@@ -14,7 +14,7 @@
 	wielded_item_state = "xm98-wielded"
 
 	burst = 2
-	burst_delay = 0.8
+	burst_delay = 0.9
 	one_hand_penalty = -1
 	dispersion = list(0.0,0.1,0.2,0.2)
 	hud_bullet_row_num = 20
@@ -22,7 +22,7 @@
 
 	firemodes = list(\
 	list(mode_name="3 round burst",  burst=3, dispersion=list(0.0,0.1,0.2)),
-	list(mode_name="6 round burst",  burst=5, dispersion=list(0.7,0.8,0.9,1.0,1.1,1.2)),
+	list(mode_name="5 round burst",  burst=5, dispersion=list(0.5,0.5,0.6,0.6,0.8)),
 	)
 
 	ammo_icon_state = null
