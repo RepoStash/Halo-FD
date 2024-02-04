@@ -41,6 +41,7 @@
 	damage = 25
 	armor_penetration = 15
 	penetrating = 1
+	pen_limited = 1
 
 /obj/item/projectile/bullet/pellet/shotgun/boltshot
 	name = "hardlight shrapnel"
@@ -48,6 +49,7 @@
 	icon_state = "boltshot_ammo"
 	fire_sound = 'code/modules/halo/sounds/boltshot_sg_fire.ogg'
 	penetrating = 1
+	pen_limited = 1
 
 /obj/item/ammo_magazine/binaryrifle
 	name = "Z-750 SASR magazine"
@@ -108,4 +110,5 @@
 	damage = 20
 	armor_penetration = 20
 	penetrating = 1
+	pen_limited = 1
 	shield_damage = 5

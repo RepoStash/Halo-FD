@@ -44,7 +44,7 @@
 			return 0
 		return 1
 
-	if(penetrating > 0)
+	if(penetrating > 0 && (pen_limited == 0 || (pen_limited == 1 && !isturf(A))))
 		if(A.opacity)
 			//display a message so that people on the other side aren't so confused
 			A.visible_message("<span class='warning'>\The [src] pierces through \the [A]!</span>")

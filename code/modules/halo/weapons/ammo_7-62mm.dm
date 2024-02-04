@@ -45,7 +45,7 @@
 	alpha = 160
 
 /obj/item/ammo_casing/m120
-	desc = "A 7.62mm HP bullet casing."
+	desc = "A 7.62mm +P bullet casing."
 	caliber = "7.62mmdmr"
 	projectile_type = /obj/item/projectile/bullet/m120
 
@@ -53,7 +53,8 @@
 	damage = 35
 	armor_penetration = 40
 	penetrating = 1
+	pen_limited = 1
 	shield_damage = 15
 	tracer_type = /obj/effect/projectile/dmr_trail
 	tracer_delay_time = 0.5 SECONDS
-	steps_between_delays = 3
+	steps_between_delays = 5
