@@ -99,6 +99,8 @@
 
 	overmap_range = 10
 
+	move_sound = 'code/modules/halo/sounds/vehicle_sfx/pelican_move.ogg'
+
 	takeoff_overlay_icon_state = "thrust"
 	takeoff_sound = 'code/modules/halo/shuttles/pelican_takeoff.ogg'
 
@@ -131,6 +133,8 @@
 /obj/vehicles/air/overmap/pelican/unsc
 	faction = "UNSC"
 
+	move_sound = 'code/modules/halo/sounds/vehicle_sfx/pelican_move.ogg'
+
 	spawn_datum = /datum/mobile_spawn/unsc
 
 /obj/vehicles/air/overmap/pelican/urf
@@ -139,6 +143,8 @@
 	icon_state = "inni-base"
 	desc = "A versatile aircraft used by the UNSC for medium-lift operations of personnel, vehicles and equipment. This one has a red fist painted onto the armor. A 40mm Chain-Gun is mounted on the nose."
 	faction = "Insurrection"
+
+	move_sound = 'code/modules/halo/sounds/vehicle_sfx/pelican_move.ogg'
 
 	comp_prof = /datum/component_profile/pelican/urf
 
@@ -182,6 +188,8 @@
 	desc = "A civilian pelican lacking in both weapons and armor."
 	faction = "police"
 	occupants = list(6,0)
+
+	move_sound = 'code/modules/halo/sounds/vehicle_sfx/pelican_move.ogg'
 
 	comp_prof = /datum/component_profile/pelican/civ
 

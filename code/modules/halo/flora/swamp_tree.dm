@@ -4,6 +4,7 @@
 /obj/structure/flora/tree/swamp_tree
 	name = "glowing tree"
 	desc = "A large, sturdy, glowing tree."
+	icon = 'code/modules/halo/icons/flora/swamp_tree.dmi'
 	anchored = 1
 	density = 1
 
