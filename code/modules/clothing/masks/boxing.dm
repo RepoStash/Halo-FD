@@ -18,6 +18,7 @@
 /obj/item/clothing/mask/balaclava/tactical
 	name = "green balaclava"
 	icon_state = "swatclava"
+	item_state = "swatclava"
 	down_icon_state = "swatclava_r"
 	armor = list(melee = 10, bullet = 5, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
 
