@@ -6,7 +6,7 @@
 	suit = /obj/item/clothing/suit/armor/special/skirmisher
 	l_hand = /obj/item/weapon/melee/blamite/dagger
 	head = /obj/item/clothing/head/helmet/kigyar/skirmisher
-	gloves = /obj/item/clothing/gloves/skirmisher_shield_gauntlets
+	gloves = /obj/item/clothing/gloves/skirmisher_shield_gauntlets/minor
 	shoes = /obj/item/clothing/shoes/skirmisher
 	//
 	id_type = /obj/item/weapon/card/id/skirmisher_minor
@@ -19,7 +19,7 @@
 	suit = /obj/item/clothing/suit/armor/special/skirmisher/major
 	l_hand = /obj/item/weapon/melee/blamite/dagger
 	head = /obj/item/clothing/head/helmet/kigyar/skirmisher/major
-	gloves = /obj/item/clothing/gloves/skirmisher_shield_gauntlets
+	gloves = /obj/item/clothing/gloves/skirmisher_shield_gauntlets/major
 	shoes = /obj/item/clothing/shoes/skirmisher/major
 	//
 	id_type = /obj/item/weapon/card/id/skirmisher_major

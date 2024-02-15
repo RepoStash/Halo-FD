@@ -52,6 +52,16 @@
 
 //variants
 
+/obj/item/clothing/gloves/skirmisher_shield_gauntlets/minor
+	name = "T\'Vaoan Minor shield gauntlets"
+	item_state = "minorshield"
+	icon_state = "minorglove"
+
+/obj/item/clothing/gloves/skirmisher_shield_gauntlets/major
+	name = "T\'Vaoan Major shield gauntlets"
+	item_state = "majorshield"
+	icon_state = "majorglove"
+
 /obj/item/clothing/gloves/skirmisher_shield_gauntlets/commando
 	name = "T\'Vaoan Commando shield gauntlets"
 	item_state = "commandoshield"
