@@ -85,3 +85,12 @@
 	//
 	id_type = /obj/item/weapon/card/id/jackal_minor
 	id_slot = slot_wear_id
+
+/decl/hierarchy/outfit/kigyar/major
+	name = "Kig-Yar Major"
+
+	head = /obj/item/clothing/head/helmet/kigyar/major
+	suit = /obj/item/clothing/suit/armor/kigyar/major
+	//
+	id_type = /obj/item/weapon/card/id/jackal_major
+	id_slot = slot_wear_id

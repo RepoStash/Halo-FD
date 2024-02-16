@@ -26,6 +26,9 @@
 	total_positions = 1
 	spawn_positions = 1
 	outfit_type = /decl/hierarchy/outfit/skirmisher_murmillo
+	alt_titles = list(\
+		"T-Vaoan Minor" = /decl/hierarchy/outfit/skirmisher_minor,
+		"T-Vaoan Major" = /decl/hierarchy/outfit/skirmisher_major)
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
 	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/kig_yar_skirmisher)
