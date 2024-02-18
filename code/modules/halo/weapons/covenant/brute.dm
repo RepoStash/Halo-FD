@@ -1,7 +1,7 @@
 
 #define BRUTE_SHOT_GRENADE_MAX_THROW_DIST 6
 #define BRUTE_SHOT_GRENADE_MIN_THROW_DIST 2
-
+#define HAMMER_COOLDOWN 30
 #define JIRALHANAE_WEAPONS 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_weapons_big.dmi'
 
 
