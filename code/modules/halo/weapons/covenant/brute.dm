@@ -251,7 +251,7 @@
 
 /obj/item/weapon/grav_hammer/attack(var/mob/m,var/mob/user)
 	. = ..()
-	if(unique_afterattack)
+	if(unique_afterattack && !istype(m, /mob/living/simple_animal/mgalekgolo))
 		var/throw_dir = get_dir(user,m)
 		m.throw_at(get_edge_target_turf(m, throw_dir),2,4,user)
 
