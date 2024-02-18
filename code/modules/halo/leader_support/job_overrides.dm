@@ -84,7 +84,7 @@
 	command_rank = 2
 
 /datum/job/unsc/odst
-	command_rank = 2
+	command_rank = 1
 
 /datum/job/unsc/odst/squad_leader
 	command_rank = 3
