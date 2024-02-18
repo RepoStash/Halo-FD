@@ -10,6 +10,8 @@
 	outfit_type = /decl/hierarchy/outfit/sangheili/shipmaster
 	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
+	alt_titles = list(\
+		"Sangheili Ceremonial Shipmaster" = /decl/hierarchy/outfit/sangheili/reach/shipmaster)
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
 	pop_balance_mult = 2.5
 
@@ -26,7 +28,8 @@
 	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
 	alt_titles = list(\
-		"Sangheili Ranger Ultra" = /decl/hierarchy/outfit/sangheili/eva/ultra)
+		"Sangheili Ranger Ultra" = /decl/hierarchy/outfit/sangheili/eva/ultra,
+		"Sangheili Ceremonial Ultra" = /decl/hierarchy/outfit/sangheili/reach/ultra)
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
 	pop_balance_mult = 2.5
 
@@ -88,6 +91,8 @@
 	poplock_divisor = 12
 	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
+	alt_titles = list(\
+		"Ceremonial Special Operations Sangheili" = /decl/hierarchy/outfit/sangheili/reach/specops)
 	pop_balance_mult = 2
 
 	radio_speech_size = RADIO_SPEECH_SPECIALIST
