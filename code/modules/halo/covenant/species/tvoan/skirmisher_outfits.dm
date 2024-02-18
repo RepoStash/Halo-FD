@@ -4,12 +4,10 @@
 	l_ear = /obj/item/device/radio/headset/covenant
 	uniform = /obj/item/clothing/under/kigyar
 	suit = /obj/item/clothing/suit/armor/special/skirmisher
-	belt = /obj/item/weapon/gun/energy/plasmapistol
 	l_hand = /obj/item/weapon/melee/blamite/dagger
-	l_pocket = /obj/item/weapon/melee/energy/elite_sword/dagger
 	head = /obj/item/clothing/head/helmet/kigyar/skirmisher
+	gloves = /obj/item/clothing/gloves/skirmisher_shield_gauntlets/minor
 	shoes = /obj/item/clothing/shoes/skirmisher
-	back = /obj/item/weapon/gun/projectile/type51carbine
 	//
 	id_type = /obj/item/weapon/card/id/skirmisher_minor
 	id_slot = slot_wear_id
@@ -19,12 +17,10 @@
 	l_ear = /obj/item/device/radio/headset/covenant
 	uniform = /obj/item/clothing/under/kigyar
 	suit = /obj/item/clothing/suit/armor/special/skirmisher/major
-	belt = /obj/item/weapon/gun/energy/plasmapistol
 	l_hand = /obj/item/weapon/melee/blamite/dagger
-	l_pocket = /obj/item/weapon/melee/energy/elite_sword/dagger
 	head = /obj/item/clothing/head/helmet/kigyar/skirmisher/major
+	gloves = /obj/item/clothing/gloves/skirmisher_shield_gauntlets/major
 	shoes = /obj/item/clothing/shoes/skirmisher/major
-	back = /obj/item/weapon/gun/projectile/type51carbine
 	//
 	id_type = /obj/item/weapon/card/id/skirmisher_major
 	id_slot = slot_wear_id
