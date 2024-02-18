@@ -1,6 +1,7 @@
 
 #define BRUTE_SHOT_GRENADE_MAX_THROW_DIST 6
 #define BRUTE_SHOT_GRENADE_MIN_THROW_DIST 2
+
 #define JIRALHANAE_WEAPONS 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_weapons_big.dmi'
 
 
@@ -266,12 +267,12 @@
 		return
 
 	var/atom/throw_target = get_edge_target_turf(A, get_dir(user, A))
-	if(istype(A, /atom/movable) && !istype(A, /obj/machinery/door) && !istype(A, /mob/living/simple_animal/mgalekgolo)) //No instant door breaking or bullying poor hunters
+	if(istype(A, /mob/living) && !istype(A, /mob/living/simple_animal/mgalekgolo) || istype(A, /obj/item/)) 
 		var/atom/movable/AM = A
 		AM.throw_at(throw_target, 6, 4, user)
 
-	if((world.time-timer)>29) // To avoid spamming non direct hits
-		timer = world.time + 30
+	if((world.time-timer) >= HAMMER_COOLDOWN)
+		timer = world.time + HAMMER_COOLDOWN
 		playsound(user.loc, hitsound, 75)
 		for(var/atom/movable/M in range(A,1))
 			if(M == user)
@@ -280,7 +281,7 @@
 			if(M == A)
 				continue
 
-			if(!M.anchored && !istype(M, /mob/living/simple_animal/mgalekgolo)) // No moving hunters
+			if(!M.anchored && !istype(M, /mob/living/simple_animal/mgalekgolo))
 				M.throw_at(throw_target, 3, 4, user)
 
 			if(isliving(M))
