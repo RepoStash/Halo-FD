@@ -237,6 +237,7 @@
 	armor_penetration = 70
 	lunge_dist = 2
 	hitsound = 'code/modules/halo/sounds/gravhammer.ogg'
+	var/timer = 0
 
 	melee_strikes = list(/datum/melee_strike/swipe_strike/polearm_mixed/hammer,/datum/melee_strike/swipe_strike/polearm_slash/hammer)
 
@@ -265,23 +266,26 @@
 		return
 
 	var/atom/throw_target = get_edge_target_turf(A, get_dir(user, A))
-	if(istype(A, /atom/movable))
+	if(istype(A, /atom/movable) && !istype(A, /obj/machinery/door) && !istype(A, /mob/living/simple_animal/mgalekgolo)) //No instant door breaking or bullying poor hunters
 		var/atom/movable/AM = A
 		AM.throw_at(throw_target, 6, 4, user)
 
-	for(var/atom/movable/M in range(A,1))
-		if(M == user)
-			continue
+	if((world.time-timer)>29) // To avoid spamming non direct hits
+		timer = world.time + 30
+		playsound(user.loc, hitsound, 75)
+		for(var/atom/movable/M in range(A,1))
+			if(M == user)
+				continue
 
-		if(M == A)
-			continue
+			if(M == A)
+				continue
 
-		if(!M.anchored)
-			M.throw_at(throw_target, 3, 4, user)
+			if(!M.anchored && !istype(M, /mob/living/simple_animal/mgalekgolo)) // No moving hunters
+				M.throw_at(throw_target, 3, 4, user)
 
-		if(isliving(M))
-			var/mob/living/victim = M
-			victim.hit_with_weapon(src, user, force/2)
+			if(isliving(M))
+				var/mob/living/victim = M
+				victim.hit_with_weapon(src, user, force/2)
 
 
 /obj/item/weapon/grav_hammer/gravless
