@@ -543,6 +543,17 @@
 
 /// REACH CEREMONIAL ///
 
+/obj/item/clothing/under/covenant/sangheili/reach
+	name = "\improper Ceremonial Sangheili Body-suit"
+	desc = "A sealed, airtight bodysuit. Meant to be worn underneath combat harnesses. Oooooh you're wearing a turtle neck!!"
+	icon = SANGHEILI_ARMOUR_ICON
+	icon_state = "r_sangheili_suit"
+	sprite_sheets = list("Sangheili" = SANGHEILI_ARMOUR_ICON)
+	species_restricted = list("Sangheili")
+	body_parts_covered = UPPER_TORSO | LOWER_TORSO | ARMS | LEGS
+	item_flags = STOPPRESSUREDAMAGE|AIRTIGHT
+	matter = list("cloth" = 1)
+
 /obj/item/clothing/head/helmet/sangheili/specops/reach
 	name = "Ceremonial Sangheili Helmet (Spec-Ops)"
 	desc = "Head armour, to be used with the Sangheili Combat Harness. This one is in a ceremonial pattern."
