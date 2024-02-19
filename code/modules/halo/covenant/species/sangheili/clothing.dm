@@ -541,4 +541,72 @@
 	totalshields = 240
 	item_state = "ranger_chest_ultra"
 
+/// REACH CEREMONIAL ///
+
+/obj/item/clothing/head/helmet/sangheili/specops/reach
+	name = "Ceremonial Sangheili Helmet (Spec-Ops)"
+	desc = "Head armour, to be used with the Sangheili Combat Harness. This one is in a ceremonial pattern."
+	icon = SANGHEILI_ARMOUR_ICON
+	icon_state = "r_specops_helm_obj"
+	item_state = "r_specops_helm"
+
+/obj/item/clothing/suit/armor/special/combatharness/specops/reach
+	name = "Ceremonial Sangheili Combat Harness (Spec-Ops)"
+	icon_state = "r_specops_chest_obj"
+	item_state = "r_specops_chest"
+	totalshields = 50
+	armor_thickness = 15
+	specials = list(/datum/armourspecials/shields/elite,/datum/armourspecials/shieldmonitor/sangheili,/datum/armourspecials/cloaking/cov_specops,/datum/armourspecials/gear/sangheili_infiltrator)
+	action_button_name = "Toggle Active Camouflage"
+
+/obj/item/clothing/gloves/thick/sangheili/specops/reach
+	. = ..()
+	name = "Ceremonial; Sanghelli Combat Gauntlets (Spec-Ops)"
+	desc = "Hand armour, to be used with the Sangheili Combat Harness.  This one is in a ceremonial pattern."
+	icon_state = "r_specops_gloves_obj"
+	item_state = "r_specops_gloves"
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,1,ITEM_SIZE_SMALL,null,list(/obj/item/device/ewar_spoofer))
+	pocket_curr.name = "EWAR Storage"
+	pocket_curr.handle_item_insertion(new /obj/item/device/ewar_spoofer/covenant(loc))
+
+/obj/item/clothing/head/helmet/sangheili/ultra/reach
+	name = "Sangheili Helmet (Ultra)"
+	desc = "Head armour, to be used with the Sangheili Combat Harness.  This one is in a ceremonial pattern."
+	icon = SANGHEILI_ARMOUR_ICON
+	icon_state = "r_ultra_helm_obj"
+	item_state = "r_ultra_helm"
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/covenant/medic
+
+/obj/item/clothing/suit/armor/special/combatharness/ultra/reach
+	name = "Sangheili Combat Harness (Ultra)"
+	icon_state = "r_ultra_chest_obj"
+	item_state = "r_ultra_chest"
+	totalshields = 240
+
+/obj/item/clothing/gloves/thick/sangheili/ultra/reach
+	name = "Sanghelli Combat Gauntlets (Ultra)"
+	desc = "Hand armour, to be used with the Sangheili Combat Harness.  This one is in a ceremonial pattern."
+	icon_state = "r_ultra_gloves_obj"
+	item_state = "r_ultra_gloves"
+
+/obj/item/clothing/head/helmet/sangheili/shipmaster/reach
+	name = "Ceremonial Sangheili Helmet (Shipmaster)"
+	desc = "Head armour, to be used with the Sangheili Combat Harness."
+	icon = SANGHEILI_ARMOUR_ICON
+	icon_state = "r_shipmaster_helm_obj"
+	item_state = "r_shipmaster_helm"
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/covenant/medic
+
+/obj/item/clothing/suit/armor/special/combatharness/shipmaster/reach
+	name = "Ceremonial Sangheili Combat Harness (Shipmaster)"
+	icon_state = "r_shipmaster_chest_obj"
+	item_state = "r_shipmaster_chest"
+	totalshields = 270
+
+/obj/item/clothing/gloves/thick/sangheili/shipmaster/reach
+	name = "Ceremonial Sanghelli Combat Gauntlets (Shipmaster)"
+	desc = "Hand armour, to be used with the Sangheili Combat Harness."
+	icon_state = "r_shipmaster_gloves_obj"
+	item_state = "r_shipmaster_gloves"
+
 #undef SANGHEILI_ARMOUR_ICON
