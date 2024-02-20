@@ -252,7 +252,7 @@
 
 /obj/item/weapon/grav_hammer/attack(var/mob/m,var/mob/user)
 	. = ..()
-	if(unique_afterattack && !istype(m, /mob/living/simple_animal/mgalekgolo))
+	if(unique_afterattack && !islarge(m))
 		var/throw_dir = get_dir(user,m)
 		m.throw_at(get_edge_target_turf(m, throw_dir),2,4,user)
 
@@ -265,9 +265,9 @@
 
 	if(get_dist(A,user) > 1)
 		return
-
+		
 	var/atom/throw_target = get_edge_target_turf(A, get_dir(user, A))
-	if(istype(A, /mob/living) && !istype(A, /mob/living/simple_animal/mgalekgolo) || istype(A, /obj/item/)) 
+	if(istype(A, /mob/living) && !islarge(A) || istype(A, /obj/item/))
 		var/atom/movable/AM = A
 		AM.throw_at(throw_target, 6, 4, user)
 
@@ -277,11 +277,11 @@
 		for(var/atom/movable/M in range(A,1))
 			if(M == user)
 				continue
-
+			
 			if(M == A)
 				continue
 
-			if(!M.anchored && !istype(M, /mob/living/simple_animal/mgalekgolo))
+			if(!M.anchored && !islarge(M))
 				M.throw_at(throw_target, 3, 4, user)
 
 			if(isliving(M))
