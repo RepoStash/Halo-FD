@@ -251,6 +251,7 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 	specials = list(/datum/armourspecials/shields/elite,/datum/armourspecials/shieldmonitor/jiralhanae)
 	totalshields = 210
 	armor_thickness = 30
+	armor_thickness_max = 30
 	matter = list("nanolaminate" = 2)
 	allowed = list(\
 		/obj/item/weapon/grenade/plasma,/obj/item/weapon/grenade/frag/spike,/obj/item/weapon/grenade/brute_shot,/obj/item/weapon/grenade/toxic_gas,\
