@@ -5,7 +5,7 @@
 	icon_state = "XM98"
 	item_state = "xm98"
 	caliber = "7.62mm"
-	fire_sound = 'code/modules/halo/sounds/MA3firefix.ogg' //sounds suppressed enough
+	fire_sound = 'code/modules/halo/sounds/silenced_triple.ogg'
 	reload_sound = 'code/modules/halo/sounds/MA37_Reload_New.wav'
 	magazine_type = /obj/item/ammo_magazine/ma5b/m118
 	allowed_magazines = list(/obj/item/ammo_magazine/ma37/m118, /obj/item/ammo_magazine/ma5b, /obj/item/ammo_magazine/ma3/m118)
