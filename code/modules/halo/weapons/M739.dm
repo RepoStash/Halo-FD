@@ -12,7 +12,7 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/m739/m118
 	allowed_magazines = list(/obj/item/ammo_magazine/m739)
-	fire_sound = 'code/modules/halo/sounds/Assault_Rifle_Fire_New.wav'
+	fire_sound = 'code/modules/halo/sounds/lmg_fire.ogg'
 	reload_sound = 'code/modules/halo/sounds/UNSC_Saw_Reload_Sound_Effect.ogg'
 	one_hand_penalty = -1
 	dispersion = list(0.2, 0.2, 0.2, 0.2, 0.3, 0.3, 0.3, 0.3, 0.4, 0.4, 0.4, 0.5)
