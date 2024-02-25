@@ -64,6 +64,7 @@
 	icon_state = "chaingun_obj"
 	item_state = "chaingun_obj"
 
+	fire_sound = 'code/modules/halo/sounds/pelican_fire.ogg'
 	fire_delay = 8
 
 	burst = 10
@@ -173,6 +174,7 @@
 
 	magazine_type = /obj/item/ammo_magazine/pelican_chaingun
 
+	fire_sound = 'code/modules/halo/sounds/pelican_fire.ogg'
 	fire_delay = 8
 
 	burst = 12
