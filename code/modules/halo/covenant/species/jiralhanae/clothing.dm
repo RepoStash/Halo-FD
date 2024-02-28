@@ -482,8 +482,8 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 	name = "Jiralhanae Clan Flag"
 	desc =  "A flag denoting a Jiralhanae Clan, wear with pride."
 	icon = JIRALHANAE_ICON_PATH_OBJ
-	icon_state = "flag"
-	item_state = "flag"
+	icon_state = "flag_red"
+	item_state = "flag_red"
 	sprite_sheets = list("Jiralhanae" = JIRALHANAE_ICON_PATH_MOB)
 
 #undef JIRALHANAE_ICON_PATH_MOB

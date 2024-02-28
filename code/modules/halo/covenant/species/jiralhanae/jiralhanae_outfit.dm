@@ -116,7 +116,6 @@
 
 	head = /obj/item/clothing/head/helmet/jiralhanae/covenant/major
 	suit = /obj/item/clothing/suit/armor/jiralhanae/covenant/major
-	starting_accessories = list(/obj/item/clothing/accessory/jiralhanae_flag)
 	shoes = /obj/item/clothing/shoes/jiralhanae/covenant/major
 
 /decl/hierarchy/outfit/jiralhanae/covenant/major/armed
