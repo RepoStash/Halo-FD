@@ -476,5 +476,15 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 	..()
 	slowdown_per_slot[slot_shoes] += 0.02 // Movement speed malus due to the armor's weight.
 
+// FLAG //
+
+/obj/item/clothing/accessory/jiralhanae_flag
+	name = "Jiralhanae Clan Flag"
+	desc =  "A flag denoting a Jiralhanae Clan, wear with pride."
+	icon = JIRALHANAE_ICON_PATH_OBJ
+	icon_state = "flag_red"
+	item_state = "flag_red"
+	sprite_sheets = list("Jiralhanae" = JIRALHANAE_ICON_PATH_MOB)
+
 #undef JIRALHANAE_ICON_PATH_MOB
 #undef JIRALHANAE_ICON_PATH_OBJ
