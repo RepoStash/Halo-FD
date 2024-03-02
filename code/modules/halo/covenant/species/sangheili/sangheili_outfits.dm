@@ -295,20 +295,18 @@
 	id_type = /obj/item/weapon/card/id/elite_specops
 	id_slot = slot_wear_id
 
-/decl/hierarchy/outfit/sangheili/reach/shipmaster
-	name = "Ceremonial Sangheili (Shipmaster)"
+/decl/hierarchy/outfit/sangheili/reach/major
+	name = "Ceremonial Sangheili (Officer)"
 
-	suit = /obj/item/clothing/suit/armor/special/combatharness/shipmaster/reach
+	suit = /obj/item/clothing/suit/armor/special/combatharness/major/reach
 	suit_store = null
-	r_hand = /obj/item/weapon/melee/energy/elite_sword
-	l_hand = /obj/item/language_learner/unggoy_to_common
 	back = null
 	belt = null
-	gloves = /obj/item/clothing/gloves/thick/sangheili/shipmaster/reach
-	shoes = /obj/item/clothing/shoes/sangheili/shipmaster //again... ditto
-	head = /obj/item/clothing/head/helmet/sangheili/shipmaster/reach
+	l_hand = /obj/item/language_learner/unggoy_to_common
+	gloves = /obj/item/clothing/gloves/thick/sangheili/major/reach
+	shoes = /obj/item/clothing/shoes/sangheili/major //why are we still here
+	head = /obj/item/clothing/head/helmet/sangheili/major/reach
 	l_pocket = null
-	r_pocket = null
 	//
-	id_type = /obj/item/weapon/card/id/elite_zealot
+	id_type = /obj/item/weapon/card/id/elite_major
 	id_slot = slot_wear_id
