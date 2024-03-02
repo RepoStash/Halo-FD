@@ -284,7 +284,7 @@
 	suit_store = null
 	back = null
 	belt = /obj/item/weapon/gun/projectile/needler/stealth
-	gloves = /obj/item/clothing/gloves/thick/sangheili/specops/reach
+	gloves = /obj/item/clothing/gloves/thick/sangheili/specops/infiltrator/reach
 	shoes = /obj/item/clothing/shoes/sangheili/specops/reach
 	head = /obj/item/clothing/head/helmet/sangheili/specops/reach
 	l_pocket = null
