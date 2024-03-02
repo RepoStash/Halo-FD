@@ -546,18 +546,11 @@
 /obj/item/clothing/under/covenant/sangheili/reach
 	name = "\improper Ceremonial Sangheili Body-suit"
 	desc = "A sealed, airtight bodysuit. Meant to be worn underneath combat harnesses. Oooooh you're wearing a turtle neck!!"
-	icon = SANGHEILI_ARMOUR_ICON
 	icon_state = "r_sangheili_suit"
-	sprite_sheets = list("Sangheili" = SANGHEILI_ARMOUR_ICON)
-	species_restricted = list("Sangheili")
-	body_parts_covered = UPPER_TORSO | LOWER_TORSO | ARMS | LEGS
-	item_flags = STOPPRESSUREDAMAGE|AIRTIGHT
-	matter = list("cloth" = 1)
 
 /obj/item/clothing/head/helmet/sangheili/specops/reach
 	name = "Ceremonial Sangheili Helmet (Spec-Ops)"
 	desc = "Head armour, to be used with the Sangheili Combat Harness. This one is in a ceremonial pattern."
-	icon = SANGHEILI_ARMOUR_ICON
 	icon_state = "r_specops_helm_obj"
 	item_state = "r_specops_helm"
 
@@ -565,20 +558,12 @@
 	name = "Ceremonial Sangheili Combat Harness (Spec-Ops)"
 	icon_state = "r_specops_chest_obj"
 	item_state = "r_specops_chest"
-	totalshields = 50
-	armor_thickness = 15
-	specials = list(/datum/armourspecials/shields/elite,/datum/armourspecials/shieldmonitor/sangheili,/datum/armourspecials/cloaking/cov_specops,/datum/armourspecials/gear/sangheili_infiltrator)
-	action_button_name = "Toggle Active Camouflage"
 
 /obj/item/clothing/gloves/thick/sangheili/specops/reach
-	. = ..()
 	name = "Ceremonial Sanghelli Combat Gauntlets (Spec-Ops)"
 	desc = "Hand armour, to be used with the Sangheili Combat Harness. This one is in a ceremonial pattern."
 	icon_state = "r_specops_gloves_obj"
 	item_state = "r_specops_gloves"
-	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,1,ITEM_SIZE_SMALL,null,list(/obj/item/device/ewar_spoofer))
-	pocket_curr.name = "EWAR Storage"
-	pocket_curr.handle_item_insertion(new /obj/item/device/ewar_spoofer/covenant(loc))
 
 /obj/item/clothing/shoes/sangheili/specops/reach
 	name = "Ceremonial Sanghelli Leg Armour (Spec-Ops)"
@@ -590,16 +575,13 @@
 /obj/item/clothing/head/helmet/sangheili/ultra/reach
 	name = "Ceremonial Sangheili Helmet (Ultra)"
 	desc = "Head armour, to be used with the Sangheili Combat Harness. This one is in a ceremonial pattern."
-	icon = SANGHEILI_ARMOUR_ICON
 	icon_state = "r_ultra_helm_obj"
 	item_state = "r_ultra_helm"
-	integrated_hud = /obj/item/clothing/glasses/hud/tactical/covenant/medic
 
 /obj/item/clothing/suit/armor/special/combatharness/ultra/reach
 	name = "Ceremonial Sangheili Combat Harness (Ultra)"
 	icon_state = "r_ultra_chest_obj"
 	item_state = "r_ultra_chest"
-	totalshields = 240
 
 /obj/item/clothing/gloves/thick/sangheili/ultra/reach
 	name = "Ceremonial Sanghelli Combat Gauntlets (Ultra)"
@@ -616,7 +598,6 @@
 /obj/item/clothing/head/helmet/sangheili/major/reach
 	name = "Ceremonial Sangheili Helmet (Officer)"
 	desc = "Head armour, to be used with the Sangheili Combat Harness. This one is in a ceremonial pattern."
-	icon = SANGHEILI_ARMOUR_ICON
 	icon_state = "r_major_helm_obj"
 	item_state = "r_major_helm"
 
@@ -624,7 +605,6 @@
 	name = "Ceremonial Sangheili Combat Harness (Officer)"
 	icon_state = "r_major_chest_obj"
 	item_state = "r_major_chest"
-	totalshields = 180
 
 /obj/item/clothing/shoes/sangheili/major/reach
 	name = "Ceremonial Sanghelli Leg Armour (Officer)"
