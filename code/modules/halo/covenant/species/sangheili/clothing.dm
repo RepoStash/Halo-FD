@@ -572,13 +572,20 @@
 
 /obj/item/clothing/gloves/thick/sangheili/specops/reach
 	. = ..()
-	name = "Ceremonial; Sanghelli Combat Gauntlets (Spec-Ops)"
+	name = "Ceremonial Sanghelli Combat Gauntlets (Spec-Ops)"
 	desc = "Hand armour, to be used with the Sangheili Combat Harness. This one is in a ceremonial pattern."
 	icon_state = "r_specops_gloves_obj"
 	item_state = "r_specops_gloves"
 	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,1,ITEM_SIZE_SMALL,null,list(/obj/item/device/ewar_spoofer))
 	pocket_curr.name = "EWAR Storage"
 	pocket_curr.handle_item_insertion(new /obj/item/device/ewar_spoofer/covenant(loc))
+
+/obj/item/clothing/shoes/sangheili/specops/reach
+	name = "Ceremonial Sanghelli Leg Armour (Spec-Ops)"
+	desc = "Leg armour, to be used with the Sangheili Combat Harness. This one is in a ceremonial pattern."
+	icon_state = "r_specops_legs_obj"
+	item_state = "r_specops_legs"
+	stepsound = 'code/modules/halo/sounds/walk_sounds/generic_walk.ogg'
 
 /obj/item/clothing/head/helmet/sangheili/ultra/reach
 	name = "Ceremonial Sangheili Helmet (Ultra)"
@@ -599,6 +606,12 @@
 	desc = "Hand armour, to be used with the Sangheili Combat Harness. This one is in a ceremonial pattern."
 	icon_state = "r_ultra_gloves_obj"
 	item_state = "r_ultra_gloves"
+
+/obj/item/clothing/shoes/sangheili/ultra/reach
+	name = "Ceremonial Sanghelli Leg Armour (Ultra)"
+	desc = "Leg armour, to be used with the Sangheili Combat Harness. This one is in a ceremonial pattern."
+	icon_state = "r_ultra_legs_obj"
+	item_state = "r_ultra_legs"
 
 /obj/item/clothing/head/helmet/sangheili/major/reach
 	name = "Ceremonial Sangheili Helmet (Officer)"
