@@ -24,7 +24,7 @@
 	pain_mod = 0.9
 	brute_mod = 1.2
 	burn_mod = 1.2
-	slowdown = -0.4
+	slowdown = -0.5
 
 	equipment_slowdown_multiplier = 1.1 //Disincentives multiple weapon carry
 	gibbed_anim = null

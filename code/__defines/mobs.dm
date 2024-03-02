@@ -262,3 +262,5 @@
 #define SUPPRESSION_SCREAM_CHANCE 5
 #define SUPPRESSION_SHAKE_CHANCE 10
 #define SCREAM_COOLDOWN 1.5 SECOND
+#define HEALTHDEFICIENCY_THRESHOLD 0.2 //20% health loss before we start feeling any sort of slowdown.
+#define HEALTHDEFICIENCY_HPLOSS_ONEPOINTSLOWDOWN_MOD 0.175 //17.5% hp loss per slowdown point

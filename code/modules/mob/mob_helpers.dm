@@ -6,6 +6,12 @@
 		return L.mob_size <= MOB_SMALL
 	return 0
 
+/proc/islarge(A)
+	if(A && istype(A, /mob/living))
+		var/mob/living/L = A
+		return L.mob_size >= MOB_LARGE
+	return 0
+
 //returns the number of size categories between two mob_sizes, rounded. Positive means A is larger than B
 /proc/mob_size_difference(var/mob_size_A, var/mob_size_B)
 	return round(log(2, mob_size_A/mob_size_B), 1)

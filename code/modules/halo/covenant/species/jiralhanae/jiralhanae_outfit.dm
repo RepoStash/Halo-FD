@@ -152,6 +152,7 @@
 	suit = /obj/item/clothing/suit/armor/special/chieftain
 	shoes = /obj/item/clothing/shoes/jiralhanae/covenant/captain/chieftain
 	l_hand = /obj/item/language_learner/unggoy_to_common
+	back = /obj/item/weapon/grav_hammer
 	//
 	id_type = /obj/item/weapon/card/id/brute_captain
 	id_slot = slot_wear_id

@@ -48,7 +48,7 @@
 
 /obj/item/clothing/suit/armor/special/odst
 	name = "ODST Armour"
-	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has standard grey markings denoting its user to be a rifleman. EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one."
+	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has standard grey markings denoting its user to be a rifleman. EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one. Contains minature servomotors to amplify movement speed,"
 	icon = ITEM_INHAND
 	icon_state = "Odst Armour"
 	icon_override = ODST_OVERRIDE
@@ -122,7 +122,7 @@
 
 /obj/item/clothing/suit/armor/special/odst/cqb
 	name = "ODST CQB Armour"
-	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has deep red markings to relay that its user is specialized in Close Quarters Battle. It has a combat knife sheath attached to the left shoulder as well as additional up-armoring on the chest and legs. EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one."
+	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has deep red markings to relay that its user is specialized in Close Quarters Battle. It has a combat knife sheath attached to the left shoulder as well as additional up-armoring on the chest and legs. EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one. Contains minature servomotors to amplify movement speed,"
 
 	icon_state = "Odst Armour CQB"
 
@@ -140,7 +140,7 @@
 
 /obj/item/clothing/suit/armor/special/odst/sharpshooter
 	name = "ODST Sharpshooter Armour"
-	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has no markings to enhance stealth capabilities and to relay that its wearer is a designated marksman or sniper. It has had its right shoulder armor removed in order to increase ease of aim and fire for right-handed shooters, as well as its left shoulder armor enlarged to provide extra protection from fire coming from the left side . EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one."
+	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has no markings to enhance stealth capabilities and to relay that its wearer is a designated marksman or sniper. It has had its right shoulder armor removed in order to increase ease of aim and fire for right-handed shooters, as well as its left shoulder armor enlarged to provide extra protection from fire coming from the left side . EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one. Contains minature servomotors to amplify movement speed,"
 
 	icon_state = "Odst Armour Sharpshooter"
 
@@ -159,7 +159,7 @@
 
 /obj/item/clothing/suit/armor/special/odst/medic
 	name = "ODST Medic Armour"
-	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has maroon markings to relay that its wearer is a designated combat medic. EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one."
+	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has maroon markings to relay that its wearer is a designated combat medic. EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one. Contains minature servomotors to amplify movement speed,"
 
 	icon_state = "Odst Armour Medic"
 
@@ -192,7 +192,7 @@
 
 /obj/item/clothing/suit/armor/special/odst/engineer
 	name = "ODST Engineer Armour"
-	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has orange markings to relay that its wearer is a designated combat engineer. EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one."
+	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has orange markings to relay that its wearer is a designated combat engineer. EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one. Contains minature servomotors to amplify movement speed,"
 
 	icon_state = "Odst Armour Engineer"
 
@@ -211,7 +211,7 @@
 
 /obj/item/clothing/suit/armor/special/odst/old
 	name = "ODST Armour"
-	desc = "Lightweight, durable armour issued to Orbital Drop Shock Troopers for increased survivability in the field. This particular BDU appears to be of a older pattern."
+	desc = "Lightweight, durable armour issued to Orbital Drop Shock Troopers for increased survivability in the field. This particular BDU appears to be of a older pattern. Contains minature servomotors to amplify movement speed,"
 
 	item_state = "h2_odst_armor_worn"
 	icon_state = "h2_odst_armor_obj"
@@ -231,7 +231,7 @@
 
 /obj/item/clothing/suit/armor/special/odst/squadleader
 	name = "ODST Squad Leader Armour"
-	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has blue markings to relay that its wearer is an NCO or officer. It has a combat knife sheath attached to the left shoulder. EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one."
+	desc = "The armor of the standard Orbital Drop Shock Trooper Battle Dress Uniform(BDU), this one has blue markings to relay that its wearer is an NCO or officer. It has a combat knife sheath attached to the left shoulder. EVA Capable, protective, and lightweight; a fine piece of armor if there ever was one. Contains minature servomotors to amplify movement speed,"
 
 	icon_state = "Odst Armor Squad Leader"
 

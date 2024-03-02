@@ -251,6 +251,7 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 	specials = list(/datum/armourspecials/shields/elite,/datum/armourspecials/shieldmonitor/jiralhanae)
 	totalshields = 210
 	armor_thickness = 30
+	armor_thickness_max = 30
 	matter = list("nanolaminate" = 2)
 	allowed = list(\
 		/obj/item/weapon/grenade/plasma,/obj/item/weapon/grenade/frag/spike,/obj/item/weapon/grenade/brute_shot,/obj/item/weapon/grenade/toxic_gas,\
@@ -474,6 +475,16 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 /obj/item/clothing/shoes/magboots/jiralhanaeEVA/New()
 	..()
 	slowdown_per_slot[slot_shoes] += 0.02 // Movement speed malus due to the armor's weight.
+
+// FLAG //
+
+/obj/item/clothing/accessory/jiralhanae_flag
+	name = "Jiralhanae Clan Flag"
+	desc =  "A flag denoting a Jiralhanae Clan, wear with pride."
+	icon = JIRALHANAE_ICON_PATH_OBJ
+	icon_state = "flag_red"
+	item_state = "flag_red"
+	sprite_sheets = list("Jiralhanae" = JIRALHANAE_ICON_PATH_MOB)
 
 #undef JIRALHANAE_ICON_PATH_MOB
 #undef JIRALHANAE_ICON_PATH_OBJ

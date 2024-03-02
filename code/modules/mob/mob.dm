@@ -145,9 +145,9 @@
 
 /mob/proc/movement_delay()
 	. = 0
-	if(istype(loc, /turf))
-		var/turf/T = loc
-		. += T.movement_delay
+	var/turf/T = get_turf(src)
+	if(src.elevation == T.elevation)
+		. += T.get_movement_delay()
 	. += currently_firing
 
 	if(pulling)

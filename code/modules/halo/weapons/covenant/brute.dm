@@ -1,6 +1,7 @@
 
 #define BRUTE_SHOT_GRENADE_MAX_THROW_DIST 6
 #define BRUTE_SHOT_GRENADE_MIN_THROW_DIST 2
+#define HAMMER_COOLDOWN 30
 #define JIRALHANAE_WEAPONS 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_weapons_big.dmi'
 
 
@@ -237,6 +238,7 @@
 	armor_penetration = 70
 	lunge_dist = 2
 	hitsound = 'code/modules/halo/sounds/gravhammer.ogg'
+	var/timer = 0
 
 	melee_strikes = list(/datum/melee_strike/swipe_strike/polearm_mixed/hammer,/datum/melee_strike/swipe_strike/polearm_slash/hammer)
 
@@ -250,7 +252,7 @@
 
 /obj/item/weapon/grav_hammer/attack(var/mob/m,var/mob/user)
 	. = ..()
-	if(unique_afterattack)
+	if(unique_afterattack && !islarge(m))
 		var/throw_dir = get_dir(user,m)
 		m.throw_at(get_edge_target_turf(m, throw_dir),2,4,user)
 
@@ -263,25 +265,28 @@
 
 	if(get_dist(A,user) > 1)
 		return
-
+		
 	var/atom/throw_target = get_edge_target_turf(A, get_dir(user, A))
-	if(istype(A, /atom/movable))
+	if(istype(A, /mob/living) && !islarge(A) || istype(A, /obj/item/))
 		var/atom/movable/AM = A
 		AM.throw_at(throw_target, 6, 4, user)
 
-	for(var/atom/movable/M in range(A,1))
-		if(M == user)
-			continue
+	if((world.time-timer) >= HAMMER_COOLDOWN)
+		timer = world.time + HAMMER_COOLDOWN
+		playsound(user.loc, hitsound, 75)
+		for(var/atom/movable/M in range(A,1))
+			if(M == user)
+				continue
+			
+			if(M == A)
+				continue
 
-		if(M == A)
-			continue
+			if(!M.anchored && !islarge(M))
+				M.throw_at(throw_target, 3, 4, user)
 
-		if(!M.anchored)
-			M.throw_at(throw_target, 3, 4, user)
-
-		if(isliving(M))
-			var/mob/living/victim = M
-			victim.hit_with_weapon(src, user, force/2)
+			if(isliving(M))
+				var/mob/living/victim = M
+				victim.hit_with_weapon(src, user, force/2)
 
 
 /obj/item/weapon/grav_hammer/gravless
