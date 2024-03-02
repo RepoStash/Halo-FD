@@ -58,7 +58,7 @@
 	whitelisted_species = list(/datum/species/sangheili)
 	alt_titles = list(\
 		"Sangheili Ranger Major" = /decl/hierarchy/outfit/sangheili/eva/major,
-		"Ceremonial Sangheili Major" = /decl/hierarchy/outfit/sangheili/major/reach)
+		"Ceremonial Sangheili Major" = /decl/hierarchy/outfit/sangheili/reach/major)
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
 	pop_balance_mult = 2
 
