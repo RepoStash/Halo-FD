@@ -250,3 +250,63 @@
 	back = /obj/item/weapon/gun/energy/plasmarifle
 	belt = /obj/item/weapon/gun/energy/plasmarifle
 	l_pocket = /obj/item/weapon/grenade/plasma
+
+/// REACH CEREMONIAL OUTFITS ///
+
+/decl/hierarchy/outfit/sangheili/reach
+	name = "Ceremonial Sangheili"
+
+	uniform = /obj/item/clothing/under/covenant/sangheili/reach
+	l_ear = /obj/item/device/radio/headset/covenant
+
+/decl/hierarchy/outfit/sangheili/reach/ultra
+	name = "Ceremonial Sangheili (Ultra)"
+
+	suit = /obj/item/clothing/suit/armor/special/combatharness/ultra/reach
+	suit_store = null
+	back = null
+	belt = null
+	l_hand = /obj/item/language_learner/unggoy_to_common
+	r_hand = /obj/item/weapon/melee/energy/elite_sword
+	gloves = /obj/item/clothing/gloves/thick/sangheili/ultra/reach
+	shoes = /obj/item/clothing/shoes/sangheili/ultra/reach
+	head = /obj/item/clothing/head/helmet/sangheili/ultra/reach
+	l_pocket = null
+	r_pocket = null
+	//
+	id_type = /obj/item/weapon/card/id/elite_ultra
+	id_slot = slot_wear_id
+
+/decl/hierarchy/outfit/sangheili/reach/specops
+	name = "Ceremonial Sangheili (Spec-Ops)"
+
+	suit = /obj/item/clothing/suit/armor/special/combatharness/specops/reach
+	suit_store = null
+	back = null
+	belt = /obj/item/weapon/gun/projectile/needler/stealth
+	gloves = /obj/item/clothing/gloves/thick/sangheili/specops/infiltrator/reach
+	shoes = /obj/item/clothing/shoes/sangheili/specops/reach
+	head = /obj/item/clothing/head/helmet/sangheili/specops/reach
+	l_pocket = null
+	r_pocket = null
+	l_hand = /obj/item/weapon/gun/energy/plasmapistol/stealth
+	r_hand = /obj/item/language_learner/unggoy_to_common
+	//
+	id_type = /obj/item/weapon/card/id/elite_specops
+	id_slot = slot_wear_id
+
+/decl/hierarchy/outfit/sangheili/reach/major
+	name = "Ceremonial Sangheili (Officer)"
+
+	suit = /obj/item/clothing/suit/armor/special/combatharness/major/reach
+	suit_store = null
+	back = null
+	belt = null
+	l_hand = /obj/item/language_learner/unggoy_to_common
+	gloves = /obj/item/clothing/gloves/thick/sangheili/major/reach
+	shoes = /obj/item/clothing/shoes/sangheili/major/reach
+	head = /obj/item/clothing/head/helmet/sangheili/major/reach
+	l_pocket = null
+	//
+	id_type = /obj/item/weapon/card/id/elite_major
+	id_slot = slot_wear_id
