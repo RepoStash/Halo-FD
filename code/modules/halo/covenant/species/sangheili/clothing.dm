@@ -559,7 +559,7 @@
 	icon_state = "r_specops_chest_obj"
 	item_state = "r_specops_chest"
 
-/obj/item/clothing/gloves/thick/sangheili/specops/reach
+/obj/item/clothing/gloves/thick/sangheili/specops/infiltrator/reach
 	name = "Ceremonial Sanghelli Combat Gauntlets (Spec-Ops)"
 	desc = "Hand armour, to be used with the Sangheili Combat Harness. This one is in a ceremonial pattern."
 	icon_state = "r_specops_gloves_obj"
