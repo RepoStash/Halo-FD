@@ -269,7 +269,7 @@
 	l_hand = /obj/item/language_learner/unggoy_to_common
 	r_hand = /obj/item/weapon/melee/energy/elite_sword
 	gloves = /obj/item/clothing/gloves/thick/sangheili/ultra/reach
-	shoes = /obj/item/clothing/shoes/sangheili/ultra //it's the exact same sprite so...
+	shoes = /obj/item/clothing/shoes/sangheili/ultra/reach
 	head = /obj/item/clothing/head/helmet/sangheili/ultra/reach
 	l_pocket = null
 	r_pocket = null
@@ -285,7 +285,7 @@
 	back = null
 	belt = /obj/item/weapon/gun/projectile/needler/stealth
 	gloves = /obj/item/clothing/gloves/thick/sangheili/specops/reach
-	shoes = /obj/item/clothing/shoes/sangheili/specops //ditto
+	shoes = /obj/item/clothing/shoes/sangheili/specops/reach
 	head = /obj/item/clothing/head/helmet/sangheili/specops/reach
 	l_pocket = null
 	r_pocket = null
@@ -304,7 +304,7 @@
 	belt = null
 	l_hand = /obj/item/language_learner/unggoy_to_common
 	gloves = /obj/item/clothing/gloves/thick/sangheili/major/reach
-	shoes = /obj/item/clothing/shoes/sangheili/major //why are we still here
+	shoes = /obj/item/clothing/shoes/sangheili/major/reach
 	head = /obj/item/clothing/head/helmet/sangheili/major/reach
 	l_pocket = null
 	//
