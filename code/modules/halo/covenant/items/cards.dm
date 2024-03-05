@@ -149,7 +149,10 @@
 	icon = 'code/modules/halo/covenant/items/Cards.dmi'
 	icon_state = "bruteguard_id"
 
-
+/obj/item/weapon/card/id/brute_guard
+	name = "Jiralhanae Honour Guard identification card"
+	icon = 'code/modules/halo/covenant/items/Cards.dmi'
+	icon_state = "sangguard_id"
 
 /***** PROPHET *****/
 

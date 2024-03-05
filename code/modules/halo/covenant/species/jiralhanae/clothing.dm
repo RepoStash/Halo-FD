@@ -137,6 +137,15 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 	armor_thickness_max = 28
 	integrated_hud = /obj/item/clothing/glasses/hud/tactical/covenant/medic
 
+/obj/item/clothing/head/helmet/jiralhanae/covenant/honour_guard
+	name =  "Jiralhanae Helm (Honour Guard)"
+	desc = "What was once a Sangheili Honour Guard helmet has now been refitted for Jiralhanae use, It is a mark of importance and leadership."
+	icon = JIRALHANAE_ICON_PATH_OBJ
+	icon_state = "honourguard_helm"
+	armor_thickness = 25
+	armor_thickness_max = 25
+
+
 /* ARMOUR */
 
 
@@ -262,6 +271,14 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 	..()
 	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
 
+/obj/item/clothing/suit/armor/jiralhanae/covenant/honour_guard
+	name = "Jiralhanae Armour (Honour Guard)"
+	desc = "A suit of refitted Sangheili Honour Guard armor, now capable of being worn by Jiralhanae."
+	icon = JIRALHANAE_ICON_PATH_OBJ
+	icon_state = "honourguard_chest"
+	armor_thickness = 28
+	armor_thickness_max = 28
+
 /* SHOES */
 
 
@@ -319,6 +336,11 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 	armor = list(melee = 45, bullet = 35, laser = 0, energy = 0, bomb = 35, bio = 0, rad = 0)
 	body_parts_covered = LEGS|FEET
 	matter = list("nanolaminate" = 1)
+
+/obj/item/clothing/shoes/jiralhanae/covenant/honour_guard
+	name = "Jiralhanae Greaves (Honour Guard)"
+	icon = JIRALHANAE_ICON_PATH_OBJ
+	icon_state = "honourguard_feet"
 
 /* FLAGS */
 

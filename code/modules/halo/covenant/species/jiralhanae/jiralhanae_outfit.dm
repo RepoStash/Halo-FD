@@ -164,6 +164,23 @@
 	belt = /obj/item/weapon/storage/belt/covenant_ammo/loadedspawn_mauler
 	suit_store = /obj/item/weapon/gun/projectile/mauler
 	l_pocket = /obj/item/weapon/grenade/frag/spike
+
+/decl/hierarchy/outfit/jiralhanae/covenant/honour_guard
+	name = "Covenant Jiralhanae Honour Guard"
+	suit = /obj/item/clothing/suit/armor/jiralhanae/covenant/honour_guard
+	suit_store = null
+	back = /obj/item/weapon/melee/energy/elite_sword/honour_staff
+	l_hand = /obj/item/language_learner/unggoy_to_common
+	r_hand = null
+	gloves = null
+	shoes = /obj/item/clothing/shoes/jiralhanae/covenant/honour_guard
+	head = /obj/item/clothing/head/helmet/jiralhanae/covenant/honour_guard
+	l_pocket = null
+	r_pocket = null
+	//
+	id_type = /obj/item/weapon/card/id/brute_guard
+	id_slot = slot_wear_id
+
 /* Ram Clan Jiralhanae */
 
 /decl/hierarchy/outfit/jiralhanae_ramclan
@@ -192,8 +209,6 @@
 	head = /obj/item/clothing/head/helmet/jiralhanae/chieftain_ram
 	suit = /obj/item/clothing/suit/armor/jiralhanae/chieftain_ram
 	shoes = /obj/item/clothing/shoes/jiralhanae
-
-
 
 /* Boulder Clan Jiralhanae */
 
