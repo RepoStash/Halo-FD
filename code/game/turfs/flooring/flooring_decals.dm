@@ -858,3 +858,31 @@ var/list/floor_decals = list()
 /obj/effect/floor_decal/techfloor/hole/right
 	name = "hole right"
 	icon_state = "techfloor_hole_right"
+
+//Grass Edges
+
+/obj/effect/floor_decal/grass_edge
+	name = "grass edge"
+	icon_state = "grass_edge"
+
+/obj/effect/floor_decal/grass_edge/corner
+	name = "grass corner"
+	icon_state = "grass_edge_corner"
+
+/obj/effect/floor_decal/grass_edge_light
+	icon_state = "grass_edge_light"
+
+/obj/effect/floor_decal/grass_edge_light/corner
+	icon_state = "grass_edge_light_corner"
+
+/obj/effect/floor_decal/grass_edge_tan
+	icon_state = "grass_edge_tan"
+
+/obj/effect/floor_decal/grass_edge_tan/corner
+	icon_state = "grass_edge_tan_corner"
+
+/obj/effect/floor_decal/grass_edge_dark
+	icon_state = "grass_edge_dark"
+
+/obj/effect/floor_decal/grass_edge_dark_corner
+	icon_state = "grass_edge_dark_corner"
