@@ -1789,6 +1789,7 @@
 #include "code\modules\halo\forerunner\species\knight\knight.dm"
 #include "code\modules\halo\forerunner\species\knight\knight_armour.dm"
 #include "code\modules\halo\forerunner\species\knight\knight_outfit.dm"
+#include "code\modules\halo\forerunner\structures_machines\structures.dm"
 #include "code\modules\halo\forerunner\turfs\floor.dm"
 #include "code\modules\halo\forerunner\turfs\materials.dm"
 #include "code\modules\halo\forerunner\turfs\walls.dm"

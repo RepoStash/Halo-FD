@@ -2,7 +2,7 @@
 /obj/structure/sentinel_spawner
 	name = "Sentinel spawner"
 	desc = "An ancient piece of Forerunner machinery that endlessly constructs sentinels to defend their installation."
-	icon = 'code/modules/halo/Forerunner/Sentinel.dmi'
+	icon = 'code/modules/halo/forerunner/sentinel.dmi'
 	icon_state = "spawner"
 	anchored = 1
 	var/list/all_sentinels = list()
@@ -43,3 +43,17 @@
 
 /obj/structure/sentinel_spawner/respawn30sec
 	sentinel_respawn_time = 30 SECONDS
+
+/obj/structure/sentinel_spawner_inactive
+	name = "Sentinel Spawner"
+	desc = "An ancient piece of Forerunner machinery that endlessly constructs Sentinels to defend their installations, this one appears to be inactive."
+	icon = 'code/modules/halo/forerunner/Sentinel.dmi'
+	icon_state = "disabled"
+	anchored = 1
+
+/obj/structure/sentinel_spawner_inactive/heavy
+	name = "Sentinel Heavy Factory"
+	desc = "An ancient shaft containing more complex Forerunner machinery that endlessly constructs heavier versions of Sentinels to defend their installations, this one appears to be inactive."
+	icon = 'code/modules/halo/forerunner/heavy_sentinel_spawner.dmi'
+	icon_state = "disabled_closed"
+	anchored = 1
