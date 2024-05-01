@@ -2116,6 +2116,28 @@ obj/item/clothing/head/helmet/odst/donator/roadcone_orange
 	/obj/item/clothing/shoes/marine/ilikesaying
 	)
 
+///////////Random516 - TheAloneRandom/////////
+
+//Spartan
+
+/obj/item/clothing/head/helmet/spartan/the_alone_random
+	icon_state = "alone_random_helm_obj"
+	item_state = "alone_random_helm_worn"
+
+/obj/item/clothing/suit/armor/special/spartan/the_alone_random
+	icon_state = "alone_random_armor_obj"
+	item_state = "alone_random_armor_worn"
+
+/obj/item/weapon/storage/box/large/donator/the_alone_random
+	startswith = list(\
+	/obj/item/clothing/head/helmet/spartan/the_alone_random,
+	/obj/item/clothing/suit/armor/special/spartan/the_alone_random
+	)
+	can_hold = list(\
+	/obj/item/clothing/head/helmet/spartan/the_alone_random,
+	/obj/item/clothing/suit/armor/special/spartan/the_alone_random
+	)
+
 #undef ODST_OVERRIDE
 #undef ITEM_INHAND
 #undef MARINE_OVERRIDE
