@@ -98,6 +98,22 @@
 	icon_state = "helmet_b"
 	body_parts_covered = HEAD|EYES
 
+/obj/item/clothing/head/helmet/marine/combatcap
+	name = "UNSC Combat Cap"
+	desc = "A standard issue combat cap worn by NCOs, Squad Leaders, or Sergeants of the UNSC Marine Corps."
+	icon = ITEM_INHAND
+	icon_override = MARINE_OVERRIDE
+	item_state = "Combat Cap"
+	icon_state = "combat-cap"
+	body_parts_covered = HEAD|EYES
+
+/obj/item/clothing/head/helmet/marine/combatcap/brown
+	icon = ITEM_INHAND
+	icon_override = MARINE_OVERRIDE
+	item_state = "Combat Cap B"
+	icon_state = "combat-cap-b"
+	body_parts_covered = HEAD|EYES
+
 /obj/item/clothing/suit/storage/marine
 	name = "Olive Camo M52A Body Armor"
 	desc = "An armored protective vest worn by the members of the UNSC Marine Corps."

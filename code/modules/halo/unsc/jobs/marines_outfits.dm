@@ -22,18 +22,21 @@
 
 /decl/hierarchy/outfit/job/unsc/marine/e5
 	name = "Marine Sergeant (e5)"
+	head = /obj/item/clothing/head/helmet/marine/combatcap
 	starting_accessories = list(\
 		/obj/item/clothing/accessory/rank/marine/enlisted/e5,\
 		/obj/item/clothing/accessory/badge/tags)
 
 /decl/hierarchy/outfit/job/unsc/marine/e6
 	name = "Marine Staff Sergeant (e6)"
+	head = /obj/item/clothing/head/helmet/marine/combatcap
 	starting_accessories = list(\
 		/obj/item/clothing/accessory/rank/marine/enlisted/e6,\
 		/obj/item/clothing/accessory/badge/tags)
 
 /decl/hierarchy/outfit/job/unsc/marine/e7
 	name = "Marine Gunnery Sergeant (e7)"
+	head = /obj/item/clothing/head/helmet/marine/combatcap/brown
 	starting_accessories = list(\
 		/obj/item/clothing/accessory/rank/marine/enlisted/e7,\
 		/obj/item/clothing/accessory/badge/tags)
