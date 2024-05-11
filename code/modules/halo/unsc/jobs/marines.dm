@@ -19,8 +19,8 @@
 
 /datum/job/unsc/marine/specialist
 	title = "Marine Specialist"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 2
+	spawn_positions = 2
 	outfit_type = /decl/hierarchy/outfit/job/unsc/marine/e3
 	alt_titles = list(
 	"Light Machine Gunner Marine",\
@@ -34,8 +34,8 @@
 
 /datum/job/unsc/marine/squad_leader
 	title = "Marine Sergeant"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	department_flag = COM
 	outfit_type = /decl/hierarchy/outfit/job/unsc/marine/e5
 	alt_titles = list(\
@@ -59,8 +59,8 @@
 
 /datum/job/unsc/marine/hellbringer
 	title = "Hellbringer"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/unsc/marine/hellbringer
 	alt_titles = list("Flamethrower Operator" = /decl/hierarchy/outfit/job/unsc/marine/hellbringer)
 	access = list(access_unsc,access_unsc_armoury,access_unsc_marine,access_unsc_specialist)

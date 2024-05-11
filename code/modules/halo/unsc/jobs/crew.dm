@@ -4,8 +4,8 @@
 	fallback_spawnpoint = null
 	outfit_type = /decl/hierarchy/outfit/job/unsc
 	access = list(access_unsc,access_unsc_armoury,access_unsc_cargo)
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = -1
+	spawn_positions = -1
 	open_slot_on_death = 1
 	alt_titles = list(\
 	"UNSC Logistics" = /decl/hierarchy/outfit/job/unsc/logistics,
@@ -19,8 +19,8 @@
 /datum/job/unsc/medical
 	title = "UNSC Station Medic"
 	fallback_spawnpoint = null
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 4
+	spawn_positions = 4
 	outfit_type = /decl/hierarchy/outfit/job/unsc/medic
 	access = list(access_unsc,access_unsc_armoury,access_unsc_cargo)
 

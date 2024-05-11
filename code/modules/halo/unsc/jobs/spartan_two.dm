@@ -1,10 +1,9 @@
 /datum/job/unsc/spartan_two
 	title = "Spartan II"
 	outfit_type = /decl/hierarchy/outfit/job/unsc/spartan_two
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 4
+	spawn_positions = 4
 	account_allowed = 0
-	faction_whitelist = "UNSC"
 	access = list(\
 		access_unsc,\
 		access_unsc_bridge,\

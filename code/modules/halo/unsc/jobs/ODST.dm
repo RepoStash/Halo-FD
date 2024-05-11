@@ -1,8 +1,8 @@
 
 /datum/job/unsc/odst
 	title = "Orbital Drop Shock Trooper"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 4
+	spawn_positions = 4
 	faction_whitelist = null
 	outfit_type = /decl/hierarchy/outfit/job/unsc/odst
 	alt_titles = list(\
